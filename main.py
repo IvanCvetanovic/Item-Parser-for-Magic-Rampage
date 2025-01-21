@@ -153,24 +153,37 @@ def main():
 
     if json_data is not None:
         parser = argparse.ArgumentParser(description="Parse items for Magic Rampage.")
+        
+        # Set default output_type to "normal" and item_type to "all"
         parser.add_argument(
             "output_type",
             type=str,
             choices=["developer", "normal"],
             help="Specify the output type (developer or normal).",
+            default="normal",  # Default is "normal"
+            nargs="?"  # Allow the argument to be optional
         )
+        
         parser.add_argument(
             "item_type",
             type=str,
             choices=["armor", "ring", "sword", "hammer", "spear", "staff", "dagger", "axe", "all"],
             help="Specify the item type (armor, ring, sword, etc. or all).",
+            default="all",  # Default is "all"
+            nargs="?"  # Allow the argument to be optional
         )
+        
         args = parser.parse_args()
 
+        # If no item_type is specified, assume "all"
         if args.item_type == "all":
-            handle_all_types(json_data, args.output_type)
+            if args.output_type == "developer":
+                handle_all_types(json_data, "developer")
+            else:
+                handle_all_types(json_data, "normal")
         else:
             save_output(json_data, args.item_type, args.output_type)
+
     else:
         print("Failed to fetch data. Please check the URL.")
 
