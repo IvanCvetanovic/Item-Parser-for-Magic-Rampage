@@ -1,1 +1,1 @@
-This is a tool used for parsing items from the popular mobile and PC game "Magic Rampage". The tools aims to provide an overview of the current items in the game, which can be useful for Wiki editors and people who require this data for other needs.
+This is a tool used for parsing items from the popular mobile and PC game "Magic Rampage". The tools aims to provide an overview of the current items in the game, which can be useful for Wiki editors, Youtubers and people who require this data for other needs.

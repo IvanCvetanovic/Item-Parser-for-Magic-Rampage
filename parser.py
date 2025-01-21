@@ -25,14 +25,14 @@ def clean_name(name):
     return name
 
 def generate_armor_code(data):
+
     armor_code_list = []
 
     if isinstance(data, list):
         for block in data:
             if isinstance(block, dict) and block.get("type") == "armor":
+ 
                 name = block.get("name", "test_armor").replace(" ", "_").lower()
-                name = clean_name(name)
-
                 frost = block.get("frost", False)
                 min_armor = block.get("armor", 0)
                 max_armor = block.get("maxLevelArmor", 0)
@@ -48,8 +48,11 @@ def generate_armor_code(data):
                 hammer_boost = process_boost(block.get("hammerBoost", 1))
                 spear_boost = process_boost(block.get("spearBoost", 1))
 
+                # Parse the element from the block
+                element = block.get("element", "NEUTRAL").upper()  # Default to "NEUTRAL" if not found
+
                 code = (
-                    f"armorList.add(createArmor(R.string.{name}, Elements.NEUTRAL, "
+                    f"armorList.add(createArmor(R.string.{name}, Elements.{element}, "
                     f"{str(frost).lower()}, {min_armor}, {max_armor}, {upgrades}, "
                     f"{speed_boost}, {jump_boost}, {magic_boost}, {sword_boost}, "
                     f"{staff_boost}, {dagger_boost}, {axe_boost}, {hammer_boost}, "
@@ -59,6 +62,7 @@ def generate_armor_code(data):
     elif isinstance(data, dict):
         for key, value in data.items():
             if isinstance(value, (list, dict)):
-                armor_code_list.extend(generate_armor_code(value))
+                armor_code_list.extend(generate_armor_code(value))  # Recursive call
 
     return armor_code_list
+
