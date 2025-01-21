@@ -16,5 +16,30 @@ Run the app with:
 python main.py
 ```
 
-
 There will be 8 output .txt folders, each containing the specific types of equipments. They are sorted based on maximum armor value for armors and rings and maximum damage value for the rest.
+
+## Advanced Usage
+
+The user can decide between **normal** and **developer** modes when executign the main.py:
+
+```bash
+python main.py normal
+```
+
+```bash
+python main.py developer
+```
+
+If this is not specified, the program automatically assumes the **normal** mode. The difference between the modes is the readability. **normal** mode provides understandable textual representation of the item information. **developer** mode provides a list of items used for Magic Rampage Companion app. This automates all the heavy workload.
+
+Apart from that the user can also define a second argument after the first:
+
+```bash
+python main.py normal all
+```
+
+```bash
+python main.py normal axes
+```
+
+If the **all** mode is picked, the textual files for all item types will be made. If a specific item type is picked, then only that type will be produced. The possible types are: **all**, **armor**, **ring**, **sword**, **dagger**, **spear**, **hammer**, **axe** and **staff**. If none are picked, mode **all** is automatically assumed.
