@@ -3,6 +3,7 @@ This is a tool used for parsing items from the popular mobile and PC game "Magic
 ## Setup
 
 Recommended Python Version: 3.13 or newer
+
 Recommended Platform: Visual Studio Code
 
 ```bash
