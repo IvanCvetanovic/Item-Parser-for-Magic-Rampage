@@ -87,8 +87,12 @@ def generate_ring_code(data):
                 if not element:  # If empty string, default to "NEUTRAL"
                     element = "NEUTRAL"
 
-                minArmor = block.get("armor", 0)
-                maxArmor = block.get("maxLevelArmor", 0)
+                # Replace minArmor and maxArmor with the armor value
+                armor = block.get("maxLevelArmor", 0)
+
+                # Process armorBoost for armorBonus
+                armorBonus = process_boost(block.get("armorBoost", 1))
+
                 upgrades = block.get("maxLevelAllowed", 0)
 
                 speed = process_boost(block.get("speedBoost", 1))
@@ -103,7 +107,7 @@ def generate_ring_code(data):
 
                 code = (
                     f"ringList.add(createRing(R.string.{name}, Elements.{element}, "
-                    f"{minArmor}, {maxArmor}, {upgrades}, "
+                    f"{armor}, {armorBonus}, {upgrades}, "
                     f"{speed}, {jump}, {magic}, {sword}, "
                     f"{staff}, {dagger}, {axe}, {hammer}, "
                     f"{spear}, R.drawable.ring_{name}));"
@@ -115,3 +119,4 @@ def generate_ring_code(data):
                 ring_code_list.extend(generate_ring_code(value))  # Recursive call
 
     return ring_code_list
+

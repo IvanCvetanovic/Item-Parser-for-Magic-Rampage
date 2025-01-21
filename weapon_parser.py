@@ -14,8 +14,13 @@ def fetch_json_from_url(url):
     except Exception as e:
         print(f"An unexpected error occurred: {e}")
 
+# For speed and jump
 def process_boost(value):
     return 0 if value == 1 else int((value - 1) * 100)
+
+# for other weapon boni
+def process_boost_extra(value):
+    return 0 if value == 1 else int((value * 100) - 100)
 
 def clean_name(name):
     if name:
@@ -30,22 +35,18 @@ def generate_sword_code(data):
     sword_code_list = []
 
     if isinstance(data, list):
-        # Process all the sword blocks
         sword_data = []
         for block in data:
             if isinstance(block, dict) and block.get("secondaryType") == "sword":
                 name = block.get("name", "test_sword").replace(" ", "_").lower()
-                # Ensure element is not empty
                 element = block.get("element", "NEUTRAL").upper()
-                if not element:  # If empty string, default to "NEUTRAL"
+                if not element:
                     element = "NEUTRAL"
 
                 minDamage = block.get("damage", 0)
                 maxDamage = block.get("maxLevelDamage", 0)
                 upgrades = block.get("maxLevelAllowed", 0)
-
-                magic = process_boost(block.get("magicBoost", 1))
-                armorBonus = process_boost(block.get("armorBoost", 1))
+                armorBonus = process_boost_extra(block.get("armorBoost", 1))
                 speed = process_boost(block.get("speedBoost", 1))
                 jump = process_boost(block.get("jumpBoost", 1))
 
@@ -55,21 +56,18 @@ def generate_sword_code(data):
                     'minDamage': minDamage,
                     'maxDamage': maxDamage,
                     'upgrades': upgrades,
-                    'magic': magic,
                     'armorBonus': armorBonus,
                     'speed': speed,
                     'jump': jump
                 })
 
-        # Sort the sword data by maxDamage
         sword_data = sort_by_max_damage(sword_data)
 
-        # Generate the weapon code
         for item in sword_data:
             code = (
                 f"swordList.add(createWeapon(R.string.{item['name']}, Elements.{item['element']}, "
-                f"{item['minDamage']}, {item['maxDamage']}, {item['upgrades']}, "
-                f"{item['magic']}, {item['armorBonus']}, {item['speed']}, {item['jump']}, "
+                f"{item['minDamage']}, {item['maxDamage']}, {item['upgrades']}, {item['armorBonus']}, "
+                f"{item['speed']}, {item['jump']}, "
                 f"R.drawable.sword_{item['name']}));"
             )
             sword_code_list.append(code)
@@ -93,8 +91,7 @@ def generate_hammer_code(data):
                 minDamage = block.get("damage", 0)
                 maxDamage = block.get("maxLevelDamage", 0)
                 upgrades = block.get("maxLevelAllowed", 0)
-                magic = process_boost(block.get("magicBoost", 1))
-                armorBonus = process_boost(block.get("armorBoost", 1))
+                armorBonus = process_boost_extra(block.get("armorBoost", 1))
                 speed = process_boost(block.get("speedBoost", 1))
                 jump = process_boost(block.get("jumpBoost", 1))
 
@@ -104,7 +101,6 @@ def generate_hammer_code(data):
                     'minDamage': minDamage,
                     'maxDamage': maxDamage,
                     'upgrades': upgrades,
-                    'magic': magic,
                     'armorBonus': armorBonus,
                     'speed': speed,
                     'jump': jump
@@ -113,8 +109,8 @@ def generate_hammer_code(data):
     hammer_code_list = sort_by_max_damage(hammer_code_list)
     code_list = [
         f"swordList.add(createWeapon(R.string.{item['name']}, Elements.{item['element']}, "
-        f"{item['minDamage']}, {item['maxDamage']}, {item['upgrades']}, {item['magic']}, "
-        f"{item['armorBonus']}, {item['speed']}, {item['jump']}, R.drawable.weapon_{item['name']}));"
+        f"{item['minDamage']}, {item['maxDamage']}, {item['upgrades']}, {item['armorBonus']}, "
+        f"{item['speed']}, {item['jump']}, R.drawable.weapon_{item['name']}));"
         for item in hammer_code_list
     ]
     
@@ -132,8 +128,7 @@ def generate_spear_code(data):
                 minDamage = block.get("damage", 0)
                 maxDamage = block.get("maxLevelDamage", 0)
                 upgrades = block.get("maxLevelAllowed", 0)
-                magic = process_boost(block.get("magicBoost", 1))
-                armorBonus = process_boost(block.get("armorBoost", 1))
+                armorBonus = process_boost_extra(block.get("armorBoost", 1))
                 speed = process_boost(block.get("speedBoost", 1))
                 jump = process_boost(block.get("jumpBoost", 1))
 
@@ -143,7 +138,6 @@ def generate_spear_code(data):
                     'minDamage': minDamage,
                     'maxDamage': maxDamage,
                     'upgrades': upgrades,
-                    'magic': magic,
                     'armorBonus': armorBonus,
                     'speed': speed,
                     'jump': jump
@@ -152,8 +146,8 @@ def generate_spear_code(data):
     spear_code_list = sort_by_max_damage(spear_code_list)
     code_list = [
         f"swordList.add(createWeapon(R.string.{item['name']}, Elements.{item['element']}, "
-        f"{item['minDamage']}, {item['maxDamage']}, {item['upgrades']}, {item['magic']}, "
-        f"{item['armorBonus']}, {item['speed']}, {item['jump']}, R.drawable.weapon_{item['name']}));"
+        f"{item['minDamage']}, {item['maxDamage']}, {item['upgrades']}, {item['armorBonus']}, "
+        f"{item['speed']}, {item['jump']}, R.drawable.weapon_{item['name']}));"
         for item in spear_code_list
     ]
     
@@ -171,8 +165,7 @@ def generate_staff_code(data):
                 minDamage = block.get("damage", 0)
                 maxDamage = block.get("maxLevelDamage", 0)
                 upgrades = block.get("maxLevelAllowed", 0)
-                magic = process_boost(block.get("magicBoost", 1))
-                armorBonus = process_boost(block.get("armorBoost", 1))
+                armorBonus = process_boost_extra(block.get("armorBoost", 1))
                 speed = process_boost(block.get("speedBoost", 1))
                 jump = process_boost(block.get("jumpBoost", 1))
 
@@ -182,7 +175,6 @@ def generate_staff_code(data):
                     'minDamage': minDamage,
                     'maxDamage': maxDamage,
                     'upgrades': upgrades,
-                    'magic': magic,
                     'armorBonus': armorBonus,
                     'speed': speed,
                     'jump': jump
@@ -191,8 +183,8 @@ def generate_staff_code(data):
     staff_code_list = sort_by_max_damage(staff_code_list)
     code_list = [
         f"swordList.add(createWeapon(R.string.{item['name']}, Elements.{item['element']}, "
-        f"{item['minDamage']}, {item['maxDamage']}, {item['upgrades']}, {item['magic']}, "
-        f"{item['armorBonus']}, {item['speed']}, {item['jump']}, R.drawable.weapon_{item['name']}));"
+        f"{item['minDamage']}, {item['maxDamage']}, {item['upgrades']}, {item['armorBonus']}, "
+        f"{item['speed']}, {item['jump']}, R.drawable.weapon_{item['name']}));"
         for item in staff_code_list
     ]
     
@@ -210,8 +202,7 @@ def generate_dagger_code(data):
                 minDamage = block.get("damage", 0)
                 maxDamage = block.get("maxLevelDamage", 0)
                 upgrades = block.get("maxLevelAllowed", 0)
-                magic = process_boost(block.get("magicBoost", 1))
-                armorBonus = process_boost(block.get("armorBoost", 1))
+                armorBonus = process_boost_extra(block.get("armorBoost", 1))
                 speed = process_boost(block.get("speedBoost", 1))
                 jump = process_boost(block.get("jumpBoost", 1))
 
@@ -221,7 +212,6 @@ def generate_dagger_code(data):
                     'minDamage': minDamage,
                     'maxDamage': maxDamage,
                     'upgrades': upgrades,
-                    'magic': magic,
                     'armorBonus': armorBonus,
                     'speed': speed,
                     'jump': jump
@@ -230,8 +220,8 @@ def generate_dagger_code(data):
     dagger_code_list = sort_by_max_damage(dagger_code_list)
     code_list = [
         f"swordList.add(createWeapon(R.string.{item['name']}, Elements.{item['element']}, "
-        f"{item['minDamage']}, {item['maxDamage']}, {item['upgrades']}, {item['magic']}, "
-        f"{item['armorBonus']}, {item['speed']}, {item['jump']}, R.drawable.weapon_{item['name']}));"
+        f"{item['minDamage']}, {item['maxDamage']}, {item['upgrades']}, {item['armorBonus']}, "
+        f"{item['speed']}, {item['jump']}, R.drawable.weapon_{item['name']}));"
         for item in dagger_code_list
     ]
     
@@ -249,8 +239,7 @@ def generate_axe_code(data):
                 minDamage = block.get("damage", 0)
                 maxDamage = block.get("maxLevelDamage", 0)
                 upgrades = block.get("maxLevelAllowed", 0)
-                magic = process_boost(block.get("magicBoost", 1))
-                armorBonus = process_boost(block.get("armorBoost", 1))
+                armorBonus = process_boost_extra(block.get("armorBoost", 1))
                 speed = process_boost(block.get("speedBoost", 1))
                 jump = process_boost(block.get("jumpBoost", 1))
 
@@ -260,7 +249,6 @@ def generate_axe_code(data):
                     'minDamage': minDamage,
                     'maxDamage': maxDamage,
                     'upgrades': upgrades,
-                    'magic': magic,
                     'armorBonus': armorBonus,
                     'speed': speed,
                     'jump': jump
@@ -269,8 +257,8 @@ def generate_axe_code(data):
     axe_code_list = sort_by_max_damage(axe_code_list)
     code_list = [
         f"swordList.add(createWeapon(R.string.{item['name']}, Elements.{item['element']}, "
-        f"{item['minDamage']}, {item['maxDamage']}, {item['upgrades']}, {item['magic']}, "
-        f"{item['armorBonus']}, {item['speed']}, {item['jump']}, R.drawable.weapon_{item['name']}));"
+        f"{item['minDamage']}, {item['maxDamage']}, {item['upgrades']}, {item['armorBonus']}, "
+        f"{item['speed']}, {item['jump']}, R.drawable.weapon_{item['name']}));"
         for item in axe_code_list
     ]
     
