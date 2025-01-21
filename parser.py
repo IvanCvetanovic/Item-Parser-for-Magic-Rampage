@@ -48,8 +48,7 @@ def generate_armor_code(data):
                 hammer_boost = process_boost(block.get("hammerBoost", 1))
                 spear_boost = process_boost(block.get("spearBoost", 1))
 
-                # Parse the element from the block
-                element = block.get("element", "NEUTRAL").upper()  # Default to "NEUTRAL" if not found
+                element = block.get("element", "NEUTRAL").upper()
 
                 code = (
                     f"armorList.add(createArmor(R.string.{name}, Elements.{element}, "
@@ -62,7 +61,45 @@ def generate_armor_code(data):
     elif isinstance(data, dict):
         for key, value in data.items():
             if isinstance(value, (list, dict)):
-                armor_code_list.extend(generate_armor_code(value))  # Recursive call
+                armor_code_list.extend(generate_armor_code(value)) 
 
     return armor_code_list
 
+def generate_ring_code(data):
+
+    ring_code_list = []
+
+    if isinstance(data, list):
+        for block in data:
+            if isinstance(block, dict) and block.get("secondaryType") == "ring":
+
+                name = block.get("name", "test_ring").replace(" ", "_").lower()
+                element = block.get("element", "NEUTRAL").upper()
+                min_armor = block.get("armor", 0)
+                max_armor = block.get("maxLevelArmor", 0)
+                upgrades = block.get("maxLevelAllowed", 0)
+
+                speed_boost = process_boost(block.get("speedBoost", 1))
+                jump_boost = process_boost(block.get("jumpBoost", 1))
+                magic_boost = process_boost(block.get("magicBoost", 1))
+                sword_boost = process_boost(block.get("swordBoost", 1))
+                staff_boost = process_boost(block.get("staffBoost", 1))
+                dagger_boost = process_boost(block.get("daggerBoost", 1))
+                axe_boost = process_boost(block.get("axeBoost", 1))
+                hammer_boost = process_boost(block.get("hammerBoost", 1))
+                spear_boost = process_boost(block.get("spearBoost", 1))
+
+                code = (
+                    f"ringList.add(createRing(R.string.{name}, Elements.{element}, "
+                    f"{min_armor}, {max_armor}, {upgrades}, "
+                    f"{speed_boost}, {jump_boost}, {magic_boost}, {sword_boost}, "
+                    f"{staff_boost}, {dagger_boost}, {axe_boost}, {hammer_boost}, "
+                    f"{spear_boost}, R.drawable.ring_{name}));"
+                )
+                ring_code_list.append(code)
+    elif isinstance(data, dict):
+        for key, value in data.items():
+            if isinstance(value, (list, dict)):
+                ring_code_list.extend(generate_ring_code(value))  # Recursive call
+
+    return ring_code_list
