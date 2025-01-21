@@ -29,33 +29,38 @@ def generate_armor_code(data):
     armor_code_list = []
 
     if isinstance(data, list):
+        # Sort the blocks by maxArmor (ascending)
+        data = sorted(data, key=lambda block: block.get("maxLevelArmor", 0))
+
         for block in data:
             if isinstance(block, dict) and block.get("type") == "armor":
- 
                 name = block.get("name", "test_armor").replace(" ", "_").lower()
-                frost = block.get("frost", False)
-                min_armor = block.get("armor", 0)
-                max_armor = block.get("maxLevelArmor", 0)
+                frostImmune = block.get("frost", False)
+                minArmor = block.get("armor", 0)
+                maxArmor = block.get("maxLevelArmor", 0)
                 upgrades = block.get("maxLevelAllowed", 0)
 
-                speed_boost = process_boost(block.get("speedBoost", 1))
-                jump_boost = process_boost(block.get("jumpBoost", 1))
-                magic_boost = process_boost(block.get("magicBoost", 1))
-                sword_boost = process_boost(block.get("swordBoost", 1))
-                staff_boost = process_boost(block.get("staffBoost", 1))
-                dagger_boost = process_boost(block.get("daggerBoost", 1))
-                axe_boost = process_boost(block.get("axeBoost", 1))
-                hammer_boost = process_boost(block.get("hammerBoost", 1))
-                spear_boost = process_boost(block.get("spearBoost", 1))
+                speed = process_boost(block.get("speedBoost", 1))
+                jump = process_boost(block.get("jumpBoost", 1))
+                magic = process_boost(block.get("magicBoost", 1))
+                sword = process_boost(block.get("swordBoost", 1))
+                staff = process_boost(block.get("staffBoost", 1))
+                dagger = process_boost(block.get("daggerBoost", 1))
+                axe = process_boost(block.get("axeBoost", 1))
+                hammer = process_boost(block.get("hammerBoost", 1))
+                spear = process_boost(block.get("spearBoost", 1))
 
+                # Ensure element is not empty
                 element = block.get("element", "NEUTRAL").upper()
+                if not element:  # If empty string, default to "NEUTRAL"
+                    element = "NEUTRAL"
 
                 code = (
                     f"armorList.add(createArmor(R.string.{name}, Elements.{element}, "
-                    f"{str(frost).lower()}, {min_armor}, {max_armor}, {upgrades}, "
-                    f"{speed_boost}, {jump_boost}, {magic_boost}, {sword_boost}, "
-                    f"{staff_boost}, {dagger_boost}, {axe_boost}, {hammer_boost}, "
-                    f"{spear_boost}, R.drawable.armor_{name}));"
+                    f"{str(frostImmune).lower()}, {minArmor}, {maxArmor}, {upgrades}, "
+                    f"{speed}, {jump}, {magic}, {sword}, "
+                    f"{staff}, {dagger}, {axe}, {hammer}, "
+                    f"{spear}, R.drawable.armor_{name}));"
                 )
                 armor_code_list.append(code)
     elif isinstance(data, dict):
@@ -70,31 +75,38 @@ def generate_ring_code(data):
     ring_code_list = []
 
     if isinstance(data, list):
+        # Sort the blocks by maxArmor (ascending)
+        data = sorted(data, key=lambda block: block.get("maxLevelArmor", 0))
+
         for block in data:
             if isinstance(block, dict) and block.get("secondaryType") == "ring":
 
                 name = block.get("name", "test_ring").replace(" ", "_").lower()
+                # Ensure element is not empty
                 element = block.get("element", "NEUTRAL").upper()
-                min_armor = block.get("armor", 0)
-                max_armor = block.get("maxLevelArmor", 0)
+                if not element:  # If empty string, default to "NEUTRAL"
+                    element = "NEUTRAL"
+
+                minArmor = block.get("armor", 0)
+                maxArmor = block.get("maxLevelArmor", 0)
                 upgrades = block.get("maxLevelAllowed", 0)
 
-                speed_boost = process_boost(block.get("speedBoost", 1))
-                jump_boost = process_boost(block.get("jumpBoost", 1))
-                magic_boost = process_boost(block.get("magicBoost", 1))
-                sword_boost = process_boost(block.get("swordBoost", 1))
-                staff_boost = process_boost(block.get("staffBoost", 1))
-                dagger_boost = process_boost(block.get("daggerBoost", 1))
-                axe_boost = process_boost(block.get("axeBoost", 1))
-                hammer_boost = process_boost(block.get("hammerBoost", 1))
-                spear_boost = process_boost(block.get("spearBoost", 1))
+                speed = process_boost(block.get("speedBoost", 1))
+                jump = process_boost(block.get("jumpBoost", 1))
+                magic = process_boost(block.get("magicBoost", 1))
+                sword = process_boost(block.get("swordBoost", 1))
+                staff = process_boost(block.get("staffBoost", 1))
+                dagger = process_boost(block.get("daggerBoost", 1))
+                axe = process_boost(block.get("axeBoost", 1))
+                hammer = process_boost(block.get("hammerBoost", 1))
+                spear = process_boost(block.get("spearBoost", 1))
 
                 code = (
                     f"ringList.add(createRing(R.string.{name}, Elements.{element}, "
-                    f"{min_armor}, {max_armor}, {upgrades}, "
-                    f"{speed_boost}, {jump_boost}, {magic_boost}, {sword_boost}, "
-                    f"{staff_boost}, {dagger_boost}, {axe_boost}, {hammer_boost}, "
-                    f"{spear_boost}, R.drawable.ring_{name}));"
+                    f"{minArmor}, {maxArmor}, {upgrades}, "
+                    f"{speed}, {jump}, {magic}, {sword}, "
+                    f"{staff}, {dagger}, {axe}, {hammer}, "
+                    f"{spear}, R.drawable.ring_{name}));"
                 )
                 ring_code_list.append(code)
     elif isinstance(data, dict):
