@@ -39,6 +39,7 @@ def generate_sword_code(data):
         for block in data:
             if isinstance(block, dict) and block.get("secondaryType") == "sword":
                 name = block.get("name", "test_sword").replace(" ", "_").lower()
+                weapon_type = "SWORD"
                 element = block.get("element", "NEUTRAL").upper()
                 if not element:
                     element = "NEUTRAL"
@@ -52,6 +53,7 @@ def generate_sword_code(data):
 
                 sword_data.append({
                     'name': name,
+                    'weapon_type': weapon_type,
                     'element': element,
                     'minDamage': minDamage,
                     'maxDamage': maxDamage,
@@ -65,9 +67,9 @@ def generate_sword_code(data):
 
         for item in sword_data:
             code = (
-                f"swordList.add(createWeapon(R.string.{item['name']}, Elements.{item['element']}, "
-                f"{item['minDamage']}, {item['maxDamage']}, {item['upgrades']}, {item['armorBonus']}, "
-                f"{item['speed']}, {item['jump']}, "
+                f"swordList.add(createWeapon(R.string.{item['name']}, WeaponTypes.{item['weapon_type']}, "
+                f"Elements.{item['element']}, {item['minDamage']}, {item['maxDamage']}, {item['upgrades']}, "
+                f"{item['armorBonus']}, {item['speed']}, {item['jump']}, "
                 f"R.drawable.sword_{item['name']}));"
             )
             sword_code_list.append(code)
@@ -82,13 +84,14 @@ def generate_sword_code(data):
 
 def generate_hammer_code(data):
     hammer_code_list = []
-    
+
     if isinstance(data, list):
         for block in data:
             if isinstance(block, dict) and block.get("secondaryType") == "hammer":
                 name = block.get("name", "test_hammer").replace(" ", "_").lower()
+                weapon_type = "HAMMER"
                 element = block.get("element", "NEUTRAL").upper()
-                if not element: 
+                if not element:
                     element = "NEUTRAL"
                 minDamage = block.get("damage", 0)
                 maxDamage = block.get("maxLevelDamage", 0)
@@ -99,6 +102,7 @@ def generate_hammer_code(data):
 
                 hammer_code_list.append({
                     'name': name,
+                    'weapon_type': weapon_type,
                     'element': element,
                     'minDamage': minDamage,
                     'maxDamage': maxDamage,
@@ -107,27 +111,28 @@ def generate_hammer_code(data):
                     'speed': speed,
                     'jump': jump
                 })
-    
+
     hammer_code_list = sort_by_max_damage(hammer_code_list)
     code_list = [
-        f"hammerList.add(createWeapon(R.string.{item['name']}, Elements.{item['element']}, "
-        f"{item['minDamage']}, {item['maxDamage']}, {item['upgrades']}, {item['armorBonus']}, "
-        f"{item['speed']}, {item['jump']}, R.drawable.hammer_{item['name']}));"
+        f"hammerList.add(createWeapon(R.string.{item['name']}, WeaponTypes.{item['weapon_type']}, "
+        f"Elements.{item['element']}, {item['minDamage']}, {item['maxDamage']}, {item['upgrades']}, "
+        f"{item['armorBonus']}, {item['speed']}, {item['jump']}, R.drawable.hammer_{item['name']}));"
         for item in hammer_code_list
     ]
-    
+
     return code_list
 
 
 def generate_spear_code(data):
     spear_code_list = []
-    
+
     if isinstance(data, list):
         for block in data:
             if isinstance(block, dict) and block.get("secondaryType") == "spear":
                 name = block.get("name", "test_spear").replace(" ", "_").lower()
+                weapon_type = "SPEAR"
                 element = block.get("element", "NEUTRAL").upper()
-                if not element: 
+                if not element:
                     element = "NEUTRAL"
                 minDamage = block.get("damage", 0)
                 maxDamage = block.get("maxLevelDamage", 0)
@@ -138,6 +143,7 @@ def generate_spear_code(data):
 
                 spear_code_list.append({
                     'name': name,
+                    'weapon_type': weapon_type,
                     'element': element,
                     'minDamage': minDamage,
                     'maxDamage': maxDamage,
@@ -146,27 +152,28 @@ def generate_spear_code(data):
                     'speed': speed,
                     'jump': jump
                 })
-    
+
     spear_code_list = sort_by_max_damage(spear_code_list)
     code_list = [
-        f"spearList.add(createWeapon(R.string.{item['name']}, Elements.{item['element']}, "
-        f"{item['minDamage']}, {item['maxDamage']}, {item['upgrades']}, {item['armorBonus']}, "
-        f"{item['speed']}, {item['jump']}, R.drawable.spear_{item['name']}));"
+        f"spearList.add(createWeapon(R.string.{item['name']}, WeaponTypes.{item['weapon_type']}, "
+        f"Elements.{item['element']}, {item['minDamage']}, {item['maxDamage']}, {item['upgrades']}, "
+        f"{item['armorBonus']}, {item['speed']}, {item['jump']}, R.drawable.spear_{item['name']}));"
         for item in spear_code_list
     ]
-    
+
     return code_list
 
 
 def generate_staff_code(data):
     staff_code_list = []
-    
+
     if isinstance(data, list):
         for block in data:
             if isinstance(block, dict) and block.get("secondaryType") == "staff":
                 name = block.get("name", "test_staff").replace(" ", "_").lower()
+                weapon_type = "STAFF"
                 element = block.get("element", "NEUTRAL").upper()
-                if not element: 
+                if not element:
                     element = "NEUTRAL"
                 minDamage = block.get("damage", 0)
                 maxDamage = block.get("maxLevelDamage", 0)
@@ -177,6 +184,7 @@ def generate_staff_code(data):
 
                 staff_code_list.append({
                     'name': name,
+                    'weapon_type': weapon_type,
                     'element': element,
                     'minDamage': minDamage,
                     'maxDamage': maxDamage,
@@ -185,27 +193,28 @@ def generate_staff_code(data):
                     'speed': speed,
                     'jump': jump
                 })
-    
+
     staff_code_list = sort_by_max_damage(staff_code_list)
     code_list = [
-        f"staffList.add(createWeapon(R.string.{item['name']}, Elements.{item['element']}, "
-        f"{item['minDamage']}, {item['maxDamage']}, {item['upgrades']}, {item['armorBonus']}, "
-        f"{item['speed']}, {item['jump']}, R.drawable.staff_{item['name']}));"
+        f"staffList.add(createWeapon(R.string.{item['name']}, WeaponTypes.{item['weapon_type']}, "
+        f"Elements.{item['element']}, {item['minDamage']}, {item['maxDamage']}, {item['upgrades']}, "
+        f"{item['armorBonus']}, {item['speed']}, {item['jump']}, R.drawable.staff_{item['name']}));"
         for item in staff_code_list
     ]
-    
+
     return code_list
 
 
 def generate_dagger_code(data):
     dagger_code_list = []
-    
+
     if isinstance(data, list):
         for block in data:
             if isinstance(block, dict) and block.get("secondaryType") == "dagger":
                 name = block.get("name", "test_dagger").replace(" ", "_").lower()
+                weapon_type = "DAGGER"
                 element = block.get("element", "NEUTRAL").upper()
-                if not element: 
+                if not element:
                     element = "NEUTRAL"
                 minDamage = block.get("damage", 0)
                 maxDamage = block.get("maxLevelDamage", 0)
@@ -216,6 +225,7 @@ def generate_dagger_code(data):
 
                 dagger_code_list.append({
                     'name': name,
+                    'weapon_type': weapon_type,
                     'element': element,
                     'minDamage': minDamage,
                     'maxDamage': maxDamage,
@@ -224,27 +234,28 @@ def generate_dagger_code(data):
                     'speed': speed,
                     'jump': jump
                 })
-    
+
     dagger_code_list = sort_by_max_damage(dagger_code_list)
     code_list = [
-        f"staffList.add(createWeapon(R.string.{item['name']}, Elements.{item['element']}, "
-        f"{item['minDamage']}, {item['maxDamage']}, {item['upgrades']}, {item['armorBonus']}, "
-        f"{item['speed']}, {item['jump']}, R.drawable.dagger_{item['name']}));"
+        f"daggerList.add(createWeapon(R.string.{item['name']}, WeaponTypes.{item['weapon_type']}, "
+        f"Elements.{item['element']}, {item['minDamage']}, {item['maxDamage']}, {item['upgrades']}, "
+        f"{item['armorBonus']}, {item['speed']}, {item['jump']}, R.drawable.dagger_{item['name']}));"
         for item in dagger_code_list
     ]
-    
+
     return code_list
 
 
 def generate_axe_code(data):
     axe_code_list = []
-    
+
     if isinstance(data, list):
         for block in data:
             if isinstance(block, dict) and block.get("secondaryType") == "axe":
                 name = block.get("name", "test_axe").replace(" ", "_").lower()
+                weapon_type = "AXE"
                 element = block.get("element", "NEUTRAL").upper()
-                if not element: 
+                if not element:
                     element = "NEUTRAL"
                 minDamage = block.get("damage", 0)
                 maxDamage = block.get("maxLevelDamage", 0)
@@ -255,6 +266,7 @@ def generate_axe_code(data):
 
                 axe_code_list.append({
                     'name': name,
+                    'weapon_type': weapon_type,
                     'element': element,
                     'minDamage': minDamage,
                     'maxDamage': maxDamage,
@@ -263,13 +275,14 @@ def generate_axe_code(data):
                     'speed': speed,
                     'jump': jump
                 })
-    
+
     axe_code_list = sort_by_max_damage(axe_code_list)
     code_list = [
-        f"axeList.add(createWeapon(R.string.{item['name']}, Elements.{item['element']}, "
-        f"{item['minDamage']}, {item['maxDamage']}, {item['upgrades']}, {item['armorBonus']}, "
-        f"{item['speed']}, {item['jump']}, R.drawable.axe_{item['name']}));"
+        f"axeList.add(createWeapon(R.string.{item['name']}, WeaponTypes.{item['weapon_type']}, "
+        f"Elements.{item['element']}, {item['minDamage']}, {item['maxDamage']}, {item['upgrades']}, "
+        f"{item['armorBonus']}, {item['speed']}, {item['jump']}, R.drawable.axe_{item['name']}));"
         for item in axe_code_list
     ]
-    
+
     return code_list
+
