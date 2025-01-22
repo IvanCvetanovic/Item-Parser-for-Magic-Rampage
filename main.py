@@ -83,15 +83,16 @@ def format_output_normal(codes):
             arguments = code[start:end].split(", ")
             arguments = [arg.strip() for arg in arguments]
 
-            if len(arguments) == 9:
+            if len(arguments) == 10:
                 name = arguments[0].replace("R.string.", "").replace("_", " ").title()
-                element = arguments[1].replace("Elements.", "").title()
-                min_damage = arguments[2]
-                max_damage = arguments[3]
-                upgrades = arguments[4]
-                armor_bonus = arguments[5]
-                speed = arguments[6]
-                jump = arguments[7]
+                weapon_type = arguments[1]
+                element = arguments[2].replace("Elements.", "").title()
+                min_damage = arguments[3]
+                max_damage = arguments[4]
+                upgrades = arguments[5]
+                armor_bonus = arguments[6]
+                speed = arguments[7]
+                jump = arguments[8]
 
                 formatted.append(
                     f"Item Name: {name}, Element: {element}, Minimum Damage: {min_damage}, "
