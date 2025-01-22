@@ -87,7 +87,7 @@ def generate_hammer_code(data):
 
     if isinstance(data, list):
         for block in data:
-            if isinstance(block, dict) and block.get("secondaryType") == "hammer":
+            if isinstance(block, dict) and block.get("secondaryType") in ("hammer", "mace"):
                 name = block.get("name", "test_hammer").replace(" ", "_").lower()
                 weapon_type = "HAMMER"
                 element = block.get("element", "NEUTRAL").upper()
