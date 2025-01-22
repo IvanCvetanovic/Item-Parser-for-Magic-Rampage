@@ -24,7 +24,7 @@ def format_output_normal(codes):
             arguments = code[start:end].split(", ")
             arguments = [arg.strip() for arg in arguments]
 
-            if len(arguments) == 15:
+            if len(arguments) == 14:
                 name = arguments[0].replace("R.string.", "").replace("_", " ").title()
                 element = arguments[1].replace("Elements.", "").title()
                 armor = arguments[2]
@@ -131,12 +131,11 @@ def save_output(data, mode, output_type):
         formatted_output = format_output_normal(codes)
     else:
         raise ValueError(f"Invalid output type: {output_type}")
-    
-    # Ensure the output folder 'output' exists
+
     output_folder = "output"
     os.makedirs(output_folder, exist_ok=True)
     
-    output_file = os.path.join(output_folder, f"{mode}_code.txt")  # Save to the output folder
+    output_file = os.path.join(output_folder, f"{mode}_code.txt")
     with open(output_file, "w") as file:
         file.write(formatted_output)
     print(f"{mode.capitalize()} code has been exported to {output_file}")
@@ -154,14 +153,13 @@ def main():
     if json_data is not None:
         parser = argparse.ArgumentParser(description="Parse items for Magic Rampage.")
         
-        # Set default output_type to "normal" and item_type to "all"
         parser.add_argument(
             "output_type",
             type=str,
             choices=["developer", "normal"],
             help="Specify the output type (developer or normal).",
-            default="normal",  # Default is "normal"
-            nargs="?"  # Allow the argument to be optional
+            default="normal",
+            nargs="?" 
         )
         
         parser.add_argument(
@@ -169,13 +167,12 @@ def main():
             type=str,
             choices=["armor", "ring", "sword", "hammer", "spear", "staff", "dagger", "axe", "all"],
             help="Specify the item type (armor, ring, sword, etc. or all).",
-            default="all",  # Default is "all"
-            nargs="?"  # Allow the argument to be optional
+            default="all",
+            nargs="?"
         )
         
         args = parser.parse_args()
 
-        # If no item_type is specified, assume "all"
         if args.item_type == "all":
             if args.output_type == "developer":
                 handle_all_types(json_data, "developer")

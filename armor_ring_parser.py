@@ -29,7 +29,6 @@ def generate_armor_code(data):
     armor_code_list = []
 
     if isinstance(data, list):
-        # Sort the blocks by maxArmor (ascending)
         data = sorted(data, key=lambda block: block.get("maxLevelArmor", 0))
 
         for block in data:
@@ -50,9 +49,8 @@ def generate_armor_code(data):
                 hammer = process_boost(block.get("hammerBoost", 1))
                 spear = process_boost(block.get("spearBoost", 1))
 
-                # Ensure element is not empty
                 element = block.get("element", "NEUTRAL").upper()
-                if not element:  # If empty string, default to "NEUTRAL"
+                if not element: 
                     element = "NEUTRAL"
 
                 code = (
@@ -75,25 +73,19 @@ def generate_ring_code(data):
     ring_code_list = []
 
     if isinstance(data, list):
-        # Sort the blocks by maxArmor (ascending)
         data = sorted(data, key=lambda block: block.get("maxLevelArmor", 0))
 
         for block in data:
             if isinstance(block, dict) and block.get("secondaryType") == "ring":
 
                 name = block.get("name", "test_ring").replace(" ", "_").lower()
-                # Ensure element is not empty
                 element = block.get("element", "NEUTRAL").upper()
-                if not element:  # If empty string, default to "NEUTRAL"
+                if not element:
                     element = "NEUTRAL"
 
-                # Replace minArmor and maxArmor with the armor value
                 armor = block.get("maxLevelArmor", 0)
 
-                # Process armorBoost for armorBonus
                 armorBonus = process_boost(block.get("armorBoost", 1))
-
-                upgrades = block.get("maxLevelAllowed", 0)
 
                 speed = process_boost(block.get("speedBoost", 1))
                 jump = process_boost(block.get("jumpBoost", 1))
@@ -107,7 +99,7 @@ def generate_ring_code(data):
 
                 code = (
                     f"ringList.add(createRing(R.string.{name}, Elements.{element}, "
-                    f"{armor}, {armorBonus}, {upgrades}, "
+                    f"{armor}, {armorBonus}, "
                     f"{speed}, {jump}, {magic}, {sword}, "
                     f"{staff}, {dagger}, {axe}, {hammer}, "
                     f"{spear}, R.drawable.ring_{name}));"
@@ -116,7 +108,7 @@ def generate_ring_code(data):
     elif isinstance(data, dict):
         for key, value in data.items():
             if isinstance(value, (list, dict)):
-                ring_code_list.extend(generate_ring_code(value))  # Recursive call
+                ring_code_list.extend(generate_ring_code(value))
 
     return ring_code_list
 
