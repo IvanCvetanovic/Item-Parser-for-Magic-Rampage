@@ -110,7 +110,7 @@ def generate_hammer_code(data):
     code_list = [
         f"hammerList.add(createWeapon(R.string.{item['name']}, Elements.{item['element']}, "
         f"{item['minDamage']}, {item['maxDamage']}, {item['upgrades']}, {item['armorBonus']}, "
-        f"{item['speed']}, {item['jump']}, R.drawable.weapon_{item['name']}));"
+        f"{item['speed']}, {item['jump']}, R.drawable.hammer_{item['name']}));"
         for item in hammer_code_list
     ]
     
@@ -147,7 +147,7 @@ def generate_spear_code(data):
     code_list = [
         f"spearList.add(createWeapon(R.string.{item['name']}, Elements.{item['element']}, "
         f"{item['minDamage']}, {item['maxDamage']}, {item['upgrades']}, {item['armorBonus']}, "
-        f"{item['speed']}, {item['jump']}, R.drawable.weapon_{item['name']}));"
+        f"{item['speed']}, {item['jump']}, R.drawable.spear_{item['name']}));"
         for item in spear_code_list
     ]
     
@@ -184,7 +184,7 @@ def generate_staff_code(data):
     code_list = [
         f"staffList.add(createWeapon(R.string.{item['name']}, Elements.{item['element']}, "
         f"{item['minDamage']}, {item['maxDamage']}, {item['upgrades']}, {item['armorBonus']}, "
-        f"{item['speed']}, {item['jump']}, R.drawable.weapon_{item['name']}));"
+        f"{item['speed']}, {item['jump']}, R.drawable.staff_{item['name']}));"
         for item in staff_code_list
     ]
     
@@ -221,7 +221,7 @@ def generate_dagger_code(data):
     code_list = [
         f"staffList.add(createWeapon(R.string.{item['name']}, Elements.{item['element']}, "
         f"{item['minDamage']}, {item['maxDamage']}, {item['upgrades']}, {item['armorBonus']}, "
-        f"{item['speed']}, {item['jump']}, R.drawable.weapon_{item['name']}));"
+        f"{item['speed']}, {item['jump']}, R.drawable.dagger_{item['name']}));"
         for item in dagger_code_list
     ]
     
@@ -258,7 +258,7 @@ def generate_axe_code(data):
     code_list = [
         f"axeList.add(createWeapon(R.string.{item['name']}, Elements.{item['element']}, "
         f"{item['minDamage']}, {item['maxDamage']}, {item['upgrades']}, {item['armorBonus']}, "
-        f"{item['speed']}, {item['jump']}, R.drawable.weapon_{item['name']}));"
+        f"{item['speed']}, {item['jump']}, R.drawable.axe_{item['name']}));"
         for item in axe_code_list
     ]
     
