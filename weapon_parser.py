@@ -108,7 +108,7 @@ def generate_hammer_code(data):
     
     hammer_code_list = sort_by_max_damage(hammer_code_list)
     code_list = [
-        f"swordList.add(createWeapon(R.string.{item['name']}, Elements.{item['element']}, "
+        f"hammerList.add(createWeapon(R.string.{item['name']}, Elements.{item['element']}, "
         f"{item['minDamage']}, {item['maxDamage']}, {item['upgrades']}, {item['armorBonus']}, "
         f"{item['speed']}, {item['jump']}, R.drawable.weapon_{item['name']}));"
         for item in hammer_code_list
@@ -145,7 +145,7 @@ def generate_spear_code(data):
     
     spear_code_list = sort_by_max_damage(spear_code_list)
     code_list = [
-        f"swordList.add(createWeapon(R.string.{item['name']}, Elements.{item['element']}, "
+        f"spearList.add(createWeapon(R.string.{item['name']}, Elements.{item['element']}, "
         f"{item['minDamage']}, {item['maxDamage']}, {item['upgrades']}, {item['armorBonus']}, "
         f"{item['speed']}, {item['jump']}, R.drawable.weapon_{item['name']}));"
         for item in spear_code_list
@@ -182,7 +182,7 @@ def generate_staff_code(data):
     
     staff_code_list = sort_by_max_damage(staff_code_list)
     code_list = [
-        f"swordList.add(createWeapon(R.string.{item['name']}, Elements.{item['element']}, "
+        f"staffList.add(createWeapon(R.string.{item['name']}, Elements.{item['element']}, "
         f"{item['minDamage']}, {item['maxDamage']}, {item['upgrades']}, {item['armorBonus']}, "
         f"{item['speed']}, {item['jump']}, R.drawable.weapon_{item['name']}));"
         for item in staff_code_list
@@ -219,7 +219,7 @@ def generate_dagger_code(data):
     
     dagger_code_list = sort_by_max_damage(dagger_code_list)
     code_list = [
-        f"swordList.add(createWeapon(R.string.{item['name']}, Elements.{item['element']}, "
+        f"staffList.add(createWeapon(R.string.{item['name']}, Elements.{item['element']}, "
         f"{item['minDamage']}, {item['maxDamage']}, {item['upgrades']}, {item['armorBonus']}, "
         f"{item['speed']}, {item['jump']}, R.drawable.weapon_{item['name']}));"
         for item in dagger_code_list
@@ -256,7 +256,7 @@ def generate_axe_code(data):
     
     axe_code_list = sort_by_max_damage(axe_code_list)
     code_list = [
-        f"swordList.add(createWeapon(R.string.{item['name']}, Elements.{item['element']}, "
+        f"axeList.add(createWeapon(R.string.{item['name']}, Elements.{item['element']}, "
         f"{item['minDamage']}, {item['maxDamage']}, {item['upgrades']}, {item['armorBonus']}, "
         f"{item['speed']}, {item['jump']}, R.drawable.weapon_{item['name']}));"
         for item in axe_code_list
