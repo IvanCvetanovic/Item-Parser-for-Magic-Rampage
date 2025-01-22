@@ -169,7 +169,7 @@ def generate_staff_code(data):
 
     if isinstance(data, list):
         for block in data:
-            if isinstance(block, dict) and block.get("secondaryType") == "staff":
+            if isinstance(block, dict) and block.get("secondaryType") in ("staff", "grimoire"):
                 name = block.get("name", "test_staff").replace(" ", "_").lower()
                 weapon_type = "STAFF"
                 element = block.get("element", "NEUTRAL").upper()
