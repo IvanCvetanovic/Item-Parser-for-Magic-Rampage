@@ -86,7 +86,7 @@ def generate_hammer_code(data):
     if isinstance(data, list):
         for block in data:
             if isinstance(block, dict) and block.get("secondaryType") == "hammer":
-                name = clean_name(block.get("name", "test_hammer"))
+                name = block.get("name", "test_hammer").replace(" ", "_").lower()
                 element = block.get("element", "NEUTRAL").upper()
                 minDamage = block.get("damage", 0)
                 maxDamage = block.get("maxLevelDamage", 0)
@@ -123,7 +123,7 @@ def generate_spear_code(data):
     if isinstance(data, list):
         for block in data:
             if isinstance(block, dict) and block.get("secondaryType") == "spear":
-                name = clean_name(block.get("name", "test_spear"))
+                name = block.get("name", "test_spear").replace(" ", "_").lower()
                 element = block.get("element", "NEUTRAL").upper()
                 minDamage = block.get("damage", 0)
                 maxDamage = block.get("maxLevelDamage", 0)
@@ -160,7 +160,7 @@ def generate_staff_code(data):
     if isinstance(data, list):
         for block in data:
             if isinstance(block, dict) and block.get("secondaryType") == "staff":
-                name = clean_name(block.get("name", "test_staff"))
+                name = block.get("name", "test_staff").replace(" ", "_").lower()
                 element = block.get("element", "NEUTRAL").upper()
                 minDamage = block.get("damage", 0)
                 maxDamage = block.get("maxLevelDamage", 0)
@@ -197,7 +197,7 @@ def generate_dagger_code(data):
     if isinstance(data, list):
         for block in data:
             if isinstance(block, dict) and block.get("secondaryType") == "dagger":
-                name = clean_name(block.get("name", "test_dagger"))
+                name = block.get("name", "test_dagger").replace(" ", "_").lower()
                 element = block.get("element", "NEUTRAL").upper()
                 minDamage = block.get("damage", 0)
                 maxDamage = block.get("maxLevelDamage", 0)
@@ -234,7 +234,7 @@ def generate_axe_code(data):
     if isinstance(data, list):
         for block in data:
             if isinstance(block, dict) and block.get("secondaryType") == "axe":
-                name = clean_name(block.get("name", "test_axe"))
+                name = block.get("name", "test_axe").replace(" ", "_").lower()
                 element = block.get("element", "NEUTRAL").upper()
                 minDamage = block.get("damage", 0)
                 maxDamage = block.get("maxLevelDamage", 0)
