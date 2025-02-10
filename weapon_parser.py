@@ -14,13 +14,8 @@ def fetch_json_from_url(url):
     except Exception as e:
         print(f"An unexpected error occurred: {e}")
 
-# For speed and jump
 def process_boost(value):
-    return 0 if value == 1 else int((value - 1) * 100)
-
-# for other weapon boni
-def process_boost_extra(value):
-    return 0 if value == 1 else int((value * 100) - 100)
+    return 0 if value == 0 or value == 1 else round((value - 1) * 100)
 
 def clean_name(name):
     if name:
@@ -47,7 +42,7 @@ def generate_sword_code(data):
                 minDamage = block.get("damage", 0)
                 maxDamage = block.get("maxLevelDamage", 0)
                 upgrades = block.get("maxLevelAllowed", 0)
-                armorBonus = process_boost_extra(block.get("armorBoost", 1))
+                armorBonus = process_boost(block.get("armorBoost", 1))
                 speed = process_boost(block.get("speedBoost", 1))
                 jump = process_boost(block.get("jumpBoost", 1))
 
@@ -96,7 +91,7 @@ def generate_hammer_code(data):
                 minDamage = block.get("damage", 0)
                 maxDamage = block.get("maxLevelDamage", 0)
                 upgrades = block.get("maxLevelAllowed", 0)
-                armorBonus = process_boost_extra(block.get("armorBoost", 1))
+                armorBonus = process_boost(block.get("armorBoost", 1))
                 speed = process_boost(block.get("speedBoost", 1))
                 jump = process_boost(block.get("jumpBoost", 1))
 
@@ -137,7 +132,7 @@ def generate_spear_code(data):
                 minDamage = block.get("damage", 0)
                 maxDamage = block.get("maxLevelDamage", 0)
                 upgrades = block.get("maxLevelAllowed", 0)
-                armorBonus = process_boost_extra(block.get("armorBoost", 1))
+                armorBonus = process_boost(block.get("armorBoost", 1))
                 speed = process_boost(block.get("speedBoost", 1))
                 jump = process_boost(block.get("jumpBoost", 1))
 
@@ -178,7 +173,7 @@ def generate_staff_code(data):
                 minDamage = block.get("damage", 0)
                 maxDamage = block.get("maxLevelDamage", 0)
                 upgrades = block.get("maxLevelAllowed", 0)
-                armorBonus = process_boost_extra(block.get("armorBoost", 1))
+                armorBonus = process_boost(block.get("armorBoost", 1))
                 speed = process_boost(block.get("speedBoost", 1))
                 jump = process_boost(block.get("jumpBoost", 1))
 
@@ -219,7 +214,7 @@ def generate_dagger_code(data):
                 minDamage = block.get("damage", 0)
                 maxDamage = block.get("maxLevelDamage", 0)
                 upgrades = block.get("maxLevelAllowed", 0)
-                armorBonus = process_boost_extra(block.get("armorBoost", 1))
+                armorBonus = process_boost(block.get("armorBoost", 1))
                 speed = process_boost(block.get("speedBoost", 1))
                 jump = process_boost(block.get("jumpBoost", 1))
 
@@ -260,7 +255,7 @@ def generate_axe_code(data):
                 minDamage = block.get("damage", 0)
                 maxDamage = block.get("maxLevelDamage", 0)
                 upgrades = block.get("maxLevelAllowed", 0)
-                armorBonus = process_boost_extra(block.get("armorBoost", 1))
+                armorBonus = process_boost(block.get("armorBoost", 1))
                 speed = process_boost(block.get("speedBoost", 1))
                 jump = process_boost(block.get("jumpBoost", 1))
 

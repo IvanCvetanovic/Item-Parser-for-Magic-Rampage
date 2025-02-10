@@ -16,7 +16,7 @@ def fetch_json_from_url(url):
         print(f"An unexpected error occurred: {e}")
 
 def process_boost(value):
-    return 0 if value == 1 else int((value - 1) * 100)
+    return 0 if value == 0 or value == 1 else round((value - 1) * 100)
 
 def clean_name(name):
     if name:
