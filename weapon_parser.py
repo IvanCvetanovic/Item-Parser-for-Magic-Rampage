@@ -17,12 +17,6 @@ def fetch_json_from_url(url):
 def process_boost(value):
     return 0 if value == 0 or value == 1 else round((value - 1) * 100)
 
-def clean_name(name):
-    if name:
-        name = name.replace("'", "")
-        name = name.replace("+", "_plus")
-    return name
-
 def sort_by_max_damage(weapon_list):
     return sorted(weapon_list, key=lambda x: x['maxDamage'])
 
@@ -33,7 +27,7 @@ def generate_sword_code(data):
         sword_data = []
         for block in data:
             if isinstance(block, dict) and block.get("secondaryType") == "sword":
-                name = block.get("name", "test_sword").replace(" ", "_").lower()
+                name = block.get("name", "test_sword").replace(" ", "_").replace("'", "").replace("+", "").replace("-", "").lower()
                 weapon_type = "SWORD"
                 element = block.get("element", "NEUTRAL").upper()
                 if not element:
@@ -83,7 +77,7 @@ def generate_hammer_code(data):
     if isinstance(data, list):
         for block in data:
             if isinstance(block, dict) and block.get("secondaryType") in ("hammer", "mace"):
-                name = block.get("name", "test_hammer").replace(" ", "_").lower()
+                name = block.get("name", "test_hammer").replace(" ", "_").replace("'", "").replace("+", "").replace("-", "").lower()
                 weapon_type = "HAMMER"
                 element = block.get("element", "NEUTRAL").upper()
                 if not element:
@@ -124,7 +118,7 @@ def generate_spear_code(data):
     if isinstance(data, list):
         for block in data:
             if isinstance(block, dict) and block.get("secondaryType") == "spear":
-                name = block.get("name", "test_spear").replace(" ", "_").lower()
+                name = block.get("name", "test_spear").replace(" ", "_").replace("'", "").replace("+", "").replace("-", "").lower()
                 weapon_type = "SPEAR"
                 element = block.get("element", "NEUTRAL").upper()
                 if not element:
@@ -165,7 +159,7 @@ def generate_staff_code(data):
     if isinstance(data, list):
         for block in data:
             if isinstance(block, dict) and block.get("secondaryType") in ("staff", "grimoire"):
-                name = block.get("name", "test_staff").replace(" ", "_").lower()
+                name = block.get("name", "test_staff").replace(" ", "_").replace("'", "").replace("+", "").replace("-", "").lower()
                 weapon_type = "STAFF"
                 element = block.get("element", "NEUTRAL").upper()
                 if not element:
@@ -206,7 +200,7 @@ def generate_dagger_code(data):
     if isinstance(data, list):
         for block in data:
             if isinstance(block, dict) and block.get("secondaryType") == "dagger":
-                name = block.get("name", "test_dagger").replace(" ", "_").lower()
+                name = block.get("name", "test_dagger").replace(" ", "_").replace("'", "").replace("+", "").replace("-", "").lower()
                 weapon_type = "DAGGER"
                 element = block.get("element", "NEUTRAL").upper()
                 if not element:
@@ -247,7 +241,7 @@ def generate_axe_code(data):
     if isinstance(data, list):
         for block in data:
             if isinstance(block, dict) and block.get("secondaryType") == "axe":
-                name = block.get("name", "test_axe").replace(" ", "_").lower()
+                name = block.get("name", "test_axe").replace(" ", "_").replace("'", "").replace("+", "").replace("-", "").lower()
                 weapon_type = "AXE"
                 element = block.get("element", "NEUTRAL").upper()
                 if not element:

@@ -18,12 +18,6 @@ def fetch_json_from_url(url):
 def process_boost(value):
     return 0 if value == 0 or value == 1 else round((value - 1) * 100)
 
-def clean_name(name):
-    if name:
-        name = name.replace("'", "")
-        name = name.replace("+", "_plus")
-    return name
-
 def generate_armor_code(data):
 
     armor_code_list = []
@@ -33,7 +27,7 @@ def generate_armor_code(data):
 
         for block in data:
             if isinstance(block, dict) and block.get("type") == "armor":
-                name = block.get("name", "test_armor").replace(" ", "_").lower()
+                name = block.get("name", "test_armor").replace(" ", "_").replace("'", "").replace("+", "").lower()
                 frostImmune = block.get("frost", False)
                 minArmor = block.get("armor", 0)
                 maxArmor = block.get("maxLevelArmor", 0)
