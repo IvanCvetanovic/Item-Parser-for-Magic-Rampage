@@ -72,7 +72,7 @@ def generate_weapon_code(data, weapon_type, secondary_types, list_name, drawable
 
     for item in weapon_data:
         code = (
-            f"{list_name}.add(createWeapon(R.string.{item['name']}, WeaponTypes.{item['weapon_type']}, "
+            f"{list_name}.add(new Weapon(str(context, R.string.{item['name']}), WeaponTypes.{item['weapon_type']}, "
             f"Elements.{item['element']}, {item['minDamage']}, {item['maxDamage']}, {item['upgrades']}, "
             f"{item['armorBonus']}, {item['speed']}, {item['jump']}, R.drawable.{drawable_prefix}_{item['name']}, "
             f"{item['attackCooldown']}, {item['pierceCount']}, {str(item['enablePierceAreaDamage']).lower()}, "

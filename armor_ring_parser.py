@@ -51,7 +51,7 @@ def generate_armor_code(data):
                     element = "NEUTRAL"
 
                 code = (
-                    f"armorList.add(createArmor(R.string.{name}, Elements.{element}, "
+                    f"armorList.add(new Armor(str(context, R.string.{name}), Elements.{element}, "
                     f"{str(frostImmune).lower()}, {minArmor}, {maxArmor}, {upgrades}, "
                     f"{speed}, {jump}, {magic}, {sword}, "
                     f"{staff}, {dagger}, {axe}, {hammer}, "
@@ -75,7 +75,7 @@ def generate_ring_code(data):
         for block in data:
             if isinstance(block, dict) and block.get("secondaryType") == "ring":
 
-                name = block.get("name", "test_ring").replace(" ", "_").replace("'", "").replace("+", "").replace("-", "").lower()
+                name = block.get("name_en", "test_ring").replace(" ", "_").replace("'", "").replace("+", "").replace("-", "").lower()
                 element = block.get("element", "NEUTRAL").upper()
                 if not element:
                     element = "NEUTRAL"
@@ -95,7 +95,7 @@ def generate_ring_code(data):
                 spear = process_boost(block.get("spearBoost", 1))
 
                 code = (
-                    f"ringList.add(createRing(R.string.{name}, Elements.{element}, "
+                    f"ringList.add(new Ring(str(context, R.string.{name}), Elements.{element}, "
                     f"{armor}, {armorBonus}, "
                     f"{speed}, {jump}, {magic}, {sword}, "
                     f"{staff}, {dagger}, {axe}, {hammer}, "
