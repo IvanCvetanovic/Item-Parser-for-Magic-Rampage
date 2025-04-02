@@ -27,11 +27,14 @@ def generate_armor_code(data):
 
         for block in data:
             if isinstance(block, dict) and block.get("type") == "armor":
-                name = block.get("name", "test_armor").replace(" ", "_").replace("'", "").replace("+", "").lower()
+                name = block.get("name_en", "test_armor").replace(" ", "_").replace("'", "").replace("+", "").replace("-", "").lower()
                 frostImmune = block.get("frost", False)
                 minArmor = block.get("armor", 0)
                 maxArmor = block.get("maxLevelArmor", 0)
-                upgrades = block.get("maxLevelAllowed", 0)
+                upgrades = block.get("maxLevelAllowed", 1)
+
+                if(upgrades == 0):
+                    upgrades = 1
 
                 speed = process_boost(block.get("speedBoost", 1))
                 jump = process_boost(block.get("jumpBoost", 1))
@@ -72,7 +75,7 @@ def generate_ring_code(data):
         for block in data:
             if isinstance(block, dict) and block.get("secondaryType") == "ring":
 
-                name = block.get("name", "test_ring").replace(" ", "_").lower()
+                name = block.get("name", "test_ring").replace(" ", "_").replace("'", "").replace("+", "").replace("-", "").lower()
                 element = block.get("element", "NEUTRAL").upper()
                 if not element:
                     element = "NEUTRAL"
