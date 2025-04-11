@@ -1,19 +1,3 @@
-import json
-import requests
-
-def fetch_json_from_url(url):
-    try:
-        response = requests.get(url)
-        response.raise_for_status()
-        data = response.json()
-        return data
-    except requests.exceptions.RequestException as e:
-        print(f"Error fetching the URL: {e}")
-    except json.JSONDecodeError as e:
-        print(f"Error decoding JSON: {e}")
-    except Exception as e:
-        print(f"An unexpected error occurred: {e}")
-
 def process_boost(value):
     return 0 if value == 0 or value == 1 else round((value - 1) * 100)
 
@@ -26,7 +10,8 @@ def extract_common_fields(block, default_name, weapon_type):
     if not element:
         element = "NEUTRAL"
     minDamage = block.get("damage", 0)
-    maxDamage = block.get("maxLevelDamage", 0)
+    # Use online field if available; fallback to local values.
+    maxDamage = block.get("maxLevelDamage", block.get("maxLevelDamage", block.get("damage", 0)))
     upgrades = block.get("maxLevelAllowed", 0)
     if upgrades == 0:
         upgrades = 1
@@ -58,19 +43,23 @@ def extract_common_fields(block, default_name, weapon_type):
         'frost': frost
     }
 
-def generate_weapon_code(data, weapon_type, secondary_types, list_name, drawable_prefix, default_name):
+def generate_weapon_code(data, weapon_type, list_name, drawable_prefix, default_name):
     code_list = []
     weapon_data = []
 
     if isinstance(data, list):
         for block in data:
-            if isinstance(block, dict) and block.get("secondaryType") in secondary_types:
+            if isinstance(block, dict):
                 fields = extract_common_fields(block, default_name, weapon_type)
                 weapon_data.append(fields)
 
     weapon_data = sort_by_max_damage(weapon_data)
 
     for item in weapon_data:
+        # Order per your spec:
+        # name, WeaponTypes, Elements, minDamage, maxDamage, upgrades, armorBonus,
+        # speed, jump, imageResId, attackCooldown, pierceCount, enablePierceAreaDamage,
+        # persistAgainstProjectile, isPoisonous, isFrost
         code = (
             f"{list_name}.add(new Weapon(str(context, R.string.{item['name']}), WeaponTypes.{item['weapon_type']}, "
             f"Elements.{item['element']}, {item['minDamage']}, {item['maxDamage']}, {item['upgrades']}, "
@@ -83,19 +72,19 @@ def generate_weapon_code(data, weapon_type, secondary_types, list_name, drawable
     return code_list
 
 def generate_sword_code(data):
-    return generate_weapon_code(data, "SWORD", ["sword"], "swordList", "sword", "test_sword")
+    return generate_weapon_code(data, "SWORD", "swordList", "sword", "test_sword")
 
 def generate_hammer_code(data):
-    return generate_weapon_code(data, "HAMMER", ["hammer", "mace"], "hammerList", "hammer", "test_hammer")
+    return generate_weapon_code(data, "HAMMER", "hammerList", "hammer", "test_hammer")
 
 def generate_spear_code(data):
-    return generate_weapon_code(data, "SPEAR", ["spear"], "spearList", "spear", "test_spear")
+    return generate_weapon_code(data, "SPEAR", "spearList", "spear", "test_spear")
 
 def generate_staff_code(data):
-    return generate_weapon_code(data, "STAFF", ["staff", "grimoire"], "staffList", "staff", "test_staff")
+    return generate_weapon_code(data, "STAFF", "staffList", "staff", "test_staff")
 
 def generate_dagger_code(data):
-    return generate_weapon_code(data, "DAGGER", ["dagger"], "daggerList", "dagger", "test_dagger")
+    return generate_weapon_code(data, "DAGGER", "daggerList", "dagger", "test_dagger")
 
 def generate_axe_code(data):
-    return generate_weapon_code(data, "AXE", ["axe"], "axeList", "axe", "test_axe")
+    return generate_weapon_code(data, "AXE", "axeList", "axe", "test_axe")

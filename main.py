@@ -1,189 +1,135 @@
 import os
 import argparse
-from armor_ring_parser import fetch_json_from_url, generate_armor_code, generate_ring_code
+from file_parser import FileParser
+from online_data import OnlineDataManager
+from filter_util import DataFilter
+from formatter import OutputFormatter
+from armor_ring_parser import generate_armor_code, generate_ring_code
 from weapon_parser import (
-    generate_sword_code,
-    generate_hammer_code,
-    generate_spear_code,
-    generate_staff_code,
-    generate_dagger_code,
-    generate_axe_code,
+    generate_sword_code, generate_hammer_code, generate_spear_code,
+    generate_staff_code, generate_dagger_code, generate_axe_code
 )
+from class_parser import ClassParser
 
-def format_output_developer(codes):
-    """Format output for developer mode (raw code)."""
-    return "\n".join(codes)
-
-def format_output_normal(codes):
-    formatted = []
-    
-    for code in codes:
-        if "createRing" in code:
-            start = code.index("createRing(") + len("createRing(")
-            end = code.rindex(")")
-            arguments = code[start:end].split(", ")
-            arguments = [arg.strip() for arg in arguments]
-
-            if len(arguments) == 14:
-                name = arguments[0].replace("R.string.", "").replace("_", " ").title()
-                element = arguments[1].replace("Elements.", "").title()
-                armor = arguments[2]
-                bonus_armor = arguments[3]
-                speed = arguments[5]
-                jump = arguments[6]
-                magic = arguments[7]
-                sword = arguments[8]
-                staff = arguments[9]
-                dagger = arguments[10]
-                axe = arguments[11]
-                hammer = arguments[12]
-                spear = arguments[13]
-
-                formatted.append(
-                    f"Item Name: {name}, Element: {element}, Armor: {armor}, Bonus Armor: {bonus_armor}, "
-                    f"Speed: {speed}, Jump: {jump}, Magic: {magic}, Sword Bonus: {sword}, "
-                    f"Staff Bonus: {staff}, Dagger Bonus: {dagger}, Axe Bonus: {axe}, "
-                    f"Hammer Bonus: {hammer}, Spear Bonus: {spear}"
-                )
-            
-        elif "createArmor" in code:
-            start = code.index("createArmor(") + len("createArmor(")
-            end = code.rindex(")")
-            arguments = code[start:end].split(", ")
-            arguments = [arg.strip() for arg in arguments]
-
-            if len(arguments) == 16:
-                name = arguments[0].replace("R.string.", "").replace("_", " ").title()
-                element = arguments[1].replace("Elements.", "").title()
-                frost_immune = arguments[2]
-                min_armor = arguments[3]
-                max_armor = arguments[4]
-                upgrades = arguments[5]
-                speed = arguments[6]
-                jump = arguments[7]
-                magic = arguments[8]
-                sword = arguments[9]
-                staff = arguments[10]
-                dagger = arguments[11]
-                axe = arguments[12]
-                hammer = arguments[13]
-                spear = arguments[14]
-
-                formatted.append(
-                    f"Item Name: {name}, Element: {element}, Frost Immune: {frost_immune}, "
-                    f"Minimum Armor: {min_armor}, Maximum Armor: {max_armor}, Upgrades: {upgrades}, "
-                    f"Speed: {speed}, Jump: {jump}, Magic: {magic}, Sword Bonus: {sword}, "
-                    f"Staff Bonus: {staff}, Dagger Bonus: {dagger}, Axe Bonus: {axe}, "
-                    f"Hammer Bonus: {hammer}, Spear Bonus: {spear}"
-                )
-            
-        elif "createWeapon" in code:
-            start = code.index("createWeapon(") + len("createWeapon(")
-            end = code.rindex(")")
-            arguments = code[start:end].split(", ")
-            arguments = [arg.strip() for arg in arguments]
-
-            if len(arguments) == 10:
-                name = arguments[0].replace("R.string.", "").replace("_", " ").title()
-                weapon_type = arguments[1]
-                element = arguments[2].replace("Elements.", "").title()
-                min_damage = arguments[3]
-                max_damage = arguments[4]
-                upgrades = arguments[5]
-                armor_bonus = arguments[6]
-                speed = arguments[7]
-                jump = arguments[8]
-
-                formatted.append(
-                    f"Item Name: {name}, Element: {element}, Minimum Damage: {min_damage}, "
-                    f"Maximum Damage: {max_damage}, Upgrades: {upgrades}, Armor Bonus: {armor_bonus}, "
-                    f"Speed: {speed}, Jump: {jump}"
-                )
-            
-    return "\n".join(formatted)
-
-def process_data(data, mode):
-    """Process data based on the mode."""
-    if mode == "armor":
-        return generate_armor_code(data)
-    elif mode == "ring":
-        return generate_ring_code(data)
-    elif mode == "sword":
-        return generate_sword_code(data)
-    elif mode == "hammer":
-        return generate_hammer_code(data)
-    elif mode == "spear":
-        return generate_spear_code(data)
-    elif mode == "staff":
-        return generate_staff_code(data)
-    elif mode == "dagger":
-        return generate_dagger_code(data)
-    elif mode == "axe":
-        return generate_axe_code(data)
-    else:
-        raise ValueError(f"Invalid mode: {mode}")
-
-def save_output(data, mode, output_type):
-    """Generate and save output for the given mode and output type."""
-    codes = process_data(data, mode)
+def process_class_file(folder_path, output_type):
+    # Adjust the filename if necessary; note that the correct name is "class-heads.enml"
+    class_file = os.path.join(folder_path, "class-heads.enml")
+    cp = ClassParser(class_file)
     if output_type == "developer":
-        formatted_output = format_output_developer(codes)
-    elif output_type == "normal":
-        formatted_output = format_output_normal(codes)
+        code_lines = cp.generate_class_code()
     else:
-        raise ValueError(f"Invalid output type: {output_type}")
-
+        code_lines = cp.format_class_human()
     output_folder = "output"
     os.makedirs(output_folder, exist_ok=True)
-    
+    output_file = os.path.join(output_folder, "class_code.txt")
+    with open(output_file, "w", encoding="utf-8") as f:
+        f.write("\n".join(code_lines))
+    print(f"[✓] Class list exported to: {output_file}")
+
+def save_output(data, mode, output_type):
+    if output_type == "developer":
+        if mode == "armor":
+            codes = generate_armor_code(data.get(mode, []))
+        elif mode == "ring":
+            codes = generate_ring_code(data.get(mode, []))
+        elif mode == "sword":
+            codes = generate_sword_code(data.get(mode, []))
+        elif mode == "hammer":
+            codes = generate_hammer_code(data.get(mode, []))
+        elif mode == "spear":
+            codes = generate_spear_code(data.get(mode, []))
+        elif mode == "staff":
+            codes = generate_staff_code(data.get(mode, []))
+        elif mode == "dagger":
+            codes = generate_dagger_code(data.get(mode, []))
+        elif mode == "axe":
+            codes = generate_axe_code(data.get(mode, []))
+        else:
+            codes = []
+        formatted_output = "\n".join(codes)
+    elif output_type == "normal":
+        if mode == "armor":
+            formatted_output = OutputFormatter.format_human_armor(data.get(mode, []))
+        elif mode in ["sword", "hammer", "spear", "staff", "dagger", "axe"]:
+            formatted_output = OutputFormatter.format_human_weapon(data.get(mode, []))
+        elif mode == "ring":
+            formatted_output = OutputFormatter.format_human_ring(data.get(mode, []))
+        else:
+            formatted_output = ""
+    else:
+        raise ValueError("Invalid output type")
+    output_folder = "output"
+    os.makedirs(output_folder, exist_ok=True)
     output_file = os.path.join(output_folder, f"{mode}_code.txt")
-    with open(output_file, "w") as file:
-        file.write(formatted_output)
-    print(f"{mode.capitalize()} code has been exported to {output_file}")
+    with open(output_file, "w", encoding="utf-8") as f:
+        f.write(formatted_output)
+    print(f"[✓] {mode.capitalize()} exported to: {output_file}")
 
 def handle_all_types(data, output_type):
-    """Process and save output for all item types separately."""
-    item_types = ["armor", "ring", "sword", "hammer", "spear", "staff", "dagger", "axe"]
-    for item_type in item_types:
+    for item_type in data.keys():
         save_output(data, item_type, output_type)
 
 def main():
-    url = "https://gist.githubusercontent.com/andresan87/5670c559e5a930129aa03dfce7827306/raw"
-    json_data = fetch_json_from_url(url)
+    parser = argparse.ArgumentParser(description="Parse Magic Rampage ENML files")
+    parser.add_argument("output_type", type=str, choices=["developer", "normal"],
+                        help="Choose output format", default="normal", nargs="?")
+    parser.add_argument("item_type", type=str,
+                        choices=["armor", "ring", "sword", "hammer", "spear", "staff", "dagger", "axe", "all", "class"],
+                        help="Choose item type", default="all", nargs="?")
+    args = parser.parse_args()
 
-    if json_data is not None:
-        parser = argparse.ArgumentParser(description="Parse items for Magic Rampage.")
-        
-        parser.add_argument(
-            "output_type",
-            type=str,
-            choices=["developer", "normal"],
-            help="Specify the output type (developer or normal).",
-            default="normal",
-            nargs="?" 
-        )
-        
-        parser.add_argument(
-            "item_type",
-            type=str,
-            choices=["armor", "ring", "sword", "hammer", "spear", "staff", "dagger", "axe", "all"],
-            help="Specify the item type (armor, ring, sword, etc. or all).",
-            default="all",
-            nargs="?"
-        )
-        
-        args = parser.parse_args()
+    folder_path = r"C:\Program Files (x86)\Steam\steamapps\common\Magic Rampage\items"
+
+    if args.item_type == "class":
+        process_class_file(folder_path, args.output_type)
+    else:
+        # Build a file mapping that includes additional files for armors and weapons.
+        file_mapping = {
+            "special-armors.enml": "armor",
+            "armor-cloth-1.enml": "armor",
+            "armor-leather-1.enml": "armor",
+            "armor-plate-1.enml": "armor",
+            "special-items.enml": "ring",
+            "special-swords.enml": "sword",
+            "weapon-sword-1.enml": "sword",
+            "special-spears.enml": "spear",
+            "special-staves.enml": "staff",
+            "weapon-staff-1.enml": "staff",
+            "special-hammers.enml": "hammer",
+            "special-daggers.enml": "dagger",
+            "special-shurikens.enml": "dagger",
+            "weapon-dagger-1.enml": "dagger",
+            "special-grimoires.enml": "staff",
+            "special-axes.enml": "axe",
+            "weapon-axe-1.enml": "axe",
+            "weapon-axe-2.enml": "axe"
+        }
+        file_parser = FileParser(folder_path, file_mapping)
+        local_data = file_parser.parse_files()
+        total_items = sum(len(lst) for lst in local_data.values())
+        if total_items == 0:
+            print("[DEBUG] Local directory exists but no items were parsed, falling back to online data.")
+
+        online_url = "https://gist.githubusercontent.com/andresan87/5670c559e5a930129aa03dfce7827306/raw"
+        online_manager = OnlineDataManager()
+        online_data = online_manager.get_online_item_data(online_url)
+        if online_data:
+            if total_items == 0:
+                merged_data = online_manager.convert_online_to_local(online_data)
+            else:
+                online_index = online_manager.index_online_data(online_data)
+                merged_data = online_manager.merge_online_fields(local_data, online_index)
+        else:
+            merged_data = local_data
+
+        filterer = DataFilter()
+        merged_data = filterer.filter_parsed_data(merged_data)
 
         if args.item_type == "all":
-            if args.output_type == "developer":
-                handle_all_types(json_data, "developer")
-            else:
-                handle_all_types(json_data, "normal")
+            handle_all_types(merged_data, args.output_type)
+            process_class_file(folder_path, args.output_type)
         else:
-            save_output(json_data, args.item_type, args.output_type)
-
-    else:
-        print("Failed to fetch data. Please check the URL.")
+            save_output(merged_data, args.item_type, args.output_type)
 
 if __name__ == "__main__":
     main()
