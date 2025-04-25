@@ -10,9 +10,9 @@ from weapon_parser import (
     generate_staff_code, generate_dagger_code, generate_axe_code
 )
 from class_parser import ClassParser
+from enemy_parser import EnemyParser
 
 def process_class_file(folder_path, output_type):
-    # Adjust the filename if necessary; note that the correct name is "class-heads.enml"
     class_file = os.path.join(folder_path, "class-heads.enml")
     cp = ClassParser(class_file)
     if output_type == "developer":
@@ -74,7 +74,7 @@ def main():
     parser.add_argument("output_type", type=str, choices=["developer", "normal"],
                         help="Choose output format", default="normal", nargs="?")
     parser.add_argument("item_type", type=str,
-                        choices=["armor", "ring", "sword", "hammer", "spear", "staff", "dagger", "axe", "all", "class"],
+                        choices=["armor", "ring", "sword", "hammer", "spear", "staff", "dagger", "axe", "all", "class", "enemy"],
                         help="Choose item type", default="all", nargs="?")
     args = parser.parse_args()
 
@@ -82,6 +82,19 @@ def main():
 
     if args.item_type == "class":
         process_class_file(folder_path, args.output_type)
+    elif args.item_type == "enemy":
+        enemy_dirs = [
+            r"C:\Program Files (x86)\Steam\steamapps\common\Magic Rampage\npcs\enemies",
+            r"C:\Program Files (x86)\Steam\steamapps\common\Magic Rampage\npcs\bosses"
+        ]
+        parser = EnemyParser(enemy_dirs)
+        names = parser.parse_enemy_stats()
+        output_folder = "output"
+        os.makedirs(output_folder, exist_ok=True)
+        output_file = os.path.join(output_folder, "enemy_code.txt")
+        with open(output_file, "w", encoding="utf-8") as f:
+            f.write("\n".join(names))
+        print(f"[✓] Enemy list exported to: {output_file}")
     else:
         # Build a file mapping that includes additional files for armors and weapons.
         file_mapping = {
@@ -132,4 +145,20 @@ def main():
             save_output(merged_data, args.item_type, args.output_type)
 
 if __name__ == "__main__":
-    main()
+    import sys
+    output_type = "normal"
+    if len(sys.argv) > 1 and sys.argv[1] in ("normal", "developer"):
+        output_type = sys.argv[1]
+
+    parser = EnemyParser([
+        r"C:\Program Files (x86)\Steam\steamapps\common\Magic Rampage\npcs\enemies",
+        r"C:\Program Files (x86)\Steam\steamapps\common\Magic Rampage\npcs\bosses"
+    ])
+    lines = parser.parse_enemy_stats(mode=output_type)
+
+    output_folder = "output"
+    os.makedirs(output_folder, exist_ok=True)
+    output_file = os.path.join(output_folder, "enemy_code.txt")
+    with open(output_file, "w", encoding="utf-8") as f:
+        f.write("\n\n".join(lines) if output_type == "normal" else "\n".join(lines))
+    print(f"[✓] Enemy list exported to: {output_file}")

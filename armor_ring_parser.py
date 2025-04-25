@@ -7,7 +7,7 @@ def generate_armor_code(data):
     if isinstance(data, list):
         for block in data:
             if isinstance(block, dict):
-                name = block.get("name", "test_armor").replace(" ", "_").replace("'", "").replace("+", "").replace("-", "").lower()
+                name = block.get("name", "test_armor").replace(" ", "_").replace("'", "").replace("+", "_plus").replace("-", "").lower()
                 frostImmune = block.get("frost", False)
                 minArmor = block.get("armor", 0)
                 maxArmor = block.get("maxLevelArmor", minArmor)
@@ -41,7 +41,7 @@ def generate_ring_code(data):
     if isinstance(data, list):
         for block in data:
             if isinstance(block, dict):
-                name = block.get("name", "test_ring").replace(" ", "_").replace("'", "").replace("+", "").replace("-", "").lower()
+                name = block.get("name", "test_ring").replace(" ", "_").replace("'", "").replace("+", "_plus").replace("-", "").lower()
                 element = block.get("element", "NEUTRAL").upper()
                 armor = block.get("armor", 0)
                 armorBonus = process_boost(block.get("armorBoost", 1))

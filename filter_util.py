@@ -1,4 +1,3 @@
-# filter_util.py
 class DataFilter:
     def filter_parsed_data(self, local_data):
         for item_type in local_data:

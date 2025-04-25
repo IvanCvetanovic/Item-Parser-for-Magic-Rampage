@@ -1,4 +1,3 @@
-# formatter.py
 class OutputFormatter:
     @staticmethod
     def process_boost(value):

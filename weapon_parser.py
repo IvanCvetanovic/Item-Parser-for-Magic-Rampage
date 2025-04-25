@@ -5,7 +5,7 @@ def sort_by_max_damage(weapon_list):
     return sorted(weapon_list, key=lambda x: x['maxDamage'])
 
 def extract_common_fields(block, default_name, weapon_type):
-    name = block.get("name", default_name).replace(" ", "_").replace("'", "").replace("+", "").replace("-", "").lower()
+    name = block.get("name", default_name).replace(" ", "_").replace("'", "").replace("+", "_plus").replace("-", "").lower()
     element = block.get("element", "NEUTRAL").upper()
     if not element:
         element = "NEUTRAL"
@@ -56,10 +56,6 @@ def generate_weapon_code(data, weapon_type, list_name, drawable_prefix, default_
     weapon_data = sort_by_max_damage(weapon_data)
 
     for item in weapon_data:
-        # Order per your spec:
-        # name, WeaponTypes, Elements, minDamage, maxDamage, upgrades, armorBonus,
-        # speed, jump, imageResId, attackCooldown, pierceCount, enablePierceAreaDamage,
-        # persistAgainstProjectile, isPoisonous, isFrost
         code = (
             f"{list_name}.add(new Weapon(str(context, R.string.{item['name']}), WeaponTypes.{item['weapon_type']}, "
             f"Elements.{item['element']}, {item['minDamage']}, {item['maxDamage']}, {item['upgrades']}, "
