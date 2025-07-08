@@ -5,16 +5,18 @@ def sort_by_max_damage(weapon_list):
     return sorted(weapon_list, key=lambda x: x['maxDamage'])
 
 def extract_common_fields(block, default_name, weapon_type):
-    name = block.get("name", default_name).replace(" ", "_").replace("'", "").replace("+", "_plus").replace("-", "").lower()
-    element = block.get("element", "NEUTRAL").upper()
-    if not element:
-        element = "NEUTRAL"
+    name = block.get("name", default_name) \
+                .replace(" ", "_") \
+                .replace("'", "") \
+                .replace("+", "_plus") \
+                .replace("-", "") \
+                .lower()
+    element = block.get("element", "NEUTRAL").upper() or "NEUTRAL"
     minDamage = block.get("damage", 0)
     # Use online field if available; fallback to local values.
-    maxDamage = block.get("maxLevelDamage", block.get("maxLevelDamage", block.get("damage", 0)))
-    upgrades = block.get("maxLevelAllowed", 0)
-    if upgrades == 0:
-        upgrades = 1
+    maxDamage = block.get("maxLevelDamage",
+                 block.get("damage", 0))
+    upgrades = block.get("maxLevelAllowed", 0) or 1
     armorBonus = process_boost(block.get("armorBoost", 1))
     speed = process_boost(block.get("speedBoost", 1))
     jump = process_boost(block.get("jumpBoost", 1))
@@ -57,11 +59,15 @@ def generate_weapon_code(data, weapon_type, list_name, drawable_prefix, default_
 
     for item in weapon_data:
         code = (
-            f"{list_name}.add(new Weapon(str(context, R.string.{item['name']}), WeaponTypes.{item['weapon_type']}, "
-            f"Elements.{item['element']}, {item['minDamage']}, {item['maxDamage']}, {item['upgrades']}, "
-            f"{item['armorBonus']}, {item['speed']}, {item['jump']}, R.drawable.{drawable_prefix}_{item['name']}, "
-            f"{item['attackCooldown']}, {item['pierceCount']}, {str(item['enablePierceAreaDamage']).lower()}, "
-            f"{str(item['persistAgainstProjectile']).lower()}, {str(item['poisonous']).lower()}, {str(item['frost']).lower()}));"
+            f"{list_name}.add(new Weapon(str(context, R.string.{item['name']}), "
+            f"WeaponTypes.{item['weapon_type']}, Elements.{item['element']}, "
+            f"{item['minDamage']}, {item['maxDamage']}, {item['upgrades']}, "
+            f"{item['armorBonus']}, {item['speed']}, {item['jump']}, "
+            f"R.drawable.{drawable_prefix}_{item['name']}, "
+            f"{item['attackCooldown']}, {item['pierceCount']}, "
+            f"{str(item['enablePierceAreaDamage']).lower()}, "
+            f"{str(item['persistAgainstProjectile']).lower()}, "
+            f"{str(item['poisonous']).lower()}, {str(item['frost']).lower()}));"
         )
         code_list.append(code)
 

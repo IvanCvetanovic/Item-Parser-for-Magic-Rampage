@@ -15,16 +15,14 @@ from enemy_parser import EnemyParser
 def process_class_file(folder_path, output_type):
     class_file = os.path.join(folder_path, "class-heads.enml")
     cp = ClassParser(class_file)
-    if output_type == "developer":
-        code_lines = cp.generate_class_code()
-    else:
-        code_lines = cp.format_class_human()
-    output_folder = "output"
-    os.makedirs(output_folder, exist_ok=True)
-    output_file = os.path.join(output_folder, "class_code.txt")
-    with open(output_file, "w", encoding="utf-8") as f:
+    code_lines = (cp.generate_class_code()
+                  if output_type == "developer"
+                  else cp.format_class_human())
+    os.makedirs("output", exist_ok=True)
+    out = os.path.join("output", "class_code.txt")
+    with open(out, "w", encoding="utf-8") as f:
         f.write("\n".join(code_lines))
-    print(f"[✓] Class list exported to: {output_file}")
+    print(f"[✓] Class list exported to: {out}")
 
 def save_output(data, mode, output_type):
     if output_type == "developer":
@@ -46,105 +44,105 @@ def save_output(data, mode, output_type):
             codes = generate_axe_code(data.get(mode, []))
         else:
             codes = []
-        formatted_output = "\n".join(codes)
-    elif output_type == "normal":
+        formatted = "\n".join(codes)
+
+    else:  # normal
         if mode == "armor":
-            formatted_output = OutputFormatter.format_human_armor(data.get(mode, []))
+            formatted = OutputFormatter.format_human_armor(data.get(mode, []))
         elif mode in ["sword", "hammer", "spear", "staff", "dagger", "axe"]:
-            formatted_output = OutputFormatter.format_human_weapon(data.get(mode, []))
+            formatted = OutputFormatter.format_human_weapon(data.get(mode, []))
         elif mode == "ring":
-            formatted_output = OutputFormatter.format_human_ring(data.get(mode, []))
+            formatted = OutputFormatter.format_human_ring(data.get(mode, []))
         else:
-            formatted_output = ""
-    else:
-        raise ValueError("Invalid output type")
-    output_folder = "output"
-    os.makedirs(output_folder, exist_ok=True)
-    output_file = os.path.join(output_folder, f"{mode}_code.txt")
-    with open(output_file, "w", encoding="utf-8") as f:
-        f.write(formatted_output)
-    print(f"[✓] {mode.capitalize()} exported to: {output_file}")
+            formatted = ""
+
+    os.makedirs("output", exist_ok=True)
+    out = os.path.join("output", f"{mode}_code.txt")
+    with open(out, "w", encoding="utf-8") as f:
+        f.write(formatted)
+    print(f"[✓] {mode.capitalize()} exported to: {out}")
 
 def handle_all_types(data, output_type):
-    for item_type in data.keys():
-        save_output(data, item_type, output_type)
+    for t in data:
+        save_output(data, t, output_type)
 
 def main():
-    parser = argparse.ArgumentParser(description="Parse Magic Rampage ENML files")
-    parser.add_argument("output_type", type=str, choices=["developer", "normal"],
-                        help="Choose output format", default="normal", nargs="?")
-    parser.add_argument("item_type", type=str,
-                        choices=["armor", "ring", "sword", "hammer", "spear", "staff", "dagger", "axe", "all", "class", "enemy"],
-                        help="Choose item type", default="all", nargs="?")
-    args = parser.parse_args()
+    p = argparse.ArgumentParser("Parse Magic Rampage ENML files")
+    p.add_argument("output_type", choices=["developer","normal"],
+                   nargs="?", default="normal")
+    p.add_argument("item_type", choices=[
+        "armor","ring","sword","hammer","spear","staff","dagger","axe",
+        "all","class","enemy"
+    ], nargs="?", default="all")
+    args = p.parse_args()
 
-    folder_path = r"C:\Program Files (x86)\Steam\steamapps\common\Magic Rampage\items"
+    folder = r"C:\Program Files (x86)\Steam\steamapps\common\Magic Rampage\items"
+
+    # parse or fallback to online
+    file_map = {
+        "special-armors.enml": "armor", "armor-cloth-1.enml": "armor",
+        "armor-leather-1.enml": "armor", "armor-plate-1.enml": "armor",
+        "special-items.enml": "ring", "special-swords.enml": "sword",
+        "weapon-sword-1.enml": "sword", "special-spears.enml": "spear",
+        "special-staves.enml": "staff", "weapon-staff-1.enml": "staff",
+        "special-hammers.enml": "hammer", "special-daggers.enml": "dagger",
+        "special-shurikens.enml": "dagger", "weapon-dagger-1.enml": "dagger",
+        "special-grimoires.enml": "staff", "special-axes.enml": "axe",
+        "weapon-axe-1.enml": "axe", "weapon-axe-2.enml": "axe"
+    }
+    local = FileParser(folder, file_map).parse_files()
+    total = sum(len(v) for v in local.values())
+
+    if total == 0:
+        print("[DEBUG] No local items, fetching online fallback")
+    online_url = "https://gist.githubusercontent.com/andresan87/.../raw"
+    od = OnlineDataManager()
+    online = od.get_online_item_data(online_url)
+    if online:
+        merged = (od.convert_online_to_local(online)
+                  if total==0
+                  else od.merge_online_fields(local, od.index_online_data(online)))
+    else:
+        merged = local
+
+    merged = DataFilter().filter_parsed_data(merged)
+
+    # ─── Reclassify maces & hammers from axe → hammer ──────────────
+    axe_blocks = merged.get("axe", [])
+    # pick out any block whose secondaryType is "mace" or "hammer"
+    to_move = [
+        b for b in axe_blocks
+        if b.get("secondaryType", "").lower() in ("mace", "hammer")
+    ]
+    if to_move:
+        # leave only true axes behind
+        merged["axe"]    = [b for b in axe_blocks if b not in to_move]
+        # append both maces and hammers onto your hammer list
+        merged["hammer"] = merged.get("hammer", []) + to_move
+    # ────────────────────────────────────────────────────────────────
 
     if args.item_type == "class":
-        process_class_file(folder_path, args.output_type)
+        process_class_file(folder, args.output_type)
     elif args.item_type == "enemy":
-        enemy_dirs = [
+        dirs = [
             r"C:\Program Files (x86)\Steam\steamapps\common\Magic Rampage\npcs\enemies",
             r"C:\Program Files (x86)\Steam\steamapps\common\Magic Rampage\npcs\bosses"
         ]
-        parser = EnemyParser(enemy_dirs)
-        names = parser.parse_enemy_stats()
-        output_folder = "output"
-        os.makedirs(output_folder, exist_ok=True)
-        output_file = os.path.join(output_folder, "enemy_code.txt")
-        with open(output_file, "w", encoding="utf-8") as f:
+        names = EnemyParser(dirs).parse_enemy_stats()
+        os.makedirs("output", exist_ok=True)
+        out = os.path.join("output","enemy_code.txt")
+        with open(out,"w",encoding="utf-8") as f:
             f.write("\n".join(names))
-        print(f"[✓] Enemy list exported to: {output_file}")
+        print(f"[✓] Enemy list exported to: {out}")
     else:
-        # Build a file mapping that includes additional files for armors and weapons.
-        file_mapping = {
-            "special-armors.enml": "armor",
-            "armor-cloth-1.enml": "armor",
-            "armor-leather-1.enml": "armor",
-            "armor-plate-1.enml": "armor",
-            "special-items.enml": "ring",
-            "special-swords.enml": "sword",
-            "weapon-sword-1.enml": "sword",
-            "special-spears.enml": "spear",
-            "special-staves.enml": "staff",
-            "weapon-staff-1.enml": "staff",
-            "special-hammers.enml": "hammer",
-            "special-daggers.enml": "dagger",
-            "special-shurikens.enml": "dagger",
-            "weapon-dagger-1.enml": "dagger",
-            "special-grimoires.enml": "staff",
-            "special-axes.enml": "axe",
-            "weapon-axe-1.enml": "axe",
-            "weapon-axe-2.enml": "axe"
-        }
-        file_parser = FileParser(folder_path, file_mapping)
-        local_data = file_parser.parse_files()
-        total_items = sum(len(lst) for lst in local_data.values())
-        if total_items == 0:
-            print("[DEBUG] Local directory exists but no items were parsed, falling back to online data.")
-
-        online_url = "https://gist.githubusercontent.com/andresan87/5670c559e5a930129aa03dfce7827306/raw"
-        online_manager = OnlineDataManager()
-        online_data = online_manager.get_online_item_data(online_url)
-        if online_data:
-            if total_items == 0:
-                merged_data = online_manager.convert_online_to_local(online_data)
-            else:
-                online_index = online_manager.index_online_data(online_data)
-                merged_data = online_manager.merge_online_fields(local_data, online_index)
-        else:
-            merged_data = local_data
-
-        filterer = DataFilter()
-        merged_data = filterer.filter_parsed_data(merged_data)
-
         if args.item_type == "all":
-            handle_all_types(merged_data, args.output_type)
-            process_class_file(folder_path, args.output_type)
+            handle_all_types(merged, args.output_type)
+            process_class_file(folder, args.output_type)
         else:
-            save_output(merged_data, args.item_type, args.output_type)
+            save_output(merged, args.item_type, args.output_type)
 
 if __name__ == "__main__":
+    main()
     import sys
     output_type = "normal"
     if len(sys.argv) > 1 and sys.argv[1] in ("normal", "developer"):
