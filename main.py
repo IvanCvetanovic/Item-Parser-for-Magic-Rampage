@@ -45,7 +45,6 @@ def save_output(data, mode, output_type):
         else:
             codes = []
         formatted = "\n".join(codes)
-
     else:  # normal
         if mode == "armor":
             formatted = OutputFormatter.format_human_armor(data.get(mode, []))
@@ -55,7 +54,6 @@ def save_output(data, mode, output_type):
             formatted = OutputFormatter.format_human_ring(data.get(mode, []))
         else:
             formatted = ""
-
     os.makedirs("output", exist_ok=True)
     out = os.path.join("output", f"{mode}_code.txt")
     with open(out, "w", encoding="utf-8") as f:
@@ -100,7 +98,7 @@ def main():
     online = od.get_online_item_data(online_url)
     if online:
         merged = (od.convert_online_to_local(online)
-                  if total==0
+                  if total == 0
                   else od.merge_online_fields(local, od.index_online_data(online)))
     else:
         merged = local
@@ -109,20 +107,18 @@ def main():
 
     # ─── Reclassify maces & hammers from axe → hammer ──────────────
     axe_blocks = merged.get("axe", [])
-    # pick out any block whose secondaryType is "mace" or "hammer"
     to_move = [
         b for b in axe_blocks
         if b.get("secondaryType", "").lower() in ("mace", "hammer")
     ]
     if to_move:
-        # leave only true axes behind
         merged["axe"]    = [b for b in axe_blocks if b not in to_move]
-        # append both maces and hammers onto your hammer list
         merged["hammer"] = merged.get("hammer", []) + to_move
     # ────────────────────────────────────────────────────────────────
 
     if args.item_type == "class":
         process_class_file(folder, args.output_type)
+
     elif args.item_type == "enemy":
         dirs = [
             r"C:\Program Files (x86)\Steam\steamapps\common\Magic Rampage\npcs\enemies",
@@ -130,10 +126,11 @@ def main():
         ]
         names = EnemyParser(dirs).parse_enemy_stats()
         os.makedirs("output", exist_ok=True)
-        out = os.path.join("output","enemy_code.txt")
-        with open(out,"w",encoding="utf-8") as f:
+        out = os.path.join("output", "enemy_code.txt")
+        with open(out, "w", encoding="utf-8") as f:
             f.write("\n".join(names))
         print(f"[✓] Enemy list exported to: {out}")
+
     else:
         if args.item_type == "all":
             handle_all_types(merged, args.output_type)
@@ -143,20 +140,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-    import sys
-    output_type = "normal"
-    if len(sys.argv) > 1 and sys.argv[1] in ("normal", "developer"):
-        output_type = sys.argv[1]
-
-    parser = EnemyParser([
-        r"C:\Program Files (x86)\Steam\steamapps\common\Magic Rampage\npcs\enemies",
-        r"C:\Program Files (x86)\Steam\steamapps\common\Magic Rampage\npcs\bosses"
-    ])
-    lines = parser.parse_enemy_stats(mode=output_type)
-
-    output_folder = "output"
-    os.makedirs(output_folder, exist_ok=True)
-    output_file = os.path.join(output_folder, "enemy_code.txt")
-    with open(output_file, "w", encoding="utf-8") as f:
-        f.write("\n\n".join(lines) if output_type == "normal" else "\n".join(lines))
-    print(f"[✓] Enemy list exported to: {output_file}")

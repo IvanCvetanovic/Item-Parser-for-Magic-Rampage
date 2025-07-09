@@ -42,4 +42,4 @@ python main.py normal all
 python main.py normal axes
 ```
 
-If the **all** mode is picked, the textual files for all item types will be made. If a specific item type is picked, then only that type will be produced. The possible types are: **all**, **armor**, **ring**, **sword**, **dagger**, **spear**, **hammer**, **axe** and **staff**. If none are picked, mode **all** is automatically assumed.
+If the **all** mode is picked, the textual files for all item types will be made. If a specific item type is picked, then only that type will be produced. The possible types are: **all**, **enemy**, **class**,**armor**, **ring**, **sword**, **dagger**, **spear**, **hammer**, **axe** and **staff**. If none are picked, mode **all** is automatically assumed.
