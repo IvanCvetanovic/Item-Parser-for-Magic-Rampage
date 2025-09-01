@@ -1,0 +1,54 @@
+"basic_greetings_0" = "Grüße!";
+"basic_wow_0" = "Wow!";
+"basic_thanks_0" = "Danke!";
+"basic_you_look_awesome_0" = "Du siehst toll aus!";
+"basic_your_build_is_awesome_0" = "Deine Ausrüstung ist spitze!";
+"basic_very_funny_0" = "Sehr lustig!";
+"basic_look_at_me_0" = "Sieh mich an!";
+"basic_good_job_0" = "Gut gemacht!";
+"basic_bye_0" = "Tschüss!";
+"basic_not_funny_0" = "Nicht lustig...";
+
+"basic_lets_play_0" = "Lass uns spielen!";
+"basic_cheers_0" = "Prost!";
+"basic_im_thirsty_0" = "Ich bin durstig...";
+"basic_yes_0" = "Ja!";
+"basic_no_0" = "Nein!";
+"basic_wait_0" = "Warte...";
+
+"special_inspect_0" = "Schauen wir mal...";
+
+"duel_gg" = "GG";
+"duel_that_was_close" = "Das war knapp!";
+"duel_that_was_intense" = "Das war heftig, Mann!";
+"duel_fight_like_that" = "Wo hast du gelernt, so zu kämpfen?";
+"duel_worthy_opponent" = "Du bist ein würdiger Gegner!";
+"duel_play_again" = "Lass uns nochmal kämpfen!";
+
+"premium_not_cool_0" = "Nicht cool...";
+"premium_i_look_awesome_0" = "Ich sehe toll aus!";
+"premium_do_i_look_cool_0" = "Sehe ich cool aus?";
+"premium_my_build_is_awesome_0" = "Meine Ausrüstung ist spitze!";
+
+"premium_glorify_ranger_0" = "Rangers rocken!";
+"premium_glorify_druid_0" = "Druiden sind die Besten!";
+"premium_glorify_mage_0" = "Magier sind episch!";
+"premium_glorify_priest_0" = "Priester sind großartig!";
+"premium_glorify_black-mage_0" = "Schwarzmagier dominieren!";
+"premium_glorify_rogue_0" = "Schurken sind die Besten!";
+"premium_glorify_warlock_0" = "Hexenmeister sind die mächtigsten!";
+"premium_glorify_thief_0" = "Diebe dominieren!";
+"premium_glorify_paladin_0" = "Paladine sind episch!";
+"premium_glorify_warrior_0" = "Krieger dominieren!";
+"premium_glorify_high-mage_0" = "Der Hochmagier ist großartig!";
+"premium_glorify_elite-warrior_0" = "Der Elitekrieger ist der Beste!";
+"premium_glorify_witchdoctor_0" = "Der Hexendoktor ist legendär!";
+
+"achievement_100pct" = "Ich habe 100% des Spiels schon beendet!";
+"achievement_101pct" = "Ich habe 101% des Spiels schon beendet!";
+"achievement_102pct" = "Ich habe 102% des Spiels beendet!";
+"achievement_dragonslayer" = "Ich bin der Drachentöter!";
+"achievement_dirtyfacedsouls" = "Ich habe 100% des Spiels auf Rampage-Modus beendet!";
+"achievement_the_king" = "Ich habe 100% des Spiels auf Rampage-Modus beendet!";
+"achievement_champion" = "Ein Champion ist gegen mich gefallen!";
+"achievement_top1" = "Ich war an der Spitze der Halle der Champions!";

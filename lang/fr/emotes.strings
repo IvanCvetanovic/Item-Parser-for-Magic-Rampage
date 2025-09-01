@@ -1,0 +1,54 @@
+"basic_greetings_0" = "Salut !";
+"basic_wow_0" = "Wow !";
+"basic_thanks_0" = "Merci !";
+"basic_you_look_awesome_0" = "T'es incroyable !";
+"basic_your_build_is_awesome_0" = "Ton personnage est incroyable !";
+"basic_very_funny_0" = "Trop drôle !";
+"basic_look_at_me_0" = "Regardez-moi !";
+"basic_good_job_0" = "Bien joué !";
+"basic_bye_0" = "À plus !";
+"basic_not_funny_0" = "Pas drôle...";
+
+"basic_lets_play_0" = "Jouons !";
+"basic_cheers_0" = "Santé !";
+"basic_im_thirsty_0" = "J'ai soif...";
+"basic_yes_0" = "Oui !";
+"basic_no_0" = "Nope !";
+"basic_wait_0" = "Attends...";
+
+"special_inspect_0" = "Voyons voir...";
+
+"duel_gg" = "GG";
+"duel_that_was_close" = "Ce n'est pas passé loin !";
+"duel_that_was_intense" = "C'était intense !";
+"duel_fight_like_that" = "Où as-tu appris à te battre comme ça ?";
+"duel_worthy_opponent" = "Tu es un adversaire redoutable !";
+"duel_play_again" = "Faisons un autre duel !";
+
+"premium_not_cool_0" = "Pas cool...";
+"premium_i_look_awesome_0" = "Je suis incroyable !";
+"premium_do_i_look_cool_0" = "J'ai l'air cool ?";
+"premium_my_build_is_awesome_0" = "Mon personnage est incroyable !";
+
+"premium_glorify_ranger_0" = "Les Rangers déchirent !";
+"premium_glorify_druid_0" = "Les Druides assurent !";
+"premium_glorify_mage_0" = "Les Mages sont épiques !";
+"premium_glorify_priest_0" = "Les Prêtres sont incroyables !";
+"premium_glorify_black-mage_0" = "Les Mages noirs dominent !";
+"premium_glorify_rogue_0" = "Les Bandits assurent !";
+"premium_glorify_warlock_0" = "Les Enchanteurs sont les plus puissants !";
+"premium_glorify_thief_0" = "Les Voleurs dominent !";
+"premium_glorify_paladin_0" = "Les Paladins sont épiques !";
+"premium_glorify_warrior_0" = "Les Guerriers dominent !";
+"premium_glorify_high-mage_0" = "Le Haut Mage est incroyable !";
+"premium_glorify_elite-warrior_0" = "Le Guerrier d'élite assure !";
+"premium_glorify_witchdoctor_0" = "Le Sorcier est légendaire !";
+
+"achievement_100pct" = "J'ai déjà terminé 100 % du jeu !";
+"achievement_101pct" = "J'ai déjà terminé 101 % du jeu !";
+"achievement_102pct" = "J'ai terminé 102 % du jeu !";
+"achievement_dragonslayer" = "Je suis le Chasseur de dragons !";
+"achievement_dirtyfacedsouls" = "J'ai terminé 100 % du jeu en Mode Rampage !";
+"achievement_the_king" = "J'ai terminé 102 % du jeu en Mode Rampage !";
+"achievement_champion" = "Un champion est tombé face à moi !";
+"achievement_top1" = "J'ai été au sommet du Hall des Champions !";

@@ -1,0 +1,15 @@
+¾	-> Gold symbol		190
+§	-> Star				167
+©	-> Heart			169
+÷	-> Diamond			247
+Æ	-> Shield			198
+¶	-> Sword			182
+Ð	-> Lock				208
+¬	-> Run coin			172
+<	-> Arrow left		60
+>	-> Arrow right		62
+
+Line breakable: \x07 7
+Rank symbol:    \x09 9
+Crown symbol:   \x0B 11
+Short space:    \x08 8

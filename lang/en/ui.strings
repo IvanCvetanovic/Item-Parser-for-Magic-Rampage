@@ -1,0 +1,1338 @@
+"dungeon" = "dungeon";
+"Dungeon" = "Dungeon";
+"pressStart" = "PRESS START";
+"pressStartAndroidTV" = "START";
+"equip" = "Equip";
+"trash" = "Trash";
+"exit" = "Exit";
+"sell" = "Sell";
+"buy" = "Buy";
+"more" = "More";
+"newsletter" = "Newsletter";
+"tips" = "Tips";
+"moreGold" = "More gold!";
+"damage" = "Damage";
+"armor" = "Armor";
+"equipped" = "Equipped";
+"trashItemConfirmation" = "Permanently discard \n'";
+"sellItemConfirmation" = "Permanently sell \n<item> for <gold>?";
+"trashCharacterConfirmation" = "Permanently remove\ncharacter on slot <slot>?";
+"reviveConfirmation" = "Pay <price> to instantly revive your character?\nYou currently have <gold>.";
+"yes" = "Yes";
+"no" = "No";
+"notNow" = "Not now";
+/* quitting the game means leaving or exiting from the app */
+"quitGameConfirmation" = "Quit game?";
+"restartGameConfirmation" = "Restart level?";
+"leaveGameWarning" = "Items collected in this level will be lost.";
+"quit" = "Quit";
+"resume" = "Resume";
+"restart" = "Restart";
+"loading" = "Loading";
+"slot" = "Slot";
+"slotSelect" = "Select slot";
+"newGame" = "New game";
+"head" = "Head";
+"eyes" = "Eyes";
+"color" = "Color";
+"body" = "Body";
+"createCharacter" = "Create character";
+"playNow" = "Play!";
+"play" = "Play";
+"shop" = "Shop";
+/* Increases magic power by 20% */
+"increases" = "Increases";
+/* Decreases jump impulse by 20% */
+"decreases" = "Decreases";
+/* Increases speed by 20% */
+"byPct" = "by";
+"use" = "Use";
+"retry" = "Retry";
+"revive" = "Revive";
+"skip" = "Skip";
+"cantUse" = "You can't use it now.";
+"cantAttack" = "I can't attack!";
+"bagFull" = "Your bag is full! Sell some items to free space!";
+"notEnoughMoney" = "Not enough gold!";
+/* End of Dungeon 1 - 3 */
+"endOf" = "End of";
+/* Secret areas discovered: 2 of 3 */
+"of" = "of";
+"chapter" = "chapter";
+"Chapter" = "Chapter";
+"bonus" = "bonus";
+"bonusLevel" = "Bonus level!";
+"Bonus" = "Bonus";
+"element" = "Magical element";
+"part" = "dungeon";
+"Part" = "Dungeon";
+"secretAreaDiscovered" = "Secret area discovered!";
+"secretAreasDiscovered:" = "Secret areas";
+/* Gold collected 300 */
+"gold:" = "Gold collected";
+/* Enemies killed: 30 */
+"enemiesKilled:" = "Enemies killed";
+"achievementUnlocked" = "Achievement unlocked";
+"inventorySell" = "Sell";
+"login" = "Sign in";
+"logout" = "Sign out";
+"chapterComingSoon" = "New dungeon\ncoming soon!";
+"chapterComingSoonText" = "Stay tuned for <strong>more dungeons</strong> and <strong>new game modes</strong> in the upcoming updates!";
+"loginRecommendation" = "<default>You seem to have been playing <strong>Magic Rampage<default> for quite a while now. How about <login>signing in<default>?\n\n<weak>The <login><service><weak> services let you save your characters in the <strong>cloud<weak>, browse your <strong>achievements<weak> and check online <strong>leaderboards<weak> with your friends!";
+"complete100pct" = "Why not try to complete 100% of the previous Dungeons while you wait?";
+"ok" = "Ok!";
+"achievements" = "Achievements";
+"leaderboards" = "Leaderboards";
+"credits" = "Credits";
+"facebook" = "Facebook page";
+"gameDesignAndProgramming" = "Game Design and Programming";
+"production" = "Production";
+"programming" = "Programming";
+"twoDArtDirection" = "2D Art Direction";
+"twoDArt" = "2D Art";
+"specialThanksTo" = "Special thanks to";
+"fireElement" = "Fire";
+"earthElement" = "Earth";
+"waterElement" = "Water";
+"iceElement" = "Ice";
+"darknessElement" = "Darkness";
+"airElement" = "Air";
+"lightElement" = "Light";
+"expansionApkRequiredText" = "Please wait while additional packages are being downloaded";
+"downloaded" = "Downloaded";
+"not-downloaded" = "Not downloaded";
+"unknown" = "Unknown state";
+"waiting" = "Waiting...";
+"lvl-check-required" = "LVL check is required";
+"download-required" = "Download is required";
+"completed" = "Completed";
+"connecting" = "Connecting...";
+"downloading" = "Downloading";
+"failed" = "Failed!";
+"failed-canceled" = "Canceled!";
+"failed-fetching-url" = "Failed while fetching URL";
+"failed-sdcard-full" = "Failed! SDCARD is full!";
+"failed-unlicensed" = "Failed! Not licensed!";
+"connected" = "Connected";
+"transactionSuccessful" = "The transaction was successful!";
+"billUserCanceled" = "User canceled";
+"billBillingUnavailable" = "Billing unavailable";
+"billItemUnavailable" = "Item unavailable";
+"billDeveloperError" = "Developer error";
+"billError" = "Unknown error";
+"billItemAlreadyOwned" = "Item already owned";
+"billItemNotOwned" = "Item not owned";
+"billRemoteException" = "Remote exception";
+"billBadResponse" = "Bad response";
+"billVerificationFailed" = "Verification failed";
+"billSendIntentFailed" = "Send intent failed";
+"billUnknownPurchaseResponse" = "Unknown purchase response";
+"billMissingToken" = "Missing token";
+"billSubscriptionsNotAvailable" = "Subscriptions not available";
+"billInvalidConsumption" = "Invalid consumption";
+"ring" = "Ring";
+"artifact" = "Artifact";
+"enemyLeft" = "<number> enemy left behind.";
+"enemiesLeft" = "<number> enemies left behind.";
+/* as in '3 enemies left behind. Star denied.' */
+"starDenied" = "Star denied.";
+"immersive" = "Immersive mode";
+"enabled" = "Enabled";
+"disabled" = "Disabled";
+"goldBonus:" = "Bonus ÷";
+"logoutConfirmation" = "Do you really\nwish to sign out?";
+"upgrades" = "Upgrades";
+"chooseRune" = "Choose a Rune:";
+"youHaveNoRunes" = "You don't have any Rune!";
+"noCompatibleItem" = "No compatible item!";
+"chooseItem" = "Choose an item to upgrade:";
+"starBonus:" = "Bonus §";
+"Localization" = "Localization";
+"spanish" = "Spanish";
+"french" = "French";
+"portuguese" = "Portuguese";
+"music" = "Music";
+"audio" = "Audio";
+"soundtrack" = "Soundtrack";
+"chapter3Soundtrack" = "Chapters 3 and 4 Soundtrack";
+"chapter5Soundtrack" = "Chapter 5 Soundtrack";
+"waitHere" = "Wait here";
+"followMe" = "Follow me";
+"reviveNPC" = "Revive him";
+"survivalComingSoon" = "Survival Mode\ncoming soon!";
+"survivalSoon" = "Survival Mode (soon)";
+"survivalTitle" = "Survival Mode";
+"soundEffects" = "Sound Effect Design";
+"drawingAndAnimation" = "Drawing and Character Animation";
+"screenplay" = "Screenplay";
+"toBeContinued" = "To be continued...";
+"menu" = "Menu";
+"buyFullGame" = "Get the full game for only <green><price></green> to continue this <strong>epic</strong> adventure!";
+"killCount" = "<number> kills";
+"waitForNewChapter" = "Stay tuned for\nnew chapters!";
+"newHighScore" = "New high score!";
+"survivalSelect" = "Select level";
+"survivorScore" = "Survivor score: <score>";
+"stayTunedForMore" = "Stay tuned for more\ndungeons and challenges!";
+"stayTunedForMoreContent" = "Stay tuned for\nmore content!";
+"google" = "Google Play Games";
+"game-center" = "Game Center";
+"steam" = "Steam";
+"forced" = "Asantee";
+"no-icloud-drive-error" = "<gray>Your <white>iCloud Drive <gray>is <red>disabled<gray>. Enable it to synchronize your progress on <white>iCloud<gray>.";
+"prizeRoom" = "Prize Room";
+"noPrizeAvailable" = "No prize available";
+"rewardFor" = "Reward for achievement:";
+"stale-data-warning" = "<gray>Couldn't load from the cloud. Slots might contain stale data.";
+"unsaved-progress-warning" = "<gray>Couldn't save slot data to cloud. Check your internet connection.";
+"versusMode" = "Versus mode";
+"characterEditor" = "Edit character";
+"changeCharacterConfirmation" = "Apply changes for <price>?";
+"roundNumber" = "Round <number>";
+"fight!" = "Fight!";
+"playerWins" = "Player <number> wins!";
+"fightTimeOut" = "Time out";
+/* Empate! */
+"draw" = "Draw!";
+"finalRound" = "Final Round!";
+"quitVersusConfirmation" = "Leave versus mode?";
+"expandInventorySpace" = "Expand\ninventory space";
+"expandInventoryConfirmation" = "Buy <number> extra spaces in your inventory for <price>?";
+"CAMPAIGN" = "CAMPAIGN";
+"VERSUS" = "2P VERSUS";
+"fightsLeft" = "<white>Trial version:<green> <number> fights left";
+"fightLeft" = "<white>Trial version:<green> <number> fight left";
+/* Like an appendix of a book */
+"appendix" = "Appendix";
+/* the German language */
+"german" = "German";
+/* the English language */
+"english" = "English";
+/* the Italian language */
+"italian" = "Italian";
+/* Class names */
+"ranger" = "Ranger";
+"druid" = "Druid";
+"mage" = "Mage";
+"priest" = "Priest";
+"black-mage" = "Black Mage";
+"rogue" = "Rogue";
+"warlock" = "Warlock";
+"thief" = "Thief";
+"paladin" = "Paladin";
+"warrior" = "Warrior";
+"high-mage" = "High Mage";
+"elite-warrior" = "Elite Warrior";
+/* or Sorcerer */
+"witchdoctor" = "Witchdoctor";
+/* Names and descriptions for each class special skill */
+"druid-name" = "Spider minion";
+"druid-desc" = "The Druid summons a temporary spider minion. Spiders get stronger as the Druid uses <earth>Earth<white>- or <water>Water<white>-based equipment.";
+"warrior-name" = "Shield blast";
+"warrior-desc" = "The Warrior inflicts huge area damage and casts a temporary shield. Armor and speed are boosted while the shield is active. The higher the Armor value, the more area damage is inflicted.";
+"thief-name" = "Rage leap";
+"thief-desc" = "The Thief performs a high jump, inflicting area damage and temporarily sees everything in slow motion. The area of the damage increases as the Thief uses <air>Air<white>- or <darkness>Darkness<white>-based equipment.";
+"rogue-name" = "Dagger rampage";
+"rogue-desc" = "The Rogue temporarily sees everything in slow motion, has his <green>Dagger<white> attack power increased and may perform triple jumping during this time.";
+"ranger-name" = "Sword rampage";
+"ranger-desc" = "The Ranger temporarily sees everything in slow motion, has his <green>Sword<white> attack power increased and may perform triple jumping during this time.";
+"elite-warrior-name" = "Shield blast";
+"elite-warrior-desc" = "The Elite Warrior inflicts huge area damage and casts a temporary shield. Armor and speed are boosted while the shield is active. The higher the Armor value, the more area damage is inflicted.";
+"priest-name" = "Starlight";
+"priest-desc" = "The Priest becomes temporarily immune to damage, sees everything in slow motion and has his <light>Light<white> weapons boosted during this time. Wearing <light>Light<white> equipment increases immunity time.";
+"mage-name" = "Fire rampage";
+"mage-desc" = "The Mage casts powerful fireballs. Damage is increased when <fire>Fire<white> element equipment is being used.";
+"black-mage-name" = "Dark rampage";
+"black-mage-desc" = "The Black Mage casts powerful beams of darkness. Damage is increased when the <darkness>Darkness<white> element is equipped.";
+"high-mage-name" = "Magic rampage";
+"high-mage-desc" = "The High Mage casts powerful beams. Damage is increased when the <darkness>Darkness<white> or <fire>Fire<white> element is equipped.";
+"paladin-name" = "Hammer of Justice";
+"paladin-desc" = "The Paladin throws powerful hammers and becomes temporarily immune to damage. Damage is increased when <light>Light<white> or <air>Air<white> equipment is being used. Hammer damage is also increased during this time.";
+"warlock-name" = "Dark clone";
+"warlock-desc" = "The Warlock summons a temporary clone to fight alongside him and mimic some of his movements.";
+"witchdoctor-name" = "Bone rise";
+"witchdoctor-desc" = "The Witchdoctor summons a pair of skeletons that fight alongside him. Skeletons are stronger when the Witchdoctor uses <darkness>Darkness<white>- or <light>Light<white>-based equipment.";
+"druid-short-desc" = "Summons a temporary spider minion.";
+"warrior-short-desc" = "Inflicts huge area damage and casts temporary shields around player.";
+"thief-short-desc" = "Performs a high jump and temporarily sees everything in slow motion.";
+"rogue-short-desc" = "Temporarily sees everything in slow motion, increases <green>Dagger<white> attack power and may perform triple jumping.";
+"ranger-short-desc" = "Temporarily sees everything in slow motion, increases <green>Sword<white> attack power and may perform triple jumping.";
+"elite-warrior-short-desc" = "Inflicts huge area damage and casts temporary shields around player.";
+"priest-short-desc" = "Becomes temporarily immune to damage and increases attack power of <light>Light<white> weapons.";
+"mage-short-desc" = "Casts powerful fireballs whose damage is increased when <fire>Fire<white> equipment is used.";
+"black-mage-short-desc" = "Casts powerful beams whose damage is increased when <darkness>Darkness<white> equipment is used.";
+"high-mage-short-desc" = "Casts powerful beams whose damage is increased when <darkness>Darkness<white> or <fire>Fire<white> equipment is used.";
+"paladin-short-desc" = "Throws powerful hammers and becomes temporarily immune to damage.";
+"warlock-short-desc" = "Summons a temporary clone to fight alongside him.";
+"witchdoctor-short-desc" = "Summons a pair of skeletons that fight alongside him.";
+/* button that leads to the 'settings' panel */
+"options" = "Options";
+"videoSettings" = "Video Settings";
+"fullscreen" = "Full screen";
+"applyChanges" = "Apply changes";
+"confirm" = "Confirm";
+"gamepadSettings" = "Gamepad settings";
+"gamepad" = "Gamepad";
+"jump" = "Jump";
+"attack" = "Attack";
+"inventory" = "Inventory";
+"back" = "Back";
+"pause" = "Pause";
+"openInventory" = "Open inventory";
+"backCancel" = "Back/Cancel";
+"pauseGame" = "Pause game";
+"restoreDefaults" = "Restore defaults";
+"enable" = "Enable";
+"cancel" = "Cancel";
+"quests" = "Quests";
+"rewardForQuest" = "Reward for quest:";
+"aFewDaysAgo" = "A few days ago . . .";
+"twoGamepadsRequired" = "This mode requires two gamepads connected to your device.";
+"multiplayerModesSoon" = "Stay tuned for the new <strong>competitive multiplayer</strong> mode in the upcoming updates!";
+"aFewHoursAgo" = "A few hours ago . . .";
+"writingAndScreenplay" = "Writing and screenplay";
+"noAdsText" = "Don't want to see ads? Purchase any gold chest from the shop!";
+"theEnd" = "The End";
+"theEndQ" = "The End ?";
+"russian" = "Russian";
+"japanese" = "Japanese";
+"korean" = "Korean";
+/* language */
+"ukrainian" = "Ukrainian";
+"turkish" = "Turkish";
+"chooseLanguage" = "Choose language";
+"noAds" = "No ads";
+"removeAds" = "Remove ads";
+"purchaseAnyChestToRemoveAds" = "Purchase any chest to remove ads!";
+"default" = "Default";
+"Jan" = "Jan";
+"Feb" = "Feb";
+"Mar" = "Mar";
+"Apr" = "Apr";
+"May" = "May";
+"Jun" = "Jun";
+"Jul" = "Jul";
+"Aug" = "Aug";
+"Sep" = "Sep";
+"Oct" = "Oct";
+"Nov" = "Nov";
+"Dec" = "Dec";
+"multiplayer" = "Multiplayer";
+"bank" = "Bank";
+"comingSoon" = "Coming soon";
+"comingSoon!" = "Coming soon!";
+/* means recovering an item from the bank. Better if not longer than 10 letters */
+"withdraw" = "Withdraw";
+"withdrawItem" = "Withdraw item";
+/* means storing an item in the bank. Better if not longer than 10 letters */
+"deposit" = "Deposit";
+"depositItem" = "Deposit item";
+"withdrawConfirmation" = "Withdraw <item> for <price>?";
+"freeWithdrawConfirmation" = "Withdraw <item>?";
+"depositConfirmation" = "Deposit <item> for <price>?";
+"noItemsInBank" = "There are no items stored in the bank.";
+"noItemsInBag" = "There are no items in your bag.";
+"bankIsFull" = "The bank is full!";
+/* RPG character level */
+"level" = "level";
+"Level" = "Level";
+/* is displayed whenever a player grows up one level */
+"levelUp" = "Level up";
+"levelUp!" = "Level up!";
+/* better if not longer than 7 chars */
+"score" = "Score";
+/* better if not longer than 7 chars */
+"SCORE" = "SCORE";
+/* indicates bonus head shot points. Better if not longer than 10 chars. Eg. 'Head shot +5' */
+"headshotBonus" = "Head shot";
+"timeBonus" = "Time bonus";
+/* indicates bonus for gaining experience points (RPG). Better if not longer than 10 chars */
+"experience" = "Experience";
+/* indicates score penalty loss when a potion is used. (BINLT 10 chars). Eg.: 'Potion used -15' */
+"potionUsed" = "Potion used";
+/* indicates amount of points deducted after taking damage. Eg.: 'Damage taken -30' */
+"damagePenalty" = "Damage taken";
+"doubleKill" = "Double kill";
+"tripleKill" = "Triple kill";
+"multiKill" = "Multi kill";
+"monsterKill" = "MONSTER KILL!";
+"dungeonTitle" = "Dungeon Level <level>";
+"experienceLost" = "<xp> experience points have been lost!";
+"experiencePoints" = "Experience points";
+"finalScore" = "Final score";
+"vs" = "vs.";
+"versus" = "versus";
+"totalDamageTaken" = "Total damage taken";
+/* total time elapsed during play */
+"totalTime" = "Time";
+"headShotCount" = "Head shots";
+"potionUsedCount" = "Potions used";
+"multiKillCount" = "Multiple kills";
+/* better if not longer than 22 chars */
+"challengeFriend" = "Challenge a friend";
+/* better if not longer than 20 chars */
+"playSolo" = "Play solo Dungeon";
+/* better if not longer than 15 chars */
+"soloDungeon" = "Solo Dungeon";
+/* better if not longer than 14 chars */
+"hallOfFame" = "Hall of Fame";
+"screenpadSize" = "Screenpad size";
+"screepadOptions" = "Screenpad options";
+/* Button for Controls options in the Options menu */
+"controls" = "Controls";
+"adjustControls" = "Adjust controls size";
+"YOUWIN" = "YOU WIN!";
+"YOULOSE" = "YOU LOSE!";
+"youWin" = "You win!";
+"youLose" = "You lose!";
+"DRAWGAME" = "DRAW!";
+"drawGame" = "Draw!";
+"go!" = "Go!";
+/* better if not longer than 18 chars */
+"competitiveMode" = "Competitive Mode";
+/* button that leads to an area with a trainer character */
+"trainer" = "Trainer";
+/* 'competitive coins' or 'tokens' refer to the ones used to play in the classic arcade games (not actual money coins) */
+"notEnoughCoins" = "Not enough tokens. Complete Solo Dungeons to get more!";
+"startChallengeConfirmation" = "Challenge player, <name>?";
+"run!" = "Run!";
+"start!" = "Start!";
+/* see localization guidelines for guidance about the game currencies */
+"coinCost" = "<dark>Cost:<light> <coins>";
+/* 'competitive coins' or 'tokens' refer to the ones used to play in the classic arcade games (not actual money coins) */
+"coinPrize" = "<dark>Prize:<light> <coins> <dark>+<light> <xp>";
+/* short for 'experience points' */
+"xp" = "xp";
+"getMoreCoinsButton" = "More Tokens!";
+/* short for Level (max 3 chars if possible; may include period if necessary) */
+"Lv" = "Lvl";
+"killerSpider" = "Killer Spider";
+"killerClone" = "Killer Clone";
+"killerSkeletons" = "Killer Skeletons";
+"energyDrain" = "Energy Drain";
+"specialKill" = "Special Kill";
+"classSpecials" = "Class Special Abilities";
+"notLoggedMessage" = "You must be signed in to <service> in order to play any online multiplayer match.";
+"logInNow" = "Sign in now";
+"connectionIssue" = "Couldn't connect to the server.";
+/* try connecting to the server again */
+"tryAgain" = "Try again";
+"equipChange" = "Equipment change";
+"serverSideProgramming" = "Server Side Programming";
+"totalMultikillPoints" = "Multiple Kill Points";
+"classPassiveBoost" = "Class passive boost";
+"equipmentBoost" = "Equipment boost";
+/* eg.: 15% + 20% speed */
+"speedBoostTitle" = "speed";
+/* eg.: 15% + 20% armor */
+"armorBoostTitle" = "armor";
+/* eg.: 15% + 20% elemental magic damage */
+"magicBoostTitle" = "elemental magic damage";
+/* eg.: 15% + 20% jump impulse */
+"jumpBoostTitle" = "jump impulse";
+/* eg.: 15% + 20% sword damage */
+"swordBoostTitle" = "sword damage";
+/* eg.: 15% + 20% dagger damage */
+"daggerBoostTitle" = "dagger damage";
+/* eg.: 15% + 20% Staff damage */
+"staffBoostTitle" = "staff damage";
+/* eg.: 15% + 20% axe damage */
+"axeBoostTitle" = "axe damage";
+/* eg.: 15% + 20% Hammer damage */
+"hammerBoostTitle" = "hammer damage";
+/* eg.: 15% + 20% spear damage */
+"spearBoostTitle" = "spear damage";
+"trainersHall" = "Training Hall";
+"skillTree" = "Skill Tree";
+"dash" = "Dash";
+"dashAbility" = "Dash Ability";
+"learnDashAbility" = "Learn Dash Ability";
+/* leave the current level */
+"goBackToLevelSelect" = "Quit dungeon?";
+/* as in 'leave the current level/dungeon' */
+"leave" = "Leave";
+"noMatchesFound" = "No matches found.";
+"playSoloDungeon" = "Play Solo Dungeons.";
+"moMatchesPlaySolo" = "No matches found. Play Solo Dungeon instead.";
+"revenge" = "Revenge!";
+"graphics" = "Graphics";
+"graphicsOptions" = "Graphics options";
+"graphicsOptMin" = "Minimum";
+"graphicsOptMed" = "Medium";
+"graphicsOptMax" = "Maximum";
+"graphicsOptPerf" = "High performance";
+"graphicsOptQual" = "Graphics quality";
+"graphicsOptPerfLong" = "Prioritize high performance";
+"graphicsOptQualLong" = "Prioritize graphics quality";
+"friendSearchType" = "Type your friend's nickname";
+"friendSearch" = "Your friend's nickname";
+"friendSearchLongGP" = "Ask your friend what his nickname on Google Play Games is in case you don't already know it.";
+"friendSearchLongGC" = "Ask your friend what his nickname on Game Center is in case you don't already know it.";
+"decline" = "Decline";
+"ignore" = "Ignore";
+"accept" = "Accept";
+"remove" = "Remove";
+"receivedChallenges" = "Challenges you received";
+"sentChallenges" = "Challenges you made";
+"friendChallengedYou" = "<friends-name> has challenged you!";
+"challengeMade" = "You have challenged <friends-name>!";
+"friendAcceptedChallenge" = "<friends-name> accepted the challenge!";
+"challengeResultDefeat" = "<friends-name> has beaten you!";
+"challengeResultChalDefeat" = "<friends-name> has beaten you after asking for revenge!";
+"challengeResultChalTaunt" = "<friends-name> couldn't beat you the first time, but they defeated you in revenge!";
+"challengeResultChalDefeatTau" = "<friends-name> tried two times, but still couldn't beat you!";
+"challengeResultVictory" = "You have beaten <friends-name>!";
+"challengeStatusDeclined" = "Declined";
+"challengeStatusWaiting" = "Waiting";
+"challengeStatusYouWon" = "You won";
+"challengeStatusYouLost" = "You lost";
+"challengeStatusDraw" = "Draw";
+"addFriend" = "Add friend";
+"myFriends" = "My friends";
+"myChallenges" = "My challenges";
+/* click it to confirm the challenge */
+"challengeButton" = "Challenge";
+/* click it to confirm the challenge */
+"challengeNowButton" = "Challenge now!";
+"challengeQuestion" = "Challenge <friends-name>?";
+"clearAll" = "Clear all";
+"clearAllChalConfirmation" = "Clear all challenges?";
+"clear" = "Clear";
+/* button that refreshes a list of invitations with up-to-date data */
+"refresh" = "Refresh";
+/* button that updates a list of invitations with up-to-date data (technically the same as above, can be the same word as the one used as 'refresh') */
+"update" = "Refresh";
+"gameVersionTooOld" = "Your game software version is too old! Please update the game in order to play online.";
+"using2ndController" = "It seems you are using the second controller. Please use the first controller.";
+"using2ndControllerEx" = "It seems you are using the second controller. Gaming and browsing may not work correctly. Please use the first controller.";
+"noFriends" = "Your friends list is currently empty.";
+"friends" = "Friends";
+"friendsList" = "Friends list";
+"challenges" = "Challenges";
+"challengesList" = "Challenges list";
+"beatenByRandomChallenger" = "<player-name> beat you in a random match!";
+"beatRandomChallenger" = "You beat <player-name> in a random match!";
+"removeFriendConfirmation" = "Remove <friends-name> from your list?";
+"addFriendConfirmation" = "Add <friends-name> to your list?";
+"challengeFullQuestion" = "Challenge <friends-name> to a Dungeon match?";
+/* coins or tokens as the ones used to play in the classic arcade games (not actual money coins) */
+"notEnoughCoinsShort" = "Not enough tokens!";
+/* coins or tokens as the ones used to play in the classic arcade games (not actual money coins) */
+"moreCoins" = "More Tokens!";
+"lastDays" = "Last <days> days";
+"challengeSent" = "Challenge sent to <friends-name>!";
+"challengeSentError" = "Couldn't send challenge to <friends-name>!";
+"challengeSentErrorFull" = "Couldn't send challenge to <friends-name>! Check your internet connection.";
+/* button name for a section where the player can see/add friends and check interactions with other players */
+"social" = "Social";
+"noPlayerFound" = "No results for <search-string>.";
+"results" = "Results:";
+"foundOneResult" = "Found 1 result:";
+"foundMultipleResult" = "Found <count> results:";
+/* better if not longer than 17 characters */
+"findFriends" = "Find your friends";
+/* service may be 'Google Play Game' or 'Game Center' (or any other network in the future) */
+"typeYourFriendsNickName" = "Search for your friend's nickname on <service>.";
+"searching" = "Searching";
+"makeSureYouTypedRight" = "Make sure you've typed your friend's nickname exactly as it is on their account.";
+"challengingFriendDungeonTitle" = "Challenging <friends-name>";
+"noChallenges" = "No new challenges at the moment.";
+/* button text. To Add someone as a friend */
+"add" = "Add";
+"declineFriendsChallenge" = "Decline <friends-name>'s challenge?";
+"acceptFriendsChallenge" = "Accept <friends-name>'s challenge?";
+/* title of product at the store */
+"goldChestTitle" = "<gold-number> gold chest";
+"goldChestDesc" = "Grants <gold-number> gold coins to your character.";
+"goldChestPlusDesc" = "Grants <gold-number> gold coins and <coin-number> competitive tokens to your character.";
+/* a position in the players hierarchy (like in the military) */
+"playerRank" = "Rank";
+"playerUnranked" = "Unranked";
+"rankIron" = "Iron";
+"rankBronze" = "Bronze";
+"rankSilver" = "Silver";
+"rankGold" = "Gold";
+"rankPlatinum" = "Platinum";
+"rankDiamond" = "Diamond";
+"spearDescription" = "Spears can pierce through barriers and enemies.";
+"billOk" = "Successful transaction";
+"billFeatureNotSupported" = "Feature not supported";
+"billServiceDisconnected" = "Service disconnected";
+"billServiceUnavailable" = "Service unavailable";
+"waitingChallengeResponse" = "Waiting for <friends-name> to accept your challenge.";
+"challengeResultDraw" = "Your match against <friends-name> was a draw!";
+"randomMatchRevengeDesc" = "Winning this revenge match will award you with <bold>2<normal> Rank points and losing won't decrease your current Rank.";
+"hallOfChampions" = "Hall of Champions";
+"randomMatchRevenge" = "See who defeated you in random matches and seek your revenge!";
+"challengeSendFailed" = "Couldn't send the challenge! Please check your internet connection and try again.";
+"challengeResponseFailed" = "Couldn't send the response to the challenge! Please check your internet connection and try again.";
+"featureComingSoon" = "This feature will be added in the upcoming updates!";
+"bloodAnimation" = "Blood animation";
+"creativeCommonsCredits" = "Creative Commons Credits";
+"friendAddedYou" = "<friends-name> added you as a friend!";
+"friendConfirmed" = "You and <friends-name> are now friends!";
+"cheaterNotice" = "Irregular activity has been detected on your account. Some features in the Competitive mode may not work as expected.";
+"challengeResultChalDefeatB" = "<friends-name> has beaten you in a revenge match!";
+"welcomeBackMessage" = "It's been a while! We've given you <gold-amount> gold in the Prize Room to help you on your journey! :)";
+"welcomeBackMessageCoin" = "You haven't played in the Competitive mode for a while. We've given you <coins-amount> competitive tokens in the Prize Room to give you a little push! :)";
+"reviewMatchStatistics" = "Watch match statistics?";
+"today" = "Today";
+"yesterday" = "Yesterday";
+"daysAgo" = "<count> days ago";
+/* eg: 4d (very short for: 4 days ago) */
+"daysAgoShort" = "<count>d";
+"tryCompetitiveMode" = "Congratulations! You're doing really well! Want more action now? Play the mind-boggling <strong>Competitive</strong> <strong>Mode</strong> while you wait for the next Chapter!";
+"complete100pcB" = "Also, try completing 100% in the previous Dungeons!";
+"armadimp" = "Armadillo";
+"demonic-spider" = "Spider Queen";
+"gorgon" = "Venomous Gorgon";
+"chest-demon" = "Mimic";
+"spidemon" = "Spidemon";
+"golem" = "Golem";
+"ape-demon" = "Giant Ape Demon";
+"armademon" = "Armademon";
+"cthulhu" = "Cthulhu";
+"slime" = "Slime";
+/* vulkanic-earthling / creature that looks like a small vulkan */
+"vulkling" = "Vulkling";
+"armadillo" = "Armadillo";
+"ape-skeleton" = "Ape Skeleton";
+"orc" = "Orc";
+"minotaur" = "Minotaur";
+"hoursAgo" = "<hours> hours ago";
+/* e.g. '10h' */
+"hoursIndicatorVeryShort" = "<hours>h";
+"minutesAgo" = "<minutes> minutes ago";
+/* e.g. '15m' */
+"minutesIndicatorVeryShort" = "<minutes>m";
+"now" = "Now";
+"prizeReceivedGold" = "You've received <amount> gold coins in the Prize Room.";
+"prizeReceivedCoin" = "You've received <amount> competitive tokens in the Prize Room.";
+"prizeReceivedItem" = "You've received the <item-name> in the Prize Room.";
+"playRevenge" = "Play a revenge match against <friends-name>?";
+/* push notifications that will be sent whenever someone beats the player's score */
+"randomMatchNotification" = "Notifications for random matches";
+/* toggle for enabling/disabling push notifications. We already have the 'Enable' word on our database */
+"disable" = "Disable";
+"notificationWarning" = "Notifications are currently disabled. Enable them for a better experience.";
+"randomMatchNotWarning" = "Notifications for random matches are currently disabled.";
+"maintenanceWarningPresent" = "Our server is undergoing maintenance. A drop in connection may be experienced for the next couple of hours.";
+"maintenanceWarningFuture" = "Our server will be undergoing maintenance within the next few hours. A drop in connection may be experienced.";
+"maintenanceWarningPast" = "It's all good now! Our server is stable again.";
+/* replacements for <time-frame> listed below */
+"coinTwice" = "Competitive matches are giving twice as many Tokens as a prize <time-frame>! Enjoy!";
+/* replacements for <time-frame> listed below */
+"coinExtra" = "Competitive matches are giving extra Tokens as a prize <time-frame>! Enjoy!";
+"timeFrameThisWeek" = "this week";
+"timeFrameWeekend" = "during this weekend";
+"timeFrameThisMonth" = "during this month";
+"timeFrameToday" = "today";
+/* small face text for button that leads to the Competitive Mode screen. Should be as short as possible */
+"competitiveShortButton" = "Competitive";
+"difficultyEasy" = "Easy";
+"difficultyMedium" = "Medium";
+"difficultyDifficult" = "Hard";
+/* title of the toggle for the push notifications */
+"revengeNotification" = "Notifications for revenge matches";
+"opponentNotifiedMessage" = "<player-name> has been notified that you won this match!";
+"opponentNotifiedMessageEx" = "<player-name> has been notified that you won this match! Be ready for a revenge match!";
+"newVersionAvailable" = "There's a newer version of Magic Rampage available! Update now!";
+"welcomeBackMessageEx" = "It looks like you haven't played for a while. We've given you <gold-amount> gold and <coins-amount> competitive tokens in the Prize Room to help you on your journey! :)";
+"welcomeBackMessageExShort" = "Long time no see! We've given you <gold-amount> gold and <coins-amount> competitive tokens in the Prize Room to help you on your journey! :)";
+"communityManagement" = "Community Management";
+"communityManagementAndSupport" = "Community Management and Support";
+/* name of the action related to button */
+"arcane" = "Use Arcane Rune";
+"cancelChallenge" = "Cancel challenge?";
+"prizeReceivedGoldSlot" = "You've received <amount> gold coins in the Prize Room. Slot <slot-number>.";
+"prizeReceivedCoinSlot" = "You've received <amount> competitive tokens in the Prize Room. Slot <slot-number>.";
+"prizeReceivedItemSlot" = "You've received the <item-name> in the Prize Room. Slot <slot-number>.";
+"joinBeta" = "Join beta";
+"communityForums" = "Community forums";
+/* credits section */
+"productionAssistant" = "Production assistant";
+/* as in: Requires Gold Rank */
+"requires" = "Requires";
+/* rank might be Bronze, Silver, Gold */
+"requiresRankFull" = "Requires <rank> rank. Your current rank is <current-rank>.";
+"goldChestDescNoNumber" = "Grants gold coins to your character.";
+"goldCoinChestNumNumberDesc" = "Grants gold and competitive tokens to your character.";
+"warnRankPenalty" = "Quitting a challenge or a match against another player penalizes you with ranking loss.";
+"rankPenaltyNotification" = "Your rank has been decreased for quitting a challenge or a match against another player.";
+"rankPenalty" = "Rank penalty: <value>";
+/* credits entry */
+"storyAndScreenplay" = "Story and Screenplay";
+/* 'quit' should represent the sense of 'abandon' */
+"quitDungeonMatchConfirmation" = "Quit dungeon?";
+/* 'quit' can represent the same sense of 'abandon' as above */
+"quitDungeonMatchButton" = "Quit";
+"rankDailyDecDesc" = "Once a day, each player's ranking score is decreased by <value>.";
+"oneExt" = "one";
+"twoExt" = "two";
+"threeExt" = "three";
+"fourExt" = "four";
+"fiveExt" = "five";
+"newVersionInBeta" = "There is a new version available for beta testing!";
+"betaInstructions" = "Want to join the beta testers to get newer versions before everyone else? Sign up through the Options menu.";
+"challengeOfTheWeek" = "Challenge of the week";
+"dungeonOfTheWeek" = "Dungeon of the week";
+"weeklyChallenge" = "Weekly Challenge";
+"weeklyDungeon" = "Weekly Dungeon";
+"challengeOfTheMonth" = "Challenge of the month";
+"dungeonOfTheMonth" = "Dungeon of the month";
+"monthlyChallenge" = "Monthly Challenge";
+"monthlyDungeon" = "Monthly Dungeon";
+"weeklyReport" = "Weekly report";
+"monthlyReport" = "Monthly report";
+"lastDaysReport" = "Last <days> days:";
+"randomMatchesCountReport" = "Random matches played against you: <number>";
+"randomMatchesCountReportFull" = "Random matches played against you in the last <days> days: <number>";
+"yourVictoriesCountReport" = "Your victories: <number>";
+"yourDefeatsCountReport" = "Your defeats: <number>";
+"victoryCountReport" = "Victory count: <number>";
+"defeatCountReport" = "Defeat count: <number>";
+"victoryRate" = "Victory rate: <percent>%";
+"highestRank" = "Your highest rank: <rank>";
+/* please to not remove the # symbol neither separate it from <number> */
+"topRankingPosition" = "Your top ranking position: #<number>";
+"relativeRankingReport" = "Your current rank is higher than <percent>% of all players.";
+/* please to not remove the # symbol neither separate it from <number> */
+"currentRankingPositionReport" = "Your current position in the global ranking is #<number>.";
+/* please to not remove the # symbol neither separate it from <number> */
+"currentRankingPosition" = "Current global position: #<number>";
+"cheaterRankNotice" = "Irregular activity has been detected on your account. Ranking features may not work as expected.";
+"playerWantsToAdd" = "<player-name> wants to add you as a friend.";
+"friendAcceptedAsFriendA" = "<player-name> accepted your friendship request.";
+"friendAcceptedAsFriendB" = "You and <player-name> are now friends!";
+"newDungeonChallenge" = "There's a new Competitive Dungeon Challenge now live!";
+"opponentsNameRank" = "<player-name>'s current rank:";
+"playAgainstPlayer" = "Play against <player-name>";
+"playAgainstPlayerEx" = "Run a Competitive Dungeon against <player-name>";
+"challengePlayer" = "Challenge <player-name>";
+"acceptFriendQuestion" = "Accept <player-name> in your friends list?";
+"notificationForFriendship" = "Notifications for friendship requests";
+"cancelFriendshipRequest" = "Cancel your friendship request to <friends-name>?";
+"declineFriendshipRequest" = "Decline <friends-name>'s friendship request?";
+"championMatch" = "Play against <player-name>?";
+"championMatchDescA" = "Winning this match rewards you with <rank> Rank points and losing it won't decrease your current Rank.";
+"beatenInHallOfChampions" = "<player-name> beat you at the Hall of Champions!";
+/* please to not remove the # symbol neither separate it from <number> */
+"bestRankingPosition" = "Your best ranking position: #<number>";
+"type:" = "Type:";
+"sword" = "Sword";
+"dagger" = "Dagger";
+"staff" = "Staff";
+"axe" = "Axe";
+"hammer" = "Hammer";
+"spear" = "Spear";
+"mace" = "Mace";
+"prizes" = "Prizes";
+"claimPrizesButton" = "Claim prizes";
+"claimButton" = "Claim";
+"goToPrizeRoomButton" = "Go to Prize Room";
+"itemInBankMessageA" = "You already have this item in the Bank.";
+"itemInBankMessageB" = "This item is already in the Bank.";
+"alreadyHasItemMessage" = "You already have this item.";
+"fire-lord" = "Fire Lord";
+"orc-fighter" = "Orc Fighter";
+"unknownItemFoundWarning" = "Some items could not be loaded. Make sure you're running the latest version of the game and check your internet connection.";
+/* button toggle (on/off) */
+"keepOriginalHelmToggle" = "Keep class' default helm";
+"keepHelmNoEffectNotification" = "This change won't affect your current appearance because your current armor doesn't have a custom helm.";
+"challengeParseError" = "Couldn't send result to server. Unknown error.";
+"challengeNoConnectionError" = "Couldn't send result to server. No connection.";
+"couldntPostWeeklyDungeon" = "Results couldn't be posted. Please check your internet connection.";
+"errorInvalidValue" = "Invalid value.";
+/* will display the minimum time in which player must finish in order to get extra score */
+"timeChallenge:" = "Time challenge:";
+/* better if not longer than 16 characters (remove word 'current' if applicable) */
+"currentBestTime:" = "Current best time:";
+/* better if not longer than 16 characters (remove word 'current' if applicable) */
+"currentBestScore:" = "Current best score:";
+"timeChallengeCompleted" = "Time challenge completed!";
+"timeChallengeNotCompleted" = "Time challenge not completed.";
+"timeChallengeNotCompletedEx" = "Time challenge not completed (<time>).";
+/* time left before event ends */
+"timeLeft:" = "Time left:";
+"yourPositionTime:" = "Your position on time leaderboard:";
+"yourPositionScore:" = "Your position on score leaderboard:";
+"starChallengeCompleted" = "Star challenge completed!";
+"oneHourLeft" = "<one> hour left";
+"hoursLeft" = "<number> hours left";
+"oneDayLeft" = "<one> day left";
+"daysLeft" = "<number> days left";
+"updateNeeded" = "Update needed!";
+"versionTooOldForWeeklyDungeon" = "Your game software version is too old! Please update the game in order to play this dungeon.";
+"newBestScore" = "New high score!";
+"newBestTime" = "New best time!";
+/* discord is the name of an online gaming community */
+"discord" = "Discord community";
+"previousChallengeBest" = "Previous Dungeon's top players";
+"postingResults" = "Posting results";
+"previousDungeonLeaderboard" = "Previous Dungeon's Leaderboard";
+"screenShotPromoText0" = "Customize your character!";
+"screenShotPromoText1" = "Epic items";
+"screenShotPromoText2" = "Fast-paced action!";
+"screenShotPromoText3" = "Fast-paced, real-time action!";
+"screenShotPromoText4" = "Collect and enhance epic armor and weapons";
+"screenShotPromoText5" = "Challenge others in Competitive Mode";
+"screenShotPromoText6" = "Massive bosses!";
+"screenShotPromoText7" = "Intense boss fights!";
+"screenShotPromoText8" = "10+ unique classes with mind-blowing special skills!";
+"screenShotPromoText9" = "Mage, Warrior, Rogue and 10+ unique classes!";
+"screenShotPromoText10" = "Captivating story full of twists and turns!";
+"screenShotPromoText11" = "Immersive story full of twists and turns!";
+"screenShotPromoText12" = "Mind-blowing, single player campaign!";
+"shortDescription0" = "Action RPG!";
+"shortDescription1" = "Fast-paced Action RPG!";
+"shortDescription2" = "Fast-paced Action RPG platformer!";
+"shortDescription3" = "Frenetic Action-RPG!";
+"shortDescription4" = "Insane Action-RPG!";
+"weeklytDungeonNotification0" = "This week's Dungeon is out!";
+"weeklytDungeonNotification1" = "This week's Dungeon is out and it brings a special prize!";
+"weeklytDungeonNotification2" = "This week's Dungeon is out! Do you think you can beat it!?";
+"weeklytDungeonNotification3" = "This week's Dungeon ends tomorrow!";
+"weeklytDungeonNotification4" = "This week's Dungeon ends later today!";
+"tellMoreAboutWeeklyDungeons" = "Tell me more about it";
+/* As in: Talk about that */
+"talk" = "Talk";
+/* short for Game Tester */
+"tester" = "Tester";
+/* More casual form of 'Hello!' - Reply to the line 'wcKeeperWelcome-0' */
+"hey" = "Hey!";
+"gameTester" = "Game tester";
+"leadGameTester" = "Lead Game tester";
+/* very short for 'Current best time' */
+"bestTime:" = "Best time:";
+/* very short for 'Current best score' */
+"bestScore:" = "Best score:";
+/* as in: 'This week's dungeon ends soon!' */
+"endsSoon!" = "Ends soon!";
+"enterCompetitiveConfirmation" = "Enter Competitive Mode?";
+"search" = "Search";
+"artDirection" = "Art Direction";
+"levelDesign" = "Level Design";
+"chapters4and5" = "Chapters 4 and 5";
+"weeklyDungeonPrizeTip" = "Being ranked among the top <number> players by the end of a Weekly Dungeon grants you huge Competitive Token prizes.";
+"weeklyDungeonPrizeNotification" = "Congratulations! This week's dungeon has ended and you ranked among the top <number> players!";
+"weeklyDungeonPrizeTipB" = "Being ranked among the top <number> players by the end of a Weekly Dungeon grants exclusive prizes.";
+"secondsIndicatorVeryShort" = "<seconds>s";
+"millisecondsIndicatorVeryShort" = "<milliseconds>ms";
+"attackSpeed" = "Attack speed";
+"attackSpeed:" = "Attack speed:";
+/* cooldown is the time stride between each strike, most gamers recognize it as 'Cooldown' in English: */
+"Cooldown" = "Cooldown";
+"Cooldown:" = "Cooldown:";
+"veryShortTime" = "Very short";
+"shortTime" = "Short";
+"mediumTime" = "Medium";
+"longTime" = "Long";
+"veryLongTime" = "Very long";
+"veryFast" = "Very fast";
+"fast" = "Fast";
+"mediumSpeed" = "Medium";
+"slow" = "Slow";
+"verySlow" = "Very slow";
+"specialOffer" = "Special Offer";
+"specialOffer!" = "Special Offer!";
+"leaveOfferRoomConfirmation" = "Leave the Special Offer?";
+/* To take a special offer (12 characters or shorter please): */
+"takeIt!" = "Take it!";
+"specialOffer-desc" = "Grants a special offer.";
+/* Example: +15 spaces in bag */
+"newBagSlots" = "<green>+<number><white> spaces in bag";
+"leaveSewers" = "Leave sewers";
+"eightYearsAgo" = "Eight years ago...";
+/* as in Score Milestones/Objectives to be achieved */
+"scoreGoals" = "Score Goals";
+"nextScoreGoal:" = "Next Score Goal:";
+"nextScoreGoal" = "Next Score Goal";
+"scoreGoalNotReached" = "Score Goal not reached";
+"scoreGoalReached!" = "Score Goal reached!";
+"numberpoints" = "<number> points";
+/* Eg: 'Incredible Score Goal not reached (600).' (<goal-name> can be anywhere in the middle of this sentence if necessary) */
+"scoreGoalNotReachedNumber" = "<goal-name> Score Goal not reached (<number>).";
+/* goal names below will replace the <goal-name> on the line above */
+"ordinaryGoalName" = "Ordinary";
+"superGoalName" = "Super";
+"amazingGoalName" = "Amazing";
+"epicGoalName" = "Epic";
+"lengedaryGoalName" = "Legendary";
+"pickItemFirst" = "You need to collect all items on the pulpit before purchasing them!";
+"timeChallengeCompletedButEnemiesLeft" = "Time challenge rejected (<enemies> enemies left alive).";
+"fourYearsAfterTheEscape" = "Four years after the escape...";
+/* Screen pad is the name we give to the buttons on screen (derived from gamepad) */
+"screenPadAdjustments" = "Screen Pad adjustments";
+"buttonsSize" = "Buttons size";
+"buttonSize" = "Button size";
+"buttonSizeShort" = "Size";
+"lockButtonPos" = "Lock buttons";
+"lockButtonShort" = "Lock";
+"moveButtons" = "Move buttons";
+"moveButtonsShort" = "Move";
+"restoreDefaultPositionsQ" = "Restore to default button positions?";
+"fourYearsAgo" = "Four years ago...";
+"timeScoreDenied" = "<number> enemies left behind. Time score won't count";
+"timeScoreWontCount" = "Time score won't count.";
+"itemSlotIsEmpty" = "This item slot is empty.";
+/* Skill tree lanes: force, wisdom, courage */
+"force" = "Force";
+"wisdom" = "Wisdom";
+"courage" = "Courage";
+/* List of skill tree's skill names and their descriptions */
+"sword_boost" = "Sword master";
+"sword_boost_desc" = "Boosts passive sword attack power by <number>%.";
+"dagger_boost" = "Dagger specialist";
+"dagger_boost_desc" = "Boosts passive dagger attack power by <number>%.";
+"faster_stamina_regeneration" = "Monstrous vigour";
+"faster_stamina_regeneration_desc" = "Increases stamina regeneration speed.";
+"poisoned_weapons" = "Toxic haze";
+"poisoned_weapons_desc" = "All weapons deal extra <poison>poison<white> damage.";
+"persistent_projectile" = "Obstinate shot";
+"persistent_projectile_desc" = "All weapon projectiles will persist even when struck by other projectiles on the fly.";
+"instant_blow_projectile" = "Corrosive shot";
+"instant_blow_projectile_desc" = "Weapon projectiles will instantly blow up defeated enemies.";
+"charge_blast" = "Charge blast";
+"charge_blast_desc" = "Charge attack that deals <number> times weapon damage.";
+"charge_blast_desc_ex" = "The projectile is able to break enemy shields.";
+"staff_boost" = "Virtuous wizard";
+"staff_boost_desc" = "Boosts passive staff attack power by <number>%.";
+"spear_boost" = "Throwing legend";
+"spear_boost_desc" = "Boosts passive spear attack power by <number>%.";
+"fire_protection" = "Fireproof skin";
+"fire_protection_desc" = "Grants passive protection against <fire>flames<white> and <fire>lava<white>.";
+"loot_magnet" = "Gold magnet";
+"loot_magnet_desc" = "Attracts gold coins and XP dropped by enemies.";
+"spherical_shield_break" = "Spherical shield breaker";
+"spherical_shield_break_desc" = "Weapon projectiles instantly break enemies' spherical shields.";
+"triple_jump" = "Magic jump";
+"triple_jump_desc" = "Gives the ability to perform an extra jump while still in the air.";
+"dark_twin" = "Dark twin";
+"dark_twin_desc" = "Summons a Dark Twin to fight alongside the Dirty Faced Soldier.";
+"hammer_boost" = "Crushing strength";
+"hammer_boost_desc" = "Boosts passive hammer attack power by <number>%.";
+"axe_boost" = "Slicing master";
+"axe_boost_desc" = "Boosts passive axe attack power by <number>%.";
+"higher_potion_heal" = "Monstrous metabolism";
+"higher_potion_heal_desc" = "Potions heal <number> times more.";
+"spike_protection" = "Untouchable skin";
+"spike_protection_desc" = "Passive protection against spikes.";
+"special_spherical_shield" = "Arcane protection";
+"special_spherical_shield_desc" = "Triggering the class's special ability creates a spherical shield.";
+"extra_hearts" = "Enhanced vitality";
+"extra_hearts_desc" = "Increases the maximum number of hearts.";
+"thunder_wave" = "Thunder wave";
+"thunder_wave_desc" = "Summons a wave of lightning bolts that strike all enemies around.";
+"thunder_wave_desc_ex" = "The higher the Armor value, the higher the damage inflicted.";
+"final_wrath" = "Final Wrath";
+"final_wrath_desc" = "Increases sword and dagger damage by <number>% when your health falls below <number-b>%.";
+"final_wrath_desc_dagger" = "Increases dagger damage by <number>% when your health falls below <number-b>%.";
+"final_wrath_desc_sword" = "Increases sword damage by <number>% when your health falls below <number-b>%.";
+"rush_of_the_doomed" = "Rush of the Doomed";
+"rush_of_the_doomed_desc" = "Increases movement speed by <number>% when your health falls below <number-b>%.";
+"overcharge" = "Overcharge";
+"overcharge_desc" = "Grants one additional Charge Blast before cooldown.";
+"overcharge_desc_b" = "Grants <number> additional Charge Blasts before cooldown.";
+"arcane_discipline" = "Arcane Discipline";
+"arcane_discipline_desc" = "Reduces the cooldown time of Super Skills by <number>%.";
+"swift_cast" = "Swift Cast";
+"swift_cast_desc" = "All thrown projectiles travel <number>% faster.";
+"swift_cast_desc_alt" = "Projectiles from Staves, Grimoires, and Spears travel <number>% faster when thrown.";
+"swift_cast_desc_alt_a" = "Projectiles from Staves and Grimoires travel <number>% faster when thrown.";
+"swift_cast_desc_alt_b" = "Projectiles from Staves travel <number>% faster when thrown.";
+"spectral_pierce" = "Spectral Pierce";
+"spectral_pierce_desc" = "All projectiles pierce <number>% of the target's armor, dealing enhanced direct damage to heavily armored foes.";
+"seismic_reach" = "Seismic Reach";
+"seismic_reach_desc" = "Increases the explosion radius of thrown projectiles by <number>%.";
+"titans_push" = "Titan's Push";
+"titans_push_desc" = "Increases the knockback strength of all weapons by <number>%, sending enemies flying even farther.";
+"shockwave_force" = "Shockwave Force";
+"shockwave_force_desc" = "Increases the total area damage dealt by all weapons by <number>%.";
+"airborne_dancer" = "Airborne Dancer";
+"airborne_dancer_desc" = "Grants an extra mid-air jump and enhances aerial attack capabilities.";
+/* Skill tree points left to distribute */
+"pointsLeftToSpend" = "<number> points left to distribute";
+"resetSkillTreePointsButton" = "Reset";
+"resetSkillTreeConfirmation" = "Reset your Skill Tree point distribution for <price>?";
+"passiveBoost" = "Passive boost";
+"skillTreePassiveBoost" = "Specialization boost";
+"faster_stamina_regeneration_desc_alt" = "Increases the stamina regeneration speed by <number>%.";
+"poisonous" = "Poisonous";
+"skillLearned" = "Skill learned";
+"skillLearned!" = "Skill learned!";
+"clickToOpenSkillDesc" = "Tap the icon inside the card to learn more about each skill!";
+"tellMoreAboutSkillTree" = "Tell me more about the Skill Tree";
+"currentVersionIsBanned" = "The version you're currently running (<version>) is deactivated. Please update now!";
+"awake" = "Awake";
+"awake!" = "Awake!";
+"boltAnimationCredits" = "Bolt sprite animation";
+"bloodAnimationCredits" = "Blood sprite animation";
+"fireBallAnimationCredits" = "Fireball sprite animation";
+"dustAnimationCredits" = "Dust sprite animation";
+"writerCreditsEntry" = "Writer";
+"gameplayCoderCreditsEntry" = "Gameplay coder";
+"designerCreditsEntry" = "Designer";
+"gameDesignerCreditsEntry" = "Game designer";
+"coCreatorCreditsEntry" = "Co-creator";
+"directorCreditsEntry" = "Director";
+"coDirectorCreditsEntry" = "Co-director";
+"highResArtistCreditsEntry" = "High-res artist";
+"artDirectorCreditsEntry" = "Art director";
+"levelDesignerCreditsEntry" = "Level designer";
+"characterDesignerCreditsEntry" = "Character designer";
+"characterAnimatorCreditsEntry" = "Character animator";
+"animatorCreditsEntry" = "Animator";
+"managerCreditsEntry" = "Manager";
+"teamManagerCreditsEntry" = "Team manager";
+"programmerCreditsEntry" = "Programmer";
+"productionAssistantCreditsEntry" = "Production assistant";
+"serverSideProgrammerCreditsEntry" = "Server-side programmer";
+"serverSideProgrammingCreditsEntry" = "Server-side programming";
+"spriteArtistCreditsEntry" = "Sprite artist";
+"environmentArtistCreditsEntry" = "Environment artist";
+"communityManagementCreditsEntry" = "Community manager";
+"userSupportCreditsEntry" = "User support";
+"chapter3n4SoundtrackCreditsEntry" = "Chapters 3 and 4 soundtrack";
+"chapter5SoundtrackCreditsEntry" = "Chapter 5 soundtrack";
+"audioDesignerCreditsEntry" = "Audio designer";
+"stealth_boost" = "Shadow camouflage";
+"stealth_boost_desc" = "Common enemies will take longer to detect the Dirty Faced Soldier.";
+"stealth_boost_desc_ex" = "The camouflage fails when other enemies are already aware of their threat's presence.";
+"green_platform_step" = "Confident move";
+"green_platform_step_desc" = "The Dirty Faced Soldier can always step on magic green platforms.";
+"super_persistent_projectile" = "Voracious shot";
+"super_persistent_projectile_desc" = "All weapon projectiles have <number>% chance to cancel enemies' projectiles on the fly.";
+"jump_boost" = "Fearless jump";
+"jump_boost_desc" = "Boosts jump power by <number>%";
+"speed_boost" = "Enhanced velocity";
+"speed_boost_desc" = "Boosts speed by <number>%";
+"armor_boost" = "Unstoppable strength";
+"armor_boost_desc" = "Boosts armor by <number>%";
+"thisAchievementGrantsSkillPoint" = "Unlocking this achievement grants one point to the Skill Tree.";
+"skillTreePoint" = "+<number> Skill Tree point";
+"skillTreePoints" = "+<number> Skill Tree points";
+"pointLeftToSpendSkillTree" = "<number> point left to distribute";
+"pointsLeftToSpendSkillTree" = "<number> points left to distribute";
+"moreSkillPointsSoonText" = "More skill points will be available in upcoming updates!";
+"skillTreePointsFull" = "Skill Tree Points";
+"skillTreePointsShort" = "Skill Points";
+"totalSkillTreePoints" = "<number> total points";
+"yourSkillTreePoints" = "Your skill points:";
+"visitTheSkillTree" = "Visit the Tree of Skills to use your points";
+"cantUsePotionInWeeklyHard" = "Can't use potions on <hard>Hard<white> difficulty!";
+"waitingSlowCreditCard" = "Waiting to complete transaction...";
+"transactionCancelled" = "Transaction cancelled";
+"signInBeforePurchasePrompt" = "That's great! We see that you are signed in with your <service> account. All your progress, including your purchases, will be automatically synced across all your devices as soon as you sign in!";
+"awesomeThanks" = "Awesome, thanks!";
+"notSignedInBeforePurchasePrompt" = "It looks like you're not signed in with your <service> account at the moment. Sign in to have all your progress synced to the cloud, including your purchases.";
+"noThanks" = "No, thanks";
+"Magic Rampage!" = "Magic Rampage!";
+"meanwhileTitle" = "Meanwhile...";
+"welcomeBack" = "Welcome back!";
+"superSkillHowTo" = "Press and hold <green>¶<white> (<green>Attack<white>) for <us-time> seconds to cast the Super Skill.";
+"superSkillHowToSwitchTap" = "Tap the Super Skill icon to switch to another one.";
+/* The tag 'Frost' will describe an item that can freeze enemies. Could be translated as 'something that freezes other things' */
+"frost" = "Frost";
+"immuneAgainstFrost" = "Immune against frost";
+/* Name of monster based on the D&D lore */
+"beholder" = "Beholder";
+"cyclops" = "Cyclops";
+/* Name of a giant robot-like monster that walks like it is marching */
+"walker" = "Walker";
+/* Name of a giant orc-like wizard monster */
+"vindicator" = "Vindicator";
+/* Name of a square rock shaped monster (no legs an no arms) */
+"demon-stomper" = "Demon Stomper";
+"wdgPctWinRewardTitleScore" = "Top <percentage>% best scores in the Weekly Dungeon!";
+"wdgPctWinRewardPushScore" = "Congratulations! You scored among the <percentage>% top players in the last Weekly Dungeon! There's a reward waiting for you in the Prize Room!";
+"wdgPctWinRewardTitleTime" = "Top <percentage>% fastest players in the Weekly Dungeon!";
+"wdgPctWinRewardPushTime" = "Congratulations! You were among the <percentage>% fastest players in the last Weekly Dungeon! There's a reward waiting for you in the Prize Room!";
+"finishDungeon" = "Finish dungeon";
+"openPortal" = "Open portal";
+"ice-golem" = "Ice Golem";
+"privacySettings" = "Privacy settings";
+"purchaseConfirmed" = "Purchase confirmed";
+"monthJanuary" = "January";
+"monthFebruary" = "February";
+"monthMarch" = "March";
+"monthApril" = "April";
+"monthMay" = "May";
+"monthJune" = "June";
+"monthJuly" = "July";
+"monthAugust" = "August";
+"monthSeptember" = "September";
+"monthOctober" = "October";
+"monthNovember" = "November";
+"monthDecember" = "December";
+"season" = "Season";
+"seasonPoints" = "Season Points";
+"seasonPointsColon" = "Season Points:";
+/* E.g.: April Season 2022, Christmas Season 2023, Fire Season 2024*/
+"seasonOf" = "<season-title> Season <year>";
+/* E.g.: You achieved the rank of Platinum 123 */
+"youAchievedTheRank" = "You achieved the rank of <rank>";
+"claimSeasonPoints" = "Claim my Season Points";
+"skinAreaTitle" = "Hero's Chamber";
+"seasonPointsAndSkins" = "Season Points and Skins";
+"exchange" = "Exchange";
+"exchangeColon" = "Exchange:";
+"price" = "Price";
+"priceColon" = "Price:";
+"exchangeFor" = "Exchange for <sp-number> Season Points";
+"exchangeForSkinConfirmationConfirm" = "Exchange <sp-number> Season Points for <skin-name>?";
+"exchangeForSkinConfirmationConfirmEx" = "Exchange <sp-number> Season Points for the <class-name>'s skin <skin-name>?";
+"notEnoughSeasonPoints" = "You don't seem to have enough Season Points!";
+"grimoire" = "Grimoire";
+"seasonEndNotification" = "A new competitive season has started! Log in to redeem your prize!";
+"loadingArcaneMagic" = "Loading arcane magic...";
+"loadingArcaneMagicFailed" = "Our arcane magicians are all busy. Please try again.";
+"extraSeasonPoints" = "Extra Season Points";
+"extraSeasonPointsShort" = "Extra Points";
+"seasonPointsProductDesc" = "Immediately grants <number> Season Points.";
+/* the Rampage mode is the name of the New Game+ modality. It can keep its name untranslated (eg: Modo Rampage in portuguese) unless it would look too odd on the target language */
+"newGamePlus" = "Rampage";
+"newGamePlusPrompt" = "You can now start a new game on <new-game-plus> mode!";
+"newGamePlusDesc" = "On <new-game-plus> mode all enemies are tougher, potions can't be used and revive costs are higher.";
+"newGamePlusRewardDesc" = "Finish <new-game-plus> mode with 100% completion or more to get exclusive legendary items!";
+"startNewGamePlus" = "Rampage Mode";
+"startNewGameStd" = "Standard new game";
+"cantWithdrawBankNewGamePlus" = "You can't withdraw items on <new-game-plus> mode.";
+"newGamePlusHowTo" = "You can play on <new-game-plus> mode simply by starting a new game from an empty slot.";
+"tavern" = "Tavern";
+"switchSuperSkill" = "Switch Super Skill";
+"keyboardSettings" = "Keyboard settings";
+"useAction" = "Use/Action";
+"moveLeft" = "Move left";
+"moveRight" = "Move right";
+"goToCharacterEditorConfirm" = "You've just acquired a new skin! You can equip custom skins in the <characterEditor> screen!";
+"goToCharacterEditor" = "Go to <characterEditor>";
+"stayHere" = "Stay here";
+"prizesAndSkinsButtonFace" = "Prizes and Skins";
+"checkingBankStatus" = "Checking bank status...";
+"bankConnectionFailure" = "Connection failure!";
+"bankConnectionRetrying" = "Retrying...";
+"loadingLegacyBankVault" = "Loading legacy bank vault...";
+"transferingWealth" = "Transferring wealth to new location...";
+"notLoggedForBankMessage" = "You must be signed in to <service> in order to access the bank.";
+"retrievingWealthInventory" = "Retrieving wealth inventory...";
+"purchaseBankSlotConfirmationPrompt" = "Purchase one extra bank slot for <price>?";
+"purchaseBankSlotsConfirmationPrompt" = "Purchase <number> extra bank slots for <price>?";
+/* The <<sign in>> verb may be changed to express the meaning of <<enter the game>> */
+"seasonEndNotificationEx" = "A new competitive season has started and you've earned <number> Season Points! Sign in to redeem your prize!";
+"lastWeekToGetSkins" = "It's the last week to get the current skins from the Prize Room! Don't miss the chance to get your favorite ones!";
+"lastWeekToGetSkinsEx" = "It's the last week to get the current skins from the Prize Room! New ones will replace them soon. Don't miss the chance to get your favorite ones!";
+"lastDaysToGetSkins" = "Last days to get the current skins from the Prize Room! Don't miss the chance to get your favorite ones!";
+"lastDaysToGetSkinsEx" = "Last days to get the skins from the Prize Room! New ones will replace them soon. Don't miss the chance to get your favorite ones!";
+"cantWithdrawBankNewGamePlusUntil102" = "You can't withdraw items on <new-game-plus> mode until you reach 102% completion.";
+"hallowitch" = "Hallowitch";
+"tombstone-mimic" = "Tombstone Mimic";
+"disconnectedFromServer" = "Disconnected from the server.";
+"reconnect" = "Reconnect";
+"leaveTavernConfirmation" = "Leave tavern?";
+"stillLoadingCredentials" = "Loading player credentials... please try again.";
+/* 'To inspect a player' means having a look at their currently equipped items and stats (to examine their stats). Ideally not longer then 12 letters */
+"inspect" = "Inspect";
+/* 'To duel a player' means fighting against them in a 1v1 PvP match. Ideally not longer than 8 letters */
+"duel" = "Duel";
+/* Same as above but including 'Player vs Player' in order to be more comprehensive. Ideally not longer than 12 letters */
+"duelPvP" = "PvP Duel";
+/* 'To team up for an arena match means inviting another player to your team on a new PvP team deathmatch */
+"teamUpArena" = "Team up for the Arena";
+"teamUpArenaShort" = "Arena team up";
+"teamUpArenaLong" = "Team up for the Arena match";
+"friendDuelComingSoon" = "Duels against friends will be available soon!";
+"messageTo" = "To <player-name>:";
+/* <service> may be replaced by Google Play Games, Game Center or Steam */
+"sessionFlushNotification" = "<service> account switched to <display-name>";
+"about-play-pass-0" = "Magic Rampage is now available on Google Play Pass! Subscribe and enjoy this enchanted world without any ads or in-app purchases [1].";
+"about-play-pass-1" = "Players with the Play Pass experience will automatically gain access to all skins, receive gold and coin rewards with up to 3x boost, and enjoy up to 50% discounts on all items in the in-game shop [2].";
+"about-play-pass-2" = "[1] There will be no changes to the game if you're not part of the Google Play Pass program.";
+"about-play-pass-3" = "[2] All in-app purchases are removed from the game for Play Pass subscribers.";
+"subscribePlayPass" = "Subscribe now!";
+"congratulationsExcl" = "Congratulations!";
+"wellDoneExcl" = "Well done!";
+"scorePrizeRewardPush" = "Bravo! Your score in last week's Dungeon secured you the position <pos> out of <total> players! A fantastic prize awaits you in the Prize Room!";
+"timePrizeRewardPush" = "Bravo! Your time score in last week's Dungeon secured you the position <pos> out of <total> players! A fantastic prize awaits you in the Prize Room!";
+"weeklyDungeonPosition" = "Weekly Dungeon reward: position <pos> out of <total>";
+"lastDaysToGetSkinsRecall" = "Last days to get the skins from the Prize Room! A collection of the most popular skins from previous seasons will be available soon!";
+/* the player asks the Taverns innkeeper what beverages are served (allowed to get quite colloquial): */
+"tavernShopButton" = "What have you got?";
+"whichFriendBuyDrinkFor" = "Which one of your comrades would you like to buy a flask of <item-name> for?";
+"whichFriendBuyDrinkForShort" = "Buy a flask of <item-name> for...";
+"noFriendsOnlineToBuyDrinkFor" = "You have no friends in the Tavern to buy power-ups for right now.";
+"playerNoLongerInTavern" = "<player-name> is no longer in the Tavern!";
+"socialFeedItemPurchaseInTavern" = "<purchaser-name> bought a flask of <item-name> to <target-name>!";
+"socialFeedPlayerEntered" = "<player-name> walked into the Tavern.";
+"socialFeedPlayerLeft" = "<player-name> left the Tavern.";
+"socialFeedEmoteSentToOther" = "<sender-name> to <target-name>: <emote-text>";
+"socialFeedEmoteSent" = "<sender-name>: <emote-text>";
+"socialFeedPowerUpUsed" = "<sender-name> had a flask of <item-name>";
+"playerSilencedNotification" = "<player-name> is now silenced.";
+"playerUnsilencedNotification" = "<player-name> is no longer silenced.";
+"playDarts" = "Play Darts";
+"playDartsExcl" = "Play Darts!";
+"playAgain" = "Play again";
+"playAgainExcl" = "Play again!";
+"yourGreatestScore" = "Your greatest score: <score>";
+"currentGreatestScore" = "Current greatest: <score>";
+"yourCurrentHighestScore" = "Your current highest score: <score>";
+"dartsMinigameScoreUpdate" = "<player-name> scored <score> points in the <game-name> game!";
+/* Darts is the name of the dart throwing minigame */
+"darts" = "Darts";
+/* Salesmans Smackdown is the name of a game that consists of hitting a dummy disguised as the Salesman character */
+"smackdown" = "Salesman's Smackdown";
+"smackdownMinigameScoreUpdate" = "<player-name> scored <score> points in the <game-name> game!";
+/* Arena is the name of a PvP mode */
+"arenaModeName" = "Arena";
+"serverMaintenanceNotification00" = "We're performing server maintenance. This may result in occasional instability. We appreciate your understanding.";
+"serverMaintenanceNotification01" = "Maintenance work is in progress on our servers. We apologize for any inconvenience and are working to complete this as quickly as possible.";
+"serverMaintenanceNotification02" = "We're conducting server maintenance. This might cause some short-term service irregularities. Your patience is greatly appreciated.";
+"chooseAComradeFirst" = "Oops! Looks like you forgot to choose a comrade. Please select one to proceed.";
+"fileCorruptionDetected" = "It seems that one or more game files are corrupted. Please uninstall the game and re-download it from the official store to resolve the issue.";
+"duelAnnouncement0" = "Prepare for glory, <class>! A Duel has been set before you!";
+"duelAnnouncement1" = "The gauntlet has been thrown! Will you rise to the Duel?";
+"duelAnnouncement2" = "A challenger approaches! Claim victory in the Duel!";
+"duelAnnouncement3" = "You have been summoned to an epic Duel!";
+"duelAnnouncement4" = "The Duel of fates is upon you!";
+"duelAnnouncement5" = "Ready yourself, <class>! A Duel calls your name!";
+"duelAnnouncement6" = "The time for battle is now! The <other-class> called you to the grand Duel.";
+"duelAnnouncement7" = "Hear the crowd roar - you've been chosen for a heroic Duel!";
+"duelAnnouncement8" = "Destiny calls - the Duel of honor demands your valor, <class>!";
+"duelAnnouncement9" = "You've been selected for a Duel against this <other-class>!";
+"duelWaitMessage0" = "Waiting this <class>'s valorous acceptance for the Duel to commence!";
+"duelWaitMessage1" = "A hush falls over the crowd as we await the <class>'s courageous response!";
+"duelWaitMessage2" = "The Duel's acceptance hangs in the balance!";
+"duelWaitMessage3" = "Waiting for the <class> to step forward and accept the challenge!";
+"duelWaitMessage4" = "The crowd holds their breath, awaiting the <class>'s acceptance to the Duel!";
+"duelWaitMessage5" = "Anticipation builds as the <class> ponders the call to Duel!";
+"duelChallengeCancelled" = "The challenger has withdrawn from the Duel's call!";
+"duelChallengeDeclined" = "The opponent has retreated from the clash you proposed.";
+"duelChallengeNotAvailableBusy" = "Hold your spells! <player-name> already has another pending duel to settle.";
+"duelChallengeNotAvailableShop" = "Hold on! <player-name> is currently checking out the tavern's goods.";
+"duelChallengeNotAvailableMisc" = "Hold your challenge! <player-name> is unavailable for a duel right now.";
+"cantShopDuringPendingDuel" = "Duel first, shop later! The tavern shop is locked while you have a duel pending.";
+"leaveDuelConfirmation" = "Leave duel?";
+"leaveDuelConfirmation0" = "Surrender to your fate?";
+"leaveDuelConfirmation1" = "Yield to your rival?";
+"leaveDuelConfirmation2" = "Abandon the fight?";
+"surrender" = "Surrender";
+"yield" = "Yield";
+"abandon" = "Abandon";
+"opponentDisconnectedVictory" = "Enemy connection severed - victory is yours!";
+"playerDisconnectedVictory" = "<player-name>'s connection severed - victory is yours!";
+"opponentDisconnectedDestiny" = "Enemy connection severed - destiny sealed!";
+"playerDisconnectedDestiny" = "<player-name>'s connection severed - destiny sealed!";
+"opponentHasFled" = "Opponent has fled the battle!";
+"playerNameWins" = "<player-name> wins";
+"playerNameWinsExcl" = "<player-name> wins!";
+"playerNameDefeated" = "<player-name> was defeated";
+"playerNameDefeatedExcl" = "<player-name> was defeated!";
+"flawlessVictory" = "Flawless Victory";
+"flawlessVictoryExcl" = "Flawless Victory!";
+"sideSip" = "Side Sip";
+"downloadingDuelArenaScene" = "Downloading duel arena...";
+"duelArenaSceneLoaded" = "Duel arena loaded.";
+"couldntLoadDuelArenaScene" = "Couldn't load duel arena.";
+"couldntLoadDuelArenaSceneTryAgain" = "Couldn't load duel arena. Please try again.";
+"duelArenaSceneLoadingFailed" = "Duel arena loading failed.";
+"downloadingResources" = "Downloading resources...";
+"resourcesDownloaded" = "Resources downloaded.";
+"couldntDownloadResources" = "Couldn't download resources.";
+"couldntDownloadResourcesTryAgain" = "Couldn't download resources. Please try again.";
+"resourceDownloadFailed" = "Resource download failed.";
+"cheaterNoticeOnlineFeatures" = "Irregular activity has been detected on your account. Some online multiplayer features may not work as expected.";
+"fileCorrupted" = "Corrupted file";
+"fileIncomplete" = "Incomplete file";
+"fileIsInvalid" = "Invalid file";
+"invalidMatchChallenger" = "Could not complete match. Challenger not found!";
+"invalidMatchChallengedPlayer" = "Could not complete match. Challenged player not found!";
+"duelUnknownError" = "Something went wrong. Our arcane magicians are already looking into it.";
+"cantChallenge" = "Hold your spells! You already have a pending Duel.";
+"rankedDuels" = "Ranked Duels";
+"rankedDuelsModeName" = "Duels of Destiny";
+"newCombatZonesSoon" = "More Combat Zones Coming Soon!";
+"inTheDuelZone" = "You're in the Duel Zone. Players in this area can be challenged to Duels!";
+"mustBeInTheDuelZone" = "Step into the Duel Zone to challenge other players!";
+"abortStateMessageContactSupport" = "An issue has been detected while running the match. Please contact support if this problem persists.";
+/* as in `Immune against damage` */
+"immune" = "Immune";
+"incompatibleForDuels" = "Game version is incompatible. Can't play Duel against this player!";
+"combatZone0" = "Chamber of the Watchers";
+"combatZone1" = "Fortress of the Swamp";
+"duelsInMaintenanceComingBackSoon" = "We're conducting maintenance in the Duel servers. Duels are going to be unavailable until later this week. Your patience is greatly appreciated.";
+"duelsInMaintenanceComingBackSoonB" = "We're conducting maintenance in the Duels. They will be back in an upcoming update within the next few hours. Your patience is greatly appreciated!";
+"combatZone2" = "Tower of the Forgotten";
+"cantAddMoreFriends" = "You can't add more friends.";
+"cantAddMoreFriendsA" = "You can't add more friends. The maximum number of friends has been reached.";
+"cantAddMoreFriendsB" = "You can't add more friends. Remove some to make room for new ones.";
+"cantAddMoreFriendsAB" = "The maximum number of friends has been reached. Please remove some to make room for new ones.";
+"duelRankIron" = "Sentinel";
+"duelRankBronze" = "Master Sentinel";
+"duelRankSilver" = "Grandmaster Sentinel";
+"duelRankGold" = "Time Traveller";
+"duelRankPlatinum" = "Time Patroller";
+"duelRankDiamond" = "Cosmic Patroller";
+/* Name of the 'Duel Mode' or simply 'Duels' */
+"duelMode" = "Duels";
+"cantChallengeDuringMatchmaking" = "You can't duel other players while waiting for a ranked match!";
+"waitingForOpponent" = "Waiting for your opponent to join...";
+"connectingToServerFun" = "Establishing a connection to the realms of Magic Rampage...";
+"lifetimeRankScore" = "Eternal Heroic Score";
+"lifetimeRankScoreDisplay" = "Eternal Heroic Score: <number>";
+"aboutLifetimeRankScore1" = "The Eternal Heroic Score represents the total amount of rank points you've accumulated across all seasons in all the competitive modes.";
+"aboutLifetimeRankScore2" = "It's a permanent, cumulative record of your achievements, showcasing your dedication and skill in Magic Rampage over time.";
+"aboutLifetimeRankScore3" = "Unlike seasonal rank points, which reset at the end of each season, the Eternal Heroic Score keeps growing as you play, providing a way to track your lifetime progress.";
+"aboutLifetimeRankScore4" = "Use it to compare your journey with other players and see how far you've come as a true champion of Magic Rampage!";
+"aboutLifetimeRankScoreE" = "We're also planning more exciting uses and exclusive perks for players with high Eternal Heroic Scores in future updates, so stay tuned!";
+"seasonPointsProductDescAlt" = "Immediately grants extra Season Points.";
+/* western version of Japanese names (please leave as is unless target language has regional specifics for Japanese)  */
+"OnTakahashi" = "On Takahashi";
+"MiyokoMatsuyama" = "Miyoko Matsuyama";
+"tellMoreAboutDuelsA" = "Tell me more about Duels";
+"tellMoreAboutDuelsB" = "Duels?";
+"tellMoreAboutDuelsC" = "Duels Guide";
+"tellMoreAboutDuelsD" = "Learn About Duels";
+"tellMoreAboutDuelsE" = "What Are Duels?";
+"tavernAndDuelsButton" = "Tavern and Duels";
+"seekingOpponentA" = "Seeking a worthy opponent...";
+"seekingOpponentB" = "Finding opponent...";
+"privacyPolicy" = "Privacy policy";
+"enterPortal" = "Enter Portal";
+"stepThrough" = "Step through";
+"proceed" = "Proceed";
+"continue" = "Continue";
+"advance" = "Advance";
+"enter" = "Enter";
+"stepIn" = "Step In";
+"go" = "Go";
+"forward" = "Forward";
+"next" = "Next";
+"stepIntoCombatZones" = "Step into the Combat Zones";
+"exploreCombatZones" = "Explore the Combat Zones";
+"dirtyFacedMinion" = "Dirty Faced Minion";
+"duelTutorialQuestion" = "Would you like to learn more about the Combat Zones first?";
+/* how it'll appear in game: +20% hammer and mace damage */
+"hammerAndMaceBoostTitle" = "hammer and mace damage";
+/* how it'll appear in game: +20% staff and grimoire damage */
+"staffAndGrimoireBoostTitle" = "staff and grimoire damage";
+"stavesAndGrimoires" = "Staves and Grimoires";
+"staffAndGrimoire" = "Staff and Grimoire";
+"hammersAndMaces" = "Hammers and Maces";
+"hammerAndMace" = "Hammer and Mace";
+/* Example: of a player wins 3 matches in a row, they are on a 3-win streak */
+"winningStreak" = "Win streak";
+"winningStreakExcl" = "Win streak!";
+"winningStreakBonus" = "Win streak bonus";
+"winningStreakBonusExcl" = "Win streak bonus!";
+"opponentHasLowerVersion" = "Your opponent is using an older version. Some new skills and features may be unavailable during this match.";
+"and" = "and";
+/* Magic ID is a randomly generated, six-letter code that uniquely identifies each player. */
+/* You may keep the name in English if it feels appropriate, but feel free to apply stylistic adjustments or localization if it better fits the target language. */
+"magicIdName" = "Magic ID";
+"aboutMagicIdShort" = "Your Magic ID is a unique 6 to 8-letter code linked to your account.";
+"aboutMagicIdEx" = "Use it to identify your profile when contacting support or connecting with friends.";
+"magicIdCopied" = "Magic ID copied to clipboard!";
+"gamepadRequiredMessage" = "Magic Rampage requires a compatible gamepad. Please connect one to continue.";
+"gamepadRequiredMessageEx" = "To play Magic Rampage, please connect a gamepad or pair a controller, then restart the game.";
+"opponentHasLowerVersionShort" = "Your opponent is using an older version";
+"updateToPlayRankedDuels" = "To play Ranked Duels, please update your Beta version.";

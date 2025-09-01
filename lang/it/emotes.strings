@@ -1,0 +1,54 @@
+"basic_greetings_0" = "Ciao!";
+"basic_wow_0" = "Wow!";
+"basic_thanks_0" = "Grazie!";
+"basic_you_look_awesome_0" = "Stai una meraviglia!";
+"basic_your_build_is_awesome_0" = "Il tuo arsenale è spettacolare!";
+"basic_very_funny_0" = "Che ridere!";
+"basic_look_at_me_0" = "Guardami!";
+"basic_good_job_0" = "Ottimo lavoro!";
+"basic_bye_0" = "Arrivederci!";
+"basic_not_funny_0" = "Non è divertente...";
+
+"basic_lets_play_0" = "Giochiamo!";
+"basic_cheers_0" = "Salute!";
+"basic_im_thirsty_0" = "Ho tanta sete...";
+"basic_yes_0" = "Sì!";
+"basic_no_0" = "No!";
+"basic_wait_0" = "Aspetta...";
+
+"special_inspect_0" = "Vediamo...";
+
+"duel_gg" = "GG";
+"duel_that_was_close" = "C'eri quasi!";
+"duel_that_was_intense" = "È stato emozionante!";
+"duel_fight_like_that" = "Chi ti ha insegnato a combattere così?";
+"duel_worthy_opponent" = "Sarà dura batterti!";
+"duel_play_again" = "Scontriamoci nuovamente!";
+
+"premium_not_cool_0" = "Non va per niente bene...";
+"premium_i_look_awesome_0" = "Sto una favola!";
+"premium_do_i_look_cool_0" = "Non sto una meraviglia?";
+"premium_my_build_is_awesome_0" = "Il mio arsenale è spettacolare!";
+
+"premium_glorify_ranger_0" = "I ranger spaccano!";
+"premium_glorify_druid_0" = "I druidi sono forti!";
+"premium_glorify_mage_0" = "I maghi sono mitici!";
+"premium_glorify_priest_0" = "I preti sono epici!";
+"premium_glorify_black-mage_0" = "I maghi neri dominano!";
+"premium_glorify_rogue_0" = "I malviventi sono dei grandi!";
+"premium_glorify_warlock_0" = "Gli stregoni sono i più forti!";
+"premium_glorify_thief_0" = "I ladri dominano!";
+"premium_glorify_paladin_0" = "I paladini sono epici!";
+"premium_glorify_warrior_0" = "I guerrieri dominano!";
+"premium_glorify_high-mage_0" = "Il mago possente è grande!";
+"premium_glorify_elite-warrior_0" = "Il guerrierio d'élite spacca!";
+"premium_glorify_witchdoctor_0" = "Lo sciamano è leggendario!";
+
+"achievement_100pct" = "Ho già raggiunto il 100%!";
+"achievement_101pct" = "Ho già raggiunto il 101%!";
+"achievement_102pct" = "Ho completato il 102%!";
+"achievement_dragonslayer" = "Sono l'ammazzadraghi!";
+"achievement_dirtyfacedsouls" = "Ho raggiunto il 100% in modalità Rampage!";
+"achievement_the_king" = "Ho raggiunto il 102% in modalità Rampage!";
+"achievement_champion" = "Un campione è caduto al mio cospetto!";
+"achievement_top1" = "Ho raggiunto la vetta della Hall of Champions!";

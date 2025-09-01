@@ -1,0 +1,1336 @@
+"dungeon" = "ダンジョン";
+"Dungeon" = "ダンジョン";
+"pressStart" = "PRESS START";
+"pressStartAndroidTV" = "START";
+"equip" = "装備";
+"trash" = "破棄";
+"exit" = "出る";
+"sell" = "売却";
+"buy" = "購入";
+"more" = "詳しく";
+"newsletter" = "ニュースレター";
+"tips" = "ヒント";
+"moreGold" = "ゴールドが足りない！";
+"damage" = "ダメージ";
+"armor" = "防御力";
+"equipped" = "装備中";
+"trashItemConfirmation" = "以下のアイテムを破棄します：\n'";
+"sellItemConfirmation" = "以下のアイテムを売却します：\n<item> 売値は <gold>ゴールドです";
+"trashCharacterConfirmation" = "以下のスロットの\nキャラクターを削除します、よろしいですか？：スロット <slot>";
+"reviveConfirmation" = "<price> を支払ってキャラクターを復活させますか？\n所持ゴールド：<gold>";
+"yes" = "はい";
+"no" = "いいえ";
+"notNow" = "後で";
+/* quitting the game means leaving or exiting from the app */
+"quitGameConfirmation" = "ゲームを終了しますか？";
+"restartGameConfirmation" = "リスタートしますか？";
+"leaveGameWarning" = "本ダンジョンで集めたアイテムは失われます";
+"quit" = "終了";
+"resume" = "再開";
+"restart" = "リスタート";
+"loading" = "読み込み中";
+"slot" = "スロット";
+"slotSelect" = "スロット選択";
+"newGame" = "新しいゲーム";
+"head" = "頭";
+"eyes" = "目";
+"color" = "色";
+"body" = "体";
+"createCharacter" = "キャラクター作成";
+"playNow" = "プレイ！";
+"play" = "プレイ";
+"shop" = "ショップ";
+/* Increases magic power by 20% */
+"increases" = "強化";
+/* Decreases jump impulse by 20% */
+"decreases" = "弱化";
+/* Increases speed by 20% */
+"byPct" = "：";
+"use" = "使用";
+"retry" = "リトライ";
+"revive" = "復活";
+"skip" = "スキップ";
+"cantUse" = "今は使えません";
+"cantAttack" = "攻撃できない！";
+"bagFull" = "荷物がいっぱいだ！ アイテムを売却してスペースを確保しよう";
+"notEnoughMoney" = "ゴールドが足りません！";
+/* End of Dungeon 1 - 3 */
+"endOf" = "達成！";
+/* Secret areas discovered: 2 of 3 */
+"of" = "/";
+"chapter" = "チャプター";
+"Chapter" = "チャプター";
+"bonus" = "ボーナス";
+"bonusLevel" = "ボーナスダンジョン！";
+"Bonus" = "ボーナス";
+"element" = "魔法属性";
+"part" = "ダンジョン";
+"Part" = "ダンジョン";
+"secretAreaDiscovered" = "隠しエリア発見！";
+"secretAreasDiscovered:" = "隠しエリア";
+/* Gold collected 300 */
+"gold:" = "収集したゴールド";
+/* Enemies killed: 30 */
+"enemiesKilled:" = "撃破した敵の数";
+"achievementUnlocked" = "実績解除";
+"inventorySell" = "売却";
+"login" = "サインイン";
+"logout" = "サインアウト";
+"chapterComingSoon" = "新ダンジョンが\n間もなく登場！";
+"chapterComingSoonText" = "次のアップデートで<strong>新ダンジョン</strong>や<strong>新ゲームモード</strong>が追加されます、お楽しみに！";
+"loginRecommendation" = "<default>初めて<strong>Magic Rampage<default>をプレイしてからしばらく経過しています　この機会に<login>サインイン<default>してみましょう\n\n<weak><login><service><weak>によってキャラクターの<strong>クラウド<weak>への保存、<strong>実績<weak>の閲覧、オンラインによるフレンドを含む<strong>リーダーボード<weak>の確認が可能になります！";
+"complete100pct" = "お待ちいただいている間に、過去クリアしたダンジョンの達成率を100%にする挑戦をしてみてください";
+"ok" = "OK！";
+"achievements" = "実績";
+"leaderboards" = "リーダーボード";
+"credits" = "クレジット";
+"facebook" = "Facebookページ";
+"gameDesignAndProgramming" = "ゲームデザイン＆プログラミング";
+"production" = "プロダクション";
+"programming" = "プログラミング";
+"twoDArtDirection" = "2Dアートディレクション";
+"twoDArt" = "2Dアート";
+"specialThanksTo" = "スペシャルサンクス";
+"fireElement" = "火";
+"earthElement" = "地";
+"waterElement" = "水";
+"iceElement" = "氷";
+"darknessElement" = "闇";
+"airElement" = "風";
+"lightElement" = "光";
+"expansionApkRequiredText" = "追加データをダウンロードしています、お待ちください";
+"downloaded" = "ダウンロード完了";
+"not-downloaded" = "未ダウンロード";
+"unknown" = "不明";
+"waiting" = "待機中…";
+"lvl-check-required" = "レベルチェックが必要です";
+"download-required" = "ダウンロードが必要です";
+"completed" = "完了";
+"connecting" = "接続中…";
+"downloading" = "ダウンロード中";
+"failed" = "失敗";
+"failed-canceled" = "キャンセル済み";
+"failed-fetching-url" = "URLの取得に失敗しました";
+"failed-sdcard-full" = "失敗：SDカードに空きがありません";
+"failed-unlicensed" = "失敗：ライセンスがありません";
+"connected" = "接続完了";
+"transactionSuccessful" = "処理が完了しました";
+"billUserCanceled" = "ユーザーによってキャンセル";
+"billBillingUnavailable" = "決済が利用できません";
+"billItemUnavailable" = "利用できないアイテムです";
+"billDeveloperError" = "開発エラー";
+"billError" = "不明のエラー";
+"billItemAlreadyOwned" = "所持済みアイテム";
+"billItemNotOwned" = "未所持アイテム";
+"billRemoteException" = "リモートエクセプション";
+"billBadResponse" = "レスポンス不良";
+"billVerificationFailed" = "確認失敗";
+"billSendIntentFailed" = "送信失敗";
+"billUnknownPurchaseResponse" = "不明な購入";
+"billMissingToken" = "トークンなし";
+"billSubscriptionsNotAvailable" = "サブスクリプションが利用できません";
+"billInvalidConsumption" = "無効な購入";
+"ring" = "指輪";
+"artifact" = "遺物";
+"enemyLeft" = "<number>体の敵が残存";
+"enemiesLeft" = "<number>体の敵が残存";
+/* as in '3 enemies left behind. Star denied.' */
+"starDenied" = "スターなし";
+"immersive" = "イマーシブモード";
+"enabled" = "有効";
+"disabled" = "無効";
+"goldBonus:" = "ボーナス ÷";
+"logoutConfirmation" = "サインアウトして\nよろしいですか？";
+"upgrades" = "強化";
+"chooseRune" = "ルーンを選択してください：";
+"youHaveNoRunes" = "ルーンを所持していません！";
+"noCompatibleItem" = "対応するアイテムがありません！";
+"chooseItem" = "強化するアイテムを選択してください：";
+"starBonus:" = "ボーナス §";
+"Localization" = "ローカライゼーション";
+"spanish" = "スペイン語";
+"french" = "フランス語";
+"portuguese" = "ポルトガル語";
+"music" = "ミュージック";
+"audio" = "オーディオ";
+"soundtrack" = "サウンドトラック";
+"chapter3Soundtrack" = "チャプター3＆4 サウンドトラック";
+"chapter5Soundtrack" = "チャプター5 サウンドトラック";
+"waitHere" = "ここで待て";
+"followMe" = "ついてこい";
+"reviveNPC" = "復活させろ";
+"survivalComingSoon" = "サバイバルモード、\n近日配信！";
+"survivalSoon" = "サバイバルモード (間もなく登場)";
+"survivalTitle" = "サバイバルモード";
+"soundEffects" = "サウンドエフェクトデザイン";
+"drawingAndAnimation" = "ドローイング＆キャラクターアニメーション";
+"screenplay" = "シナリオ";
+"toBeContinued" = "To be continued...";
+"menu" = "メニュー";
+"buyFullGame" = "<green><price></green>を支払うことで全編遊べるようになります<strong>最高</strong>の冒険をあなたの手に！";
+"killCount" = "<number> キル";
+"waitForNewChapter" = "新たなチャプターも\nお楽しみに！";
+"newHighScore" = "ハイスコア更新！";
+"survivalSelect" = "ダンジョン選択";
+"survivorScore" = "サバイバルスコア： <score>";
+"stayTunedForMore" = "新たなダンジョンやチャレンジ\nを今後追加予定！";
+"stayTunedForMoreContent" = "さらなる追加コンテンツも\nお楽しみに！";
+"google" = "Google Play Games";
+"game-center" = "Game Center";
+"steam" = "Steam";
+"forced" = "Asantee";
+"no-icloud-drive-error" = "<gray><white>iCloud Drive<gray>が<red>無効となっています<gray>有効にすることでゲームの進捗を<white>iCloud<gray>に保存できます";
+"prizeRoom" = "報酬の間";
+"noPrizeAvailable" = "報酬がありません";
+"rewardFor" = "実績の報酬を獲得：";
+"stale-data-warning" = "<gray>クラウド上のデータをロードできませんでした　スロットに無効なデータが含まれている可能性があります";
+"unsaved-progress-warning" = "<gray>クラウドにセーブを保存できませんでした　インターネット接続を確認してください";
+"versusMode" = "バーサスモード";
+"characterEditor" = "キャラクター編集";
+"changeCharacterConfirmation" = "<price>の変更を適用しますか？";
+"roundNumber" = "ラウンド <number>";
+"fight!" = "Fight!";
+"playerWins" = "プレイヤー<number>の勝利！";
+"fightTimeOut" = "タイムアウト";
+/* Empate! */
+"draw" = "ドロー!";
+"finalRound" = "最終ラウンド！";
+"quitVersusConfirmation" = "バーサスモードを終了しますか？";
+"expandInventorySpace" = "インベントリを\n拡大";
+"expandInventoryConfirmation" = "インベントリのスペースを<number>増やしますか？（価格：<price>）";
+"CAMPAIGN" = "キャンペーン";
+"VERSUS" = "2Pバーサス";
+"fightsLeft" = "<white>体験版：<green>残り対戦回数<number>回";
+"fightLeft" = "<white>体験版：<green>残り対戦回数<number>回";
+/* Like an appendix of a book */
+"appendix" = "目次";
+/* the German language */
+"german" = "ドイツ語";
+/* the English language */
+"english" = "英語";
+/* the Italian language */
+"italian" = "イタリア語";
+/* Class names */
+"ranger" = "レンジャー";
+"druid" = "ドルイド";
+"mage" = "メイジ";
+"priest" = "プリースト";
+"black-mage" = "ブラックメイジ";
+"rogue" = "ローグ";
+"warlock" = "ウォーロック";
+"thief" = "シーフ";
+"paladin" = "パラディン";
+"warrior" = "ウォーリアー";
+"high-mage" = "ハイメイジ";
+"elite-warrior" = "エリートウォーリアー";
+/* or Sorcerer */
+"witchdoctor" = "ウィッチドクター";
+/* Names and descriptions for each class special skill */
+"druid-name" = "スパイダーミニオン";
+"druid-desc" = "短時間クモのミニオンを呼び出す　ドルイドが<earth>地<white>、<water>水<white>いずれかの属性を持つ装備を身に着けている場合、クモの能力が強化される";
+"warrior-name" = "シールドブラスト";
+"warrior-desc" = "範囲攻撃で大ダメージを与え、短時間持続するシールドを発生させる　シールド発動中は防御力とスピードが強化される　防御力が高いほど範囲攻撃のダメージも増加する";
+"thief-name" = "レイジリープ";
+"thief-desc" = "高く跳びあがって範囲攻撃を繰り出すと同時に、一時的にすべてがスローになる　シーフが<air>風<white>、<darkness>闇<white>いずれかの属性を持つ装備を身に着けている場合、攻撃範囲が拡大する";
+"rogue-name" = "ダガーランページ";
+"rogue-desc" = "一時的にすべてがスローになる　効果時間中は<green>ダガー<white>の攻撃力が上昇し、三段ジャンプができるようになる";
+"ranger-name" = "ソードランページ";
+"ranger-desc" = "一時的にすべてがスローになる　効果時間中は<green>剣<white>の攻撃力が上昇し、三段ジャンプができるようになる";
+"elite-warrior-name" = "シールドブラスト";
+"elite-warrior-desc" = "範囲攻撃で大ダメージを与え、短時間持続するシールドを発生させる　シールド発動中は防御力とスピードが強化される　防御力が高いほど範囲攻撃のダメージも増加する";
+"priest-name" = "スターライト";
+"priest-desc" = "一時的にダメージを無効化し、すべてがスローになる　効果時間中は<light>光<white>属性の武器が強化される　また、<light>光<white>属性装備を身に着けているとダメージ無効時間が伸びる";
+"mage-name" = "ファイアランページ";
+"mage-desc" = "強力な火球を放つ<fire>火<white>属性装備を身に着けるとダメージが増加する";
+"black-mage-name" = "ダークランページ";
+"black-mage-desc" = "強力な闇のビームを放つ<darkness>闇<white>属性装備を身に着けるとダメージが増加する";
+"high-mage-name" = "マジックランページ";
+"high-mage-desc" = "強力なビームを放つ<darkness>闇<white>もしくは<fire>火<white>属性の装備を身に着けるとダメージが増加する";
+"paladin-name" = "正義の鉄槌";
+"paladin-desc" = "強力なハンマーを投げると同時に、一時的にダメージを無効化する<light>光<white>もしくは<air>風<white>属性の装備を見に着けるとダメージが増加する　効果時間中はハンマー武器のダメージも増加する";
+"warlock-name" = "ダーククローン";
+"warlock-desc" = "短時間一緒に戦ってくれる味方を呼び出す　自分と同じ動きをすることもある";
+"witchdoctor-name" = "ボーンライズ";
+"witchdoctor-desc" = "一緒に戦ってくれる2体のスケルトンを呼び出す　ウィッチドクターが<darkness>闇<white>もしくは<light>光<white>属性の装備を身に着けているとスケルトンが強化される";
+"druid-short-desc" = "短時間クモのミニオンを呼び出す";
+"warrior-short-desc" = "範囲攻撃で大ダメージを与え、短時間持続するシールドを発生させる";
+"thief-short-desc" = "高く跳びあがり、一時的にすべてがスローになる";
+"rogue-short-desc" = "一時的にすべてがスローになる　また、<green>ダガー<white>の攻撃力が上昇し、三段ジャンプができるようになる";
+"ranger-short-desc" = "一時的にすべてがスローになる　また、<green>剣<white>の攻撃力が上昇し、三段ジャンプができるようになる";
+"elite-warrior-short-desc" = "範囲攻撃で大ダメージを与え、短時間持続するシールドを発生させる";
+"priest-short-desc" = "一時的にダメージを無効化し、<light>光<white>属性武器の攻撃力が増加する";
+"mage-short-desc" = "<fire>火<white>属性装備を身に着けるとダメージが増加する、強力な火球を放つ";
+"black-mage-short-desc" = "<darkness>闇<white>属性装備を身に着けるとダメージが増加する、強力なビームを放つ";
+"high-mage-short-desc" = "<darkness>闇<white>、<fire>火<white>いずれかの属性を持つ装備を身に着けるとダメージが増加する、強力なビームを放つ";
+"paladin-short-desc" = "強力なハンマーを投げると同時に、一時的にダメージを無効化する";
+"warlock-short-desc" = "短時間一緒に戦ってくれる味方を呼び出す";
+"witchdoctor-short-desc" = "一緒に戦ってくれる2体のスケルトンを呼び出す";
+/* button that leads to the 'settings' panel */
+"options" = "オプション";
+"videoSettings" = "映像設定";
+"fullscreen" = "フルスクリーン";
+"applyChanges" = "変更を適用";
+"confirm" = "決定";
+"gamepadSettings" = "ゲームパッド設定";
+"gamepad" = "ゲームパッド";
+"jump" = "ジャンプ";
+"attack" = "攻撃";
+"inventory" = "インベントリ";
+"back" = "戻る";
+"pause" = "ポーズ";
+"openInventory" = "インベントリを開く";
+"backCancel" = "戻る/キャンセル";
+"pauseGame" = "ゲームを中断";
+"restoreDefaults" = "デフォルトに戻す";
+"enable" = "有効にする";
+"cancel" = "キャンセル";
+"quests" = "クエスト";
+"rewardForQuest" = "クエストの報酬：";
+"aFewDaysAgo" = "数日前 . . .";
+"twoGamepadsRequired" = "本モードではゲームパッドを2つ接続する必要があります";
+"multiplayerModesSoon" = "次のアップデートで<strong>コンペティティブ</strong>モードが追加されます、お楽しみに！";
+"aFewHoursAgo" = "数時間前 . . .";
+"writingAndScreenplay" = "ライティング/シナリオ";
+"noAdsText" = "広告を消したい場合は、ショップでいずれかのゴールドチェストを購入してください！";
+"theEnd" = "The End";
+"theEndQ" = "The End ?";
+"russian" = "ロシア語";
+"japanese" = "日本語";
+"korean" = "韓国語";
+/* language */
+"ukrainian" = "ウクライナ語";
+"turkish" = "トルコ語";
+"chooseLanguage" = "言語選択";
+"noAds" = "広告なし";
+"removeAds" = "広告を消す";
+"purchaseAnyChestToRemoveAds" = "広告を消すにはチェストを購入してください！";
+"default" = "デフォルト";
+"Jan" = "1月";
+"Feb" = "2月";
+"Mar" = "3月";
+"Apr" = "4月";
+"May" = "5月";
+"Jun" = "6月";
+"Jul" = "7月";
+"Aug" = "8月";
+"Sep" = "9月";
+"Oct" = "10月";
+"Nov" = "11月";
+"Dec" = "12月";
+"multiplayer" = "マルチプレイ";
+"bank" = "銀行";
+"comingSoon" = "近日公開";
+"comingSoon!" = "近日公開!";
+/* means recovering an item from the bank. Better if not longer than 10 letters */
+"withdraw" = "引き出す";
+"withdrawItem" = "アイテムを引き出す";
+/* means storing an item in the bank. Better if not longer than 10 letters */
+"deposit" = "預ける";
+"depositItem" = "アイテムを預ける";
+"withdrawConfirmation" = "<item>を<price>で引き出しますか？";
+"freeWithdrawConfirmation" = "<item>を引き出しますか？";
+"depositConfirmation" = "<item>を<price>で預けますか？";
+"noItemsInBank" = "銀行にアイテムがありません";
+"noItemsInBag" = "アイテムを所持していません";
+"bankIsFull" = "銀行に空きがありません！";
+/* RPG character level */
+"level" = "レベル";
+"Level" = "レベル";
+/* is displayed whenever a player grows up one level */
+"levelUp" = "レベルアップ";
+"levelUp!" = "レベルアップ！";
+/* better if not longer than 7 chars */
+"score" = "スコア";
+/* better if not longer than 7 chars */
+"SCORE" = "スコア";
+/* indicates bonus head shot points. Better if not longer than 10 chars. Eg. 'Head shot +5' */
+"headshotBonus" = "ヘッドショット";
+"timeBonus" = "タイムボーナス";
+/* indicates bonus for gaining experience points (RPG). Better if not longer than 10 chars */
+"experience" = "経験値";
+/* indicates score penalty loss when a potion is used. (BINLT 10 chars). Eg.: 'Potion used -15' */
+"potionUsed" = "回復薬使用";
+/* indicates amount of points deducted after taking damage. Eg.: 'Damage taken -30' */
+"damagePenalty" = "被ダメージ";
+"doubleKill" = "ダブルキル";
+"tripleKill" = "トリプルキル";
+"multiKill" = "複数キル";
+"monsterKill" = "モンスターキル！";
+"dungeonTitle" = "ダンジョン<level>";
+"experienceLost" = "<xp>経験値が失われた！";
+"experiencePoints" = "経験値";
+"finalScore" = "最終スコア";
+"vs" = "vs.";
+"versus" = "バーサス";
+"totalDamageTaken" = "合計被ダメージ";
+/* total time elapsed during play */
+"totalTime" = "経過時間";
+"headShotCount" = "ヘッドショット数";
+"potionUsedCount" = "回復薬の使用数";
+"multiKillCount" = "複数キル";
+/* better if not longer than 22 chars */
+"challengeFriend" = "フレンドに挑む";
+/* better if not longer than 20 chars */
+"playSolo" = "ソロダンジョンをプレイ";
+/* better if not longer than 15 chars */
+"soloDungeon" = "ソロダンジョン";
+/* better if not longer than 14 chars */
+"hallOfFame" = "名誉の間";
+"screenpadSize" = "画面サイズ";
+"screepadOptions" = "スクリーン設定";
+/* Button for Controls options in the Options menu */
+"controls" = "操作";
+"adjustControls" = "操作パネルサイズ調整";
+"YOUWIN" = "勝利！";
+"YOULOSE" = "敗北！";
+"youWin" = "勝利！";
+"youLose" = "敗北！";
+"DRAWGAME" = "ドロー！";
+"drawGame" = "ドロー！";
+"go!" = "Go!";
+/* better if not longer than 18 chars */
+"competitiveMode" = "コンペティティブモード";
+/* button that leads to an area with a trainer character */
+"trainer" = "トレーニング";
+/* 'competitive coins' or 'tokens' refer to the ones used to play in the classic arcade games (not actual money coins) */
+"notEnoughCoins" = "トークンが足りません　ソロダンジョンを達成すればトークンを獲得できます";
+"startChallengeConfirmation" = "<name>に挑みますか？";
+"run!" = "Run!";
+"start!" = "Start!";
+/* see localization guidelines for guidance about the game currencies */
+"coinCost" = "<dark>コスト：<light> <coins>";
+/* 'competitive coins' or 'tokens' refer to the ones used to play in the classic arcade games (not actual money coins) */
+"coinPrize" = "<dark>報酬：<light> <coins> <dark>+<light> <xp>";
+/* short for 'experience points' */
+"xp" = "xp";
+"getMoreCoinsButton" = "トークンをゲット！";
+/* short for Level (max 3 chars if possible; may include period if necessary) */
+"Lv" = "Lvl";
+"killerSpider" = "キラースパイダー";
+"killerClone" = "キラークローン";
+"killerSkeletons" = "キラースケルトン";
+"energyDrain" = "エナジードレイン";
+"specialKill" = "スペシャルキル";
+"classSpecials" = "クラスのスペシャルアビリティ";
+"notLoggedMessage" = "オンラインマッチをプレイするには<service>にサインインする必要があります";
+"logInNow" = "今すぐサインイン";
+"connectionIssue" = "サーバーに接続できませんでした";
+/* try connecting to the server again */
+"tryAgain" = "再試行";
+"equipChange" = "装備変更";
+"serverSideProgramming" = "サーバープログラミング";
+"totalMultikillPoints" = "複数キルポイント";
+"classPassiveBoost" = "クラスパッシブ強化";
+"equipmentBoost" = "装備強化";
+/* eg.: 15% + 20% speed */
+"speedBoostTitle" = "スピード";
+/* eg.: 15% + 20% armor */
+"armorBoostTitle" = "防御力";
+/* eg.: 15% + 20% magic power */
+"magicBoostTitle" = "魔法攻撃力";
+/* eg.: 15% + 20% jump impulse */
+"jumpBoostTitle" = "ジャンプ力";
+/* eg.: 15% + 20% sword attack power */
+"swordBoostTitle" = "剣攻撃力";
+/* eg.: 15% + 20% dagger attack power */
+"daggerBoostTitle" = "ダガー攻撃力";
+/* eg.: 15% + 20% Staff attack power */
+"staffBoostTitle" = "杖攻撃力";
+/* eg.: 15% + 20% axe attack power */
+"axeBoostTitle" = "斧攻撃力";
+/* eg.: 15% + 20% Hammer attack power */
+"hammerBoostTitle" = "ハンマー攻撃力";
+/* eg.: 15% + 20% spear attack power */
+"spearBoostTitle" = "槍攻撃力";
+"trainersHall" = "鍛錬の間";
+"skillTree" = "スキルツリー";
+"dash" = "ダッシュ";
+"dashAbility" = "ダッシュアビリティ";
+"learnDashAbility" = "ダッシュアビリティを習得";
+/* leave the current level */
+"goBackToLevelSelect" = "ダンジョンを出ますか？";
+/* as in 'leave the current level/dungeon' */
+"leave" = "出る";
+"noMatchesFound" = "マッチが見つかりません";
+"playSoloDungeon" = "ソロダンジョンをプレイします";
+"moMatchesPlaySolo" = "マッチが見つかりません　ソロダンジョンをプレイしてください";
+"revenge" = "リベンジ！";
+"graphics" = "グラフィック";
+"graphicsOptions" = "グラフィック設定";
+"graphicsOptMin" = "最低";
+"graphicsOptMed" = "中";
+"graphicsOptMax" = "最高";
+"graphicsOptPerf" = "パフォーマンス重視";
+"graphicsOptQual" = "グラフィック重視";
+"graphicsOptPerfLong" = "パフォーマンスを優先します";
+"graphicsOptQualLong" = "グラフィック品質を優先します";
+"friendSearchType" = "フレンドのニックネームを入力してください";
+"friendSearch" = "フレンドのニックネーム";
+"friendSearchLongGP" = "念のためフレンドにGoogle Play Games上のニックネームを確認しておくことをおすすめします";
+"friendSearchLongGC" = "念のためフレンドにGame Center上のニックネームを確認しておくことをおすすめします";
+"decline" = "拒否";
+"ignore" = "無視";
+"accept" = "承認";
+"remove" = "消去";
+"receivedChallenges" = "受けた挑戦";
+"sentChallenges" = "行った挑戦";
+"friendChallengedYou" = "<friends-name>が勝負を挑んできました！";
+"challengeMade" = "<friends-name>に勝負を挑みました！";
+"friendAcceptedChallenge" = "<friends-name>が挑戦を承認しました！";
+"challengeResultDefeat" = "<friends-name>に敗北しました";
+"challengeResultChalDefeat" = "リベンジを申し出た<friends-name>に敗北しました！";
+"challengeResultChalTaunt" = "一度勝利した<friends-name>にリベンジされました！";
+"challengeResultChalDefeatTau" = "<friends-name>に二度挑まれましたがリベンジを許しませんでした！";
+"challengeResultVictory" = "<friends-name>に勝利しました！";
+"challengeStatusDeclined" = "拒否済";
+"challengeStatusWaiting" = "待機中";
+"challengeStatusYouWon" = "勝利";
+"challengeStatusYouLost" = "敗北";
+"challengeStatusDraw" = "ドロー";
+"addFriend" = "フレンドを追加";
+"myFriends" = "マイフレンド";
+"myChallenges" = "マイチャレンジ";
+/* click it to confirm the challenge */
+"challengeButton" = "勝負を受ける";
+/* click it to confirm the challenge */
+"challengeNowButton" = "勝負だ！";
+"challengeQuestion" = "<friends-name>に挑戦しますか？";
+"clearAll" = "すべて消去";
+"clearAllChalConfirmation" = "すべての挑戦を消去しますか？";
+"clear" = "消去";
+/* button that refreshes a list of invitations with up-to-date data */
+"refresh" = "更新";
+/* button that updates a list of invitations with up-to-date data (technically the same as above, can be the same word as the one used as 'refresh') */
+"update" = "更新";
+"gameVersionTooOld" = "ゲームが旧バージョンのままになっています　オンラインでプレイするにはアップデートしてください";
+"using2ndController" = "2つめのコントローラーが使用されています　1つめのコントローラーを使用してください";
+"using2ndControllerEx" = "2つめのコントローラーが使用されています　動作が正常に行われない場合もありますので、1つめのコントローラーを使用してください";
+"noFriends" = "リストにフレンドがいません";
+"friends" = "フレンド";
+"friendsList" = "フレンドリスト";
+"challenges" = "挑戦";
+"challengesList" = "挑戦リスト";
+"beatenByRandomChallenger" = "ランダムマッチで<player-name>に敗北しました";
+"beatRandomChallenger" = "ランダムマッチで<player-name>に勝利しました！";
+"removeFriendConfirmation" = "<friends-name>をリストから消去しますか？";
+"addFriendConfirmation" = "<friends-name>をリストに追加しますか？";
+"challengeFullQuestion" = "ダンジョンマッチで<friends-name>に挑戦しますか？";
+/* coins or tokens as the ones used to play in the classic arcade games (not actual money coins) */
+"notEnoughCoinsShort" = "トークンが足りません！";
+/* coins or tokens as the ones used to play in the classic arcade games (not actual money coins) */
+"moreCoins" = "トークンをゲット！";
+"lastDays" = "直近<days>日";
+"challengeSent" = "<friends-name>に挑戦を送りました！";
+"challengeSentError" = "<friends-name>に挑戦を送れませんでした";
+"challengeSentErrorFull" = "<friends-name>に挑戦を送れませんでした インターネット接続を確認してください";
+/* button name for a section where the player can see/add friends and check interactions with other players */
+"social" = "ソーシャル";
+"noPlayerFound" = "<search-string>：検索結果がありません";
+"results" = "結果：";
+"foundOneResult" = "1件ヒット：";
+"foundMultipleResult" = "<count>件ヒット：";
+/* better if not longer than 17 characters */
+"findFriends" = "フレンドを探す";
+/* service may be 'Google Play Game' or 'Game Center' (or any other network in the future) */
+"typeYourFriendsNickName" = "<service>上のフレンドをニックネームで検索します";
+"searching" = "検索中";
+"makeSureYouTypedRight" = "フレンドのニックネームが正しく入力されているか確認してください";
+"challengingFriendDungeonTitle" = "<friends-name>に挑戦中";
+"noChallenges" = "挑戦は届いていません";
+/* button text. To Add someone as a friend */
+"add" = "追加";
+"declineFriendsChallenge" = "<friends-name>の挑戦を拒否しますか？";
+"acceptFriendsChallenge" = "<friends-name>の挑戦を承認しますか？";
+/* title of product at the store */
+"goldChestTitle" = "<gold-number>ゴールドチェスト";
+"goldChestDesc" = "<gold-number>ゴールドをキャラクターに与えることができる";
+"goldChestPlusDesc" = "<gold-number>ゴールドと<coin-number>トークンをキャラクターに与える";
+/* a position in the players hierarchy (like in the military) */
+"playerRank" = "ランク";
+"playerUnranked" = "ランクなし";
+"rankIron" = "アイアン";
+"rankBronze" = "ブロンズ";
+"rankSilver" = "シルバー";
+"rankGold" = "ゴールド";
+"rankPlatinum" = "プラチナ";
+"rankDiamond" = "ダイヤモンド";
+"spearDescription" = "槍はバリアも敵も貫き通す";
+"billOk" = "処理成功";
+"billFeatureNotSupported" = "サポートされていない機能です";
+"billServiceDisconnected" = "切断されました";
+"billServiceUnavailable" = "サービスが利用できません";
+"waitingChallengeResponse" = "<friends-name>が挑戦を承認するのを待っています";
+"challengeResultDraw" = "<friends-name>との対決はドローでした！";
+"randomMatchRevengeDesc" = "このリベンジマッチに勝利するとランクポイントを<bold>2<normal>獲得できます　敗北した場合も現在のランクから降格することはありません";
+"hallOfChampions" = "チャンピオンの間";
+"randomMatchRevenge" = "ランダムマッチであなたを打ち破った強敵に、リベンジを挑んでみましょう！";
+"challengeSendFailed" = "挑戦を送れませんでした　インターネット接続を確認し再試行してください";
+"challengeResponseFailed" = "挑戦に対する応答を送信できませんでした　インターネット接続を確認し再試行してください";
+"featureComingSoon" = "この機能は今後のアップデートで追加予定です！";
+"bloodAnimation" = "血液アニメーション";
+"creativeCommonsCredits" = "クリエイティブ・コモンズ クレジット";
+"friendAddedYou" = "<friends-name>があなたをフレンドに追加しました！";
+"friendConfirmed" = "<friends-name>とフレンドになりました！";
+"cheaterNotice" = "あなたのアカウントで異常な行動が検知されました　コンペティティブモードにおける複数の機能が制限される可能性があります";
+"challengeResultChalDefeatB" = "<friends-name>にリベンジマッチで敗北しました！";
+"welcomeBackMessage" = "おかえりなさい！冒険のサポートとして<gold-amount>ゴールドを贈ります　報酬の間にて獲得してください！";
+"welcomeBackMessageCoin" = "しばらくコンペティティブモードをプレイしていません　再出発のお手伝いとして<coins-amount>トークンを贈ります　報酬の間から獲得してください！";
+"reviewMatchStatistics" = "対戦成績を見ますか？";
+"today" = "今日";
+"yesterday" = "昨日";
+"daysAgo" = "<count>日前";
+/* eg: 4d (very short for: 4 days ago) */
+"daysAgoShort" = "<count>日";
+"tryCompetitiveMode" = "おめでとうございます！素晴らしい戦いでした！まだ物足りない？ならば、心躍る<strong>コンペティティブ</strong> <strong>モード</strong>で遊びつつ次のチャプターを待ちましょう！";
+"complete100pcB" = "また、一度クリアしたダンジョンでも達成度100%を目指しましょう！";
+"armadimp" = "アルマジロ";
+"demonic-spider" = "女王グモ";
+"gorgon" = "ヴェノムゴルゴン";
+"chest-demon" = "ミミック";
+"spidemon" = "デークモン";
+"golem" = "ゴーレム";
+"ape-demon" = "大猿魔";
+"armademon" = "アクマジロ";
+"cthulhu" = "クトゥルフ";
+"slime" = "スライム";
+/* vulkanic-earthling / creature that looks like a small vulkan */
+"vulkling" = "ヴァルキング";
+"armadillo" = "アルマジロ";
+"ape-skeleton" = "モンキースケルトン";
+"orc" = "オーク";
+"minotaur" = "ミノタウロス";
+"hoursAgo" = "<hours>時間前";
+/* e.g. '10h' */
+"hoursIndicatorVeryShort" = "<hours>時間";
+"minutesAgo" = "<minutes>分前";
+/* e.g. '15m' */
+"minutesIndicatorVeryShort" = "<minutes>分";
+"now" = "たった今";
+"prizeReceivedGold" = "報酬の間に<amount>ゴールドが届きました";
+"prizeReceivedCoin" = "報酬の間に<amount>トークンが届きました";
+"prizeReceivedItem" = "報酬の間に<item-name>が届きました";
+"playRevenge" = "<friends-name>とリベンジマッチを行いますか？";
+/* push notifications that will be sent whenever someone beats the player's score */
+"randomMatchNotification" = "ランダムマッチ通知";
+/* toggle for enabling/disabling push notifications. We already have the 'Enable' word on our database */
+"disable" = "無効にする";
+"notificationWarning" = "通知は現在無効になっています よりお楽しみいただくためには「有効」にすることをおすすめします";
+"randomMatchNotWarning" = "ランダムマッチ通知は現在無効になっています";
+"maintenanceWarningPresent" = "サーバーメンテナンス中です 数時間は接続が安定しない可能性があります";
+"maintenanceWarningFuture" = "数時間以内にサーバーメンテナンスを実施するため、接続が安定しない可能性があります";
+"maintenanceWarningPast" = "お待たせしました！サーバーは正常に稼働再開しました！";
+/* replacements for <time-frame> listed below */
+"coinTwice" = "<time-frame>はコンペティティブ対戦の報酬としてもらえるトークンが2倍になっています！ぜひ挑戦を！";
+/* replacements for <time-frame> listed below */
+"coinExtra" = "<time-frame>はコンペティティブ対戦の報酬としてもらえるトークンが増えています！ぜひ挑戦を！";
+"timeFrameThisWeek" = "今週";
+"timeFrameWeekend" = "今週末";
+"timeFrameThisMonth" = "今月";
+"timeFrameToday" = "今日";
+/* small face text for button that leads to the Competitive Mode screen. Should be as short as possible */
+"competitiveShortButton" = "コンペティティブ";
+"difficultyEasy" = "イージー";
+"difficultyMedium" = "ミディアム";
+"difficultyDifficult" = "ハード";
+/* title of the toggle for the push notifications */
+"revengeNotification" = "リベンジマッチ通知";
+"opponentNotifiedMessage" = "<player-name>にあなたの勝利が通知されました！";
+"opponentNotifiedMessageEx" = "<player-name>にあなたの勝利が通知されました！リベンジマッチに備えましょう";
+"newVersionAvailable" = "Magic Rampageの新バージョンがリリースされました！今すぐアップデートを！";
+"welcomeBackMessageEx" = "しばらくプレイしていないようですね 冒険のサポートとして<gold-amount>ゴールド、<coins-amount>トークンを贈ります　報酬の間にて獲得してください！";
+"welcomeBackMessageExShort" = "おかえりなさい！冒険のサポートとして<gold-amount>ゴールド、<coins-amount>トークンを贈ります 報酬の間にて獲得してください！";
+"communityManagement" = "コミュニティマネジメント";
+"communityManagementAndSupport" = "コミュニティマネジメント＆サポート";
+/* name of the action related to button */
+"arcane" = "アーケインルーンを使う";
+"cancelChallenge" = "挑戦を取り消しますか？";
+"prizeReceivedGoldSlot" = "報酬の間に<amount>ゴールドが届きました：スロット<slot-number>";
+"prizeReceivedCoinSlot" = "報酬の間に<amount>トークンが届きました：スロット<slot-number>";
+"prizeReceivedItemSlot" = "報酬の間に<item-name>が届きました：スロット<slot-number>";
+"joinBeta" = "ベータに参加";
+"communityForums" = "コミュニティフォーラム";
+/* credits section */
+"productionAssistant" = "プロダクションアシスタント";
+/* as in: Requires Gold Rank */
+"requires" = "条件：";
+/* rank might be Bronze, Silver, Gold */
+"requiresRankFull" = "<rank>であることが条件です 現在のランクは<current-rank>です";
+"goldChestDescNoNumber" = "ゴールドをキャラクターに与えることができる";
+"goldCoinChestNumNumberDesc" = "ゴールドとトークンをキャラクターに与えることができる";
+"warnRankPenalty" = "他プレイヤーに対する挑戦、マッチを中断した場合、ランク降格ペナルティが課せられます";
+"rankPenaltyNotification" = "他プレイヤーに対する挑戦、マッチを中断したペナルティとしてランクが降格しました";
+"rankPenalty" = "ランクペナルティ <value>";
+/* credits entry */
+"storyAndScreenplay" = "ストーリー＆シナリオ";
+/* 'quit' should represent the sense of 'abandon' */
+"quitDungeonMatchConfirmation" = "諦めてダンジョンを出ますか？";
+/* 'quit' can represent the same sense of 'abandon' as above */
+"quitDungeonMatchButton" = "諦める";
+"rankDailyDecDesc" = "1日に一度、各プレイヤーのランクスコアが<value>減少します";
+"oneExt" = "1";
+"twoExt" = "2";
+"threeExt" = "3";
+"fourExt" = "4";
+"fiveExt" = "5";
+"newVersionInBeta" = "ベータテストの新バージョンがリリースされました！";
+"betaInstructions" = "ベータテストに参加し、いち早く新バージョンを遊びたいあなた！ぜひオプションからサインアップを！";
+"challengeOfTheWeek" = "今週のチャレンジ";
+"dungeonOfTheWeek" = "今週のダンジョン";
+"weeklyChallenge" = "ウィークリーチャレンジ";
+"weeklyDungeon" = "ウィークリーダンジョン";
+"challengeOfTheMonth" = "今月のチャレンジ";
+"dungeonOfTheMonth" = "今月のダンジョン";
+"monthlyChallenge" = "マンスリーチャレンジ";
+"monthlyDungeon" = "マンスリーダンジョン";
+"weeklyReport" = "ウィークリーレポート";
+"monthlyReport" = "マンスリーレポート";
+"lastDaysReport" = "直近<days>日：";
+"randomMatchesCountReport" = "挑まれたランダムマッチの数： <number>";
+"randomMatchesCountReportFull" = "直近<days>日間で挑まれたランダムマッチの数： <number>";
+"yourVictoriesCountReport" = "勝利数： <number>";
+"yourDefeatsCountReport" = "敗北数： <number>";
+"victoryCountReport" = "勝利数： <number>";
+"defeatCountReport" = "敗北数： <number>";
+"victoryRate" = "勝率： <percent>%";
+"highestRank" = "過去最高ランク： <rank>";
+/* please to not remove the # symbol neither separate it from <number> */
+"topRankingPosition" = "過去最高順位： #<number>";
+"relativeRankingReport" = "現在のランクは全プレイヤーのうち<percent>%のプレイヤーたちを上回っています";
+/* please to not remove the # symbol neither separate it from <number> */
+"currentRankingPositionReport" = "現在の世界ランクは#<number>です";
+/* please to not remove the # symbol neither separate it from <number> */
+"currentRankingPosition" = "現在の世界ランク： #<number>";
+"cheaterRankNotice" = "あなたのアカウントで異常な行動が検知されました　ランキングの複数の機能が制限される可能性があります";
+"playerWantsToAdd" = "<player-name>からフレンド申請が来ています";
+"friendAcceptedAsFriendA" = "<player-name>があなたのフレンド申請を承認しました";
+"friendAcceptedAsFriendB" = "<player-name>とフレンドになりました！";
+"newDungeonChallenge" = "新しいコンペティティブダンジョンチャレンジがあります！";
+"opponentsNameRank" = "<player-name>の現在のランク：";
+"playAgainstPlayer" = "<player-name>と戦う";
+"playAgainstPlayerEx" = "<player-name>とコンペティティブダンジョンで対決";
+"challengePlayer" = "<player-name>に挑む";
+"acceptFriendQuestion" = "<player-name>をフレンドリストに追加しますか？";
+"notificationForFriendship" = "フレンド申請通知";
+"cancelFriendshipRequest" = "<friends-name>へのフレンド申請を取り消しますか？";
+"declineFriendshipRequest" = "<friends-name>からのフレンド申請を拒否しますか？";
+"championMatch" = "<player-name>と対戦しますか？";
+"championMatchDescA" = "このマッチに勝利すると<rank>ランクポイントを獲得できます　また、敗北してもランクが降格することはありません";
+"beatenInHallOfChampions" = "チャンピオンの間で<player-name>に敗北しました";
+/* please to not remove the # symbol neither separate it from <number> */
+"bestRankingPosition" = "過去最高順位： #<number>";
+"type:" = "タイプ：";
+"sword" = "剣";
+"dagger" = "ダガー";
+"staff" = "杖";
+"axe" = "斧";
+"hammer" = "ハンマー";
+"spear" = "槍";
+"mace" = "メイス";
+"prizes" = "報酬";
+"claimPrizesButton" = "報酬を受け取る";
+"claimButton" = "受け取る";
+"goToPrizeRoomButton" = "報酬の間へ行く";
+"itemInBankMessageA" = "銀行に同アイテムが預けられています";
+"itemInBankMessageB" = "銀行に同アイテムが預けられています";
+"alreadyHasItemMessage" = "このアイテムは既に所持しています";
+"fire-lord" = "ファイアロード";
+"orc-fighter" = "オークファイター";
+"unknownItemFoundWarning" = "読み込みに失敗したアイテムがあります　ゲームが最新バージョンになっているか、インターネット接続は正常かを確認してください";
+/* button toggle (on/off) */
+"keepOriginalHelmToggle" = "クラスデフォルトの頭部を維持";
+"keepHelmNoEffectNotification" = "現在の装備にはカスタム頭防具が含まれていないため、見た目に影響はありません";
+"challengeParseError" = "原因不明のエラーが発生したため、サーバーに結果を送信できませんでした";
+"challengeNoConnectionError" = "サーバーに結果を送信できませんでした インターネットに接続されていません";
+"couldntPostWeeklyDungeon" = "結果を送信できませんでした インターネット接続を確認してください";
+"errorInvalidValue" = "無効な値です";
+/* will display the minimum time in which player must finish in order to get extra score */
+"timeChallenge:" = "タイムチャレンジ：";
+/* better if not longer than 16 characters (remove word 'current' if applicable) */
+"currentBestTime:" = "過去最速タイム：";
+/* better if not longer than 16 characters (remove word 'current' if applicable) */
+"currentBestScore:" = "過去最高スコア：";
+"timeChallengeCompleted" = "タイムチャレンジ達成！";
+"timeChallengeNotCompleted" = "タイムチャレンジ未達成";
+"timeChallengeNotCompletedEx" = "タイムチャレンジ未達成 (<time>)";
+/* time left before event ends */
+"timeLeft:" = "残り時間：";
+"yourPositionTime:" = "タイムランキングの順位：";
+"yourPositionScore:" = "スコアランキングの順位：";
+"starChallengeCompleted" = "スターチャレンジ達成！";
+"oneHourLeft" = "残り<one>時間";
+"hoursLeft" = "残り<number>時間";
+"oneDayLeft" = "残り<one>日";
+"daysLeft" = "残り<number>日";
+"updateNeeded" = "アップデートが必要です！";
+"versionTooOldForWeeklyDungeon" = "ゲームが旧バージョンのままになっています　このダンジョンをプレイするにはアップデートしてください";
+"newBestScore" = "ハイスコア更新！";
+"newBestTime" = "ベストタイム更新！";
+/* discord is the name of an online gaming community */
+"discord" = "Discordコミュニティ";
+"previousChallengeBest" = "前ダンジョンのトッププレイヤー";
+"postingResults" = "送信結果";
+"previousDungeonLeaderboard" = "前ダンジョンのリーダーボード";
+"screenShotPromoText0" = "キャラクターをカスタマイズしよう！";
+"screenShotPromoText1" = "かっこいいアイテム";
+"screenShotPromoText2" = "テンポ感のあるアクション！";
+"screenShotPromoText3" = "リアルタイムに進行する、テンポ感あるアクション！";
+"screenShotPromoText4" = "イカした武器や防具をコレクションしよう";
+"screenShotPromoText5" = "コンペティティブモードで他プレイヤーと対戦";
+"screenShotPromoText6" = "強力なボスに立ち向かえ！";
+"screenShotPromoText7" = "激しいボス戦も！";
+"screenShotPromoText8" = "心が躍るスペシャルスキルを持つ、個性豊かなクラスが10種以上！";
+"screenShotPromoText9" = "メイジ、ウォーリアー、ローグ、その他10種以上の中からクラスを選択しよう！";
+"screenShotPromoText10" = "予想外の展開盛りだくさん、心奪われるストーリー";
+"screenShotPromoText11" = "予想外の展開だらけ、思わず没入するストーリー";
+"screenShotPromoText12" = "わくわくが止まらないシングルプレイのキャンペーン";
+"shortDescription0" = "アクションRPG";
+"shortDescription1" = "テンポ感バツグンのアクションRPG！";
+"shortDescription2" = "テンポ感バツグンのアクションRPG！";
+"shortDescription3" = "熱いアクションRPG！";
+"shortDescription4" = "盛り上がるアクションRPG！";
+"weeklytDungeonNotification0" = "今週のダンジョンがオープンしました！";
+"weeklytDungeonNotification1" = "今週のダンジョンがオープンしました！なんと特別な報酬も！";
+"weeklytDungeonNotification2" = "今週のダンジョンがオープンしました！あなたは乗り越えられるか！";
+"weeklytDungeonNotification3" = "今週のダンジョンは明日終了します！";
+"weeklytDungeonNotification4" = "今週のダンジョンは今日終了します！";
+"tellMoreAboutWeeklyDungeons" = "詳しく";
+/* As in: Talk about that */
+"talk" = "詳しく";
+/* short for Game Tester */
+"tester" = "テスター";
+/* More casual form of 'Hello!' - Reply to the line 'wcKeeperWelcome-0' */
+"hey" = "やあ！";
+"gameTester" = "ゲームテスター";
+"leadGameTester" = "リードゲームテスター";
+/* very short for 'Current best time' */
+"bestTime:" = "最速タイム：";
+/* very short for 'Current best score' */
+"bestScore:" = "最高スコア：";
+/* as in: 'This week's dungeon ends soon!' */
+"endsSoon!" = "間もなく修了！";
+"enterCompetitiveConfirmation" = "コンペティティブモードで遊びますか？";
+"search" = "検索";
+"artDirection" = "アートディレクション";
+"levelDesign" = "レベルデザイン";
+"chapters4and5" = "チャプター4＆5";
+"weeklyDungeonPrizeTip" = "ウィークリーダンジョン終了時にトップ<number>にランクインすると、報酬としてトークンを獲得できます";
+"weeklyDungeonPrizeNotification" = "おめでとうございます！今週のダンジョン終了時、トップ<number>にランクインしました！";
+"weeklyDungeonPrizeTipB" = "ウィークリーダンジョン終了時にトップ<number>にランクインすると、限定報酬を獲得できます";
+"secondsIndicatorVeryShort" = "<seconds>秒";
+"millisecondsIndicatorVeryShort" = "<milliseconds>ms";
+"attackSpeed" = "攻撃速度";
+"attackSpeed:" = "攻撃速度：";
+/* cooldown is the time stride between each strike, most gamers recognize it as 'Cooldown' in English: */
+"Cooldown" = "クールダウン";
+"Cooldown:" = "クールダウン：";
+"veryShortTime" = "最短";
+"shortTime" = "短";
+"mediumTime" = "中";
+"longTime" = "長";
+"veryLongTime" = "最長";
+"veryFast" = "最速";
+"fast" = "速";
+"mediumSpeed" = "中";
+"slow" = "遅";
+"verySlow" = "最遅";
+"specialOffer" = "スペシャルオファー";
+"specialOffer!" = "スペシャルオファー！";
+"leaveOfferRoomConfirmation" = "スペシャルオファーを終了しますか？";
+/* To take a special offer (12 characters or shorter please): */
+"takeIt!" = "欲しい！";
+"specialOffer-desc" = "スペシャルオファーを提供";
+/* Example: +15 spaces in bag */
+"newBagSlots" = "<green>+<number><white>スペースをバッグに追加する";
+"leaveSewers" = "水路を去る";
+"eightYearsAgo" = "8年前…";
+/* as in Score Milestones/Objectives to be achieved */
+"scoreGoals" = "スコア目標";
+"nextScoreGoal:" = "次のスコア目標：";
+"nextScoreGoal" = "次のスコア目標";
+"scoreGoalNotReached" = "スコア目標未達成";
+"scoreGoalReached!" = "スコア目標達成！";
+"numberpoints" = "<number>ポイント";
+/* Eg: 'Incredible Score Goal not reached (600).' (<goal-name> can be anywhere in the middle of this sentence if necessary) */
+"scoreGoalNotReachedNumber" = "スコア目標「<goal-name>」未達成(<number>)";
+/* goal names below will replace the <goal-name> on the line above */
+"ordinaryGoalName" = "ノーマル";
+"superGoalName" = "スーパー";
+"amazingGoalName" = "アメイジング";
+"epicGoalName" = "エピック";
+"lengedaryGoalName" = "レジェンド";
+"pickItemFirst" = "壇上のアイテムを購入するには、先にそれらすべてを集める必要があります";
+"timeChallengeCompletedButEnemiesLeft" = "タイムチャレンジ失敗(<enemies>体の敵が生存)";
+"fourYearsAfterTheEscape" = "逃れてから4年後…";
+/* Screen pad is the name we give to the buttons on screen (derived from gamepad) */
+"screenPadAdjustments" = "操作パネル調整";
+"buttonsSize" = "ボタンサイズ";
+"buttonSize" = "ボタンサイズ";
+"buttonSizeShort" = "サイズ";
+"lockButtonPos" = "ロックボタン";
+"lockButtonShort" = "ロック";
+"moveButtons" = "移動ボタン";
+"moveButtonsShort" = "移動";
+"restoreDefaultPositionsQ" = "ボタン配置をデフォルトに戻しますか？";
+"fourYearsAgo" = "4年前…";
+"timeScoreDenied" = "<number>体の敵が生存しているため、タイムスコアはカウントされません";
+"timeScoreWontCount" = "タイムスコアはカウントされません";
+"itemSlotIsEmpty" = "空のアイテムスロットです";
+/* Skill tree lanes: force, wisdom, courage */
+"force" = "力";
+"wisdom" = "知恵";
+"courage" = "勇気";
+/* List of skill tree's skill names and their descriptions */
+"sword_boost" = "ソードマスター";
+"sword_boost_desc" = "剣の攻撃力が<number>%上昇する";
+"dagger_boost" = "ダガーの名手";
+"dagger_boost_desc" = "ダガーの攻撃力が<number>%上昇する";
+"faster_stamina_regeneration" = "怪物級の体";
+"faster_stamina_regeneration_desc" = "スタミナ回復速度が上昇する";
+"poisoned_weapons" = "ポイズンヘイズ";
+"poisoned_weapons_desc" = "すべての武器に<poison>毒<white>ダメージ効果を付与する";
+"persistent_projectile" = "ガンジョーショット";
+"persistent_projectile_desc" = "武器による全発射物が他の発射物と接触しても消えなくなる";
+"instant_blow_projectile" = "ボンバーショット";
+"instant_blow_projectile_desc" = "武器による発射物によって倒した敵が爆発するようになる";
+"charge_blast" = "チャージブラスト";
+"charge_blast_desc" = "<number>回分の武器ダメージを与えるチャージ攻撃";
+"charge_blast_desc_ex" = "発射物によって敵のシールドを破壊できるようになる";
+"staff_boost" = "魔法名人";
+"staff_boost_desc" = "杖の攻撃力が<number>%上昇する";
+"spear_boost" = "伝説の槍使い";
+"spear_boost_desc" = "槍の攻撃力が<number>%上昇する";
+"fire_protection" = "火傷知らずの肌";
+"fire_protection_desc" = "<fire>炎<white>と<fire>溶岩<white>からダメージを受けなくなる";
+"loot_magnet" = "ゴールドマグネット";
+"loot_magnet_desc" = "敵が落としたゴールドと経験値を吸い寄せる効果を付与する";
+"spherical_shield_break" = "スフィアシールドブレイク";
+"spherical_shield_break_desc" = "武器による発射物で敵の球状シールドを破壊できるようになる";
+"triple_jump" = "マジックジャンプ";
+"triple_jump_desc" = "空中ジャンプ可能回数が1回増える";
+"dark_twin" = "ダークツイン";
+"dark_twin_desc" = "「ダークツイン」を召喚し、汚れ顔の兵士と共闘させる";
+"hammer_boost" = "パワークラッシュ";
+"hammer_boost_desc" = "ハンマーの攻撃力が<number>%上昇する";
+"axe_boost" = "マスタースライサー";
+"axe_boost_desc" = "斧の攻撃力が<number>%上昇する";
+"higher_potion_heal" = "ヒーリングモンスター";
+"higher_potion_heal_desc" = "回復薬の回復量が<number>倍になる";
+"spike_protection" = "アンタッチャブル";
+"spike_protection_desc" = "トゲからダメージを受けなくなる";
+"special_spherical_shield" = "アーケインプロテクト";
+"special_spherical_shield_desc" = "クラスのスペシャルアビリティを発動すると球状シールドが発生する";
+"extra_hearts" = "バイタルエンハンス";
+"extra_hearts_desc" = "ハートの最大数が増える";
+"thunder_wave" = "サンダーウェーブ";
+"thunder_wave_desc" = "周囲の敵すべてにヒットする雷波を発生させる";
+"thunder_wave_desc_ex" = "防御力が高いほどダメージも増加する";
+"final_wrath" = "最終の憤怒";
+"final_wrath_desc" = " 体力が<number-b>%未満になると、剣とダガーのダメージが<number>%上昇する";
+"final_wrath_desc_dagger" = "体力が<number-b>%未満になると、ダガーのダメージが<number>%上昇する";
+"final_wrath_desc_sword" = "体力が<number-b>%未満になると、剣のダメージが<number>%上昇する";
+"rush_of_the_doomed" = "滅びの猛進";
+"rush_of_the_doomed_desc" = "体力が<number-b>%未満になると、移動速度が<number>%上昇する";
+"overcharge" = "過充電";
+"overcharge_desc" = "クールダウン前にチャージブラストを1回多く放てる";
+"overcharge_desc_b" = "クールダウン前にチャージブラストを<number>回多く放てる";
+"arcane_discipline" = "秘術の鍛錬";
+"arcane_discipline_desc" = "スーパー技のクールダウン時間が<number>%短縮される";
+"swift_cast" = "高速キャスト";
+"swift_cast_desc" = "すべての飛び道具の速度が<number>%上昇する";
+"swift_cast_desc_alt" = "杖、グリモア、槍から投げた飛び道具の速度が<number>%上昇する";
+"swift_cast_desc_alt_a" = "杖とグリモアから投げた飛び道具の速度が<number>%上昇する";
+"swift_cast_desc_alt_b" = "杖から投げた飛び道具の速度が<number>%上昇する";
+"spectral_pierce" = "霊的貫通";
+"spectral_pierce_desc" = "すべての飛び道具が敵の防具を<number>%貫通し、重装備の敵に対してより高い直接ダメージを与える";
+"seismic_reach" = "地鳴り圏内";
+"seismic_reach_desc" = "飛び道具の爆発範囲が<number>%拡大する";
+"titans_push" = "タイタンの一撃";
+"titans_push_desc" = "すべての武器のノックバック効果が<number>%上昇し、敵をより遠くに吹き飛ばせる";
+"shockwave_force" = "衝撃波の力";
+"shockwave_force_desc" = "すべての武器による範囲ダメージが<number>%増加する";
+"airborne_dancer" = "空中の舞い手";
+"airborne_dancer_desc" = "空中ジャンプが1回追加され、空中攻撃能力が強化される";
+/* Skill tree points left to distribute */
+"pointsLeftToSpend" = "振り分け可能：<number>ポイント";
+"resetSkillTreePointsButton" = "リセット";
+"resetSkillTreeConfirmation" = "<price>支払ってスキルツリーのポイント割り振りをリセットしますか？";
+"passiveBoost" = "パッシブ強化";
+"skillTreePassiveBoost" = "スペシャライズ強化";
+"faster_stamina_regeneration_desc_alt" = "スタミナ回復速度が<number>%上昇する";
+"poisonous" = "毒";
+"skillLearned" = "スキル習得";
+"skillLearned!" = "スキル習得！";
+"clickToOpenSkillDesc" = "カード内のアイコンをタップすると各スキルの詳細を確認できます";
+"tellMoreAboutSkillTree" = "スキルツリーについて詳しく";
+"currentVersionIsBanned" = "現在のゲームバージョン(<version>)は無効なバージョンです アップデートしてください！";
+"awake" = "呼び覚ます";
+"awake!" = "呼び覚ます！";
+"boltAnimationCredits" = "電撃のアニメーション";
+"bloodAnimationCredits" = "血液アニメーション";
+"fireBallAnimationCredits" = "火球アニメーション";
+"dustAnimationCredits" = "塵アニメーション";
+"writerCreditsEntry" = "ライター";
+"gameplayCoderCreditsEntry" = "ゲームプレイコーダー";
+"designerCreditsEntry" = "デザイナー";
+"gameDesignerCreditsEntry" = "ゲームデザイナー";
+"coCreatorCreditsEntry" = "共同制作";
+"directorCreditsEntry" = "ディレクター";
+"coDirectorCreditsEntry" = "共同ディレクター";
+"highResArtistCreditsEntry" = "ハイレゾアーティスト";
+"artDirectorCreditsEntry" = "アートディレクター";
+"levelDesignerCreditsEntry" = "レベルデザイナー";
+"characterDesignerCreditsEntry" = "キャラクターデザイナー";
+"characterAnimatorCreditsEntry" = "キャラクターアニメーター";
+"animatorCreditsEntry" = "アニメーター";
+"managerCreditsEntry" = "マネージャー";
+"teamManagerCreditsEntry" = "チームマネージャー";
+"programmerCreditsEntry" = "プログラマー";
+"productionAssistantCreditsEntry" = "プロダクションアシスタント";
+"serverSideProgrammerCreditsEntry" = "サーバープログラマー";
+"serverSideProgrammingCreditsEntry" = "サーバープログラミング";
+"spriteArtistCreditsEntry" = "スプライトアーティスト";
+"environmentArtistCreditsEntry" = "背景アーティスト";
+"communityManagementCreditsEntry" = "コミュニティマネージャー";
+"userSupportCreditsEntry" = "ユーザーサポート";
+"chapter3n4SoundtrackCreditsEntry" = "チャプター3＆4 サウンドトラック";
+"chapter5SoundtrackCreditsEntry" = "チャプター5 サウンドトラック";
+"audioDesignerCreditsEntry" = "オーディオデザイナー";
+"stealth_boost" = "影まとい";
+"stealth_boost_desc" = "通常の敵が汚れ顔の兵士を発見するまでの時間が伸びる";
+"stealth_boost_desc_ex" = "他の敵に既に気付かれている場合、本スキルは無効となる";
+"green_platform_step" = "マジックステップ";
+"green_platform_step_desc" = "魔法がかけられた緑色の地面上を常に歩くことができる";
+"super_persistent_projectile" = "バクバクショット";
+"super_persistent_projectile_desc" = "武器によるすべての発射物が、空中にある敵の発射物を<number>%の確率で打ち消す";
+"jump_boost" = "フィアレスジャンプ";
+"jump_boost_desc" = "ジャンプ力が<number>%上昇する";
+"speed_boost" = "瞬足";
+"speed_boost_desc" = "スピードが<number>%上昇する";
+"armor_boost" = "アンストッパブル";
+"armor_boost_desc" = "防御力が<number>%上昇する";
+"thisAchievementGrantsSkillPoint" = "この実績を解除すると、スキルツリーポイントを1獲得できます";
+"skillTreePoint" = "+<number>スキルツリーポイント";
+"skillTreePoints" = "+<number>スキルツリーポイント";
+"pointLeftToSpendSkillTree" = "振り分け可能：<number>ポイント";
+"pointsLeftToSpendSkillTree" = "振り分け可能：<number>ポイント";
+"moreSkillPointsSoonText" = "次のアップデートでさらにスキルポイントが使えるようになります！";
+"skillTreePointsFull" = "スキルツリーポイント";
+"skillTreePointsShort" = "スキルポイント";
+"totalSkillTreePoints" = "合計<number>ポイント";
+"yourSkillTreePoints" = "スキルポイント：";
+"visitTheSkillTree" = "スキルツリーでポイントを使おう";
+"cantUsePotionInWeeklyHard" = "難易度<hard>ハード<white>では回復薬を使用できません！";
+"waitingSlowCreditCard" = "処理が終了するまでお待ちください…";
+"transactionCancelled" = "処理中止";
+"signInBeforePurchasePrompt" = "ありがとうございます！<service>アカウントでのサインインを確認しました　サインインすると進捗、購入品などがすべてのデバイス間で自動的に同期されます";
+"awesomeThanks" = "ありがとうございます！";
+"notSignedInBeforePurchasePrompt" = "現在<service>アカウントでサインインを行っていないようです　購入、進捗をクラウドに保存するためにはサインインが必要です";
+"noThanks" = "結構です";
+"Magic Rampage!" = "Magic Rampage!";
+"meanwhileTitle" = "その頃…";
+"welcomeBack" = "おかえりなさい！";
+"superSkillHowTo" = "<green>¶<white> (<green>攻撃<white>)ボタンを<us-time>秒長押しするとスーパースキルが発動";
+"superSkillHowToSwitchTap" = "スーパースキルのアイコンをタップすると、2つめのスキルに切替できます";
+/* The tag 'Frost' will describe an item that can freeze enemies. Could be translated as 'something that freezes other things' */
+"frost" = "フロストアイス";
+"immuneAgainstFrost" = "凍結を無効にする";
+/* Name of monster based on the D&D lore */
+"beholder" = "ビホルダーr";
+"cyclops" = "サイクロプス";
+/* Name of a giant robot-like monster that walks like it is marching */
+"walker" = "ウォーカー";
+/* Name of a giant orc-like wizard monster */
+"vindicator" = "ヴィンディケイター";
+/* Name of a square rock shaped monster (no legs an no arms) */
+"demon-stomper" = "デーモンストンプ";
+"wdgPctWinRewardTitleScore" = "ウィークリーダンジョンの最高スコアが上位<percentage>%にランクインしました！";
+"wdgPctWinRewardPushScore" = "おめでとうございます！先週のウィークリーダンジョンのスコアが上位<percentage>%にランクインしました！報酬の間に報酬が届いています！";
+"wdgPctWinRewardTitleTime" = "ウィークリーダンジョンの最速タイムが上位<percentage>%にランクインしました！";
+"wdgPctWinRewardPushTime" = "おめでとうございます！先週のウィークリーダンジョンのタイムが上位<percentage>%にランクインしました！報酬の間に報酬が届いています！";
+"finishDungeon" = "ダンジョンを終える";
+"openPortal" = "ポータルを開く";
+"ice-golem" = "アイスゴーレム";
+"privacySettings" = "プライバシー設定";
+"purchaseConfirmed" = "購入確認";
+"monthJanuary" = "1月";
+"monthFebruary" = "2月";
+"monthMarch" = "3月";
+"monthApril" = "4月";
+"monthMay" = "5月";
+"monthJune" = "6月";
+"monthJuly" = "7月";
+"monthAugust" = "8月";
+"monthSeptember" = "9月";
+"monthOctober" = "10月";
+"monthNovember" = "11月";
+"monthDecember" = "12月";
+"season" = "シーズン";
+"seasonPoints" = "シーズンポイント";
+"seasonPointsColon" = "シーズンポイント：";
+/* E.g.: April Season 2022, Christmas Season 2023, Fire Season 2024*/
+"seasonOf" = "<season-title>シーズン <year>";
+/* E.g.: You achieved the rank of Platinum 123 */
+"youAchievedTheRank" = "ランクが<rank>に到達";
+"claimSeasonPoints" = "シーズンポイントを受け取る";
+"skinAreaTitle" = "英雄の間";
+"seasonPointsAndSkins" = "シーズンポイントとスキン";
+"exchange" = "交換";
+"exchangeColon" = "交換：";
+"price" = "価格";
+"priceColon" = "価格：";
+"exchangeFor" = "<sp-number>シーズンポイントと交換";
+"exchangeForSkinConfirmationConfirm" = "<sp-number>シーズンポイントを<skin-name>と交換しますか？";
+"exchangeForSkinConfirmationConfirmEx" = "<sp-number>シーズンポイントを<class-name>クラスの<skin-name>スキンと交換しますか？";
+"notEnoughSeasonPoints" = "シーズンポイントが足りません！";
+"grimoire" = "グリモワール";
+"seasonEndNotification" = "新たなコンペティティブシーズンが開幕しました！ログインして報酬を受け取れるようにしましょう！";
+"loadingArcaneMagic" = "秘密の魔術を読み込み中…";
+"loadingArcaneMagicFailed" = "手の空いている秘密の魔術師がいません　再度お試しください";
+"extraSeasonPoints" = "エクストラシーズンポイント";
+"extraSeasonPointsShort" = "エクストラポイント";
+"seasonPointsProductDesc" = "<number>シーズンポイントをすぐに獲得できます";
+/* the Rampage mode is the name of the New Game+ modality. It can keep its name untranslated (eg: Modo Rampage in portuguese) unless it would look too odd on the target language */
+"newGamePlus" = "ランページ";
+"newGamePlusPrompt" = "<new-game-plus>モードで新たにゲームを始めることができます";
+"newGamePlusDesc" = "<new-game-plus>モードではすべての敵がより強力になり、回復薬が使用できなくなります　また、復活コストも高くなります";
+"newGamePlusRewardDesc" = "<new-game-plus>モードの達成度を100%以上にすると、特別なアイテムを入手できます！";
+"startNewGamePlus" = "ランページモード";
+"startNewGameStd" = "新規ゲーム（ノーマルモード）";
+"cantWithdrawBankNewGamePlus" = "<new-game-plus>モードではアイテムを引き出せません";
+"newGamePlusHowTo" = "空のスロットでゲームを始めることで<new-game-plus>モードをプレイすることができます";
+"tavern" = "酒場";
+"switchSuperSkill" = "スーパースキル切替";
+"keyboardSettings" = "キーボード設定";
+"useAction" = "使用/アクション";
+"moveLeft" = "左移動";
+"moveRight" = "右移動";
+"goToCharacterEditorConfirm" = "新たなスキンを獲得しました！<characterEditor>からカスタムスキンを装備できます！";
+"goToCharacterEditor" = "<characterEditor>へ移動";
+"stayHere" = "ここに残る";
+"prizesAndSkinsButtonFace" = "報酬とスキン";
+"checkingBankStatus" = "銀行の状態を確認中…";
+"bankConnectionFailure" = "接続失敗";
+"bankConnectionRetrying" = "再試行中…";
+"loadingLegacyBankVault" = "銀行の貯蔵庫を読み込んでいます…";
+"transferingWealth" = "財産を新たな場所へ移行中…";
+"notLoggedForBankMessage" = "銀行にアクセスするには<service>にサインインする必要があります";
+"retrievingWealthInventory" = "財産を回収中…";
+"purchaseBankSlotConfirmationPrompt" = "<price>を支払って銀行のスロットを購入しますか？";
+"purchaseBankSlotsConfirmationPrompt" = "<number>個の銀行スロットを<price>で購入しますか？";
+/* The <<sign in>> verb may be changed to express the meaning of <<enter the game>> */
+"seasonEndNotificationEx" = "新たなコンペティティブシーズンが開幕し、<number>シーズンポイントを獲得しました！報酬を受け取るためゲームをプレイしましょう！";
+"lastWeekToGetSkins" = "報酬の間から現在ラインナップされているスキンを受け取れるのは今週が最後です！お気に入りを手に入れるチャンスをお見逃しなく！";
+"lastWeekToGetSkinsEx" = "報酬の間から現在ラインナップされているスキンを受け取れるのは今週が最後です！間もなく新たなスキンに入れ替わります、お気に入りを手に入れるチャンスをお見逃しなく！";
+"lastDaysToGetSkins" = "報酬の間から現在ラインナップされているスキンを受け取れるのは残り数日です！お気に入りを手に入れるチャンスをお見逃しなく！";
+"lastDaysToGetSkinsEx" = "報酬の間から現在ラインナップされているスキンを受け取れるのは残り数日です！間もなく新たなスキンに入れ替わります、お気に入りを手に入れるチャンスをお見逃しなく！";
+"cantWithdrawBankNewGamePlusUntil102" = "<new-game-plus>モードでは達成度が102%に到達するまで、アイテムを引き出せません";
+"hallowitch" = "ハロウィッチ";
+"tombstone-mimic" = "ハカイシミミック";
+"disconnectedFromServer" = "サーバーとの接続が切れました";
+"reconnect" = "再接続";
+"leaveTavernConfirmation" = "酒場から退出しますか？";
+"stillLoadingCredentials" = "プレイヤー権限を読み込み中… 再試行してください";
+/* 'To inspect a player' means having a look at their currently equipped items and stats (to examine their stats). Ideally not longer then 12 letters */
+"inspect" = "詳しく見る";
+/* 'To duel a player' means fighting against them in a 1v1 PvP match. Ideally not longer than 8 letters */
+"duel" = "決闘";
+/* Same as above but including 'Player vs Player' in order to be more comprehensive. Ideally not longer than 12 letters */
+"duelPvP" = "PvP決闘";
+/* 'To team up for an arena match means inviting another player to your team on a new PvP team deathmatch */
+"teamUpArena" = "チームを組んでアリーナに挑む";
+"teamUpArenaShort" = "アリーナチームを組む";
+"teamUpArenaLong" = "チームを組んでアリーナに挑む";
+"friendDuelComingSoon" = "フレンドとの決闘機能は間もなくリリース予定です！";
+"messageTo" = "<player-name>へ：";
+/* <service> may be replaced by Google Play Games, Game Center or Steam */
+"sessionFlushNotification" = "<service>アカウントが<display-name>に切り替わりました";
+"about-play-pass-0" = "Magic RampageがGoogle Play Passに登場！ぜひ登録して広告、ゲーム内購入要素なしで魔法の世界をお楽しみください[1]";
+"about-play-pass-1" = "Play Passの権利をお持ちの方は自動的にすべてのスキンを利用できる権利を得ます また、最大3倍のゴールドやコイン報酬、ゲーム内ショップの全アイテム最大50%引きという特典付き[2]";
+"about-play-pass-2" = "[1] Google Play Passに登録していない場合はゲームに変更はありません";
+"about-play-pass-3" = "[2] Play Passに登録している場合はゲーム内購入要素はなくなります";
+"subscribePlayPass" = "今すぐ登録！";
+"congratulationsExcl" = "おめでとうございます！";
+"wellDoneExcl" = "素晴らしい！";
+"scorePrizeRewardPush" = "素晴らしい！先週のダンジョンにおけるあなたのスコアが<pos>位にランクインしました（全<total>プレイヤー中）！豪華な報酬が報酬の間に届いています！";
+"timePrizeRewardPush" = "素晴らしい！先週のダンジョンにおけるあなたのタイムが<pos>位にランクインしました（全<total>プレイヤー中）！豪華な報酬が報酬の間に届いています！";
+"weeklyDungeonPosition" = "ウィークリーダンジョン報酬：<pos>位（全<total>プレイヤー中）";
+"lastDaysToGetSkinsRecall" = "報酬の間でスキンを手に入れられる期間が残り数日となりました！間もなく前シーズンで特に人気を集めたスキンコレクションがリリースされます！";
+/* the player asks the Taverns innkeeper what beverages are served (allowed to get quite colloquial): */
+"tavernShopButton" = "ラインナップは？";
+"whichFriendBuyDrinkFor" = "<item-name>一杯をどのフレンドにおごりますか？";
+"whichFriendBuyDrinkForShort" = "<item-name>一杯をおごる";
+"noFriendsOnlineToBuyDrinkFor" = "フレンドが酒場にいないため、強化アイテムをおごれません";
+"playerNoLongerInTavern" = "<player-name>が酒場にいません！";
+"socialFeedItemPurchaseInTavern" = "<purchaser-name>が<item-name>一杯を<target-name>におごりました！";
+"socialFeedPlayerEntered" = "<player-name>が酒場に入りました";
+"socialFeedPlayerLeft" = "<player-name>が酒場を去りました";
+"socialFeedEmoteSentToOther" = "<sender-name>から<target-name>へ： <emote-text>";
+"socialFeedEmoteSent" = "<sender-name>： <emote-text>";
+"socialFeedPowerUpUsed" = "<sender-name>が<item-name>を使用";
+"playerSilencedNotification" = "<player-name>が静かになりました";
+"playerUnsilencedNotification" = "<player-name>が再度話し始めました";
+"playDarts" = "ダーツで遊ぶ";
+"playDartsExcl" = "ダーツで遊ぶ！";
+"playAgain" = "もう一度";
+"playAgainExcl" = "もう一度！";
+"yourGreatestScore" = "最高スコア：<score>";
+"currentGreatestScore" = "過去最高スコア：<score>";
+"yourCurrentHighestScore" = "過去最高スコア<score>";
+"dartsMinigameScoreUpdate" = "<player-name>が<score>ポイントを<game-name>で獲得！";
+/* Darts is the name of the dart throwing minigame */
+"darts" = "ダーツ";
+/* Salesmans Smackdown is the name of a game that consists of hitting a dummy disguised as the Salesman character */
+"smackdown" = "化けるセールスマン";
+"smackdownMinigameScoreUpdate" = "<player-name>が<score>ポイントを<game-name>で獲得！";
+/* Arena is the name of a PvP mode */
+"arenaModeName" = "アリーナ";
+"serverMaintenanceNotification00" = "現在サーバーメンテナンス中です 動作が不安定になることがありますが、ご理解ご協力のほどよろしくお願い致します";
+"serverMaintenanceNotification01" = "現在サーバーメンテナンス中です ご不便をおかけしますが、いち早い復旧に向けて作業を続けております";
+"serverMaintenanceNotification02" = "現在サーバーメンテナンス中です 短時間、予期せぬトラブルが発生する可能性もございます ご理解ご協力のほどよろしくお願い致します";
+"chooseAComradeFirst" = "友達を選択していません！続けるには選択してください";
+"fileCorruptionDetected" = "いずれか、もしくは複数のゲームファイルが破損している可能性があります 問題を解決するには一度ゲームをアンインストールし、ストアから再度ダウンロードしてください";
+"duelAnnouncement0" = "栄光の準備をしろ、 <class>! 決闘が君を待っている！";
+"duelAnnouncement1" = "挑戦状が突きつけられた！決闘に立ち向かうか？";
+"duelAnnouncement2" = "挑戦者が現れた！決闘で勝利を掴め！";
+"duelAnnouncement3" = "壮大な決闘に召喚された！";
+"duelAnnouncement4" = "運命の決闘が迫っている！";
+"duelAnnouncement5" = "準備はいいか、 <class>! 決闘が君を呼んでいる！";
+"duelAnnouncement6" = "戦いの時が来た！ <other-class> が君を壮大な決闘に読んでいる";
+"duelAnnouncement7" = "観衆が叫ぶのが聞こえる - 君は英雄的な決闘に呼ばれたんだ";
+"duelAnnouncement8" = "運命が呼んでいる - 名誉の決闘が君の勇気を試す <class>!";
+"duelAnnouncement9" = "君はこの <other-class>との決闘に選ばれた！";
+"duelWaitMessage0" = "決闘が始まるため <class>の勇敢な受け入れを待っている！";
+"duelWaitMessage1" = "観衆は静まり返り<class>の勇気ある返答を待っている！";
+"duelWaitMessage2" = "決闘の受け入れは、未決のままだ！";
+"duelWaitMessage3" = "<class>が前に出て挑戦を受け入れるのを待っている！";
+"duelWaitMessage4" = "観衆は息をのみ、<class>の決闘の受け入れを待っている！";
+"duelWaitMessage5" = "<class>が決闘の呼びかけに思案し、期待が高まっている！";
+"duelChallengeCancelled" = "挑戦者は決闘の呼びかけから退却した！";
+"duelChallengeDeclined" = "相手は君が提案した戦いから退却した";
+"duelChallengeNotAvailableBusy" = "呪文を止めろ！<player-name> は既に他の決闘が控えている";
+"duelChallengeNotAvailableShop" = "ちょっと待て！ <player-name> は今、酒場のメニューを見ている";
+"duelChallengeNotAvailableMisc" = "挑戦を保留して！ <player-name>は今、決闘に応じられない！";
+"cantShopDuringPendingDuel" = "まずは決闘を優先だ! 決闘が保留中の間、酒場は閉鎖中だ";
+"leaveDuelConfirmation" = "決闘を離れるのか？";
+"leaveDuelConfirmation0" = "運命に降伏する？";
+"leaveDuelConfirmation1" = "ライバルに降参する？";
+"leaveDuelConfirmation2" = "戦いを放棄する？";
+"surrender" = "降伏";
+"yield" = "降参";
+"abandon" = "放棄";
+"opponentDisconnectedVictory" = "敵の接続が切れた　- 勝利は君のものだ！";
+"playerDisconnectedVictory" = "<player-name>の接続が切れた　-　勝利は君のものだ！";
+"opponentDisconnectedDestiny" = "敵の接続が切れた - 運命が定まった！";
+"playerDisconnectedDestiny" = "<player-name>の接続が切れた - 運命が定まった！";
+"opponentHasFled" = "相手は戦いから逃げた！";
+"playerNameWins" = "<player-name>が勝利！";
+"playerNameWinsExcl" = "<player-name>が勝利！";
+"playerNameDefeated" = "<player-name>は敗北した";
+"playerNameDefeatedExcl" = "<player-name>は敗北した！";
+"flawlessVictory" = "完璧な勝利";
+"flawlessVictoryExcl" = "完璧な勝利！";
+"sideSip" = "サイドスイップ";
+"downloadingDuelArenaScene" = "決闘アリーナをダウンロード中...";
+"duelArenaSceneLoaded" = "決闘アリーナが読み込まれました";
+"couldntLoadDuelArenaScene" = "決闘アリーナの読み込みに失敗しました";
+"couldntLoadDuelArenaSceneTryAgain" = "決闘アリーナの読み込みに失敗しました　再試行してください";
+"duelArenaSceneLoadingFailed" = "決闘アリーナの読み込みに失敗しました";
+"downloadingResources" = "リソースをダウンロード中...";
+"resourcesDownloaded" = "リソースがダウンロードされました";
+"couldntDownloadResources" = "リソースのダウンロードに失敗しました";
+"couldntDownloadResourcesTryAgain" = "リソースのダウンロードに失敗しました　再試行してください";
+"resourceDownloadFailed" = "リソースのダウンロードに失敗しました";
+"cheaterNoticeOnlineFeatures" = "アカウントで不正な活動が検出されました　一部のオンラインマルチプレイヤー機能が正常に動作しない場合があります";
+"fileCorrupted" = "破損したファイル";
+"fileIncomplete" = "不完全なファイル";
+"fileIsInvalid" = "無効なファイル";
+"invalidMatchChallenger" = "試合を完了できませんでした　挑戦者が見つかりません！";
+"invalidMatchChallengedPlayer" = "試合を完了できませんでした　挑戦されたプレイヤーが見つかりません！";
+"duelUnknownError" = "何か問題が発生しました　我らの魔法使いたちがすでに調査しています";
+"cantChallenge" = "呪文を控えよ！あなたはすでに他の決闘を控えている！";
+"rankedDuels" = "ランクデュエル ";
+"rankedDuelsModeName" = "運命の決闘";
+"newCombatZonesSoon" = "新しい決闘エリアが近日登場！";
+"inTheDuelZone" = "決闘エリアにいます　このエリアのプレイヤーは決闘に挑戦できます！";
+"mustBeInTheDuelZone" = "決闘エリアに足を踏み入れて、他のプレイヤーに挑戦しよう！";
+"abortStateMessageContactSupport" = "試合中に問題が検出されました　この問題が続く場合はサポートにお問い合わせください";
+/* as in `Immune against damage` */
+"immune" = "免疫";
+"incompatibleForDuels" = "ゲームバージョンに互換性がありません　このプレイヤーとは決闘できません！";
+"combatZone0" = "監視者の間";
+"combatZone1" = "沼地の要塞";
+"duelsInMaintenanceComingBackSoon" = "決闘サーバーのメンテナンスを行っています 決闘は今週後半まで利用できません ご理解いただきありがとうございます";
+"duelsInMaintenanceComingBackSoonB" = "決闘のメンテナンスを行っています　数時間以内に予定されているアップデートで再開されます　ご理解とご協力いただきありがとうございます！";
+"combatZone2" = "忘れられた塔";
+"cantAddMoreFriends" = "これ以上友達を追加できません";
+"cantAddMoreFriendsA" = "これ以上友達を追加できません　友達の最大数に達しました";
+"cantAddMoreFriendsB" = "これ以上友達を追加できません　新しい友達を追加するために、いくつか削除してください";
+"cantAddMoreFriendsAB" = "友達の最大数に達しました　新しい友達を追加するために、いくつか削除してください";
+"duelRankIron" = "センチネル";
+"duelRankBronze" = "マスターセンチネル";
+"duelRankSilver" = "グランドマスターセンチネル";
+"duelRankGold" = "タイムトラベラー";
+"duelRankPlatinum" = "タイムパトローラー";
+"duelRankDiamond" = "コズミックパトローラー";
+/* Name of the 'Duel Mode' or simply 'Duels' */
+"duelMode" = "決闘";
+"cantChallengeDuringMatchmaking" = "ランクマッチ待機中は、他のプレイヤーと決闘できません！";
+"waitingForOpponent" = "相手が参加するのを待っています...";
+"connectingToServerFun" = "Magic Rampageの領域に接続中...";
+"lifetimeRankScore" = "永遠の英雄スコア";
+"lifetimeRankScoreDisplay" = "永遠の英雄スコア: <number>";
+"aboutLifetimeRankScore1" = "永遠の英雄スコアは、すべての競技モードで全シーズンにわたって獲得したランクポイントの合計を示します";
+"aboutLifetimeRankScore2" = "これはMagic Rampageでのあなたの努力とスキルを示す、永続的な累積記録です";
+"aboutLifetimeRankScore3" = "シーズンごとにリセットされるランクポイントとは異なり、永遠の英雄スコアはプレイを続けるたびに増え続け、あなたの成長を記録します";
+"aboutLifetimeRankScore4" = "これを使って他のプレイヤーと自分の進行状況を比較し、Magic Rampageの真のチャンピオンとしてどれだけ成長したかを確認しましょう！";
+"aboutLifetimeRankScoreE" = "高い永遠の英雄スコアを持つプレイヤーのために、今後のアップデートではさらにエキサイティングな特典や特別な報酬を計画していますので、お楽しみに！";
+"seasonPointsProductDescAlt" = "シーズンポイントをすぐに追加します";
+/* western version of name 高橋 温 (please leave as is unless target language has regional specifics for Japanese)  */
+"OnTakahashi" = "高橋温";
+"MiyokoMatsuyama" = "松山美代子";
+"tellMoreAboutDuelsA" = "決闘についてもっと教えて";
+"tellMoreAboutDuelsB" = "決闘？";
+"tellMoreAboutDuelsC" = "決闘ガイド";
+"tellMoreAboutDuelsD" = "決闘について学ぶ";
+"tellMoreAboutDuelsE" = "決闘とは？";
+"tavernAndDuelsButton" = "酒場と決闘";
+"seekingOpponentA" = "相応しい対戦相手を探しています...";
+"seekingOpponentB" = "対戦相手を見つけています...";
+"privacyPolicy" = "プライバシーポリシー";
+"enterPortal" = "ポータルに入る";
+"stepThrough" = "通過する";
+"proceed" = "進む";
+"continue" = "続行";
+"advance" = "前進する";
+"enter" = "入る";
+"stepIn" = "踏み込む";
+"go" = "行く";
+"forward" = "前へ";
+"next" = "次へ";
+"stepIntoCombatZones" = "戦闘ゾーンに踏み込む";
+"exploreCombatZones" = "戦闘ゾーンを探索する";
+"dirtyFacedMinion" = "汚れ顔のミニオン";
+"duelTutorialQuestion" = "最初に戦闘ゾーンについて学びますか？";
+/* how it'll appear in game: +20% hammer attack power */
+"hammerAndMaceBoostTitle" = "ハンマーとメイスの攻撃力";
+/* how it'll appear in game: +20% staff and grimoire attack power */
+"staffAndGrimoireBoostTitle" = "杖とグリモアの攻撃力";
+"stavesAndGrimoires" = "杖とグリモア";
+"staffAndGrimoire" = "杖とグリモア";
+"hammersAndMaces" = "ハンマーとメイス";
+"hammerAndMace" = "ハンマーとメイス";
+/* Example: of a player wins 3 matches in a row, they are on a 3-win streak */
+"winningStreak" = "連勝";
+"winningStreakExcl" = "連勝!";
+"winningStreakBonus" = "連勝ボーナス";
+"winningStreakBonusExcl" = "連勝ボーナス!";
+"opponentHasLowerVersion" = "対戦相手は古いバージョンを使用しています　この対戦中は一部の新スキルや機能が利用できない可能性があります";
+"and" = "と";
+"magicIdName" = "Magic ID";
+"aboutMagicIdShort" = "Magic IDはアカウントに紐づけられた6～8文字の固有コードです";
+"aboutMagicIdEx" = "サポートへの問い合わせやフレンドとの接続時に使用します";
+"magicIdCopied" = "Magic IDをクリップボードにコピーしました！";
+"gamepadRequiredMessage" = "Magic Rampage をプレイするには対応するゲームパッドに接続してください";
+"gamepadRequiredMessageEx" = "Magic Rampage をプレイするにはゲームパッドを接続、またはコントローラーをペアリングし、ゲームを再起動してください";
+"opponentHasLowerVersionShort" = "対戦相手が古いバージョンを使用しています";
+"updateToPlayRankedDuels" = "ランクデュエルで遊ぶには、ベータ版をアップデートしてください。";

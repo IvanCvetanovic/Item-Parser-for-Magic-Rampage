@@ -1,0 +1,56 @@
+"basic_greetings_0" = "ヤッホー！";
+"basic_wow_0" = "ワオ！!";
+"basic_thanks_0" = "ありがとう！";
+"basic_you_look_awesome_0" = "イカした格好だね！";
+"basic_your_build_is_awesome_0" = "最高のビルドだね！";
+"basic_very_funny_0" = "おもしろい！";
+"basic_look_at_me_0" = "こっち見て！";
+"basic_good_job_0" = "グッジョブ！";
+"basic_bye_0" = "バイバイ！";
+"basic_not_funny_0" = "ハァ…";
+
+"basic_lets_play_0" = "一緒に遊ぼう！";
+"basic_cheers_0" = "いけいけ！";
+"basic_im_thirsty_0" = "喉乾いた…";
+"basic_yes_0" = "イェス!";
+"basic_no_0" = "ノー!";
+"basic_wait_0" = "待って…";
+
+"special_inspect_0" = "ふむふむ…";
+
+"premium_not_cool_0" = "なんかなぁ…";
+"premium_i_look_awesome_0" = "ルックス良いでしょ！";
+"premium_do_i_look_cool_0" = "カッコイイかな？";
+"premium_my_build_is_awesome_0" = "自慢のビルドさ！";
+
+"premium_glorify_ranger_0" = "レンジャー最高！";
+"premium_glorify_druid_0" = "ドルイドが一番！";
+"premium_glorify_mage_0" = "やっぱメイジ！";
+"premium_glorify_priest_0" = "プリーストこそ正義！";
+"premium_glorify_black-mage_0" = "ブラックメイジ最強！";
+"premium_glorify_rogue_0" = "時代はローグ！";
+"premium_glorify_warlock_0" = "ウォーロックが世界一！";
+"premium_glorify_thief_0" = "シーフしか勝たん！";
+"premium_glorify_paladin_0" = "パラディン カッコイイ！";
+"premium_glorify_warrior_0" = "ウォーリアー激強！";
+"premium_glorify_high-mage_0" = "ハイメイジは良いぞ！";
+"premium_glorify_elite-warrior_0" = "エリートウォーリアー強すぎ！";
+"premium_glorify_witchdoctor_0" = "ウィッチドクターの強さは伝説級！";
+
+"achievement_100pct" = "達成度100%になったよ！";
+"achievement_101pct" = "達成度101%になったよ！";
+"achievement_102pct" = "達成度102%になったよ！";
+"achievement_dragonslayer" = "ドラゴンスレイヤーなのさ！";
+"achievement_dirtyfacedsouls" = "ランページモードで100%までいった！";
+"achievement_the_king" = "ランページモードで102%までいった！";
+"achievement_champion" = "チャンピオンだって楽勝さ！";
+"achievement_top1" = "チャンピオンの間でトップになったんだ！";
+
+/* `GG` is shorthand for `Good Game` - typically used at the end of a match -  widely recognized term in gaming communities worldwide */
+/* In many locales, this expression is well-known and does not require translation */
+"duel_gg" = "GG";
+"duel_that_was_close" = "ギリギリだったな！";
+"duel_that_was_intense" = "激アツな戦いだったな！";
+"duel_fight_like_that" = "どこでそんな戦い方を学んだんだ？";
+"duel_worthy_opponent" = "お前、なかなかやるな！";
+"duel_play_again" = "もう一戦やろうぜ！";

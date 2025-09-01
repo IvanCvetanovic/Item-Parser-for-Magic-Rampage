@@ -1,0 +1,56 @@
+"basic_greetings_0" = "Greetings!";
+"basic_wow_0" = "Wow!";
+"basic_thanks_0" = "Thanks!";
+"basic_you_look_awesome_0" = "You look awesome!";
+"basic_your_build_is_awesome_0" = "Your build is awesome!";
+"basic_very_funny_0" = "Very funny!";
+"basic_look_at_me_0" = "Look at me!";
+"basic_good_job_0" = "Good job!";
+"basic_bye_0" = "Bye!";
+"basic_not_funny_0" = "Not funny...";
+
+"basic_lets_play_0" = "Let's play!";
+"basic_cheers_0" = "Cheers!";
+"basic_im_thirsty_0" = "I'm thirsty...";
+"basic_yes_0" = "Yes!";
+"basic_no_0" = "Nope!";
+"basic_wait_0" = "Wait...";
+
+"special_inspect_0" = "Let's see...";
+
+/* `GG` is shorthand for `Good Game` - typically used at the end of a match -  widely recognized term in gaming communities worldwide */
+/* In many locales, this expression is well-known and does not require translation */
+"duel_gg" = "GG";
+"duel_that_was_close" = "That was close!";
+"duel_that_was_intense" = "That was intense, dude!";
+"duel_fight_like_that" = "Where did you learn to fight like that?";
+"duel_worthy_opponent" = "You're a worthy opponent!";
+"duel_play_again" = "Let's duel again!";
+
+"premium_not_cool_0" = "Not cool...";
+"premium_i_look_awesome_0" = "I look awesome!";
+"premium_do_i_look_cool_0" = "Do I look cool?";
+"premium_my_build_is_awesome_0" = "My build is awesome!";
+
+"premium_glorify_ranger_0" = "Rangers rock!";
+"premium_glorify_druid_0" = "Druids rule!";
+"premium_glorify_mage_0" = "Mages are epic!";
+"premium_glorify_priest_0" = "Priests are awesome!";
+"premium_glorify_black-mage_0" = "Black Mages dominate!";
+"premium_glorify_rogue_0" = "Rogues rule!";
+"premium_glorify_warlock_0" = "Warlocks are the mightiest!";
+"premium_glorify_thief_0" = "Thiefs dominate!";
+"premium_glorify_paladin_0" = "Paladins are epic!";
+"premium_glorify_warrior_0" = "Warriors dominate!";
+"premium_glorify_high-mage_0" = "The High Mage is awesome!";
+"premium_glorify_elite-warrior_0" = "The Elite Warrior rules!";
+"premium_glorify_witchdoctor_0" = "The Witchdoctor is legendary!";
+
+"achievement_100pct" = "I've done 100% already!";
+"achievement_101pct" = "I've done 101% already!";
+"achievement_102pct" = "I've completed 102%!";
+"achievement_dragonslayer" = "I'm the dragonslayer!";
+"achievement_dirtyfacedsouls" = "I've done 100% on Rampage Mode!";
+"achievement_the_king" = "I've done 102% on Rampage Mode!";
+"achievement_champion" = "A champion has fallen against me!";
+"achievement_top1" = "I've been to the top of the Hall of Champions!";

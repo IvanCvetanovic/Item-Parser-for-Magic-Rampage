@@ -1,0 +1,54 @@
+"basic_greetings_0" = "Saudações!";
+"basic_wow_0" = "Wow!";
+"basic_thanks_0" = "Valeu!";
+"basic_you_look_awesome_0" = "Seu visual tá demais!";
+"basic_your_build_is_awesome_0" = "Sua build é demais!";
+"basic_very_funny_0" = "Que engraçado!";
+"basic_look_at_me_0" = "Olha pra mim!";
+"basic_good_job_0" = "Bom trabalho!";
+"basic_bye_0" = "Tchau!";
+"basic_not_funny_0" = "Não tem graça...";
+
+"basic_lets_play_0" = "Vamos jogar!";
+"basic_cheers_0" = "Um brinde!";
+"basic_im_thirsty_0" = "Tô com sede...";
+"basic_yes_0" = "Sim!";
+"basic_no_0" = "Não!";
+"basic_wait_0" = "Espera...";
+
+"special_inspect_0" = "Vejamos...";
+
+"duel_gg" = "GG";
+"duel_that_was_close" = "Essa foi por pouco!";
+"duel_that_was_intense" = "Isso foi intenso, cara!";
+"duel_fight_like_that" = "Onde você aprendeu a lutar assim?";
+"duel_worthy_opponent" = "Você é um oponente digno!";
+"duel_play_again" = "Vamos duelar de novo!";
+
+"premium_not_cool_0" = "Isso não é legal...";
+"premium_i_look_awesome_0" = "Meu visual tá demais!";
+"premium_do_i_look_cool_0" = "Eu tô maneiro?";
+"premium_my_build_is_awesome_0" = "Minha build é ótima!";
+
+"premium_glorify_ranger_0" = "Guardiões detonam!";
+"premium_glorify_druid_0" = "Druidas comandam!";
+"premium_glorify_mage_0" = "Magos são épicos!";
+"premium_glorify_priest_0" = "Sacerdotes são demais!";
+"premium_glorify_black-mage_0" = "Magos Sombrios dominam!";
+"premium_glorify_rogue_0" = "Ladinos comandam!";
+"premium_glorify_warlock_0" = "Bruxos são os poderosos!";
+"premium_glorify_thief_0" = "Ladrões dominam!";
+"premium_glorify_paladin_0" = "Paladinos são épicos!";
+"premium_glorify_warrior_0" = "Guerreiros dominam!";
+"premium_glorify_high-mage_0" = "O Alto Mago é demais!";
+"premium_glorify_elite-warrior_0" = "Guerreiro de Elite domina!";
+"premium_glorify_witchdoctor_0" = "O Feiticeiro é legendário!";
+
+"achievement_100pct" = "Eu já fiz 100%!";
+"achievement_101pct" = "Eu já fiz 101%!";
+"achievement_102pct" = "Eu completei os 102%!";
+"achievement_dragonslayer" = "Eu sou o Matador de Dragões!";
+"achievement_dirtyfacedsouls" = "Eu fiz 100% no Modo Rampage!";
+"achievement_the_king" = "Eu fiz 102% no Modo Rampage!";
+"achievement_champion" = "Eu venci um Campeão!";
+"achievement_top1" = "Já estive no topo do Hall dos Campeões!";

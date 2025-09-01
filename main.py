@@ -93,7 +93,7 @@ def main():
 
     if total == 0:
         print("[DEBUG] No local items, fetching online fallback")
-    online_url = "https://gist.githubusercontent.com/andresan87/.../raw"
+    online_url = "https://gist.githubusercontent.com/andresan87/5670c559e5a930129aa03dfce7827306/raw/5e53a1df2e4d8fec5328640d38ae573116059761/items.json"
     od = OnlineDataManager()
     online = od.get_online_item_data(online_url)
     if online:

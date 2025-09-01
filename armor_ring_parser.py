@@ -1,11 +1,23 @@
 def process_boost(value):
     return 0 if value == 0 or value == 1 else round((value - 1) * 100)
 
+
+def sort_by_max_armor(items, is_ring=False):
+    """Sorts a list of dicts by max armor (or armor if ring) in ascending order."""
+    if is_ring:
+        return sorted(items, key=lambda x: x.get("armor", 0))
+    else:
+        return sorted(items, key=lambda x: x.get("maxLevelArmor", x.get("armor", 0)))
+
+
 def generate_armor_code(data):
     armor_code_list = []
 
     if isinstance(data, list):
-        for block in data:
+        # sort ascending
+        sorted_data = sort_by_max_armor(data, is_ring=False)
+
+        for block in sorted_data:
             if isinstance(block, dict):
                 name = block.get("name", "test_armor").replace(" ", "_").replace("'", "").replace("+", "_plus").replace("-", "").lower()
                 frostImmune = block.get("frost", False)
@@ -35,11 +47,15 @@ def generate_armor_code(data):
 
     return armor_code_list
 
+
 def generate_ring_code(data):
     ring_code_list = []
 
     if isinstance(data, list):
-        for block in data:
+        # sort ascending
+        sorted_data = sort_by_max_armor(data, is_ring=True)
+
+        for block in sorted_data:
             if isinstance(block, dict):
                 name = block.get("name", "test_ring").replace(" ", "_").replace("'", "").replace("+", "_plus").replace("-", "").lower()
                 element = block.get("element", "NEUTRAL").upper()

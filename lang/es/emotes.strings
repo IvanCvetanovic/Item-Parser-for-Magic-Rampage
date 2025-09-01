@@ -1,0 +1,54 @@
+"basic_greetings_0" = "¡Saludos!";
+"basic_wow_0" = "¡Vaya!";
+"basic_thanks_0" = "¡Gracias!";
+"basic_you_look_awesome_0" = "¡Estás genial!";
+"basic_your_build_is_awesome_0" = "¡Tu configuración es genial!";
+"basic_very_funny_0" = "¡Qué gracioso!";
+"basic_look_at_me_0" = "¡Mírame!";
+"basic_good_job_0" = "¡Bien hecho!";
+"basic_bye_0" = "¡Adiós!";
+"basic_not_funny_0" = "No tiene gracia...";
+
+"basic_lets_play_0" = "¡A jugar!";
+"basic_cheers_0" = "¡Salud!";
+"basic_im_thirsty_0" = "Tengo sed...";
+"basic_yes_0" = "¡Sí!";
+"basic_no_0" = "¡No!";
+"basic_wait_0" = "Espera...";
+
+"special_inspect_0" = "A ver...";
+
+"duel_gg" = "GG";
+"duel_that_was_close" = "¡Ha estado cerca!";
+"duel_that_was_intense" = "¡Eso sí que fue intenso, Tío!";
+"duel_fight_like_that" = "¿Dónde aprendiste a luchar así?";
+"duel_worthy_opponent" = "¡Eres un oponente digno!";
+"duel_play_again" = "¡Luchemos otra vez!";
+
+"premium_not_cool_0" = "No mola...";
+"premium_i_look_awesome_0" = "¡Estoy genial!";
+"premium_do_i_look_cool_0" = "¿Molo o qué?";
+"premium_my_build_is_awesome_0" = "¡Mi configuración es genial!";
+
+"premium_glorify_ranger_0" = "¡Los guardas son la caña!";
+"premium_glorify_druid_0" = "¡Los druidas mandan!";
+"premium_glorify_mage_0" = "¡Los magos son épicos!";
+"premium_glorify_priest_0" = "¡Los sacerdotes son geniales!";
+"premium_glorify_black-mage_0" = "¡Los magos oscuros dominan!";
+"premium_glorify_rogue_0" = "¡Los pícaros mandan!";
+"premium_glorify_warlock_0" = "¡Los brujos son los más poderosos!";
+"premium_glorify_thief_0" = "¡Los ladrones dominan!";
+"premium_glorify_paladin_0" = "¡Los paladines son épicos!";
+"premium_glorify_warrior_0" = "¡Los guerreros dominan!";
+"premium_glorify_high-mage_0" = "¡El alto mago es genial!";
+"premium_glorify_elite-warrior_0" = "¡El guerrero de élite manda!";
+"premium_glorify_witchdoctor_0" = "¡El hechicero es legendario!";
+
+"achievement_100pct" = "¡Ya he hecho el 100%!";
+"achievement_101pct" = "¡Ya he hecho el 101%!";
+"achievement_102pct" = "¡He completado el 102%!";
+"achievement_dragonslayer" = "¡Soy el matadragones!";
+"achievement_dirtyfacedsouls" = "¡He hecho el 100% en el modo Rampage!";
+"achievement_the_king" = "¡He hecho el 102% en el modo Rampage!";
+"achievement_champion" = "¡Un campeón ha caído contra mí!";
+"achievement_top1" = "¡He estado en lo más alto del Salón de los Campeones!";

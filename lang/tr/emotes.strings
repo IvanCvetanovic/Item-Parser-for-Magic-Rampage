@@ -1,0 +1,54 @@
+"basic_greetings_0" = "Selamlar!";
+"basic_wow_0" = "Vay!";
+"basic_thanks_0" = "Teşekkürler!";
+"basic_you_look_awesome_0" = "Harika!";
+"basic_your_build_is_awesome_0" = "Karakterin harika!";
+"basic_very_funny_0" = "Çok komik!";
+"basic_look_at_me_0" = "Baksana bana!";
+"basic_good_job_0" = "Harika iş!";
+"basic_bye_0" = "Görüşürüz!";
+"basic_not_funny_0" = "Hiç komik değil...";
+
+"basic_lets_play_0" = "Hadi oynayalım!";
+"basic_cheers_0" = "Şerefe!";
+"basic_im_thirsty_0" = "Susadım...";
+"basic_yes_0" = "Evet!";
+"basic_no_0" = "Hayır!";
+"basic_wait_0" = "Bekle...";
+
+"special_inspect_0" = "Bir bakalım...";
+
+"duel_gg" = "GG";
+"duel_that_was_close" = "Ah be yakındı!";
+"duel_that_was_intense" = "Sağlam mücadeleydi, dostum!";
+"duel_fight_like_that" = "Böyle dövüşmeyi nereden öğrendin?";
+"duel_worthy_opponent" = "Değerli bir rakipsin!";
+"duel_play_again" = "Hadi tekrar düello yapalım!";
+
+"premium_not_cool_0" = "Yakışmadı...";
+"premium_i_look_awesome_0" = "Harika gözüküyorum!";
+"premium_do_i_look_cool_0" = "Havalı gözüküyor muyum?";
+"premium_my_build_is_awesome_0" = "Karakterim harika!";
+
+"premium_glorify_ranger_0" = "Korucu çok havalı!";
+"premium_glorify_druid_0" = "Şamanlar çok havalı!";
+"premium_glorify_mage_0" = "Büyücüler harika!";
+"premium_glorify_priest_0" = "Rahipler harika!";
+"premium_glorify_black-mage_0" = "Kara Büyücüler yok eder!";
+"premium_glorify_rogue_0" = "Düzenbazlar hükmeder!";
+"premium_glorify_warlock_0" = "Cehennem Büyücüleri En güçlüleri!";
+"premium_glorify_thief_0" = "Hırsızlar hükmeder!";
+"premium_glorify_paladin_0" = "Şövalyeler harika!";
+"premium_glorify_warrior_0" = "Savaşçılar hükmeder!";
+"premium_glorify_high-mage_0" = "Yüce Büyücüler harika!";
+"premium_glorify_elite-warrior_0" = "Elit Savaşçılar parçalar!";
+"premium_glorify_witchdoctor_0" = "Cadıdoktorlar efsanevi!";
+
+"achievement_100pct" = "Zaten %100 yaptım";
+"achievement_101pct" = "Zaten %101 yaptım!";
+"achievement_102pct" = "Zaten %102 yaptım!";
+"achievement_dragonslayer" = "Ben ejderkatiliyim!";
+"achievement_dirtyfacedsouls" = "Rampage Modunda %100 yaptım";
+"achievement_the_king" = "Rampage Modunda %102 yaptım";
+"achievement_champion" = "Bir şampiyon karşımda diz çöktü!!";
+"achievement_top1" = "Şampiyonlar Salonunun zirvesine çıktım!";

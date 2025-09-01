@@ -1,0 +1,54 @@
+"basic_greetings_0" = "Вітаю!";
+"basic_wow_0" = "Овва!";
+"basic_thanks_0" = "Дякую!";
+"basic_you_look_awesome_0" = "Класно виглядаєш!";
+"basic_your_build_is_awesome_0" = "Суперова збірка!";
+"basic_very_funny_0" = "Ха-ха-ха!";
+"basic_look_at_me_0" = "Заціни!";
+"basic_good_job_0" = "Молодець!";
+"basic_bye_0" = "Па-па!";
+"basic_not_funny_0" = "Не смішно...";
+
+"basic_lets_play_0" = "Зіграємо!";
+"basic_cheers_0" = "Твоє здоров'я!";
+"basic_im_thirsty_0" = "Хильнути б чогось...";
+"basic_yes_0" = "Ага!";
+"basic_no_0" = "Ніт!";
+"basic_wait_0" = "Стривай-но...";
+
+"special_inspect_0" = "Так-так, подивимося...";
+
+"duel_gg" = "Гарна гра!";
+"duel_that_was_close" = "Рівна гра!";
+"duel_that_was_intense" = "Уф, довелося добряче повозитися!";
+"duel_fight_like_that" = "Овва! Я теж так хочу!";
+"duel_worthy_opponent" = "Ти гідний супротивник! Моя шана!";
+"duel_play_again" = "Ще разок?";
+
+"premium_not_cool_0" = "Ну, таке собі...";
+"premium_i_look_awesome_0" = "Я круто виглядаю!";
+"premium_do_i_look_cool_0" = "Ну, як я тобі?";
+"premium_my_build_is_awesome_0" = "Моя збірка просто супер!";
+
+"premium_glorify_ranger_0" = "Рейнджери найкращі!";
+"premium_glorify_druid_0" = "Друїди найкрутіші!";
+"premium_glorify_mage_0" = "Маги - топчик!";
+"premium_glorify_priest_0" = "Священики самі-пресамі!";
+"premium_glorify_black-mage_0" = "Темні маги правлять світом!";
+"premium_glorify_rogue_0" = "Розбійники - таємна еліта!";
+"premium_glorify_warlock_0" = "Чорнокнижники наймогутніші!";
+"premium_glorify_thief_0" = "Злодії рулять!";
+"premium_glorify_paladin_0" = "Уклоніться перед паладинами!";
+"premium_glorify_warrior_0" = "Воїни понад усе!";
+"premium_glorify_high-mage_0" = "Вищі маги найкрутіші!";
+"premium_glorify_elite-warrior_0" = "Світ належить елітним воїнам!";
+"premium_glorify_witchdoctor_0" = "Схиліться перед чаклунами!";
+
+"achievement_100pct" = "Мною вже пройдено 100%!";
+"achievement_101pct" = "Мною вже пройдено 101%!";
+"achievement_102pct" = "Мною вже пройдено 102%!";
+"achievement_dragonslayer" = "Я - винищувач драконів!";
+"achievement_dirtyfacedsouls" = "Мною вже пройдено 100% у режимі «Буйство»!";
+"achievement_the_king" = "Мною вже пройдено 102% у режимі «Буйство»!";
+"achievement_champion" = "Навіть чемпіон не вистояв проти мене!";
+"achievement_top1" = "Я був найкращим у Залі чемпіонів!";

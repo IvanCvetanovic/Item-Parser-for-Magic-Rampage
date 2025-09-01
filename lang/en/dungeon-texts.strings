@@ -1,0 +1,42 @@
+"dungeon0_text0" = "Once upon a time...";
+"dungeon0_text1" = "... a mighty Warlock...";
+"dungeon0_text2" = "... invaded a castle.";
+"aimForTheHead" = "Aim for the head\nfor critical damage";
+"checkYourInventory" = "Check your inventory often for\nbetter armor and weapons";
+"dontDie" = "If you die, all items collected\nin the level will be lost\nunless you revive your hero";
+"jumpInTheAir" = "Jump whilst in the air\nfor a double jump";
+"fireArmorDontBurn" = "The <fire>Fire<white> element armor\nprotects you against flames";
+"airArmorDontHurt" = "The <air>Air<white> element armor\nprotects you against spikes";
+"dungeon9_text0" = "Yet the King, shrouded in preparation,";
+"dungeon9_text1" = "... awaited the Warlock's move...";
+"lightWeaponPassThrough" = "<light>Light<white> element weapons may\npass through magical shields";
+"natureArmorStep" = "<earth>Earth<white> element vests allow\nyou to walk over green platforms";
+"ghostsSeekDarkRing" = "Ghosts are more vulnerable\nagainst those who wear\n<darkness>Darkness<white> equipment";
+"upgradedFireWeapons" = "Upgraded <fire>Fire<white> weapons also\nprotect against flames";
+"dungeon18_text0" = "The King stood ready,";
+"dungeon18_text1" = "yet even the best-laid\nplans can derail...";
+"vulnerableFromBehind" = "Some enemies are only vulnerable\nwhile you are hidden";
+"dungeon25-text0" = "As the swamp swallows\n        the Blue Brick road . . .";
+"dungeon25-text1" = ". . . other things emerge from below.";
+"dungeon27-text0" = "Elsewhere . . .";
+"dungeon27-text1" = ". . . The King orchestrates\n            a resurgence.";
+/* Text that show up in the scenario while the player advances */
+"dungeon30_text0" = "Time . . .";
+/* Text that show up in the scenario while the player advances */
+"dungeon30_text1" = ". . . and space.";
+/* Text that show up in the scenario while the player advances */
+"dungeon30_text2" = "The unexpected . . .";
+/* Text that show up in the scenario while the player advances */
+"dungeon30_text3" = ". . . is the only guest.";
+"deepWater" = "Some waters are\ntoo deep for a swim.";
+"waterRing" = "<water>Water<white> rings and armor allow you to\nwalk across pools of water.";
+"dungeon32_text0" = "When road narrows . . .";
+"dungeon32_text1" = ". . . a swifter journey\n        onward remains.";
+"dungeon35_text0" = "And the King's plan . . .";
+"dungeon35_text1" = ". . . is carried out.";
+"dungeon37_text0" = "In the realm of certainties . . .";
+"dungeon37_text1" = ". . . the unexpected reigns king.";
+"chapter4cred_text0" = "But the King didn't know...";
+"chapter4cred_text1" = "... that time is just a cycle.";
+"crateBreak" = "You can break wooden\ncrates with your weapon.";
+"cratePush" = "Move crates to use them\nas platforms to reach higher areas.";

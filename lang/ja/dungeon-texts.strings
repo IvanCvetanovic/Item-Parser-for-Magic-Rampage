@@ -1,0 +1,42 @@
+"dungeon0_text0" = "遥か昔…";
+"dungeon0_text1" = "… とある屈強な魔術師が…";
+"dungeon0_text2" = "… 城に侵攻していた";
+"aimForTheHead" = "頭に命中すると\nクリティカルヒット";
+"checkYourInventory" = "防具や武器を更新するために\nこまめにインベントリを見よう";
+"dontDie" = "死亡するとダンジョンで\n集めたアイテムは失われる\nただし復活すれば取り戻せる";
+"jumpInTheAir" = "空中でもう一度ジャンプすると\nダブルジャンプできる";
+"fireArmorDontBurn" = "<fire>火<white>属性の防具があれば\n火から身を守れる";
+"airArmorDontHurt" = "<air>風<white>属性の防具があれば\nトゲから身を守れる";
+"dungeon9_text0" = "それでもザ・キングは万一に備えて準備を整え、";
+"dungeon9_text1" = "... 魔術師の動きを待っていた...";
+"lightWeaponPassThrough" = "<light>光<white>属性の武器による攻撃は\n魔法シールドを貫通する";
+"natureArmorStep" = "<earth>地<white>属性の防具があれば\n緑の足場を歩くことができる";
+"ghostsSeekDarkRing" = "ゴーストと戦う時は\n装備している防具の属性が\n<darkness>闇<white>であれば弱体化できる";
+"upgradedFireWeapons" = "強化した<fire>火<white>属性武器でも\n炎から身を守ることができる";
+"dungeon18_text0" = "ザ・キングは準備万端で立っていた";
+"dungeon18_text1" = "だが最も緻密な計画でも\n崩れることがある...";
+"vulnerableFromBehind" = "隠れた状態の時のみ\n弱点を見せる敵もいる";
+"dungeon25-text0" = "沼地によって\n        青レンガの道が覆われた . . .";
+"dungeon25-text1" = ". . . 何かが複数、浮かび上がってくる";
+"dungeon27-text0" = "ここではないどこかで . . .";
+"dungeon27-text1" = ". . . ザ・キングは\n            復活を企てているかもしれない";
+/* Text that show up in the scenario while the player advances */
+"dungeon30_text0" = "時 . . .";
+/* Text that show up in the scenario while the player advances */
+"dungeon30_text1" = ". . . そして空間";
+/* Text that show up in the scenario while the player advances */
+"dungeon30_text2" = "予想外なことだけが . . .";
+/* Text that show up in the scenario while the player advances */
+"dungeon30_text3" = ". . . この世界では起こりうる";
+"deepWater" = "水の中には深すぎて\n泳げない場所もある";
+"waterRing" = "<water>水<white>属性の指輪や防具を身に着ければ\n水がある場所も移動できる";
+"dungeon32_text0" = "道が狭まった時 . . .";
+"dungeon32_text1" = ". . . 残された選択肢は一つ\n        ただ先を急ぐのみだ.";
+"dungeon35_text0" = "ザ・キングの計画は . . .";
+"dungeon35_text1" = ". . . 実行に移された";
+"dungeon37_text0" = "確実性に満ちた世界では . . .";
+"dungeon37_text1" = ". . . 予期せぬ出来事が運命を支配するのだ";
+"chapter4cred_text0" = "だがザ・キングは知らなかった...";
+"chapter4cred_text1" = "...時は常に巡っているのだと";
+"crateBreak" = "木箱を見つけたら\n武器を使って壊してみよう";
+"cratePush" = "木箱を動かして足場にすれば\n高い所にもたどり着ける";
