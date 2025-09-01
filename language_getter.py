@@ -2,17 +2,13 @@ import os
 import re
 import xml.etree.ElementTree as ET
 
-# --- Configuration ---
 STRINGS_FILE = "strings.xml"
 LANG_DIR = "lang"
 OUTPUT_BASE = "translations"
 TARGET_LANGUAGES = ["de", "es", "fr", "it", "pt", "ru", "tr", "uk", "ja"]
 
-# --- Allow list for tags that should NOT be removed from final output ---
 TAGS_TO_PRESERVE = ["new-game-plus"]
 
-
-# --- Normalization and Parsing Functions ---
 def normalize_string(text):
     """
     Creates a generic template from a string for matching purposes.
@@ -22,19 +18,14 @@ def normalize_string(text):
     def replacer(match):
         number_part, tag_part = match.groups()
         
-        # --- FIX: Treat numbers and special tags THE SAME for matching ---
         if number_part:
-            # It's a number, so it's a placeholder.
             return "<ph>"
         
         if tag_part:
             tag_content = tag_part.strip("<>")
-            # If it's a number placeholder OR a special preserved tag,
-            # treat it as a placeholder for matching.
             if tag_content.startswith('number') or tag_content in TAGS_TO_PRESERVE:
                 return "<ph>"
             else:
-                # It's a decorative tag, remove it.
                 return ""
         return ""
 
@@ -48,7 +39,6 @@ def parse_line(line):
     value = value.strip().strip(";'\"")
     return key, value
 
-# --- Database Creation Functions ---
 def create_english_text_db(en_dir):
     print(f"📚 Building English text-to-key database...")
     db = {}
@@ -92,15 +82,12 @@ def create_translations_db(lang_dir):
                         if key: db[lang_code][fname][key.lower()] = value
     return db
 
-# --- Main Execution ---
 def main():
-    # 1. Build databases
     en_dir = os.path.join(LANG_DIR, 'en')
     key_locations = create_key_locations_map(en_dir)
     english_text_db = create_english_text_db(en_dir)
     translations_db = create_translations_db(LANG_DIR)
 
-    # 2. Parse XML and extract numbers
     try:
         tree = ET.parse(STRINGS_FILE)
         root = tree.getroot()
@@ -109,14 +96,12 @@ def main():
             name = s.attrib.get("name")
             if name:
                 text = (s.text or "").strip().replace("\\'", "'")
-                # This now extracts numbers OR special tags to be re-injected later
                 numbers_and_tags = re.findall(r"[\d\.]+|(<new-game-plus>)", text)
                 xml_data[name] = {"text": text, "inject": numbers_and_tags}
     except FileNotFoundError:
         print(f"❌ ERROR: Main input file '{STRINGS_FILE}' not found. Exiting.")
         return
 
-    # 3. Setup output files
     os.makedirs(OUTPUT_BASE, exist_ok=True)
     writers = {lang: open(os.path.join(OUTPUT_BASE, f"values-{lang}", "strings.xml"), "w", encoding="utf-8") for lang in TARGET_LANGUAGES}
     for lang, writer in writers.items():
@@ -126,8 +111,7 @@ def main():
     unmatched_file_path = os.path.join(OUTPUT_BASE, "unmatched.xml")
     unmatched_writer = open(unmatched_file_path, "w", encoding="utf-8")
     unmatched_writer.write('<?xml version="1.0" encoding="utf-8"?>\n<resources>\n')
-    
-    # 4. Process strings
+
     print("🗺️  Matching existing translations...")
     processed_strings = set()
     for string_name, data in xml_data.items():
@@ -148,13 +132,10 @@ def main():
             for lang_code in TARGET_LANGUAGES:
                 try:
                     translation_template = translations_db[lang_code][source_filename][source_key.lower()]
-                    
-                    # This iterator now contains both numbers and special tags
+
                     inject_iterator = iter(data["inject"])
-                    # This regex finds any kind of tag in the template
                     translation_with_injects = re.sub(r"<[^>]+>", lambda m: next(inject_iterator, m.group()), translation_template)
 
-                    # Final cleanup of any decorative tags that weren't replaced
                     def final_cleanup_replacer(match):
                         tag = match.group(0)
                         tag_content = tag.strip("<>")
@@ -170,8 +151,7 @@ def main():
                     writers[lang_code].write(f'    <string name="{string_name}">{final_output_string}</string>\n')
                 except KeyError:
                     pass
-    
-    # 5. Write unmatched and close files
+
     print("📝 Writing unmatched strings to unmatched.xml...")
     unmatched_names = set(xml_data.keys()) - processed_strings
     for name in sorted(list(unmatched_names)):
@@ -183,7 +163,6 @@ def main():
         writer.write("</resources>\n"); writer.close()
     unmatched_writer.write("</resources>\n"); unmatched_writer.close()
 
-    # 6. Final Summary
     total_strings = len(xml_data)
     total_matched = len(processed_strings)
     total_unmatched = total_strings - total_matched
