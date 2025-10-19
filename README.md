@@ -43,3 +43,12 @@ python main.py normal axes
 ```
 
 If the **all** mode is picked, the textual files for all item types will be made. If a specific item type is picked, then only that type will be produced. The possible types are: **all**, **enemy**, **class**,**armor**, **ring**, **sword**, **dagger**, **spear**, **hammer**, **axe** and **staff**. If none are picked, mode **all** is automatically assumed.
+
+
+## Language Getter **
+
+Language getter is a tool that searches entries in english and then tries to match these entries in other languages and provide them for usage. It needs to be executed separately:
+
+```bash
+python language_getter.py
+```

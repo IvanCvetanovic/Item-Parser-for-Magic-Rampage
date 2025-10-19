@@ -1,11 +1,6 @@
 <resources>
     <!-- Dungeon Texts -->
-    <string name="dungeon1text">All three 💎 are in the golden pots.\n\n
-There are many potions in the upper invisible areas. For example, above secret area 1 and ending area.\n\n
-After meeting captain, you wil come across two boxes. Destroy the upper one to gain access to the area you have previously been to.\n\n
-If you go to the place where the cinematic starts, you will find good sword and armor in the two white pots.\n\n
-Second secret area is not reachable without the use of jumpman suit or special abilities, you cannot obtain it in the first try.\n\n
-    </string>
+    <string name="dungeon1text">"All three 💎 are in the golden pots.   There are many potions in the upper invisible areas. For example, above secret area 1 and ending area.   After meeting captain, you wil come across two boxes. Destroy the upper one to gain access to the area you have previously been to.   If you go to the place where the cinematic starts, you will find good sword and armor in the two white pots.   Second secret area is not reachable without the use of jumpman suit or special abilities, you cannot obtain it in the first try.       "</string>
 
     <string name="dungeon2text">All three 💎 are in the golden pots.\n\n
 If you save the Dude he will gift you with a good early game sword and you will also receive an achievement.\n\n
@@ -470,19 +465,12 @@ Above the third golden pot, there is a dagger of light, which is very good for e
         All three 💎 are on the way, however, you mostly need a golden key to open the doors to get them. Do not skip any areas beforehand.\n\n
         The third secret area is also hidden behind destructible orange mass.\n\n
         Be sure to visit the sixth secret area, since it has a nice armor that will help you with the boss.\n\n
+        The fifth secret area can be opened by the bottom to the left of it. It is on the ceiling. You need to use the box that redirects your attacks in order to activate it.\n\n
     </string>
 
-    <string name="dungeon44bossfighttext1">
-        Be sure to collect <font color="#FFA500"> Robe of Imminent Fires </font>from the sixth secret area in order to maximize your damage.\n\n
-        The boss has three main attacks: sliding icicle, falling icicles and boulder throw.\n\n
-        You are supposed to dodge while dealing damage at the same time while following the path shown in the picture.\n\n
-        Your attack should be the following: activate your special ability, then activate your super ability, then spam basic attacks. Rinse and repeat.\n\n
-    </string>
+    <string name="dungeon44bossfighttext1">Be sure to collect <font color="#FFA500"> Robe of Imminent Fires </font>from the sixth secret area in order to maximize your damage. \n\n The boss has three main attacks: sliding icicle, falling icicles and boulder throw. \n\n You are supposed to dodge while dealing damage at the same time while following the path shown in the picture. \n\n Your attack should be the following: activate your special ability, then activate your super ability, then spam basic attacks. Rinse and repeat.</string>
 
-    <string name="dungeon44bossfighttext2">
-        <font color="#FF0000">Warning:</font> If you do not deal enough damage until the sliding icicle breaks, the boss will start throwing boulders at you, which is pretty hard to dodge.\n\n
-        When the boss enters the second stage his sliding icicle move faster, his falling icicles now target your current position and he throws multiple boulders.\n\n
-    </string>
+    <string name="dungeon44bossfighttext2"><font color="#FF0000">Warning:</font> If you do not deal enough damage until the sliding icicle breaks, the boss will start throwing boulders at you, which is pretty hard to dodge. When the boss enters the second stage his sliding icicle move faster, his falling icicles now target your current position and he throws multiple boulders.</string>
 
     <!-- Skill Tree -->
     <string name="enhanced_velocity">Enhanced Velocity</string>
@@ -525,22 +513,17 @@ Above the third golden pot, there is a dagger of light, which is very good for e
 
     <!-- Equipment Tester -->
     <string name="reset_all">Reset All</string>
-    <string name="damage">Please pick everything to see the stats!</string>
-    <string name="armor">Stats are not always 100% identical with the game!</string>
-    <string name="speed">Speed: 0%</string>
-    <string name="jump_impulse">Jump Impulse: 0%</string>
+    <string name="damage"></string>
+    <string name="armor"></string>
+    <string name="speed">Speed: </string>
+    <string name="jump_impulse">Jump Impulse: </string>
     <string name="select_skills">Select Skills</string>
     <string name="upgrades">Upgrades:</string>
-    <string name="max">(MAX)</string>
-    <string name="fire_resistance">Fire Resistance </string>
-    <string name="spike_resistance">Spike Resistance</string>
     <string name="damage_in_calculation">"Damage: "</string>
     <string name="armor_in_calculation">"Armor: "</string>
     <string name="speed_in_calculation">"Speed: "</string>
     <string name="jump_impulse_in_calculation">"Jump Impulse: "</string>
     <string name="frost_resistance">Frost Resistance</string>
-    <string name="item_already_maxed">Item already at maximum upgrade!</string>
-    <string name="item_already_at_zero_upgrades">Item already at zero upgrades!</string>
     <string name="element_cannot_be_picked">Element cannot be picked for this item!</string>
 
     <!-- Elements -->
@@ -550,6 +533,16 @@ Above the third golden pot, there is a dagger of light, which is very good for e
     <string name="element_light">Light</string>
     <string name="element_earth">Earth</string>
     <string name="element_air">Air</string>
+    <string name="element_neutral">Neutral</string>
+
+    <!-- Weapon Types -->
+
+    <string name="weapon_type_sword">Sword</string>
+    <string name="weapon_type_staff">Staff</string>
+    <string name="weapon_type_dagger">Dagger</string>
+    <string name="weapon_type_axe">Axe</string>
+    <string name="weapon_type_hammer">Hammer</string>
+    <string name="weapon_type_spear">Spear</string>
 
     <!-- Skill Tree Description -->
     <string name="skill_description_0">Boosts speed by 4\%.</string>
@@ -593,7 +586,6 @@ Above the third golden pot, there is a dagger of light, which is very good for e
 
     <!-- Equipment Tester -->
     <string name="skill_description_default">No description available.</string>
-    <string name="rating_start">Rating: 0/10 💩</string>
 
     <!-- Classes -->
     <string name="rogue">Rogue</string>
@@ -645,12 +637,12 @@ Above the third golden pot, there is a dagger of light, which is very good for e
     <string name="bacoon_set_plus">Bacoon Set+</string>
     <string name="druid_vest">Druid Vest</string>
     <string name="moonkeeper_set">Moonkeeper Set</string>
-    <string name="bankers_coat">Bankers Coat</string>
+    <string name="bankers_coat">Banker\'s Coat</string>
     <string name="deathdoctor_set">Deathdoctor Set</string>
     <string name="crow_set">Crow Set</string>
     <string name="special_crow_set">Special Crow Set</string>
     <string name="antiheros_set">Anti-hero\'s Set</string>
-    <string name="special_antiheros_set">Special Antihero Set</string>
+    <string name="special_antiheros_set">Special Anti-hero Set</string>
     <string name="steelblow_armor">Steelblow Armor</string>
     <string name="steelblow_armor_plus">Steelblow Armor+</string>
     <string name="dark_lord_set">Dark Lord Set</string>
@@ -688,7 +680,7 @@ Above the third golden pot, there is a dagger of light, which is very good for e
     <string name="tunic_of_endless_justice">Tunic of Endless Justice</string>
     <string name="cataclysmic_plate">Cataclysmic Plate</string>
     <string name="tunic_of_frozen_voices">Tunic of Frozen Voices</string>
-    <string name="robe_of_distant_visions">Robe of Distant Vision</string>
+    <string name="robe_of_distant_visions">Robe of Distant Visions</string>
     <string name="tunic_of_distant_ancestors">Tunic of Distant Ancestors</string>
     <string name="vest_of_phantoms_keeper">Vest of Phantoms Keeper</string>
     <string name="robe_of_imminent_fires">Robe of Imminent Fires</string>
@@ -748,10 +740,10 @@ Above the third golden pot, there is a dagger of light, which is very good for e
     <string name="recruit_sword">Recruit Sword</string>
     <string name="steel_blade">Steel Blade</string>
     <string name="fire_sword">Fire Sword</string>
-    <string name="nobel_sword">Nobel Sword</string>
+    <string name="nobel_sword">Noble Sword</string>
     <string name="leaf_sword">Leaf Sword</string>
     <string name="pirate_sword">Pirate Sword</string>
-    <string name="master_sword">Master Sword</string>
+    <string name="master_sword">Master\'s Sword</string>
     <string name="vorpal_sword">Vorpal Sword</string>
     <string name="umbranian_short_sword">Umbranian Short Sword</string>
     <string name="umbranian_long_sword">Umbranian Long Sword</string>
@@ -943,7 +935,7 @@ Above the third golden pot, there is a dagger of light, which is very good for e
     <string name="sapphire_pawns_dagger">Sapphire Pawns Dagger</string>
     <string name="toxic_dual_dagger">Toxic Dual Dagger</string>
     <string name="all_seeing_cleaver">All Seeing Cleaver</string>
-    <string name="ruby_pawns_edge">Ruby Pawns Edge</string>
+    <string name="ruby_pawns_edge">Ruby Pawn\'s Edge</string>
     <string name="shooting_star_shuriken">Shooting Star Shuriken</string>
     <string name="tome_of_the_sands">Tome of the Sands</string>
     <string name="choose_the_chapter">Choose the Chapter!</string>
@@ -954,7 +946,7 @@ Above the third golden pot, there is a dagger of light, which is very good for e
     <string name="eggscellent_axe">Eggscellent Axe</string>
     <string name="dark_lord_set_plus">Dark Lord Set+</string>
     <string name="heros_set_plus">Hero\'s Set+</string>
-    <string name="bankers_coat_plus">Bankers Coat+</string>
+    <string name="bankers_coat_plus">Banker\'s Coat+</string>
     <string name="tidecaller_ring">Tidecaller Ring</string>
     <string name="the_ancient_codices">The Ancient Codices</string>
     <string name="minion_vest">Minion Vest</string>
@@ -1011,6 +1003,8 @@ Above the third golden pot, there is a dagger of light, which is very good for e
 
     <!-- Other -->
     <string name="golden_key">Golden Key</string>
+    <string name="change_language">Change Language</string>
+
 
     <!-- About Section -->
     <string name="about_author">About Author</string>
@@ -1019,8 +1013,7 @@ Above the third golden pot, there is a dagger of light, which is very good for e
     <string name="special_thanks">Special Thanks:</string>
     <string name="in_memory_of">In Memory Of:</string>
     <string name="kitty_bucher">Kathleen Ann Bucher 1952 – 2022</string>
-    <string name="special_thanks_text">Andre Santee \n Bruno Pereira \n Feras Alami \n Kathleen Ann Bucher \n Roy Delos Santos Guevarra \n Simon Baron \n Dimitris.k/ thibo \n Dark Junior \n Cornelius Du Plessis \n Zoe Moreno Ayala \n Kofeman </string>
-
+    <string name="special_thanks_text">Andre Santee \n Bruno Pereira \n Feras Alami \n Kathleen Ann Bucher \n Roy Delos Santos Guevarra \n Simon Baron \n Dimitris.k/ thibo \n Dark Junior \n Cornelius Du Plessis \n Zoe Moreno Ayala \n Kofeman \n Mat2011 \n Sidhanth Da RAMPAGER</string>
 
     <!-- Equipment Tester -->
     <string name="attack_speed">Attack Speed: </string>
@@ -1230,6 +1223,7 @@ Above the third golden pot, there is a dagger of light, which is very good for e
     <string name="enemy_warlock_final_boss">Final Boss Warlock</string>
     <string name="enemy_xmas_mimic">Xmas Mimic</string>
 
+    <!-- Achievements-->
     <string name="vase_breaker">Vase breaker</string>
     <string name="save_that_dude">Save That Dude!</string>
     <string name="keep_that_dude_alive">Keep That Dude alive!</string>
@@ -1259,7 +1253,7 @@ Above the third golden pot, there is a dagger of light, which is very good for e
     <string name="loot_from_the_future">Loot from the future</string>
     <string name="the_untold_story_2">The Untold Story 2</string>
     <string name="kill_the_spider">Evil thing in spider form</string>
-    <string name="lost_hammer">I did it intentionally, to...</string>
+    <string name="lost_hammer">I did it intentionally, to…</string>
     <string name="dude_still_lives">That Dude still lives</string>
     <string name="dudes_story">That Dude\'s story</string>
     <string name="breaker_of_chains">Breaker of Chains</string>
@@ -1340,7 +1334,7 @@ Above the third golden pot, there is a dagger of light, which is very good for e
     <string name="bring_it_on_desc">Start a match against another player in the Competitive Mode.</string>
     <string name="veni_vidi_vici">I came, I saw, I conquered</string>
     <string name="veni_vidi_vici_desc">Win a match against another player in the Competitive Mode.</string>
-    <string name="taking_part_counts">It\'s the taking part that counts...</string>
+    <string name="taking_part_counts">It\'s the taking part that counts…</string>
     <string name="taking_part_counts_desc">Don\'t ever try to lose a match against another player, but if you do, this achievement will be unlocked.</string>
     <string name="add_friend">Friends will be friends</string>
     <string name="add_friend_desc">Add a friend in the Competitive Mode.</string>
@@ -1365,7 +1359,7 @@ Above the third golden pot, there is a dagger of light, which is very good for e
     <string name="ranked_top_15">We are the champions!</string>
     <string name="ranked_top_15_desc">Join the top 15 players featured in the Hall of Champions.</string>
     <string name="its_time">It\'s time!</string>
-    <string name="its_time_desc">Collect the ¾420 that floats in the air at 3-6. Do it during a specific time of day.</string>
+    <string name="its_time_desc">Collect the ¾420 that floats in the air at 3\-6. Do it during a specific time of day.</string>
     <string name="bag_expanded_2">Even more storage!</string>
     <string name="bag_expanded_2_desc">Buy the second expansion chest in the shop.</string>
     <string name="ranked_top_100">True hero</string>
@@ -1383,7 +1377,7 @@ Above the third golden pot, there is a dagger of light, which is very good for e
     <string name="pixelated_arsenal">Pixelated Arsenal</string>
     <string name="pixelated_arsenal_desc">Collect a Retro stylized item in the alternative reality.</string>
     <string name="the_end_of_the_world">The End of the World</string>
-    <string name="the_end_of_the_world_desc">Get to the surface for the first time in Dungeon 5-1.</string>
+    <string name="the_end_of_the_world_desc">Get to the surface for the first time in Dungeon 5\-1.</string>
     <string name="bag_expanded_3">Impossibly huge</string>
     <string name="bag_expanded_3_desc">Buy the third expansion chest.</string>
     <string name="its_amazing">It\'s Amazing!</string>
@@ -1403,9 +1397,9 @@ Above the third golden pot, there is a dagger of light, which is very good for e
     <string name="weekly_dungeons_time_50">Mighty Runner</string>
     <string name="weekly_dungeons_time_50_desc">Complete 50 Time Challenges in 50 distinct Weekly Dungeons.</string>
     <string name="story_to_be_told">A story to be told</string>
-    <string name="story_to_be_told_desc">Listen to what the Dude has to say at 5-3 prologue about the turbulent portal crossing.</string>
+    <string name="story_to_be_told_desc">Listen to what the Dude has to say at 5\-3 prologue about the turbulent portal crossing.</string>
     <string name="the_untold_story_3">The Untold Story 3</string>
-    <string name="the_untold_story_3_desc">Listen to what the King has to say in his lab at 5-3 prologue.</string>
+    <string name="the_untold_story_3_desc">Listen to what the King has to say in his lab at 5–3 prologue.</string>
     <string name="skilled_dirty_faced">Skilled but dirty-faced</string>
     <string name="skilled_dirty_faced_desc">Learn three skills from the Skill Tree.</string>
     <string name="super_skill">The super skill!</string>
@@ -1413,9 +1407,9 @@ Above the third golden pot, there is a dagger of light, which is very good for e
     <string name="complete_103">The 103 Lamentations</string>
     <string name="complete_103_desc">Complete 103%. Complete all Dungeons, find all secret areas in the game and replay all dungeons up to the end of Chapter 5 without taking any damage.</string>
     <string name="ninth_circle">The ninth circle</string>
-    <string name="ninth_circle_desc">Get to the frozen underground chambers of the planet in Dungeon 5-4.</string>
+    <string name="ninth_circle_desc">Get to the frozen underground chambers of the planet in Dungeon 5–4.</string>
     <string name="the_darkest_side">The darkest side of the Moon</string>
-    <string name="the_darkest_side_desc">Watch the bonus scene after finishing Dungeon 5-4 with all three diamonds.</string>
+    <string name="the_darkest_side_desc">Watch the bonus scene after finishing Dungeon 5–4 with all three diamonds.</string>
     <string name="sharp_dressed_minion">Sharp Dressed Minion</string>
     <string name="sharp_dressed_minion_desc">Change your minion\'s look using a custom skin. You can purchase new skins in the Prize Room.</string>
     <string name="dirty_faced_souls">Dirty-faced Souls</string>
@@ -1454,4 +1448,375 @@ Above the third golden pot, there is a dagger of light, which is very good for e
     <string name="diamond_duel_rank_achievement_desc">Raise your Rank up to Cosmic Patroller in the Duels!</string>
     <string name="first_steps_into_destiny">First steps into destiny</string>
     <string name="first_steps_into_destiny_desc">Explore every Combat Zone and complete your initial training for the Duels of Destiny.</string>
+
+    <string name="enemy_stat_health">Health: </string>
+    <string name="enemy_stat_damage">Damage: </string>
+    <string name="enemy_stat_touch_damage">Touch Damage: </string>
+    <string name="enemy_stat_armor">Armor: </string>
+    <string name="enemy_stat_speed">Speed: </string>
+    <string name="enemy_stat_jump">Jump: </string>
+    <string name="enemy_stat_patrol_behaviour">Patrol Behaviour: </string>
+    <string name="enemy_stat_attack_behaviour">Attack Behaviour: </string>
+
+    <string name="dungeon_1">Dungeon 1</string>
+    <string name="tips_and_tricks">Tips and Tricks:</string>
+    <string name="secret_areas">Secret Areas:</string>
+    <string name="dungeon_2">Dungeon 2</string>
+    <string name="dungeon_3">Dungeon 3</string>
+    <string name="dungeon_3_bonus">Dungeon 3 Bonus</string>
+    <string name="dungeon_4">Dungeon 4</string>
+    <string name="tutorial">Tutorial:</string>
+    <string name="dungeon_5">Dungeon 5</string>
+    <string name="dungeon_6">Dungeon 6</string>
+    <string name="dungeon_5_bonus">Dungeon 5 Bonus</string>
+    <string name="dungeon_7">Dungeon 7</string>
+    <string name="dungeon_7_bonus">Dungeon 7 Bonus</string>
+    <string name="dungeon_8">Dungeon 8</string>
+    <string name="dungeon_9">Dungeon 9</string>
+    <string name="dungeon_10">Dungeon 10</string>
+    <string name="bossfight_tips_and_tricks">Bossfight Tips and Tricks</string>
+    <string name="dungeon_11">Dungeon 11</string>
+    <string name="dungeon_11_bonus">Dungeon 11 Bonus</string>
+    <string name="dungeon_12">Dungeon 12</string>
+    <string name="dungeon_13">Dungeon 13</string>
+    <string name="dungeon_13_bonus">Dungeon 13 Bonus</string>
+    <string name="dungeon_14">Dungeon 14</string>
+    <string name="dungeon_15">Dungeon 15</string>
+    <string name="dungeon_16">Dungeon 16</string>
+    <string name="dungeon_17">Dungeon 17</string>
+    <string name="dungeon_17_bonus">Dungeon 17 Bonus</string>
+    <string name="dungeon_18">Dungeon 18</string>
+    <string name="dungeon_19">Dungeon 19</string>
+    <string name="dungeon_19_bonus">Dungeon 19 Bonus</string>
+    <string name="dungeon_20">Dungeon 20</string>
+    <string name="dungeon_21">Dungeon 21</string>
+    <string name="dungeon_22">Dungeon 22</string>
+    <string name="dungeon_23">Dungeon 23</string>
+    <string name="dungeon_23_bonus">Dungeon 23 Bonus</string>
+    <string name="dungeon_24">Dungeon 24</string>
+    <string name="dungeon_25">Dungeon 25</string>
+    <string name="dungeon_26">Dungeon 26</string>
+    <string name="dungeon_27">Dungeon 27</string>
+    <string name="dungeon_27_bonus">Dungeon 27 Bonus</string>
+    <string name="dungeon_28">Dungeon 28</string>
+    <string name="dungeon_29">Dungeon 29</string>
+    <string name="dungeon_29_bonus">Dungeon 29 Bonus</string>
+    <string name="dungeon_30">Dungeon 30</string>
+    <string name="dungeon_31">Dungeon 31</string>
+    <string name="dungeon_31_bonus">Dungeon 31 Bonus</string>
+    <string name="dungeon_32">Dungeon 32</string>
+    <string name="dungeon_33">Dungeon 33</string>
+    <string name="dungeon_34">Dungeon 34</string>
+    <string name="dungeon_35">Dungeon 35</string>
+    <string name="dungeon_36">Dungeon 36</string>
+    <string name="dungeon_37">Dungeon 37</string>
+    <string name="dungeon_38">Dungeon 38</string>
+    <string name="dungeon_39">Dungeon 39</string>
+    <string name="dungeon_40">Dungeon 40</string>
+    <string name="dungeon_41">Dungeon 41</string>
+    <string name="dungeon_42">Dungeon 42</string>
+    <string name="dungeon_42_bonus">Dungeon 42 Bonus</string>
+    <string name="dungeon_43">Dungeon 43</string>
+    <string name="dungeon_43_bonus">Dungeon 43 Bonus</string>
+    <string name="dungeon_44">Dungeon 44</string>
+    <string name="select_element">Select Element</string>
+    <string name="news">📰 News 📰</string>
+
+    <string name="translating">Downloading the translation. This takes time and uses data. Please wait.</string>
+    <string name="waypoints">Waypoints</string>
+    <string name="stone_thrower">Stone Thrower</string>
+    <string name="knife_thrower">Knife Thrower</string>
+    <string name="failed_to_load_news">Failed to load news.\n Please check your connection.</string>
+
+    <string name="open_with">Open with</string>
+    <string name="no_app_to_open_link_copied">No app found to open the link. The invite URL was copied to your clipboard.</string>
+    <string name="element">"Element: "</string>
+    <string name="type">"Type: "</string>
+    <string name="armor_bonus">"Armor Bonus: "</string>
+    <string name="pierce_area_damage">Pierce Area Damage: </string>
+    <string name="magic_bonus">"Magic Bonus: "</string>
+    <string name="sword_bonus">"Sword Bonus: "</string>
+    <string name="staff_bonus">"Staff Bonus: "</string>
+    <string name="dagger_bonus">"Dagger Bonus: "</string>
+    <string name="axe_bonus">"Axe Bonus: "</string>
+    <string name="hammer_bonus">"Hammer Bonus: "</string>
+    <string name="spear_bonus">"Spear Bonus: "</string>
+    <string name="max_sets_reached">Maximum amount of sets reached!</string>
+    <string name="pick_item_first">Please pick an item first!</string>
+
+    <string name="arcane_precision_tonic">Arcane Precision Tonic</string>
+    <string name="elixir_of_duplication">Elixir of Duplication</string>
+    <string name="forbidden_flowers_extract">Forbidden Flowers Extract</string>
+    <string name="instant_charge_blast">Instant Charge Blast</string>
+    <string name="instant_dark_twin">Instant Dark Twin</string>
+    <string name="instant_gust">Instant Gust</string>
+    <string name="instant_radiant_shield">Instant Radiant Shield</string>
+    <string name="instant_thunder_wave">Instant Thunder Wave</string>
+    <string name="levitation_liqueur">Levitation Liqueur</string>
+    <string name="monsters_juice">Monsters Juice</string>
+    <string name="moonjump_mixture">Moonjump Mixture</string>
+    <string name="pepper_brew">Pepper Brew</string>
+    <string name="starlight_supertonic">Starlight Supertonic</string>
+    <string name="tonic_of_invulnerability">Tonic of Invulnerability</string>
+    <string name="umbranian_water">Umbranian Water</string>
+    <string name="arcane_precision_tonic_desc">Launched projectiles will home in on targets, at the cost of a slight armor reduction.</string>
+    <string name="elixir_of_duplication_desc">Multiplies the number of projectiles fired while slightly lowering armor.</string>
+    <string name="forbidden_flowers_extract_desc">Gives the ability to shoot bouncy fireballs.</string>
+    <string name="instant_charge_blast_desc">Charges up an attack that unleashes massive damage upon release. To activate, fire an attack.</string>
+    <string name="instant_dark_twin_desc">Summons a Dark Twin to fight alongside the Dirty Faced Soldier. To activate, fire an attack.</string>
+    <string name="instant_gust_desc">Pushes enemies back with a powerful gust on each attack.</string>
+    <string name="instant_radiant_shield_desc">Provides excellent damage protection, safeguarding against external threats for a short duration.</string>
+    <string name="instant_thunder_wave_desc">Summons a wave of lightning bolts that strike all surrounding enemies. To activate, fire an attack.</string>
+    <string name="levitation_liqueur_desc">Prevents falling into bottomless pits and grants extra jumps in the air. Additionally, projectiles launched while airborne deal increased damage.</string>
+    <string name="monsters_juice_desc">Amplifies attack prowess at the cost of diminished armor.</string>
+    <string name="moonjump_mixture_desc">Reduces gravity effects.</string>
+    <string name="pepper_brew_desc">Grants protection from frost effects and increases armor.</string>
+    <string name="starlight_supertonic_desc">Grants temporary invulnerability and boosts weapon damage output for a short duration.</string>
+    <string name="tonic_of_invulnerability_desc">Provides immunity to poison effects and increases armor.</string>
+    <string name="umbranian_water_desc">Clears the active power-up effect.</string>
+    <string name="new_set">New Set</string>
+    <string name="recommend">Get Set</string>
+    <string name="load">Load Set</string>
+    <string name="saved">Set Saved!</string>
+    <string name="nothing_to_load">Nothing to load!</string>
+    <string name="load_set_title">Choose a set!</string>
+    <string name="load_failed">Loading Failed!</string>
+    <string name="enter_set_name_hint">Enter set name</string>
+    <string name="save_set_title">Enter a name for your set:</string>
+    <string name="set_name_empty">Set name is empty!</string>
+    <string name="overwrite_question">Would you like to overwrite the set with the same name?</string>
+    <string name="overwrite">Overwrite?</string>
+    <string name="loaded_named">Set loaded!</string>
+    <string name="delete_question">Do you want to delete this set?</string>
+    <string name="delete">Delete</string>
+    <string name="set_stats_title">Current Stats:</string>
+    <string name="no_reward_sets">No reward sets defined!</string>
+    <string name="ad_failed">"Ad failed: "</string>
+    <string name="ad_still_loading">Ad is still loading, try again soon.</string>
+    <string name="blaze_armor">Blaze Armor</string>
+    <string name="sovereigns_onyx_sword">Sovereigns Onyx Sword</string>
+    <string name="sovereigns_ruby_sword">Sovereigns Ruby Sword</string>
+    <string name="app_name">Magic Rampage: Companion</string>
+    <string name="outcast_mage_hood">Outcast Mage Hood</string>
+    <string name="renegade_mage_hood">Renegade Mage Hood</string>
+    <string name="ancient_druid_mask">Ancient Druid Mask</string>
+    <string name="relentless_druid_helm">Relentless Druid Helm</string>
+    <string name="dark_knight_helm">Dark Knight Helm</string>
+    <string name="renegade_knight_helm">Renegade Knight Helm</string>
+    <string name="forest_mage_hat">Forest Mage Hat</string>
+    <string name="swamp_mage_hat">Swamp Mage Hat</string>
+    <string name="desert_mage_hat">Desert Mage Hat</string>
+    <string name="smoky_mage_hat">Smoky Mage Hat</string>
+    <string name="light_knight_helm">Light Knight Helm</string>
+    <string name="justice_knight_helm">Justice Knight Helm</string>
+    <string name="white_bishop_mitra">White Bishop Mitra</string>
+    <string name="white_prophet_keffiyeh">White Prophet Keffiyeh</string>
+    <string name="deserter_ranger_helm">Deserter Ranger Helm</string>
+    <string name="outcast_ranger_helm">Outcast Ranger Helm</string>
+    <string name="fine_rogue_hat">Fine Rogue Hat</string>
+    <string name="galant_rogue_hat">Galant Rogue Hat</string>
+    <string name="black_ninja_hood">Black Ninja Hood</string>
+    <string name="desert_ninja_hood">Desert Ninja Hood</string>
+    <string name="cursed_warlock_hood">Cursed Warlock Hood</string>
+    <string name="monstrous_warlock_hood">Monstrous Warlock Hood</string>
+    <string name="mighty_fighter_helm">Mighty Fighter Helm</string>
+    <string name="gladiator_helm">Gladiator Helm</string>
+    <string name="arcane_witchdoctor_mask">Arcane Witchdoctor Mask</string>
+    <string name="umbranian_doctor_mask">Umbranian Doctor Mask</string>
+    <string name="skin_black_mage3">Red Orb hat</string>
+    <string name="skin_druid3">Maskarade nature sorceress</string>
+    <string name="skin_elite_warrior3">Berserker helmet</string>
+    <string name="skin_high_mage3">High sorceress</string>
+    <string name="skin_mage3">Wildfire hat</string>
+    <string name="skin_paladin3">Light Champion\'s helmet</string>
+    <string name="skin_priest3">High Priestess helm</string>
+    <string name="skin_ranger3">Official bonete</string>
+    <string name="skin_rogue3">Crescent morion</string>
+    <string name="skin_thief3">Rascal\'s hat</string>
+    <string name="skin_warlock3">Demon Joker mask</string>
+    <string name="skin_warrior3">Valkyrie helmet</string>
+    <string name="skin_witchdoctor3">Owldoctor mask</string>
+    <string name="skin_black_mage4">Malicious Witch</string>
+    <string name="skin_druid4">Shamanic mask</string>
+    <string name="skin_elite_warrior4">Dark Warlord</string>
+    <string name="skin_high_mage4">Arcane High Mage</string>
+    <string name="skin_mage4">Fire starter</string>
+    <string name="skin_paladin4">Archangel helmet</string>
+    <string name="skin_priest4">Mitra of Silence</string>
+    <string name="skin_ranger4">Helm of Silent Torment</string>
+    <string name="skin_rogue4">Cait Ninja</string>
+    <string name="skin_thief4">Mercenary facemask</string>
+    <string name="skin_warlock4">Horncrown</string>
+    <string name="skin_warrior4">Kabuto</string>
+    <string name="skin_witchdoctor4">Witchdoctor coif</string>
+    <string name="skin_black_mage5">Shadow Wrapped</string>
+    <string name="skin_druid5">Feral Fury</string>
+    <string name="skin_elite_warrior5">Ironclad Infantry</string>
+    <string name="skin_high_mage5">Emerald Sage</string>
+    <string name="skin_mage5">Blazing Bejeweled</string>
+    <string name="skin_paladin5">Heavenly Herald</string>
+    <string name="skin_priest5">Interdimensional Inquisitor</string>
+    <string name="skin_ranger5">Broken Renegade</string>
+    <string name="skin_rogue5">Crimson Corsair</string>
+    <string name="skin_thief5">Daring Daredevil</string>
+    <string name="skin_warlock5">Tongued Tormentor</string>
+    <string name="skin_warrior5">Scarlet Sentinel</string>
+    <string name="skin_witchdoctor5">Macabre Medicine Man</string>
+    <string name="skin_black_mage6">Haunted Marionette</string>
+    <string name="skin_druid6">Web-Weaving Witch</string>
+    <string name="skin_elite_warrior6">White Oni</string>
+    <string name="skin_high_mage6">Rose Quartz Mage</string>
+    <string name="skin_mage6">Ignition Illusionist</string>
+    <string name="skin_paladin6">Handmaid\'s Redemption</string>
+    <string name="skin_priest6">Shamanic Prophet</string>
+    <string name="skin_ranger6">Silver-Plated Scout</string>
+    <string name="skin_rogue6">Scarlet Cloaked Rogue</string>
+    <string name="skin_thief6">Flamingo Bandit</string>
+    <string name="skin_warlock6">Red-Horned Reaper</string>
+    <string name="skin_warrior6">Yokai Warrior</string>
+    <string name="skin_witchdoctor6">Crowned Spirit Summoner</string>
+    <string name="skin_black_mage7">Scarlet Shroud Arcanist</string>
+    <string name="skin_druid7">Wildmane Primal Druid</string>
+    <string name="skin_elite_warrior7">Brass Vanguard Centurion</string>
+    <string name="skin_high_mage7">Amethyst Starfall Adept</string>
+    <string name="skin_mage7">Sunfire Adept</string>
+    <string name="skin_paladin7">Sunforged Halo Knight</string>
+    <string name="skin_priest7">Golden Skull Oracle</string>
+    <string name="skin_ranger7">Argonaut Guardian</string>
+    <string name="skin_rogue7">White Shroud Phantom</string>
+    <string name="skin_thief7">Joker Pickpocket</string>
+    <string name="skin_warlock7">Abyssal Triclops Warlock</string>
+    <string name="skin_warrior7">Skeletal Spike Soldier</string>
+    <string name="skin_witchdoctor7">Golden Laurel Healer</string>
+    <string name="skin_black_mage8">Abyssal Cultist Cowl</string>
+    <string name="skin_druid8">Harvest Guardian</string>
+    <string name="skin_elite_warrior8">Crowned Warlord Mane</string>
+    <string name="skin_high_mage8">Astral Starburst Magus</string>
+    <string name="skin_mage8">Pyro-Commander</string>
+    <string name="skin_paladin8">Seraphim Sentinel Helm</string>
+    <string name="skin_priest8">Cerulean Crested Cleric</string>
+    <string name="skin_ranger8">Dynasty Ranger</string>
+    <string name="skin_rogue8">Striped Stealth Rogue</string>
+    <string name="skin_thief8">Sea Thief</string>
+    <string name="skin_warlock8">Void Warlock</string>
+    <string name="skin_warrior8">Emerald Warrior</string>
+    <string name="skin_witchdoctor8">Owl Elite Witchdoc</string>
+    <string name="skin_black_mage11">Noble Necro Topper</string>
+    <string name="skin_druid11">Lupine Howler Helm</string>
+    <string name="skin_elite_warrior11">Crimson Horned Guard</string>
+    <string name="skin_high_mage11">Wicked Mage Hat</string>
+    <string name="skin_mage11">Spectral Mage Shroud</string>
+    <string name="skin_paladin11">Glacial Knight Visor</string>
+    <string name="skin_priest11">Mystic Phantom Cowl</string>
+    <string name="skin_ranger11">Enamored Spirit Bonnet</string>
+    <string name="skin_rogue11">Fiendish Pink Horn Cap</string>
+    <string name="skin_thief11">Ghastly Grin Hood</string>
+    <string name="skin_warlock11">Savage Frost Maw</string>
+    <string name="skin_warrior11">Cryptic Gem Visage</string>
+    <string name="skin_witchdoctor11">Shamanic Steel Shroud</string>
+    <string name="skin_black_mage12">Arcane Shade Hood</string>
+    <string name="skin_druid12">Forest Spirit Hat</string>
+    <string name="skin_elite_warrior12">Dragon Heart War Helm</string>
+    <string name="skin_high_mage12">High Arcanist\'s Hat</string>
+    <string name="skin_mage12">Pyromancer\'s Turban</string>
+    <string name="skin_paladin12">Sanctified Beacon Helm</string>
+    <string name="skin_priest12">Devout Guardian Hood</string>
+    <string name="skin_ranger12">Shogun Ranger Helm</string>
+    <string name="skin_rogue12">Phantom Assassin Mask</string>
+    <string name="skin_thief12">Silent Pilferer\'s Hat</string>
+    <string name="skin_warlock12">Dark Pact Helm</string>
+    <string name="skin_warrior12">Ironclad Defender Helm</string>
+    <string name="skin_witchdoctor12">Spiritcaller Helm</string>
+    <string name="skin_black_mage13">Crystal Gaze Turban</string>
+    <string name="skin_druid13">Feral Spirit\'s Visage</string>
+    <string name="skin_elite_warrior13">Spirehorn Warhelm</string>
+    <string name="skin_high_mage13">Helm of the Arcane Sage</string>
+    <string name="skin_mage13">Helm of the Watchful Abyss</string>
+    <string name="skin_paladin13">Helm of the Righteous Dragon</string>
+    <string name="skin_priest13">Dragonclaw Hood</string>
+    <string name="skin_ranger13">Guardian of the Sun Helm</string>
+    <string name="skin_rogue13">Whispering Vines Mask</string>
+    <string name="skin_thief13">Lunarflare Mask</string>
+    <string name="skin_warlock13">Hood of the Deep One</string>
+    <string name="skin_warrior13">Wings of Wrath</string>
+    <string name="skin_witchdoctor13">Ravenlord\'s Mask</string>
+    <string name="skin_black_mage14">Spectral Knight Helm</string>
+    <string name="skin_druid14">Knight of the Wild</string>
+    <string name="skin_elite_warrior14">Bulwark of the Rook</string>
+    <string name="skin_high_mage14">Crown of the Arcane Queen</string>
+    <string name="skin_mage14">Mystic Pawn\'s Hood</string>
+    <string name="skin_paladin14">Bastion of the Rook</string>
+    <string name="skin_priest14">Bishop\'s Sacred Veil</string>
+    <string name="skin_ranger14">Helm of the Bold Pawn</string>
+    <string name="skin_rogue14">Crown of the Shadow King</string>
+    <string name="skin_thief14">Pawn\'s Maw Mask</string>
+    <string name="skin_warlock14">Cursed Bishop\'s Mask</string>
+    <string name="skin_warrior14">Royal Warlord\'s Visage</string>
+    <string name="skin_witchdoctor14">Queen of the Cursed Vortex</string>
+    <string name="skin_black_mage15">Darkcode Veil</string>
+    <string name="skin_druid15">Groveborn Protector</string>
+    <string name="skin_elite_warrior15">Titanium Vanguard</string>
+    <string name="skin_high_mage15">Neural Archmage Crest</string>
+    <string name="skin_mage15">Neurocaster Helm</string>
+    <string name="skin_paladin15">Shield of the Singularity</string>
+    <string name="skin_priest15">Holo-Saint\'s Mask</string>
+    <string name="skin_ranger15">Holo-Hunter\'s Visor</string>
+    <string name="skin_rogue15">Shadow Saboteur Mask</string>
+    <string name="skin_thief15">Shadow Circuit Mask</string>
+    <string name="skin_warlock15">Daemon Binder\'s Crown</string>
+    <string name="skin_warrior15">Depthwalker\'s Visor</string>
+    <string name="skin_witchdoctor15">Plague Circuit Mask</string>
+    <string name="skin_black_mage16">Shadowfire Dragon Visage</string>
+    <string name="skin_druid16">Crown of the Wild Wyrm</string>
+    <string name="skin_elite_warrior16">Draconic Warlord Helm</string>
+    <string name="skin_high_mage16">Crown of the Arcane Dragon</string>
+    <string name="skin_mage16">Dragonflame Archmage</string>
+    <string name="skin_paladin16">Helm of the Sacred Wyrm</string>
+    <string name="skin_priest16">Sacred Wyrm\'s Halo</string>
+    <string name="skin_ranger16">Dragonfang Tracker</string>
+    <string name="skin_rogue16">Helm of the Silent Wyrm</string>
+    <string name="skin_thief16">Venomfang Hood</string>
+    <string name="skin_warlock16">Infernal Dragon\'s Mask</string>
+    <string name="skin_warrior16">Draconic Fury Helm</string>
+    <string name="skin_witchdoctor16">Plague Dragon\'s Visage</string>
+    <string name="skin_black_mage17">Visage of the Void Lich</string>
+    <string name="skin_druid17">Helm of the Verdant Curse</string>
+    <string name="skin_elite_warrior17">Helm of the Bone Vanguard</string>
+    <string name="skin_high_mage17">Crown of the Spectral Archmage</string>
+    <string name="skin_mage17">Skullflame Sorcerer</string>
+    <string name="skin_paladin17">Sanctified Skullplate</string>
+    <string name="skin_priest17">Halo of the Bone Cleric</string>
+    <string name="skin_ranger17">Stalker of the Hollow Hunt</string>
+    <string name="skin_rogue17">Shade of the Smiling Skull</string>
+    <string name="skin_thief17">Hood of the Grinning Phantom</string>
+    <string name="skin_warlock17">Mask of the Cursed Skull</string>
+    <string name="skin_warrior17">Skullcrush Battlemask</string>
+    <string name="skin_witchdoctor17">Totemic Skullbearer</string>
+    <string name="skin_black_mage18">Twilight Witch</string>
+    <string name="skin_druid18">Floral Grove Spirit</string>
+    <string name="skin_elite_warrior18">Crowned Talon</string>
+    <string name="skin_high_mage18">Arcane Empress</string>
+    <string name="skin_mage18">Runeseer Apprentice</string>
+    <string name="skin_paladin18">Radiant Sentinel</string>
+    <string name="skin_priest18">Moon Oracle</string>
+    <string name="skin_ranger18">Moonbraid Tracker</string>
+    <string name="skin_rogue18">Silent Ribbon</string>
+    <string name="skin_thief18">Shadowstep Lass</string>
+    <string name="skin_warlock18">Whisperhorn Enchantress</string>
+    <string name="skin_warrior18">Bladestorm Huntress</string>
+    <string name="skin_witchdoctor18">Mystic Chanter</string>
+    <string name="skin_black_mage19">Twilight Witch</string>
+    <string name="skin_druid19">Scarfang</string>
+    <string name="skin_elite_warrior19">Crowned Legionnaire</string>
+    <string name="skin_high_mage19">Candle Enchantress</string>
+    <string name="skin_mage19">Plumed Pyromancer</string>
+    <string name="skin_paladin19">Halo Warden</string>
+    <string name="skin_priest19">Horned Oracle</string>
+    <string name="skin_ranger19">Mindlock Ranger</string>
+    <string name="skin_rogue19">Deadly Darling</string>
+    <string name="skin_thief19">Masked Trickster</string>
+    <string name="skin_warlock19">Hellbound Hexer</string>
+    <string name="skin_warrior19">Titanic Crown Breaker</string>
+    <string name="skin_witchdoctor19">Spirit Vessel</string>
+    
 </resources>
