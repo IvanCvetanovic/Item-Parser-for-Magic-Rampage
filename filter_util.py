@@ -1,5 +1,8 @@
 class DataFilter:
     def filter_parsed_data(self, local_data):
+        """
+        NOTE: This filter does NOT whitelist keys, so new price fields will not be dropped.
+        """
         for item_type in local_data:
             filtered_items = []
             for item in local_data[item_type]:

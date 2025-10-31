@@ -10,6 +10,29 @@ def sort_by_max_armor(items, is_ring=False):
         return sorted(items, key=lambda x: x.get("maxLevelArmor", x.get("armor", 0)))
 
 
+def _price_values_in_order(block):
+    """Return exactly six price values in required order, defaulting to 0 if missing."""
+    order = [
+        "freemiumGoldPrice",
+        "premiumGoldPrice",
+        "freemiumCoinPrice",
+        "premiumCoinPrice",
+        "baseFreemiumSellPrice",
+        "basePremiumSellPrice",
+    ]
+    vals = []
+    for key in order:
+        v = block.get(key)
+        vals.append(0 if v is None else v)
+    return vals
+
+
+def _append_price_params(code_so_far, block):
+    """Append the six numeric price params to the constructor call, then close '));'."""
+    vals = _price_values_in_order(block)
+    return code_so_far + ", " + ", ".join(str(v) for v in vals) + "));"
+
+
 def generate_armor_code(data):
     armor_code_list = []
 
@@ -19,7 +42,10 @@ def generate_armor_code(data):
 
         for block in sorted_data:
             if isinstance(block, dict):
-                name = block.get("name", "test_armor").replace(" ", "_").replace("'", "").replace("+", "_plus").replace("-", "").lower()
+                name = (block.get("name", "test_armor")
+                        .replace(" ", "_").replace("'", "")
+                        .replace("+", "_plus").replace("-", "")
+                        .lower())
                 frostImmune = block.get("frost", False)
                 minArmor = block.get("armor", 0)
                 maxArmor = block.get("maxLevelArmor", minArmor)
@@ -37,12 +63,14 @@ def generate_armor_code(data):
 
                 element = block.get("element", "NEUTRAL").upper()
 
-                code = (
+                base = (
                     f"armorList.add(new Armor(str(context, R.string.{name}), Elements.{element}, "
                     f"{str(frostImmune).lower()}, {minArmor}, {maxArmor}, {upgrades}, "
                     f"{speed}, {jump}, {magic}, {sword}, "
-                    f"{staff}, {dagger}, {axe}, {hammer}, {spear}, R.drawable.armor_{name}));"
+                    f"{staff}, {dagger}, {axe}, {hammer}, {spear}, "
+                    f"R.drawable.armor_{name}"
                 )
+                code = _append_price_params(base, block)
                 armor_code_list.append(code)
 
     return armor_code_list
@@ -57,7 +85,10 @@ def generate_ring_code(data):
 
         for block in sorted_data:
             if isinstance(block, dict):
-                name = block.get("name", "test_ring").replace(" ", "_").replace("'", "").replace("+", "_plus").replace("-", "").lower()
+                name = (block.get("name", "test_ring")
+                        .replace(" ", "_").replace("'", "")
+                        .replace("+", "_plus").replace("-", "")
+                        .lower())
                 element = block.get("element", "NEUTRAL").upper()
                 armor = block.get("armor", 0)
                 armorBonus = process_boost(block.get("armorBoost", 1))
@@ -71,11 +102,13 @@ def generate_ring_code(data):
                 hammer = process_boost(block.get("hammerBoost", 1))
                 spear = process_boost(block.get("spearBoost", 1))
 
-                code = (
+                base = (
                     f"ringList.add(new Ring(str(context, R.string.{name}), Elements.{element}, "
                     f"{armor}, {armorBonus}, {speed}, {jump}, {magic}, {sword}, "
-                    f"{staff}, {dagger}, {axe}, {hammer}, {spear}, R.drawable.ring_{name}));"
+                    f"{staff}, {dagger}, {axe}, {hammer}, {spear}, "
+                    f"R.drawable.ring_{name}"
                 )
+                code = _append_price_params(base, block)
                 ring_code_list.append(code)
 
     return ring_code_list

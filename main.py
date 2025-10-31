@@ -93,13 +93,27 @@ def main():
 
     if total == 0:
         print("[DEBUG] No local items, fetching online fallback")
-    online_url = "https://gist.githubusercontent.com/andresan87/5670c559e5a930129aa03dfce7827306/raw/5e53a1df2e4d8fec5328640d38ae573116059761/items.json"
+    online_url = "https://gist.githubusercontent.com/andresan87/5670c559e5a930129aa03dfce7827306/raw/items.json"
     od = OnlineDataManager()
     online = od.get_online_item_data(online_url)
+
+# --- DEBUG: check what the online JSON actually contains for 'Root' or 'Rift' ---
+    if online:
+        print("\n[CHECK] Online candidates containing 'root' or 'rift':")
+        for o in online:
+            if "root" in (o.get("name", "").lower()) or "root" in (o.get("name_en", "").lower()) \
+            or "rift" in (o.get("name", "").lower()) or "rift" in (o.get("name_en", "").lower()):
+                print("ONLINE:",
+                    "name =", o.get("name"),
+                    "| name_en =", o.get("name_en"),
+                    "| sprite =", o.get("sprite"),
+                    "| maxLevelDamage =", o.get("maxLevelDamage"))
+
+
     if online:
         merged = (od.convert_online_to_local(online)
-                  if total == 0
-                  else od.merge_online_fields(local, od.index_online_data(online)))
+          if total == 0
+          else od.merge_online_fields(local, online))
     else:
         merged = local
 

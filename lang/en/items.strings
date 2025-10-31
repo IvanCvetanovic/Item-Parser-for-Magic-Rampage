@@ -713,7 +713,7 @@
 "Levitation Liqueur-desc" = "Prevents falling into bottomless pits and grants extra jumps in the air. Additionally, projectiles launched while airborne deal increased damage.";
 "Levitation Liqueur-desc-alt-a" = "Prevents falling into bottomless pits and grants one extra jump in the air. Additionally, projectiles launched while airborne deal increased damage.";
 "Levitation Liqueur-desc-alt-b" = "Prevents falling into bottomless pits. Additionally, projectiles launched while airborne deal increased damage.";
-"Moonjump Mixture-desc" = "Reduces gravity effects.";
+"Moonjump Mixture-desc" = "Reduces gravity, allowing higher jumps and slower descents. While airborne, your attacks become significantly faster.";
 "Forbidden Flowers Extract-desc" = "Gives the ability to shoot bouncy fireballs.";
 "Umbranian Water" = "Umbranian Water";
 "Umbranian Water-desc" = "Clears the active power-up effect.";
@@ -925,3 +925,11 @@
 "Mystwind Pendant-desc" = "This pendant grants its wearer the swiftness of unseen winds and the grace of a passing breeze.";
 "Moonbound Necklace" = "Moonbound Necklace";
 "Moonbound Necklace-desc" = "Forged under a blood moon, this necklace binds its wearer to ancient powers that defy gravity and fate alike.";
+"Root of Judgement Hammer" = "Root of Judgement";
+"Root of Judgement Hammer-desc" = "A relic from the sacred tree's heart. Bearing the weight of forgotten virtues.";
+"Eye of the Rift Hammer" = "Eye of the Rift";
+"Eye of the Rift Hammer-desc" = "Forged in a forgotten future. It sees through time, and what it sees... gazes back.";
+"Crowned Dragonhead Staff" = "Crowned Dragonhead";
+"Crowned Dragonhead Staff-desc" = "Dragons once guarded the rift between worlds. This one bows to a new master.";
+/* This suit is themed after the Discord's app logo */
+"Knight of Discord Armor" = "Knight of Discord";

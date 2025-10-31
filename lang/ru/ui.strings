@@ -783,7 +783,7 @@
 "faster_stamina_regeneration" = "Чудовищная сила";
 "faster_stamina_regeneration_desc" = "Повышает скорость восстановления выносливости.";
 "poisoned_weapons" = "Ядовитый туман";
-"poisoned_weapons_desc" = "Всё оружие наносит дополнительный урон <poison>ядом<white>.";
+"poisoned_weapons_desc" = "Каждый взрыв метательного оружия создаёт облако <poison>яда<white>, наносящее урон ближайшим врагам со временем.";
 "persistent_projectile" = "Неотразимый бросок";
 "persistent_projectile_desc" = "Всё метательное оружие не сбивается с траектории при столкновении с другим летящим снарядом.";
 "instant_blow_projectile" = "Разъедающий снаряд";
@@ -832,7 +832,8 @@
 "arcane_discipline" = "Колдовская дисциплина";
 "arcane_discipline_desc" = "Снижает время время перезарядки супернавыков на <number>%.";
 "swift_cast" = "Ловкий бросок";
-"swift_cast_desc" = "Все брошенные снаряды летят на <number>% быстрее.";
+"swift_cast_desc" = "Скорость снарядов увеличивается вместе с силой прыжка";
+"swift_cast_desc_old" = "Все брошенные снаряды летят на <number>% быстрее.";
 "swift_cast_desc_alt" = "Выстрелы из посохов, гримуаров и копий движутся на <number>% быстрее.";
 "swift_cast_desc_alt_a" = "Выстрелы из посохов и гримуаров движутся на <number>% быстрее.";
 "swift_cast_desc_alt_b" = "Выстрелы из посохов движутся на <number>% быстрее.";
@@ -896,7 +897,9 @@
 "green_platform_step" = "Уверенные шаги";
 "green_platform_step_desc" = "Герой всегда может перемещаться по зеленым магическим платформам.";
 "super_persistent_projectile" = "Прожорливый снаряд";
-"super_persistent_projectile_desc" = "Всё метательное оружие имеет шанс <number>% поглотить в полёте вражеские снаряды.";
+"super_persistent_projectile_desc" = "Снаряды вашего оружия могут поглощать вражеские снаряды в полёте.";
+"super_persistent_projectile_desc_ex" = "Чем тяжелее снаряд, тем выше шанс нейтрализовать вражескую атаку.";
+"super_persistent_projectile_desc-old" = "Всё метательное оружие имеет шанс <number>% поглотить в полёте вражеские снаряды.";
 "jump_boost" = "Бесстрашный прыжок";
 "jump_boost_desc" = "Усиливает прыжок на <number>%";
 "speed_boost" = "Скорость гепарда";
@@ -1208,3 +1211,8 @@
 "gamepadRequiredMessageEx" = "Для игры в Magic Rampage подключите геймпад или контроллер, а затем перезапустите игру.";
 "opponentHasLowerVersionShort" = "Ваш противник использует более старую версию.";
 "updateToPlayRankedDuels" = "Чтобы играть в Рейтинговые Дуэли, обновите вашу бета-версию.";
+"reconnecting" = "Переподключение...";
+"Female Castle Guard" = "Капитан";
+"Captain" = "Капитан";
+"Moonkeeper" = "Лунный Страж";
+"Scavenger A" = "Пустынный Искатель";

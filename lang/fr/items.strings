@@ -658,7 +658,7 @@
 "Levitation Liqueur-desc" = "Empêche de tomber dans les gouffres et octroie des sauts supplémentaires dans les airs. Les projectiles lancés dans les airs sont également plus puissants.";
 "Levitation Liqueur-desc-alt-a" = "Empêche de tomber dans les gouffres et octroie un saut supplémentaire dans les airs. Les projectiles lancés dans les airs sont également plus puissants.";
 "Levitation Liqueur-desc-alt-b" = "Empêche de tomber dans les gouffres. Les projectiles lancés dans les airs sont également plus puissants.";
-"Moonjump Mixture-desc" = "Réduit les effets de la gravité.";
+"Moonjump Mixture-desc" = "Réduit la gravité, permettant des sauts plus hauts et des descentes plus lentes. En plein vol, vos attaques deviennent nettement plus rapides.";
 "Forbidden Flowers Extract-desc" = "Octroie la capacité de tirer des boules de feu rebondissantes.";
 "Umbranian Water" = "Eau umbranienne";
 "Umbranian Water-desc" = "Retire l'effet de l'amélioration active.";
@@ -866,3 +866,10 @@
 "Mystwind Pendant-desc" = "Ce pendentif offre à son porteur la rapidité du vent et la grâce d'une brise légère.";
 "Moonbound Necklace" = "Collier lunaire";
 "Moonbound Necklace-desc" = "Forgé sous une lune de sang, ce collier offre à son porteur les pouvoirs anciens qui permettent de défier la gravité et le destin.";
+"Root of Judgement Hammer" = "Racine du jugement";
+"Root of Judgement Hammer-desc" = "Une relique issue du cœur de l'arbre sacré. Elle porte le poids de vertus oubliées.";
+"Eye of the Rift Hammer" = "Œil du gouffre";
+"Eye of the Rift Hammer-desc" = "Forgé dans un futur oublié. Il voit à travers le temps et ce qu'il voit... Le voit en retour.";
+"Crowned Dragonhead Staff" = "Tête de dragon couronnée";
+"Crowned Dragonhead Staff-desc" = "Des dragons gardaient autrefois le gouffre entre les mondes. Celui-ci s'incline devant un nouveau maître.";
+"Knight of Discord Armor" = "Chevalier de la Discord";

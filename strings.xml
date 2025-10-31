@@ -1818,5 +1818,28 @@ Above the third golden pot, there is a dagger of light, which is very good for e
     <string name="skin_warlock19">Hellbound Hexer</string>
     <string name="skin_warrior19">Titanic Crown Breaker</string>
     <string name="skin_witchdoctor19">Spirit Vessel</string>
+
+    <string name="class_ranger">Ranger</string>
+<string name="class_priest">Priest</string>
+<string name="class_warlock">Warlock</string>
+<string name="class_black_mage">Black Mage</string>
+<string name="class_rogue">Rogue</string>
+<string name="class_thief">Thief</string>
+<string name="class_warrior">Warrior</string>
+<string name="class_mage">Mage</string>
+<string name="class_druid">Druid</string>
+<string name="class_paladin">Paladin</string>
+<string name="class_high_mage">High Mage</string>
+<string name="class_elite_warrior">Elite Warrior</string>
+<string name="class_witchdoctor">Witchdoctor</string>
+
+    <string name="root_of_judgement">Root of Judgement</string>
+    <string name="eye_of_the_rift">Eye of the Rift</string>
+    <string name="staff_of_withering">Staff of Withering</string>
+    <string name="crowned_dragonhead">Crowned Dragonhead</string>
+    <string name="knight_of_discord">Knight of Discord</string>
+    <string name="bloodforged_charm_earring">Bloodforged Charm</string>
+    <string name="moonbound_necklace">Moonbound Necklace</string>
+    <string name="skybreaker_band">Skybreaker Band</string>
     
 </resources>

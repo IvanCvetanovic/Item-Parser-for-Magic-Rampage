@@ -1,3 +1,52 @@
+/* New achievements */
+"bag-expanded-4" = "Interdimensional storage";
+"bag-expanded-4-desc" = "Buy the fourth expansion chest. You really need all this space? We won't judge. Much.";
+
+/* New items */
+"Root of Judgement Hammer" = "Root of Judgement";
+"Root of Judgement Hammer-desc" = "A relic from the sacred tree's heart. Bearing the weight of forgotten virtues.";
+"Eye of the Rift Hammer" = "Eye of the Rift";
+"Eye of the Rift Hammer-desc" = "Forged in a forgotten future. It sees through time, and what it sees... gazes back.";
+"Crowned Dragonhead Staff" = "Crowned Dragonhead";
+"Crowned Dragonhead Staff-desc" = "Dragons once guarded the rift between worlds. This one bows to a new master.";
+/* This suit is themed after the Discord's app logo */
+"Knight of Discord Armor" = "Knight of Discord";
+
+/* New skins names please refer to skins-19.jpeg file for references */
+"skin-black-mage19" = "Twilight Witch";
+"skin-druid19" = "Scarfang";
+"skin-elite-warrior19" = "Crowned Legionnaire";
+"skin-high-mage19" = "Candle Enchantress";
+"skin-mage19" = "Plumed Pyromancer";
+"skin-paladin19" = "Halo Warden";
+"skin-priest19" = "Horned Oracle";
+"skin-ranger19" = "Mindlock Ranger";
+"skin-rogue19" = "Deadly Darling";
+"skin-thief19" = "Masked Trickster";
+"skin-warlock19" = "Hellbound Hexer";
+"skin-warrior19" = "Titanic Crown Breaker";
+"skin-witchdoctor19" = "Spirit Vessel";
+
+/* Please note that the character to which the identifier below is going to be used is Female */
+"Female Castle Guard" = "Captain";
+/* Please note that the character to which the identifier below is going to be used is Female */
+"Captain" = "Captain";
+/* Identifier below belongs to Male character */
+"Moonkeeper" = "Moon Keeper";
+"Scavenger A" = "Desert Scavenger";
+
+
+--------------------
+UNTIL 2nd Sep 2025
+--------------------
+
+/* As in: Connection dropped... (trying to reestablish) reconnecting back to the Duel servers... */
+"reconnecting" = "Reconnecting...";
+
+
+--------------------
+UNTIL 23rd July 2025
+--------------------
 
 /* New skins names please refer to skins-18.png file for references */
 "skin-black-mage18" = "Twilight Witch";

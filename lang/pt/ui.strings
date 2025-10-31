@@ -782,7 +782,7 @@
 "faster_stamina_regeneration" = "Vigor monstruoso";
 "faster_stamina_regeneration_desc" = "Aumenta a velocidade de regeneração da estamina.";
 "poisoned_weapons" = "Névoa tóxica";
-"poisoned_weapons_desc" = "Todas as armas infligem dano extra por <poison>envenenamento<white>.";
+"poisoned_weapons_desc" = "Ao explodir, projéteis liberam uma névoa de <poison>veneno<white> que causa dano contínuo a inimigos próximos.";
 "persistent_projectile" = "Disparo obstinado";
 "persistent_projectile_desc" = "Todos os projéteis persistirão quando atingidos por outros projéteis no trajeto.";
 "instant_blow_projectile" = "Disparo corrosivo";
@@ -831,7 +831,8 @@
 "arcane_discipline" = "Disciplina Arcana";
 "arcane_discipline_desc" = "Reduz o tempo de recarga das Super Habilidades em <number>%.";
 "swift_cast" = "Conjuração Rápida";
-"swift_cast_desc" = "Todos os projéteis lançados viajam <number>% mais rápido.";
+"swift_cast_desc" = "A velocidade dos projéteis lançados escala com o alcance do pulo.";
+"swift_cast_desc_old" = "Todos os projéteis lançados viajam <number>% mais rápido.";
 "swift_cast_desc_alt" = "Projéteis lançados de Cajados, Grimórios e Lanças viajam <number>% mais rápido.";
 "swift_cast_desc_alt_a" = "Projéteis lançados de Cajados e Grimórios viajam <number>% mais rápido.";
 "swift_cast_desc_alt_b" = "Projéteis lançados de Cajados viajam <number>% mais rápido.";
@@ -895,7 +896,9 @@
 "green_platform_step" = "Passo confiante";
 "green_platform_step_desc" = "O Soldado do Rosto Sujo sempre poderá pisar nas plataformas verdes mágicas.";
 "super_persistent_projectile" = "Disparo voraz";
-"super_persistent_projectile_desc" = "Os projéteis têm <number>% de chance de cancelar os projéteis do inimigo durante o voo.";
+"super_persistent_projectile_desc" = "Seus projéteis podem cancelar projéteis inimigos no ar.";
+"super_persistent_projectile_desc_ex" = "Projéteis mais pesados têm maior chance de cancelar projéteis inimigos.";
+"super_persistent_projectile_desc-old" = "Os projéteis têm <number>% de chance de cancelar os projéteis do inimigo durante o voo.";
 "jump_boost" = "Salto destemido";
 "jump_boost_desc" = "Incrementa alcance do pulo em <number>%";
 "speed_boost" = "Velocista feroz";
@@ -1207,3 +1210,8 @@
 "gamepadRequiredMessageEx" = "Para jogar Magic Rampage, conecte ou emparelhe um controle e reinicie o jogo.";
 "opponentHasLowerVersionShort" = "Seu oponente está usando uma versão antiga.";
 "updateToPlayRankedDuels" = "Para jogar os Duelos Ranqueados, por favor atualize sua versão Beta.";
+"reconnecting" = "Reconnectando...";
+"Female Castle Guard" = "Capitã";
+"Captain" = "Capitã";
+"Moonkeeper" = "Guardião Lunar";
+"Scavenger A" = "Saqueador do Deserto";

@@ -660,7 +660,7 @@
 "Levitation Liqueur-desc" = "Verhindert das Hinabstürzen in bodenlose Abgründe und gewährt zusätzliche Luftsprünge. Außerdem verursachen aus der Luft abgefeuerte Projektile erhöhten Schaden.";
 "Levitation Liqueur-desc-alt-a" = "Verhindert das Hinabstürzen in bodenlose Abgründe und gewährt einen zusätzlichen Luftsprung. Außerdem verursachen aus der Luft abgefeuerte Projektile erhöhten Schaden.";
 "Levitation Liqueur-desc-alt-b" = "Verhindert das Hinabstürzen in bodenlose Abgründe. Außerdem verursachen aus der Luft abgefeuerte Projektile erhöhten Schaden.";
-"Moonjump Mixture-desc" = "Reduziert Gravitationseffekte.";
+"Moonjump Mixture-desc" = "Reduziert die Schwerkraft und ermöglicht höhere Sprünge sowie langsamere Abstiege. In der Luft werden deine Angriffe deutlich schneller.";
 "Forbidden Flowers Extract-desc" = "Bietet die Fähigkeit an, hüpfende Feuerbälle abzuschießen.";
 "Umbranian Water" = "Umbrisches Wasser";
 "Umbranian Water-desc" = "Löscht den aktiven Power-Up-Effekt.";
@@ -868,3 +868,10 @@
 "Mystwind Pendant-desc" = "Dieser Anhänger verleiht seinem Träger die Schnelligkeit unsichtbarer Winde und die Anmut einer vorbeiziehenden Brise.";
 "Moonbound Necklace" = "Mondgebundene Kette";
 "Moonbound Necklace-desc" = "Unter einem Blutmond geschmiedet, bindet diese Kette ihren Träger an uralte Kräfte, die sowohl die Schwerkraft als auch das Schicksal herausfordern.";
+"Root of Judgement Hammer" = "Wurzel des Urteils";
+"Root of Judgement Hammer-desc" = "Ein Relikt aus dem Herzen des heiligen Baumes. Es trägt das Gewicht vergessener Tugenden.";
+"Eye of the Rift Hammer" = "Auge des Risses";
+"Eye of the Rift Hammer-desc" = "Geschmiedet in einer vergessenen Zukunft. Es sieht durch die Zeit und das, was es sieht... blickt zurück.";
+"Crowned Dragonhead Staff" = "Gekrönter Drachenkopf";
+"Crowned Dragonhead Staff-desc" = "Einst bewachten Drachen den Riss zwischen den Welten. Dieser hier dient nun einem neuen Meister.";
+"Knight of Discord Armor" = "Ritter von Discord";

@@ -660,7 +660,7 @@
 "Levitation Liqueur-desc" = "Impede quedas em abismos e concede pulos extras no ar. Além disso, projéteis lançados enquanto estiver no ar causam mais dano.";
 "Levitation Liqueur-desc-alt-a" = "Impede quedas em abismos e concede um pulo extra no ar. Além disso, projéteis lançados enquanto estiver no ar causam mais dano.";
 "Levitation Liqueur-desc-alt-b" = "Impede quedas em abismos. Além disso, projéteis lançados enquanto estiver no ar causam mais dano.";
-"Moonjump Mixture-desc" = "Reduz os efeitos da gravidade.";
+"Moonjump Mixture-desc" = "Reduz a gravidade, permitindo saltos mais altos e quedas mais lentas. Enquanto estiver no ar, seus ataques se tornam significativamente mais rápidos.";
 "Forbidden Flowers Extract-desc" = "Concede o poder de lançar bolas de fogo saltitantes.";
 "Umbranian Water" = "Água Umbraniana";
 "Umbranian Water-desc" = "Remove o efeito do power-up que estiver ativo.";
@@ -761,7 +761,7 @@
 "Soulreaver Sword" = "Ceifador de Almas";
 "Phantoms Wrath Sword" = "Ira do Fantasma";
 "Voidcaller Staff" = "Cajado do Chamador do Vazio";
-"Staff of Withering Staff" = "Cajado da Decomposição";
+"Staff of Withering Staff" = "Cajado do Carcomido";
 "Netherbane Rod Staff" = "Vara da Ruína Infernal";
 "Plaguebringers Scepter Staff" = "Cetro do Portador da Peste";
 "Spectral Wisp Staff" = "Cajado do Espectro";
@@ -868,3 +868,10 @@
 "Mystwind Pendant-desc" = "Este pingente concede ao portador a agilidade dos ventos invisíveis e a leveza de uma brisa passageira.";
 "Moonbound Necklace" = "Colar da Lua Sangrenta";
 "Moonbound Necklace-desc" = "Forjado sob uma lua sangrenta, este colar liga seu portador a poderes ancestrais que desafiam a gravidade e o destino.";
+"Root of Judgement Hammer" = "Raiz do Veredito";
+"Root of Judgement Hammer-desc" = "Relíquia do núcleo da árvore sagrada. Carrega o peso das virtudes adormecidas.";
+"Eye of the Rift Hammer" = "Olho do Abismo";
+"Eye of the Rift Hammer-desc" = "Forjado em um futuro esquecido. Enxerga através do tempo — e o que vê... encara de volta.";
+"Crowned Dragonhead Staff" = "Dragão da Chama Real";
+"Crowned Dragonhead Staff-desc" = "Dragões já guardaram a fenda entre mundos. Este agora se curva a um novo mestre.";
+"Knight of Discord Armor" = "Guerreiro da Discórdia";

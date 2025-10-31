@@ -659,7 +659,7 @@
 "Levitation Liqueur-desc" = "Предотвращает падение в бездонные ямы и дает дополнительные прыжки в воздухе. Кроме того, выпущенные в воздухе снаряды наносят повышенный урон.";
 "Levitation Liqueur-desc-alt-a" = "Предотвращает падение в бездонные ямы и дает один дополнительный прыжок в воздухе. Кроме того, выпущенные в воздухе снаряды наносят повышенный урон.";
 "Levitation Liqueur-desc-alt-b" = "Предотвращает падение в бездонные ямы. Кроме того, выпущенные в воздухе снаряды наносят повышенный урон.";
-"Moonjump Mixture-desc" = "Уменьшает эффект гравитации.";
+"Moonjump Mixture-desc" = "Уменьшает силу гравитации, позволяя выше прыгать и медленнее падать. В воздухе ваши атаки становятся значительно быстрее.";
 "Forbidden Flowers Extract-desc" = "Даёт возможность стрелять отскакивающими огненными шарами.";
 "Umbranian Water" = "Умбранская вода";
 "Umbranian Water-desc" = "Снимает активный эффект усиления.";
@@ -867,3 +867,10 @@
 "Mystwind Pendant-desc" = "Эта подвеска дарит владельцу стремительность ветра и изящество бриза.";
 "Moonbound Necklace" = "Лунное ожерелье";
 "Moonbound Necklace-desc" = "Созданное под кровавой луной, это ожерелье связывает своего владельца с древними силами, которые бросают вызов гравитации и судьбе.";
+"Root of Judgement Hammer" = "Root of Judgement";
+"Root of Judgement Hammer-desc" = "A relic from the sacred tree's heart. Bearing the weight of forgotten virtues.";
+"Eye of the Rift Hammer" = "Eye of the Rift";
+"Eye of the Rift Hammer-desc" = "Forged in a forgotten future. It sees through time, and what it sees... gazes back.";
+"Crowned Dragonhead Staff" = "Crowned Dragonhead";
+"Crowned Dragonhead Staff-desc" = "Dragons once guarded the rift between worlds. This one bows to a new master.";
+"Knight of Discord Armor" = "Knight of Discord";

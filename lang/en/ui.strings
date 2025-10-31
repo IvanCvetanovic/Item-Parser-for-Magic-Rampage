@@ -657,7 +657,7 @@
 "requiresRankFull" = "Requires <rank> rank. Your current rank is <current-rank>.";
 "goldChestDescNoNumber" = "Grants gold coins to your character.";
 "goldCoinChestNumNumberDesc" = "Grants gold and competitive tokens to your character.";
-"warnRankPenalty" = "Quitting a challenge or a match against another player penalizes you with ranking loss.";
+"warnRankPenalty" = "Quitting a match against another player results in a loss of ranking points.";
 "rankPenaltyNotification" = "Your rank has been decreased for quitting a challenge or a match against another player.";
 "rankPenalty" = "Rank penalty: <value>";
 /* credits entry */
@@ -887,7 +887,7 @@
 "faster_stamina_regeneration" = "Monstrous vigour";
 "faster_stamina_regeneration_desc" = "Increases stamina regeneration speed.";
 "poisoned_weapons" = "Toxic haze";
-"poisoned_weapons_desc" = "All weapons deal extra <poison>poison<white> damage.";
+"poisoned_weapons_desc" = "Exploding projectiles release a <poison>poison<white> cloud that damages nearby enemies over time.";
 "persistent_projectile" = "Obstinate shot";
 "persistent_projectile_desc" = "All weapon projectiles will persist even when struck by other projectiles on the fly.";
 "instant_blow_projectile" = "Corrosive shot";
@@ -936,7 +936,8 @@
 "arcane_discipline" = "Arcane Discipline";
 "arcane_discipline_desc" = "Reduces the cooldown time of Super Skills by <number>%.";
 "swift_cast" = "Swift Cast";
-"swift_cast_desc" = "All thrown projectiles travel <number>% faster.";
+"swift_cast_desc" = "Projectile speed scales with jump power.";
+"swift_cast_desc_old" = "All thrown projectiles travel <number>% faster.";
 "swift_cast_desc_alt" = "Projectiles from Staves, Grimoires, and Spears travel <number>% faster when thrown.";
 "swift_cast_desc_alt_a" = "Projectiles from Staves and Grimoires travel <number>% faster when thrown.";
 "swift_cast_desc_alt_b" = "Projectiles from Staves travel <number>% faster when thrown.";
@@ -1001,7 +1002,9 @@
 "green_platform_step" = "Confident move";
 "green_platform_step_desc" = "The Dirty Faced Soldier can always step on magic green platforms.";
 "super_persistent_projectile" = "Voracious shot";
-"super_persistent_projectile_desc" = "All weapon projectiles have <number>% chance to cancel enemies' projectiles on the fly.";
+"super_persistent_projectile_desc" = "Your weapon projectiles may cancel enemy projectiles midair.";
+"super_persistent_projectile_desc_ex" = "Heavier weapon projectiles are more likely to cancel enemy shots.";
+"super_persistent_projectile_desc-old" = "All weapon projectiles have <number>% chance to cancel enemies' projectiles on the fly.";
 "jump_boost" = "Fearless jump";
 "jump_boost_desc" = "Boosts jump power by <number>%";
 "speed_boost" = "Enhanced velocity";
@@ -1336,3 +1339,11 @@
 "gamepadRequiredMessageEx" = "To play Magic Rampage, please connect a gamepad or pair a controller, then restart the game.";
 "opponentHasLowerVersionShort" = "Your opponent is using an older version";
 "updateToPlayRankedDuels" = "To play Ranked Duels, please update your Beta version.";
+"reconnecting" = "Reconnecting...";
+/* Please note that the character to which the identifier below is going to be used is Female */
+"Female Castle Guard" = "Captain";
+/* Please note that the character to which the identifier below is going to be used is Female */
+"Captain" = "Captain";
+/* Identifier below belongs to Male character */
+"Moonkeeper" = "Moon Keeper";
+"Scavenger A" = "Desert Scavenger";

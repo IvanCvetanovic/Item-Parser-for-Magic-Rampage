@@ -887,7 +887,7 @@
 "faster_stamina_regeneration" = "怪物級の体";
 "faster_stamina_regeneration_desc" = "スタミナ回復速度が上昇する";
 "poisoned_weapons" = "ポイズンヘイズ";
-"poisoned_weapons_desc" = "すべての武器に<poison>毒<white>ダメージ効果を付与する";
+"poisoned_weapons_desc" = "すべての投擲武器の爆発時に、周囲の敵にダメージを与える<poison>毒<white>の霧を発生させる。";
 "persistent_projectile" = "ガンジョーショット";
 "persistent_projectile_desc" = "武器による全発射物が他の発射物と接触しても消えなくなる";
 "instant_blow_projectile" = "ボンバーショット";
@@ -936,7 +936,8 @@
 "arcane_discipline" = "秘術の鍛錬";
 "arcane_discipline_desc" = "スーパー技のクールダウン時間が<number>%短縮される";
 "swift_cast" = "高速キャスト";
-"swift_cast_desc" = "すべての飛び道具の速度が<number>%上昇する";
+"swift_cast_desc" = "発射体の速度はジャンプ力に応じて変化する";
+"swift_cast_desc_old" = "すべての飛び道具の速度が<number>%上昇する";
 "swift_cast_desc_alt" = "杖、グリモア、槍から投げた飛び道具の速度が<number>%上昇する";
 "swift_cast_desc_alt_a" = "杖とグリモアから投げた飛び道具の速度が<number>%上昇する";
 "swift_cast_desc_alt_b" = "杖から投げた飛び道具の速度が<number>%上昇する";
@@ -1001,7 +1002,9 @@
 "green_platform_step" = "マジックステップ";
 "green_platform_step_desc" = "魔法がかけられた緑色の地面上を常に歩くことができる";
 "super_persistent_projectile" = "バクバクショット";
-"super_persistent_projectile_desc" = "武器によるすべての発射物が、空中にある敵の発射物を<number>%の確率で打ち消す";
+"super_persistent_projectile_desc" = "武器の発射物が敵の発射物を空中で打ち消すことがあります。";
+"super_persistent_projectile_desc_ex" = "発射物が重いほど、敵の攻撃を打ち消す確率が高くなります。";
+"super_persistent_projectile_desc-old" = "武器によるすべての発射物が、空中にある敵の発射物を<number>%の確率で打ち消す";
 "jump_boost" = "フィアレスジャンプ";
 "jump_boost_desc" = "ジャンプ力が<number>%上昇する";
 "speed_boost" = "瞬足";
@@ -1334,3 +1337,8 @@
 "gamepadRequiredMessageEx" = "Magic Rampage をプレイするにはゲームパッドを接続、またはコントローラーをペアリングし、ゲームを再起動してください";
 "opponentHasLowerVersionShort" = "対戦相手が古いバージョンを使用しています";
 "updateToPlayRankedDuels" = "ランクデュエルで遊ぶには、ベータ版をアップデートしてください。";
+"reconnecting" = "再接続中…";
+"Female Castle Guard" = "キャプテン";
+"Captain" = "キャプテン";
+"Moonkeeper" = "ムーンキーパー";
+"Scavenger A" = "砂漠のスカベンジャー";

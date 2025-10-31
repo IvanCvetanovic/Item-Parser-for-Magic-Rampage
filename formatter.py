@@ -3,6 +3,20 @@ class OutputFormatter:
     def process_boost(value):
         return 0 if value == 0 or value == 1 else round((value - 1) * 100)
 
+    @staticmethod
+    def _price_suffix(item):
+        # Full labels, specific order, omit missing values.
+        labeling = [
+            ("Freemium Gold Price", item.get("freemiumGoldPrice")),
+            ("Premium Gold Price", item.get("premiumGoldPrice")),
+            ("Freemium Coin Price", item.get("freemiumCoinPrice")),
+            ("Premium Coin Price", item.get("premiumCoinPrice")),
+            ("Freemium Sell Price", item.get("baseFreemiumSellPrice")),
+            ("Premium Sell Price", item.get("basePremiumSellPrice")),
+        ]
+        parts = [f"{label}: {val}" for label, val in labeling if val is not None]
+        return (" " + ", ".join(parts)) if parts else ""
+
     @classmethod
     def format_human_armor(cls, items):
         lines = []
@@ -10,7 +24,7 @@ class OutputFormatter:
             name = item.get("name", "Unknown").replace("_", " ").title()
             element = item.get("element", "NEUTRAL").title()
             frost = item.get("frost", False)
-            frost_str = "Yes" if frost else "No"
+            frost_str = "No" if not frost else "Yes"
             min_armor = item.get("armor", 0)
             max_armor = item.get("maxLevelArmor", min_armor)
             upgrades = item.get("maxLevelAllowed", 1)
@@ -20,6 +34,7 @@ class OutputFormatter:
             line = (f"Armor: {name}, Element: {element}, Immune to Frost: {frost_str}, "
                     f"Min Armor: {min_armor}, Max Armor: {max_armor}, Upgrades: {upgrades}, "
                     f"Speed: {speed}%, Jump: {jump}%, Magic: {magic}%")
+            line += cls._price_suffix(item)
             lines.append(line)
         return "\n".join(lines)
 
@@ -46,6 +61,7 @@ class OutputFormatter:
                     f"Max Damage: {max_damage}, Upgrades: {upgrades}, Armor Bonus: {armor_bonus}%, Speed: {speed}%, "
                     f"Jump: {jump}%, Attack Cooldown: {attack_cd}, Pierce Count: {pierce_count}, "
                     f"Pierce: {enable_pierce_str}, Persist: {persist_str}, Poisonous: {poisonous_str}, Frost: {frost_str}")
+            line += cls._price_suffix(item)
             lines.append(line)
         return "\n".join(lines)
 
@@ -62,5 +78,6 @@ class OutputFormatter:
             magic = cls.process_boost(item.get("magicBoost", 1))
             line = (f"Ring: {name}, Element: {element}, Armor: {armor}, Armor Bonus: {armor_bonus}%, "
                     f"Speed: {speed}%, Jump: {jump}%, Magic: {magic}%")
+            line += cls._price_suffix(item)
             lines.append(line)
         return "\n".join(lines)

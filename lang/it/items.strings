@@ -659,7 +659,7 @@
 "Levitation Liqueur-desc" = "Impedisce di cadere in pozzi senza fondo e garantisce salti extra in aria. Inoltre, i proiettili lanciati mentre si è in aria, infliggono danni maggiori.";
 "Levitation Liqueur-desc-alt-a" = "Impedisce di cadere in pozzi senza fondo e garantisce un salto extra in aria. Inoltre, i proiettili lanciati mentre si è in aria, infliggono danni maggiori.";
 "Levitation Liqueur-desc-alt-b" = "Inoltre, i proiettili lanciati mentre si è in aria, infliggono danni maggiori.";
-"Moonjump Mixture-desc" = "Riduce gli effetti della gravità.";
+"Moonjump Mixture-desc" = "Riduce la gravità, permettendo salti più alti e discese più lente. In aria, i tuoi attacchi diventano significativamente più rapidi.";
 "Forbidden Flowers Extract-desc" = "Ti permette di sparare sfere di fuoco rimbalzanti.";
 "Umbranian Water" = "Acqua delle ombre";
 "Umbranian Water-desc" = "Annulla l'effetto del potenziamento attivo.";
@@ -867,3 +867,10 @@
 "Mystwind Pendant-desc" = "Questo ciondolo regala a chi lo indossa la velocità di venti nascosti e la gentilezza di una leggera brezza.";
 "Moonbound Necklace" = "Collana vincolo lunare";
 "Moonbound Necklace-desc" = "Creata alla luce di una luna di sangue, questa collana collega chi la indossa ai poteri antichi che sfidano la gravità e il fato.";
+"Root of Judgement Hammer" = "Root of Judgement";
+"Root of Judgement Hammer-desc" = "A relic from the sacred tree's heart. Bearing the weight of forgotten virtues.";
+"Eye of the Rift Hammer" = "Eye of the Rift";
+"Eye of the Rift Hammer-desc" = "Forged in a forgotten future. It sees through time, and what it sees... gazes back.";
+"Crowned Dragonhead Staff" = "Crowned Dragonhead";
+"Crowned Dragonhead Staff-desc" = "Dragons once guarded the rift between worlds. This one bows to a new master.";
+"Knight of Discord Armor" = "Knight of Discord";

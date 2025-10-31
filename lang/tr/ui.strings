@@ -865,7 +865,7 @@
 "faster_stamina_regeneration" = "Korkunç Canlılık";
 "faster_stamina_regeneration_desc" = "Dayanıklılık yenilenme hızını artırır.";
 "poisoned_weapons" = "Zehirli Sis";
-"poisoned_weapons_desc" = "Tüm silahlar ekstra <poison>zehir<white> hasarı vurur.";
+"poisoned_weapons_desc" = "Her mermi patladığında, yakındaki düşmanlara hasar veren bir <poison>zehir<white> bulutu oluşturur.";
 "persistent_projectile" = "İnatçı Atış";
 "persistent_projectile_desc" = "Tüm silah atışları,diğer atışlar tarafından vurulduğunda bile devam edecek...";
 "instant_blow_projectile" = "Aşındırıcı Atış";
@@ -914,7 +914,8 @@
 "arcane_discipline" = "Gizemli Disiplin";
 "arcane_discipline_desc" = "Süper Yeteneklerin bekleme süresini <number>% azaltır.";
 "swift_cast" = "Seri Atış";
-"swift_cast_desc" = "Fırlatılan tüm mermiler <number>% daha hızlı hareket eder";
+"swift_cast_desc" = "Mermi hızı, zıplama gücüne bağlıdır.";
+"swift_cast_desc_old" = "Fırlatılan tüm mermiler <number>% daha hızlı hareket eder";
 "swift_cast_desc_alt" = "Asalar, Büyü Kitapları ve Mızraklardan fırlatılan mermiler, fırlatıldığında <number>% daha hızlı hareket eder.";
 "swift_cast_desc_alt_a" = "Asalar ve Büyü Kitaplarından fırlatılan mermiler, fırlatıldığında <number>% daha hızlı hareket eder..";
 "swift_cast_desc_alt_b" = "Asalardan fırlatılan mermiler, fırlatıldığında <number>% daha hızlı hareket eder.";
@@ -977,8 +978,10 @@
 "stealth_boost_desc_ex" = "Düşmanlar varolan tehlikenin farkındalarsa, kamuflaj etkisiz kalır...";
 "green_platform_step" = "Özgüvenli Adım";
 "green_platform_step_desc" = "Kirli Yüzlü Asker her zaman sihirli yeşil platformlara basabilir...";
-"super_persistent_projectile" = "Doyumsuz Atış.";
-"super_persistent_projectile_desc" = "Tüm silah mermileri %<number> ihtimal ile rakiplerin havadaki mermilerini engelleyebilir...";
+"super_persistent_projectile" = "Doyumsuz Atış";
+"super_persistent_projectile_desc" = "Silah mermilerin havadaki düşman mermilerini engelleyebilir.";
+"super_persistent_projectile_desc_ex" = "Mermi ne kadar ağırsa, düşman saldırılarını engelleme ihtimali o kadar yüksektir.";
+"super_persistent_projectile_desc-old" = "Tüm silah mermileri %<number> ihtimal ile rakiplerin havadaki mermilerini engelleyebilir...";
 "jump_boost" = "Korkusuz Atlayış";
 "jump_boost_desc" = "Zıplama gücünü %<number> arttırır";
 "speed_boost" = "Arttırılmış Hız";
@@ -1286,7 +1289,12 @@
 "aboutMagicIdShort" = "Magic ID'niz, hesabınıza bağlı 6 ila 8 harften oluşan benzersiz bir koddur.";
 "aboutMagicIdEx" = "Destek ile iletişime geçerken veya arkadaşlarınızla bağlantı kurarken profilinizi tanımlamak için kullanın.";
 "magicIdCopied" = "Magic ID panoya kopyalandı!";
-"gamepadRequiredMessage" = "Magic Rampage uyumlu bir oyun kumandası gerektirir. Devam etmek için bir tane bağlayın.";
-"gamepadRequiredMessageEx" = "Magic Rampage oynamak için bir kumanda bağlayın veya eşleştirin ve oyunu yeniden başlatın.";
+"gamepadRequiredMessage" = "Magic Rampage uyumlu bir gamepad gerektirir. Devam etmek için lütfen bir gamepad bağlayın.";
+"gamepadRequiredMessageEx" = "Magic Rampage oynamak için lütfen bir gamepad bağlayın veya bir kontrolcüyü eşleştirin, ardından oyunu yeniden başlatın.";
 "opponentHasLowerVersionShort" = "Rakibiniz eski bir sürüm kullanıyor.";
 "updateToPlayRankedDuels" = "Sıralamalı Düellolara katılmak için Beta sürümünüzü güncelleyin.";
+"reconnecting" = "Tekrar bağlanıyor...";
+"Female Castle Guard" = "Kaptan";
+"Captain" = "Kaptan";
+"Moonkeeper" = "Ay Muhafızı";
+"Scavenger A" = "Çöl Yağmacısı";

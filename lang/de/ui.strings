@@ -791,7 +791,7 @@
 "faster_stamina_regeneration" = "Monströse Energie";
 "faster_stamina_regeneration_desc" = "Erhöht die Geschwindigkeit der Ausdauerregeneration.";
 "poisoned_weapons" = "Giftiger Dunst";
-"poisoned_weapons_desc" = "Alle Waffen verursachen zusätzliche <poison>Giftschaden<white>.";
+"poisoned_weapons_desc" = "Jedes Projektil erzeugt beim Explodieren eine <poison>Giftwolke<white>, die nahen Gegnern fortlaufenden Schaden zufügt.";
 "persistent_projectile" = "Hartnäckiger Schuss";
 "persistent_projectile_desc" = "Alle Waffenprojektile können nicht mehr blockiert werden, auch wenn sie von anderen Projektilen im Flug getroffen werden.";
 "instant_blow_projectile" = "Korrosiver Schuss";
@@ -840,7 +840,8 @@
 "arcane_discipline" = "Arkane Disziplin";
 "arcane_discipline_desc" = "Reduziert die Abklingzeit von Super-Fertigkeiten um <number>%.";
 "swift_cast" = "Schneller Wurf";
-"swift_cast_desc" = "Alle geworfenen Projektile fliegen <number>% schneller.";
+"swift_cast_desc" = "Die Projektilgeschwindigkeit skaliert mit der Sprungkraft.";
+"swift_cast_desc_old" = "Alle geworfenen Projektile fliegen <number>% schneller.";
 "swift_cast_desc_alt" = "Geschosse von Stäben, Grimoires und Speeren fliegen beim Werfen <number>% schneller.";
 "swift_cast_desc_alt_a" = "Geschosse von Stäben und Grimoires fliegen beim Werfen <number>% schneller.";
 "swift_cast_desc_alt_b" = "Geschosse von Stäben fliegen beim Werfen <number>% schneller.";
@@ -904,7 +905,9 @@
 "green_platform_step" = "Selbstbewusster Schritt";
 "green_platform_step_desc" = "Der Soldat mit schmutzigem Gesicht kann immer auf magische grüne Plattformen treten.";
 "super_persistent_projectile" = "Gefräßiger Schuss";
-"super_persistent_projectile_desc" = "Alle Projektile haben eine Chance von <number>%, die Projektile von Feinden im Flug zu zerstören.";
+"super_persistent_projectile_desc" = "Deine Projektile können gegnerische Projektile in der Luft neutralisieren.";
+"super_persistent_projectile_desc_ex" = "Schwerere Projektile haben eine höhere Chance, gegnerische Geschosse zu neutralisieren.";
+"super_persistent_projectile_desc-old" = "Alle Projektile haben eine Chance von <number>%, die Projektile von Feinden im Flug zu zerstören.";
 "jump_boost" = "Furchtloser Sprung";
 "jump_boost_desc" = "Erhöht die Sprungkraft um <number>%";
 "speed_boost" = "Erhöhte Geschwindigkeit";
@@ -1216,3 +1219,8 @@
 "gamepadRequiredMessageEx" = "Um Magic Rampage zu spielen, verbinde bitte ein Gamepad oder koppel einen Controller und starte das Spiel neu.";
 "opponentHasLowerVersionShort" = "Dein Gegner verwendet eine ältere Version.";
 "updateToPlayRankedDuels" = "Um Ranglistenduelle zu spielen, aktualisiere bitte deine Beta-Version.";
+"reconnecting" = "Verbinde erneut...";
+"Female Castle Guard" = "Hauptfrau";
+"Captain" = "Hauptfrau";
+"Moonkeeper" = "Mondwächter";
+"Scavenger A" = "Wüstenplünderer";

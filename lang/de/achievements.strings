@@ -139,7 +139,7 @@
 "its-time" = "Es ist soweit!";
 "its-time-desc" = "Sammle die ¾420 die bei 3-6 in der Luft schwebt. Mache das zu einer bestimmten Tageszeit.";
 "bag-expanded-2" = "Noch mehr Lagerraum!";
-"bag-expanded-2-desc" = "Kaufe die zweite Erweiterungskiste im Laden.";
+"bag-expanded-2-desc" = "Kaufe die zweite Erweiterungstruhe im Laden.";
 "ranked-top-100" = "Wahrer Held";
 "ranked-top-100-desc" = "Erreiche die Top 100 der besten Ranglistenspieler. Du siehst deine aktuelle Position im Ranglistenteil deines Inventars.";
 "ranked-top-500" = "Rampage-Veteran";
@@ -226,3 +226,5 @@
 "diamond-duel-rank-achievement-desc" = "Erhöhe deinen Rang bis zum Kosmischen Wächter in den Duellen!";
 "first-steps-into-destiny" = "Erste Schritte ins Schicksal";
 "first-steps-into-destiny-desc" = "Erkunde jede Kampfzone und absolviere dein erstes Training für die Duelle des Schicksals.";
+"bag-expanded-4" = "Interdimensionaler Lagerraum";
+"bag-expanded-4-desc" = "Kaufe die vierte Erweiterungstruhe. Brauchst du wirklich so viel Platz? Wir urteilen nicht. Allzu sehr.";

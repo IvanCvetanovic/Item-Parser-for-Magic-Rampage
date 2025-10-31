@@ -793,7 +793,7 @@
 "faster_stamina_regeneration" = "Vigor monstruoso";
 "faster_stamina_regeneration_desc" = "Aumenta la velocidad de regeneración de la resistencia.";
 "poisoned_weapons" = "Bruma tóxica";
-"poisoned_weapons_desc" = "Todas las armas infligen daño de <poison>veneno<white> adicional.";
+"poisoned_weapons_desc" = "Cada proyectil libera, al explotar, una nube de <poison>veneno<white> que inflige daño continuo a los enemigos cercanos.";
 "persistent_projectile" = "Disparo obstinado";
 "persistent_projectile_desc" = "Todos los proyectiles de armas persisten incluso cuando los golpean otros proyectiles al vuelo.";
 "instant_blow_projectile" = "Disparo corrosivo";
@@ -842,7 +842,8 @@
 "arcane_discipline" = "Disciplina arcana";
 "arcane_discipline_desc" = "Reduce el tiempo de reuso de las superhabilidades en un <number> %.";
 "swift_cast" = "Lanzamiento rápido";
-"swift_cast_desc" = "Todos los proyectiles lanzados se mueven un <number> % más rápido.";
+"swift_cast_desc" = "La velocidad de los proyectiles lanzados escala con la potencia del salto.";
+"swift_cast_desc_old" = "Todos los proyectiles lanzados se mueven un <number> % más rápido.";
 "swift_cast_desc_alt" = "Los proyectiles de los báculos, grimorios y lanzas se mueven un <number> % más rápido al lanzarlos.";
 "swift_cast_desc_alt_a" = "Los proyectiles de los báculos y grimorios se mueven un <number> % más rápido al lanzarlos.";
 "swift_cast_desc_alt_b" = "Los proyectiles de los báculos se mueven un <number> % más rápido al lanzarlos.";
@@ -906,7 +907,9 @@
 "green_platform_step" = "Movimiento confiado";
 "green_platform_step_desc" = "El soldado Cara Sucia siempre puede pisar las plataformas mágicas verdes.";
 "super_persistent_projectile" = "Disparo voraz";
-"super_persistent_projectile_desc" = "Todas las armas de proyectiles tienen un <number> % de probabilidad de cancelar los proyectiles enemigos al vuelo.";
+"super_persistent_projectile_desc" = "Tus proyectiles pueden cancelar los proyectiles enemigos en pleno vuelo.";
+"super_persistent_projectile_desc_ex" = "Los proyectiles más pesados tienen más probabilidad de cancelar los disparos enemigos.";
+"super_persistent_projectile_desc-old" = "Todas las armas de proyectiles tienen un <number> % de probabilidad de cancelar los proyectiles enemigos al vuelo.";
 "jump_boost" = "Salto intrépido";
 "jump_boost_desc" = "Aumenta la potencia del salto en un <number> %";
 "speed_boost" = "Velocidad mejorada";
@@ -1218,3 +1221,8 @@
 "gamepadRequiredMessageEx" = "Para jugar a Magic Rampage, conecta o empareja un mando y, a continuación, reinicia el juego.";
 "opponentHasLowerVersionShort" = "Tu oponente está usando una versión anterior.";
 "updateToPlayRankedDuels" = "Para jugar Duelos Clasificatorios, actualiza tu versión Beta.";
+"reconnecting" = "Reconectando...";
+"Female Castle Guard" = "Capitana";
+"Captain" = "Capitana";
+"Moonkeeper" = "Custodio Lunar";
+"Scavenger A" = "Carroñero Desértico";

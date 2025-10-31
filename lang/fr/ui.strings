@@ -778,7 +778,7 @@
 "faster_stamina_regeneration" = "Énergie colossale";
 "faster_stamina_regeneration_desc" = "Augmente la vitesse de régénération de l'endurance.";
 "poisoned_weapons" = "Brouillard toxique";
-"poisoned_weapons_desc" = "Toutes les armes occasionnent des dégâts de <poison>poison<white> supplémentaires.";
+"poisoned_weapons_desc" = "Chaque projectile crée une nuée de <poison>poison<white> à l'explosion, infligeant des dégâts continus aux ennemis proches.";
 "persistent_projectile" = "Tir tenace";
 "persistent_projectile_desc" = "Tous les projectiles poursuivront leur trajectoire même s'ils sont frappés par d'autres projectiles lors du tir.";
 "instant_blow_projectile" = "Tir destructeur";
@@ -827,7 +827,8 @@
 "arcane_discipline" = "Discipline des arcanes";
 "arcane_discipline_desc" = "Réduit le temps de récupération des Super compétences de <number> %.";
 "swift_cast" = "Jet rapide";
-"swift_cast_desc" = "Tous les projectiles sont <number> % plus rapides.";
+"swift_cast_desc" = "La vitesse des projectiles dépend de la puissance de saut.";
+"swift_cast_desc_old" = "Tous les projectiles sont <number> % plus rapides.";
 "swift_cast_desc_alt" = "Les projectiles lancés par les bâtons, grimoires et lances sont <number> % plus rapides.";
 "swift_cast_desc_alt_a" = "Les projectiles lancés par les bâtons et grimoires sont <number> % plus rapides.";
 "swift_cast_desc_alt_b" = "Les projectiles lancés par les bâtons sont <number> % plus rapides.";
@@ -890,8 +891,10 @@
 "stealth_boost_desc_ex" = "Le camouflage échoue si d'autres ennemis sont déjà alertés par la présence d'une menace.";
 "green_platform_step" = "Déplacement sûr";
 "green_platform_step_desc" = "Le Soldat au Visage sale peut toujours marcher sur les plateformes vertes magiques.";
-"super_persistent_projectile" = "Tir vorace.";
-"super_persistent_projectile_desc" = "Tous les projectiles d'armes ont <number> % de chance d'annuler les projectiles ennemis en plein vol.";
+"super_persistent_projectile" = "Tir vorace";
+"super_persistent_projectile_desc" = "Les projectiles de votre arme peuvent annuler ceux des ennemis en plein vol.";
+"super_persistent_projectile_desc_ex" = "Plus le projectile est lourd, plus il a de chances d'annuler ceux de l'ennemi.";
+"super_persistent_projectile_desc-old" = "Tous les projectiles d'armes ont <number> % de chance d'annuler les projectiles ennemis en plein vol.";
 "jump_boost" = "Saut téméraire";
 "jump_boost_desc" = "Augmente la puissance de saut de <number> %";
 "speed_boost" = "Vitesse accrue";
@@ -1203,3 +1206,8 @@
 "gamepadRequiredMessageEx" = "Pour jouer à Magic Rampage, connecte une manette et redémarre le jeu.";
 "opponentHasLowerVersionShort" = "Votre adversaire utilise une version plus ancienne.";
 "updateToPlayRankedDuels" = "Pour jouer aux Duels Classés, veuillez mettre à jour votre version Bêta.";
+"reconnecting" = "Reconnexion...";
+"Female Castle Guard" = "Capitaine";
+"Captain" = "Capitaine";
+"Moonkeeper" = "Gardien de la Lune";
+"Scavenger A" = "Charognard du désert";

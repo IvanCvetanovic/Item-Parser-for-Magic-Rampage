@@ -678,7 +678,7 @@
 "Levitation Liqueur-desc" = "Sonsuz boşluklara düşmeyi engeller ve havada fazladan zıplama sağlar. Ayrıca, havadayken fırlatılan mermiler daha fazla hasar verir."";
 "Levitation Liqueur-desc-alt-a" = "Sonsuz boşluklara düşmeyi engeller ve havada bir fazladan zıplama sağlar. Ayrıca, havadayken fırlatılan mermiler daha fazla hasar verir.";
 "Levitation Liqueur-desc-alt-b" = "Sonsuz boşluklara düşmeyi engeller. Ayrıca, havadayken fırlatılan mermiler daha fazla hasar verir.";
-"Moonjump Mixture-desc" = "Yerçekimi etkisini kaldırır.";
+"Moonjump Mixture-desc" = "Yerçekimini azaltır, daha yükseğe zıplamanıza ve yavaş düşmenize olanak tanır. Havadayken saldırılarınız belirgin şekilde hızlanır.";
 "Forbidden Flowers Extract-desc" = "Zıplayan ateş topları atma yeteneği verir.";
 "Umbranian Water" = "Umbra Suyu";
 "Umbranian Water-desc" = "Üzerinizdeki güçlendirme etkilerini kaldırır.";
@@ -886,3 +886,10 @@
 "Mystwind Pendant-desc" = "Bu kolye, sahibine görünmez rüzgarların çabukluğunu ve geçen bir esintinin zarafetini verir.";
 "Moonbound Necklace" = "Ayyeminli Kolye";
 "Moonbound Necklace-desc" = "Kanlı ay altında dövülen bu kolye, sahibini yer çekimine ve kadere meydan okuyan kadim güçlere bağlar.";
+"Root of Judgement Hammer" = "Root of Judgement";
+"Root of Judgement Hammer-desc" = "A relic from the sacred tree's heart. Bearing the weight of forgotten virtues.";
+"Eye of the Rift Hammer" = "Eye of the Rift";
+"Eye of the Rift Hammer-desc" = "Forged in a forgotten future. It sees through time, and what it sees... gazes back.";
+"Crowned Dragonhead Staff" = "Crowned Dragonhead";
+"Crowned Dragonhead Staff-desc" = "Dragons once guarded the rift between worlds. This one bows to a new master.";
+"Knight of Discord Armor" = "Knight of Discord";

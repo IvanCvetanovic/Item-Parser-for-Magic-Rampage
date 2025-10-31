@@ -713,7 +713,7 @@
 "Levitation Liqueur-desc" = "奈落への落下を防ぎ、空中ジャンプが追加され、空中で放たれた飛び道具のダメージが増加する";
 "Levitation Liqueur-desc-alt-a" = "奈落への落下を防ぎ、空中ジャンプが1回追加され、空中で放たれた飛び道具のダメージが増加する";
 "Levitation Liqueur-desc-alt-b" = "奈落への落下を防ぎ、空中で放たれた飛び道具のダメージが増加する";
-"Moonjump Mixture-desc" = "重力を減少させる";
+"Moonjump Mixture-desc" = "重力の影響を軽減し、高くジャンプしてゆっくり降下できるようになる　空中にいる間は攻撃速度が大幅に上昇する";
 "Forbidden Flowers Extract-desc" = "バウンドする火球を放てるようになる";
 "Umbranian Water" = "アンブラウォーター";
 "Umbranian Water-desc" = "発動中の能力強化を無効にする";
@@ -924,3 +924,10 @@
 "Mystwind Pendant-desc" = "このペンダントは目に見えぬ風のごとき俊敏さと 流れる風のような優雅さを与える";
 "Moonbound Necklace" = "月縛のネックレス";
 "Moonbound Necklace-desc" = "血の月の下で鍛えられたこのネックレスは 持ち主を重力と運命を超える古代の力と結びつける";
+"Root of Judgement Hammer" = "Root of Judgement";
+"Root of Judgement Hammer-desc" = "A relic from the sacred tree's heart. Bearing the weight of forgotten virtues.";
+"Eye of the Rift Hammer" = "Eye of the Rift";
+"Eye of the Rift Hammer-desc" = "Forged in a forgotten future. It sees through time, and what it sees... gazes back.";
+"Crowned Dragonhead Staff" = "Crowned Dragonhead";
+"Crowned Dragonhead Staff-desc" = "Dragons once guarded the rift between worlds. This one bows to a new master.";
+"Knight of Discord Armor" = "Knight of Discord";

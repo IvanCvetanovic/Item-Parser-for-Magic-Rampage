@@ -778,7 +778,7 @@
 "faster_stamina_regeneration" = "Vigore mostruoso";
 "faster_stamina_regeneration_desc" = "Aumenta la velocità di rigenerazione della resistenza.";
 "poisoned_weapons" = "Foschia tossica";
-"poisoned_weapons_desc" = "Tutte le armi infliggono danni <poison>veleno<white> extra.";
+"poisoned_weapons_desc" = "Ogni proiettile crea una nube di <poison>veleno<white> all'esplosione, infliggendo danni continui ai nemici vicini.";
 "persistent_projectile" = "Sparo ostinato";
 "persistent_projectile_desc" = "Tutti i proiettili delle armi perdureranno anche quando verranno colpiti da altri proiettili in volo.";
 "instant_blow_projectile" = "Sparo corrosivo";
@@ -827,7 +827,8 @@
 "arcane_discipline" = "Disciplina arcana";
 "arcane_discipline_desc" = "Riduce il tempo di ricarica delle Super abilità di un <number>%.";
 "swift_cast" = "Lancio lesto";
-"swift_cast_desc" = "Tutti i proiettili lanciati viaggiano a una velocità di un <number>% maggiore.";
+"swift_cast_desc" = "La velocità dei proiettili dipende dalla potenza del salto.";
+"swift_cast_desc_old" = "Tutti i proiettili lanciati viaggiano a una velocità di un <number>% maggiore.";
 "swift_cast_desc_alt" = "I proiettili lanciati da bastoni, grimori e lance sono più veloci di un <number>%.";
 "swift_cast_desc_alt_a" = "I proiettili lanciati da bastoni e grimori sono più veloci di un <number>%.";
 "swift_cast_desc_alt_b" = "I proiettili lanciati da bastoni sono più veloci di un <number>%.";
@@ -890,8 +891,10 @@
 "stealth_boost_desc_ex" = "La mimetizzazione non funziona quando altri nemici si sono già accorti della presenza della minaccia nemica.";
 "green_platform_step" = "Mossa sicura";
 "green_platform_step_desc" = "Il soladato dalla faccia sporca può sempre camminare sulle piattaforme verdi magiche.";
-"super_persistent_projectile" = "Colpo vorace.";
-"super_persistent_projectile_desc" = "Tutti i proiettili delle armi hanno un <number>% di probabilità di annullare i proiettili nemici in volo.";
+"super_persistent_projectile" = "Colpo vorace";
+"super_persistent_projectile_desc" = "I proiettili della tua arma possono annullare quelli nemici a mezz’aria.";
+"super_persistent_projectile_desc_ex" = "Più il proiettile è pesante, maggiori sono le probabilità che annulli quelli nemici.";
+"super_persistent_projectile_desc-old" = "Tutti i proiettili delle armi hanno un <number>% di probabilità di annullare i proiettili nemici in volo.";
 "jump_boost" = "Salto senza paura";
 "jump_boost_desc" = "Potenzia la forza del salto di un <number>%";
 "speed_boost" = "Velocità potenziata";
@@ -1203,3 +1206,8 @@
 "gamepadRequiredMessageEx" = "Per giocare a Magic Rampage, connetti un controller e poi riavvia il gioco.";
 "opponentHasLowerVersionShort" = "Il tuo avversario sta usando una versione precedente.";
 "updateToPlayRankedDuels" = "Per giocare ai Duelli Classificati, aggiorna la tua versione Beta.";
+"reconnecting" = "Riconnessione in corso...";
+"Female Castle Guard" = "Capitana";
+"Captain" = "Capitana";
+"Moonkeeper" = "Custode Lunare";
+"Scavenger A" = "Esploratore del Deserto";
