@@ -1,5 +1,9 @@
 import os
-import math
+import logging
+from parser_utils import parse_scalar, process_boost
+from models import ClassRecord
+
+logger = logging.getLogger(__name__)
 
 class ClassParser:
     def __init__(self, file_path):
@@ -15,14 +19,14 @@ class ClassParser:
                 try:
                     key, value = line.split("=", 1)
                 except Exception as e:
-                    print(f"[DEBUG] Malformed line in class block: {e}")
+                    logger.debug("Malformed line in class block: %s", e)
                     continue
-                item[key.strip()] = value.strip().rstrip(";")
+                item[key.strip()] = parse_scalar(value)
         return item
 
     def parse_file(self):
         if not os.path.exists(self.file_path):
-            print(f"[DEBUG] File {self.file_path} not found.")
+            logger.debug("Class file not found: %s", self.file_path)
             return []
         with open(self.file_path, "r", encoding="utf-8") as f:
             lines = f.readlines()
@@ -56,38 +60,27 @@ class ClassParser:
                     block_text = "\n".join(block_lines)
                     block = self.parse_class_block(block_text)
                     block["identifier"] = current_identifier
-                    blocks.append(block)
+                    blocks.append(ClassRecord.from_mapping(block))
                     block_lines = []
                     continue
                 block_lines.append(s)
 
-        print(f"[DEBUG] Total class blocks parsed: {len(blocks)}")
+        logger.info("Parsed %s class block(s)", len(blocks))
         return blocks
 
     def compute_parameters(self, block):
-        def calc(field):
-            try:
-                raw = block.get(field, "1")
-                val = float(raw)
-                # mirror your weapon‐parser logic: zero or one → 0%, else round((val-1)*100)
-                if val in (0.0, 1.0):
-                    return 0
-                return round((val - 1) * 100)
-            except:
-                return 0
-
         # order must match your CharacterClass ctor:
         # armor, magic, sword, dagger, hammer, axe, spear, staff, speed, jump
-        p1  = calc("armorBoost")
-        p2  = calc("magicBoost")
-        p3  = calc("swordBoost")
-        p4  = calc("daggerBoost")
-        p5  = calc("hammerBoost")
-        p6  = calc("axeBoost")
-        p7  = calc("spearBoost")
-        p8  = calc("staffBoost")
-        p9  = calc("speedBoost")
-        p10 = calc("jumpBoost")
+        p1 = process_boost(block.get("armorBoost", 1))
+        p2 = process_boost(block.get("magicBoost", 1))
+        p3 = process_boost(block.get("swordBoost", 1))
+        p4 = process_boost(block.get("daggerBoost", 1))
+        p5 = process_boost(block.get("hammerBoost", 1))
+        p6 = process_boost(block.get("axeBoost", 1))
+        p7 = process_boost(block.get("spearBoost", 1))
+        p8 = process_boost(block.get("staffBoost", 1))
+        p9 = process_boost(block.get("speedBoost", 1))
+        p10 = process_boost(block.get("jumpBoost", 1))
 
         return (p1, p2, p3, p4, p5, p6, p7, p8, p9, p10)
 
@@ -95,9 +88,10 @@ class ClassParser:
         blocks = self.parse_file()
         code_lines = []
         for block in blocks:
+            block = block.as_dict()
             cls = block.get("class", "").strip().lower()
             if not cls:
-                print(f"[DEBUG] Block with identifier '{block.get('identifier','')}' has no 'class' field.")
+                logger.debug("Class block %s has no class field", block.get("identifier", ""))
                 continue
             params = self.compute_parameters(block)
             enum_name = cls.upper().replace("-", "_")
@@ -114,29 +108,21 @@ class ClassParser:
         blocks = self.parse_file()
         lines = []
         for block in blocks:
+            block = block.as_dict()
             cls_val = block.get("class", "").strip().lower()
             if not cls_val:
                 continue
 
-            def calc_field(field):
-                try:
-                    val = float(block.get(field, "1"))
-                    if val in (0.0, 1.0):
-                        return 0
-                    return round((val - 1) * 100)
-                except:
-                    return 0
-
-            armorBonus       = calc_field("armorBoost")
-            magicBonus       = calc_field("magicBoost")
-            swordBonus       = calc_field("swordBoost")
-            daggerBonus      = calc_field("daggerBoost")
-            hammerBonus      = calc_field("hammerBoost")
-            axeBonus         = calc_field("axeBoost")
-            spearBonus       = calc_field("spearBoost")
-            staffBonus       = calc_field("staffBoost")
-            speedBonus       = calc_field("speedBoost")
-            jumpImpulseBonus = calc_field("jumpBoost")
+            armorBonus = process_boost(block.get("armorBoost", 1))
+            magicBonus = process_boost(block.get("magicBoost", 1))
+            swordBonus = process_boost(block.get("swordBoost", 1))
+            daggerBonus = process_boost(block.get("daggerBoost", 1))
+            hammerBonus = process_boost(block.get("hammerBoost", 1))
+            axeBonus = process_boost(block.get("axeBoost", 1))
+            spearBonus = process_boost(block.get("spearBoost", 1))
+            staffBonus = process_boost(block.get("staffBoost", 1))
+            speedBonus = process_boost(block.get("speedBoost", 1))
+            jumpImpulseBonus = process_boost(block.get("jumpBoost", 1))
 
             line = (
                 f"Class: {cls_val.title()}, Armor Bonus: {armorBonus}%, Magic Bonus: {magicBonus}%, "

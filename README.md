@@ -1,53 +1,80 @@
-This is a tool used for parsing items from the popular mobile and PC game "Magic Rampage". The tool aims to provide an overview of the current items in the game, which can be useful for Wiki editors, Youtubers and people who require this data for other needs.
+This project parses item, class, and enemy data from Magic Rampage and exports either readable text or developer-oriented constructor code.
 
-## Setup & Usage
+## Requirements
 
-Recommended Python Version: 3.13 or newer
+- Python 3.11 or newer
+- `requests`
 
-Recommended Platform: Visual Studio Code
+Install dependencies with:
 
 ```bash
-pip install requests
+pip install .
 ```
 
-Run the app with:
+## Usage
+
+Default run:
 
 ```bash
 python main.py
 ```
 
-There will be 8 output .txt folders, each containing the specific types of equipments. They are sorted based on maximum armor value for armors and rings and maximum damage value for the rest.
-
-## Advanced Usage
-
-The user can decide between **normal** and **developer** modes when executign the main.py:
-
-```bash
-python main.py normal
-```
-
-```bash
-python main.py developer
-```
-
-If this is not specified, the program automatically assumes the **normal** mode. The difference between the modes is the readability. **normal** mode provides understandable textual representation of the item information. **developer** mode provides a list of items used for Magic Rampage Companion app. This automates all the heavy workload.
-
-Apart from that the user can also define a second argument after the first:
+Explicit output and item type:
 
 ```bash
 python main.py normal all
+python main.py developer sword
+python main.py developer enemy
 ```
+
+You can override the default game paths:
 
 ```bash
-python main.py normal axes
+python main.py normal all --items-folder "D:\SteamLibrary\steamapps\common\Magic Rampage\items"
+python main.py developer enemy --enemy-dir "D:\SteamLibrary\steamapps\common\Magic Rampage\npcs\enemies" --enemy-dir "D:\SteamLibrary\steamapps\common\Magic Rampage\npcs\bosses"
+python main.py normal all --output-dir custom-output
 ```
 
-If the **all** mode is picked, the textual files for all item types will be made. If a specific item type is picked, then only that type will be produced. The possible types are: **all**, **enemy**, **class**,**armor**, **ring**, **sword**, **dagger**, **spear**, **hammer**, **axe** and **staff**. If none are picked, mode **all** is automatically assumed.
+The same values can be provided through environment variables:
 
+- `MAGIC_RAMPAGE_ITEMS_DIR`
+- `MAGIC_RAMPAGE_ENEMY_DIRS`
+- `MAGIC_RAMPAGE_ITEMS_URL`
+- `MAGIC_RAMPAGE_OUTPUT_DIR`
+- `MAGIC_RAMPAGE_LOG_LEVEL`
 
-## Language Getter **
+`MAGIC_RAMPAGE_ENEMY_DIRS` uses the platform path separator.
 
-Language getter is a tool that searches entries in english and then tries to match these entries in other languages and provide them for usage. It needs to be executed separately:
+## Outputs
+
+- `normal` mode exports readable text summaries.
+- `developer` mode exports constructor lines for the companion app.
+- Output files are written to `output/` by default.
+
+Items are sorted deterministically:
+
+- Armor by max armor, then name
+- Rings by armor, then name
+- Weapons by max damage, then name
+
+## Architecture
+
+- `pipeline.py` handles loading, filtering, merging, reclassification, and stable ordering.
+- `exporters.py` handles writing text outputs.
+- `models.py` provides typed records for items, classes, and enemies.
+- `online_data.py` validates the online schema before use.
+
+## Tests
+
+Run the test suite with:
+
+```bash
+python -m unittest discover -s tests
+```
+
+## Language Getter
+
+The language extraction tool remains separate:
 
 ```bash
 python language_getter.py

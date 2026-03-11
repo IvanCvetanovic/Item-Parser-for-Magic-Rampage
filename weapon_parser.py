@@ -1,6 +1,5 @@
-def process_boost(value):
-    """Converts boost multipliers to percentages (e.g. 1.2 → 20)."""
-    return 0 if value in (0, 1) else round((value - 1) * 100)
+from parser_utils import process_boost, sanitize_resource_name
+from models import record_to_mapping
 
 
 def sort_by_max_damage(weapon_list):
@@ -10,12 +9,7 @@ def sort_by_max_damage(weapon_list):
 
 def extract_common_fields(block, default_name, weapon_type):
     """Extract shared weapon properties and compute damage/boost values."""
-    name = block.get("name", default_name) \
-                .replace(" ", "_") \
-                .replace("'", "") \
-                .replace("+", "_plus") \
-                .replace("-", "") \
-                .lower()
+    name = sanitize_resource_name(block.get("name", default_name), default_name)
 
     element = block.get("element", "NEUTRAL").upper() or "NEUTRAL"
 
@@ -79,7 +73,8 @@ def generate_weapon_code(data, weapon_type, list_name, drawable_prefix, default_
 
     if isinstance(data, list):
         for block in data:
-            if isinstance(block, dict):
+            if isinstance(block, dict) or hasattr(block, "as_dict"):
+                block = record_to_mapping(block)
                 fields = extract_common_fields(block, default_name, weapon_type)
                 weapon_data.append(fields)
 

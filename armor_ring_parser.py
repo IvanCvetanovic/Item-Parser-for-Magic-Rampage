@@ -1,5 +1,5 @@
-def process_boost(value):
-    return 0 if value == 0 or value == 1 else round((value - 1) * 100)
+from parser_utils import process_boost, sanitize_resource_name
+from models import record_to_mapping
 
 
 def sort_by_max_armor(items, is_ring=False):
@@ -12,6 +12,7 @@ def sort_by_max_armor(items, is_ring=False):
 
 def _price_values_in_order(block):
     """Return exactly six price values in required order, defaulting to 0 if missing."""
+    block = record_to_mapping(block)
     order = [
         "freemiumGoldPrice",
         "premiumGoldPrice",
@@ -41,11 +42,11 @@ def generate_armor_code(data):
         sorted_data = sort_by_max_armor(data, is_ring=False)
 
         for block in sorted_data:
-            if isinstance(block, dict):
+            if isinstance(block, dict) or hasattr(block, "as_dict"):
+                block = record_to_mapping(block)
                 name = (block.get("name", "test_armor")
-                        .replace(" ", "_").replace("'", "")
-                        .replace("+", "_plus").replace("-", "")
-                        .lower())
+                        )
+                name = sanitize_resource_name(name, "test_armor")
                 frostImmune = block.get("frost", False)
                 minArmor = block.get("armor", 0)
                 maxArmor = block.get("maxLevelArmor", minArmor)
@@ -84,11 +85,11 @@ def generate_ring_code(data):
         sorted_data = sort_by_max_armor(data, is_ring=True)
 
         for block in sorted_data:
-            if isinstance(block, dict):
+            if isinstance(block, dict) or hasattr(block, "as_dict"):
+                block = record_to_mapping(block)
                 name = (block.get("name", "test_ring")
-                        .replace(" ", "_").replace("'", "")
-                        .replace("+", "_plus").replace("-", "")
-                        .lower())
+                        )
+                name = sanitize_resource_name(name, "test_ring")
                 element = block.get("element", "NEUTRAL").upper()
                 armor = block.get("armor", 0)
                 armorBonus = process_boost(block.get("armorBoost", 1))

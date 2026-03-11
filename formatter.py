@@ -1,3 +1,6 @@
+from models import record_to_mapping
+
+
 class OutputFormatter:
     @staticmethod
     def process_boost(value):
@@ -5,6 +8,7 @@ class OutputFormatter:
 
     @staticmethod
     def _price_suffix(item):
+        item = record_to_mapping(item)
         # Full labels, specific order, omit missing values.
         labeling = [
             ("Freemium Gold Price", item.get("freemiumGoldPrice")),
@@ -21,6 +25,7 @@ class OutputFormatter:
     def format_human_armor(cls, items):
         lines = []
         for item in items:
+            item = record_to_mapping(item)
             name = item.get("name", "Unknown").replace("_", " ").title()
             element = item.get("element", "NEUTRAL").title()
             frost = item.get("frost", False)
@@ -39,11 +44,18 @@ class OutputFormatter:
         return "\n".join(lines)
 
     @classmethod
-    def format_human_weapon(cls, items):
+    def format_human_weapon(cls, items, default_weapon_type=None):
         lines = []
         for item in items:
+            item = record_to_mapping(item)
             name = item.get("name", "Unknown").replace("_", " ").title()
-            weapon_type = item.get("weapon_type", "Unknown").title()
+            weapon_type = (
+                item.get("weapon_type")
+                or item.get("secondaryType")
+                or default_weapon_type
+                or "Unknown"
+            )
+            weapon_type = str(weapon_type).title()
             element = item.get("element", "NEUTRAL").title()
             min_damage = item.get("damage", 0)
             max_damage = item.get("maxLevelDamage", item.get("damage", 0))
@@ -69,6 +81,7 @@ class OutputFormatter:
     def format_human_ring(cls, items):
         lines = []
         for item in items:
+            item = record_to_mapping(item)
             name = item.get("name", "Unknown").replace("_", " ").title()
             element = item.get("element", "NEUTRAL").title()
             armor = item.get("armor", 0)

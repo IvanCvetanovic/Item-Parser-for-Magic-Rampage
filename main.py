@@ -1,156 +1,30 @@
-import os
-import argparse
-from file_parser import FileParser
-from online_data import OnlineDataManager
-from filter_util import DataFilter
-from formatter import OutputFormatter
-from armor_ring_parser import generate_armor_code, generate_ring_code
-from weapon_parser import (
-    generate_sword_code, generate_hammer_code, generate_spear_code,
-    generate_staff_code, generate_dagger_code, generate_axe_code
-)
-from class_parser import ClassParser
-from enemy_parser import EnemyParser
-
-def process_class_file(folder_path, output_type):
-    class_file = os.path.join(folder_path, "class-heads.enml")
-    cp = ClassParser(class_file)
-    code_lines = (cp.generate_class_code()
-                  if output_type == "developer"
-                  else cp.format_class_human())
-    os.makedirs("output", exist_ok=True)
-    out = os.path.join("output", "class_code.txt")
-    with open(out, "w", encoding="utf-8") as f:
-        f.write("\n".join(code_lines))
-    print(f"[✓] Class list exported to: {out}")
-
-def save_output(data, mode, output_type):
-    if output_type == "developer":
-        if mode == "armor":
-            codes = generate_armor_code(data.get(mode, []))
-        elif mode == "ring":
-            codes = generate_ring_code(data.get(mode, []))
-        elif mode == "sword":
-            codes = generate_sword_code(data.get(mode, []))
-        elif mode == "hammer":
-            codes = generate_hammer_code(data.get(mode, []))
-        elif mode == "spear":
-            codes = generate_spear_code(data.get(mode, []))
-        elif mode == "staff":
-            codes = generate_staff_code(data.get(mode, []))
-        elif mode == "dagger":
-            codes = generate_dagger_code(data.get(mode, []))
-        elif mode == "axe":
-            codes = generate_axe_code(data.get(mode, []))
-        else:
-            codes = []
-        formatted = "\n".join(codes)
-    else:  # normal
-        if mode == "armor":
-            formatted = OutputFormatter.format_human_armor(data.get(mode, []))
-        elif mode in ["sword", "hammer", "spear", "staff", "dagger", "axe"]:
-            formatted = OutputFormatter.format_human_weapon(data.get(mode, []))
-        elif mode == "ring":
-            formatted = OutputFormatter.format_human_ring(data.get(mode, []))
-        else:
-            formatted = ""
-    os.makedirs("output", exist_ok=True)
-    out = os.path.join("output", f"{mode}_code.txt")
-    with open(out, "w", encoding="utf-8") as f:
-        f.write(formatted)
-    print(f"[✓] {mode.capitalize()} exported to: {out}")
-
-def handle_all_types(data, output_type):
-    for t in data:
-        save_output(data, t, output_type)
-
-def main():
-    p = argparse.ArgumentParser("Parse Magic Rampage ENML files")
-    p.add_argument("output_type", choices=["developer","normal"],
-                   nargs="?", default="normal")
-    p.add_argument("item_type", choices=[
-        "armor","ring","sword","hammer","spear","staff","dagger","axe",
-        "all","class","enemy"
-    ], nargs="?", default="all")
-    args = p.parse_args()
-
-    folder = r"C:\Program Files (x86)\Steam\steamapps\common\Magic Rampage\items"
-
-    # parse or fallback to online
-    file_map = {
-        "special-armors.enml": "armor", "armor-cloth-1.enml": "armor",
-        "armor-leather-1.enml": "armor", "armor-plate-1.enml": "armor",
-        "special-items.enml": "ring", "special-swords.enml": "sword",
-        "weapon-sword-1.enml": "sword", "special-spears.enml": "spear",
-        "special-staves.enml": "staff", "weapon-staff-1.enml": "staff",
-        "special-hammers.enml": "hammer", "special-daggers.enml": "dagger",
-        "special-shurikens.enml": "dagger", "weapon-dagger-1.enml": "dagger",
-        "special-grimoires.enml": "staff", "special-axes.enml": "axe",
-        "weapon-axe-1.enml": "axe", "weapon-axe-2.enml": "axe"
-    }
-    local = FileParser(folder, file_map).parse_files()
-    total = sum(len(v) for v in local.values())
-
-    if total == 0:
-        print("[DEBUG] No local items, fetching online fallback")
-    online_url = "https://gist.githubusercontent.com/andresan87/5670c559e5a930129aa03dfce7827306/raw/items.json"
-    od = OnlineDataManager()
-    online = od.get_online_item_data(online_url)
-
-# --- DEBUG: check what the online JSON actually contains for 'Root' or 'Rift' ---
-    if online:
-        print("\n[CHECK] Online candidates containing 'root' or 'rift':")
-        for o in online:
-            if "root" in (o.get("name", "").lower()) or "root" in (o.get("name_en", "").lower()) \
-            or "rift" in (o.get("name", "").lower()) or "rift" in (o.get("name_en", "").lower()):
-                print("ONLINE:",
-                    "name =", o.get("name"),
-                    "| name_en =", o.get("name_en"),
-                    "| sprite =", o.get("sprite"),
-                    "| maxLevelDamage =", o.get("maxLevelDamage"))
+from config import configure_logging, parse_args
+from exporters import ExportService
+from pipeline import ItemPipeline
 
 
-    if online:
-        merged = (od.convert_online_to_local(online)
-          if total == 0
-          else od.merge_online_fields(local, online))
-    else:
-        merged = local
+def main(argv=None):
+    config = parse_args(argv)
+    configure_logging(config.log_level)
+    exporter = ExportService(config.output_dir)
 
-    merged = DataFilter().filter_parsed_data(merged)
+    if config.item_type == "class":
+        exporter.export_classes(config.items_folder, config.output_type)
+        return
 
-    # ─── Reclassify maces & hammers from axe → hammer ──────────────
-    axe_blocks = merged.get("axe", [])
-    to_move = [
-        b for b in axe_blocks
-        if b.get("secondaryType", "").lower() in ("mace", "hammer")
-    ]
-    if to_move:
-        merged["axe"]    = [b for b in axe_blocks if b not in to_move]
-        merged["hammer"] = merged.get("hammer", []) + to_move
-    # ────────────────────────────────────────────────────────────────
+    if config.item_type == "enemy":
+        exporter.export_enemies(config.enemy_directories, config.output_type)
+        return
 
-    if args.item_type == "class":
-        process_class_file(folder, args.output_type)
+    items_by_type = ItemPipeline(config.items_folder, config.online_items_url).load_items()
 
-    elif args.item_type == "enemy":
-        dirs = [
-            r"C:\Program Files (x86)\Steam\steamapps\common\Magic Rampage\npcs\enemies",
-            r"C:\Program Files (x86)\Steam\steamapps\common\Magic Rampage\npcs\bosses"
-        ]
-        names = EnemyParser(dirs).parse_enemy_stats()
-        os.makedirs("output", exist_ok=True)
-        out = os.path.join("output", "enemy_code.txt")
-        with open(out, "w", encoding="utf-8") as f:
-            f.write("\n".join(names))
-        print(f"[✓] Enemy list exported to: {out}")
+    if config.item_type == "all":
+        exporter.export_all_items(items_by_type, config.output_type)
+        exporter.export_classes(config.items_folder, config.output_type)
+        return
 
-    else:
-        if args.item_type == "all":
-            handle_all_types(merged, args.output_type)
-            process_class_file(folder, args.output_type)
-        else:
-            save_output(merged, args.item_type, args.output_type)
+    exporter.export_items(items_by_type, config.item_type, config.output_type)
+
 
 if __name__ == "__main__":
     main()

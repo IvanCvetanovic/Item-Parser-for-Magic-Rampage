@@ -1,12 +1,15 @@
 import re
+import logging
 import requests
 import unicodedata
+from models import PRICE_FIELD_NAMES
 
-PRICE_FIELDS = [
-    "freemiumGoldPrice", "premiumGoldPrice",
-    "freemiumCoinPrice", "premiumCoinPrice",
-    "baseFreemiumSellPrice", "basePremiumSellPrice"
-]
+logger = logging.getLogger(__name__)
+
+PRICE_FIELDS = PRICE_FIELD_NAMES
+
+LOCAL_ITEM_TYPES = {"armor", "ring", "sword", "hammer", "spear", "staff", "dagger", "axe"}
+ONLINE_REQUIRED_FIELDS = {"name", "type", "secondaryType"}
 
 
 def _norm_key(s):
@@ -57,14 +60,49 @@ def _matches(local_key, online_item, item_type):
 class OnlineDataManager:
     def get_online_item_data(self, url):
         try:
-            response = requests.get(url)
+            response = requests.get(url, timeout=15)
             response.raise_for_status()
             data = response.json()
-            print(f"[DEBUG] Retrieved {len(data)} items from online JSON")
-            return data
+            valid_data = self.validate_online_item_data(data)
+            logger.info("Retrieved %s valid item(s) from online JSON", len(valid_data))
+            return valid_data
         except Exception as e:
-            print(f"Error fetching online data: {e}")
+            logger.warning("Error fetching online data: %s", e)
             return None
+
+    def validate_online_item_data(self, data):
+        valid_items = []
+        for index, item in enumerate(data or []):
+            missing = sorted(field for field in ONLINE_REQUIRED_FIELDS if field not in item)
+            if missing:
+                logger.warning("Skipping online item at index %s due to missing fields: %s", index, ", ".join(missing))
+                continue
+            valid_items.append(item)
+        return valid_items
+
+    def convert_online_to_local(self, online_data):
+        """Convert online JSON items into the local grouped structure."""
+        converted = {item_type: [] for item_type in LOCAL_ITEM_TYPES}
+
+        for item in online_data:
+            item_type = self._get_local_item_type(item)
+            if item_type is None:
+                continue
+            converted[item_type].append(dict(item))
+
+        return converted
+
+    def _get_local_item_type(self, item):
+        raw_type = _norm_key(item.get("type"))
+        secondary = _norm_key(item.get("secondaryType"))
+
+        if raw_type == "armor":
+            return "armor"
+        if raw_type == "ring" or secondary == "ring":
+            return "ring"
+        if raw_type == "weapon" and secondary in LOCAL_ITEM_TYPES:
+            return secondary
+        return None
 
     def merge_online_fields(self, local_data, online_data):
         """
@@ -77,7 +115,6 @@ class OnlineDataManager:
         for item_type in local_data:
             for item in local_data[item_type]:
                 local_name_key = _norm_key(item.get("name", ""))
-                sprite = (item.get("sprite") or "").strip().lower()
                 match = None
 
                 # Try normal matching
@@ -96,7 +133,7 @@ class OnlineDataManager:
 
                 # Print only when no match found
                 if not match:
-                    print(f"[DEBUG] Local item '{item.get('name')}' not found (type {item_type})")
+                    logger.debug("Local item %s not found for type %s", item.get("name"), item_type)
                     continue
 
                 # --- Merge data from online item ---

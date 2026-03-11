@@ -1,6 +1,10 @@
-import os
 import re
+import logging
 from pathlib import Path
+from parser_utils import parse_scalar
+from models import EnemyRecord
+
+logger = logging.getLogger(__name__)
 
 class EnemyParser:
     def __init__(self, directories):
@@ -8,29 +12,57 @@ class EnemyParser:
 
     def parse_character_block(self, block_text):
         enemy = {}
-        for line in block_text.strip().splitlines():
-            line = line.split('//')[0].strip()
-            if '=' in line:
+        depth = 0
+        for raw_line in block_text.strip().splitlines():
+            line = raw_line.split('//')[0].strip()
+            if not line:
+                continue
+            if depth == 0 and '=' in line:
                 key, value = line.split('=', 1)
                 key = key.strip()
-                value = value.strip().rstrip(';').strip('"')
-                try:
-                    value = float(value)
-                except ValueError:
-                    pass
-                enemy[key] = value
+                parsed = parse_scalar(value.strip().strip('"'))
+                enemy[key] = parsed
+            depth += line.count('{')
+            depth -= line.count('}')
         return enemy
+
+    def extract_named_blocks(self, content, block_pattern):
+        blocks = []
+        pattern = re.compile(rf"\b(?:{block_pattern})\s*\{{", re.IGNORECASE)
+        pos = 0
+
+        while True:
+            match = pattern.search(content, pos)
+            if not match:
+                break
+
+            brace_start = content.find("{", match.start())
+            depth = 1
+            index = brace_start + 1
+            while index < len(content) and depth > 0:
+                char = content[index]
+                if char == "{":
+                    depth += 1
+                elif char == "}":
+                    depth -= 1
+                index += 1
+
+            if depth == 0:
+                blocks.append(content[brace_start + 1:index - 1])
+            pos = index
+
+        return blocks
 
     def parse_file(self, file_path):
         enemies = []
         with open(file_path, encoding="utf-8") as f:
             content = f.read()
-        character_blocks = re.findall(r"character\s*\{(.*?)\}", content, re.DOTALL)
-        item_blocks = re.findall(r"equippedItem\d\s*\{(.*?)\}", content, re.DOTALL)
+        character_blocks = self.extract_named_blocks(content, r"character")
 
         for block in character_blocks:
             character = self.parse_character_block(block)
             item_stats = {"damage": 0, "armor": 0, "speedBoost": 1.0, "jumpImpulseBoost": 1.0}
+            item_blocks = self.extract_named_blocks(block, r"equippedItem\d+")
             for item in item_blocks:
                 parsed = self.parse_character_block(item)
                 for key in item_stats:
@@ -48,9 +80,12 @@ class EnemyParser:
     def parse_enemy_data(self):
         all_enemies = []
         for directory in self.directories:
+            if not Path(directory).exists():
+                logger.debug("Enemy directory not found: %s", directory)
+                continue
             for file in Path(directory).glob("*.character"):
                 all_enemies.extend(self.parse_file(file))
-        return all_enemies
+        return [EnemyRecord.from_mapping(enemy) for enemy in all_enemies]
 
     def format_developer(self, enemy, name_counts):
         base = enemy.get("_filename", "unknown").lower().replace(" ", "_").replace("-", "_")
@@ -104,9 +139,11 @@ class EnemyParser:
 
     def export_to_txt(self, enemies, output_path, mode="normal"):
         name_counts = {}
-        sorted_enemies = sorted(enemies, key=lambda e: e.get("resistance", 0))
+        sorted_enemies = sorted(enemies, key=lambda e: e.as_dict().get("resistance", 0) if hasattr(e, "as_dict") else e.get("resistance", 0))
         with open(output_path, "w", encoding="utf-8") as f:
             for enemy in sorted_enemies:
+                if hasattr(enemy, "as_dict"):
+                    enemy = enemy.as_dict()
                 if mode == "developer":
                     f.write(self.format_developer(enemy, name_counts) + "\n")
                 else:
@@ -114,10 +151,11 @@ class EnemyParser:
 
     def parse_enemy_stats(self, mode="normal"):
         enemies = self.parse_enemy_data()
-        sorted_enemies = sorted(enemies, key=lambda e: e.get("resistance", 0))
+        sorted_enemies = sorted(enemies, key=lambda e: e.as_dict().get("resistance", 0))
         lines = []
         name_counts = {}
         for enemy in sorted_enemies:
+            enemy = enemy.as_dict()
             if mode == "developer":
                 lines.append(self.format_developer(enemy, name_counts))
             else:

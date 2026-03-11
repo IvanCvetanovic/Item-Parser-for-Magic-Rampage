@@ -1,4 +1,8 @@
 import os
+import logging
+from parser_utils import parse_scalar
+
+logger = logging.getLogger(__name__)
 
 class FileParser:
     def __init__(self, folder_path, file_to_type):
@@ -17,27 +21,22 @@ class FileParser:
                 try:
                     key, value = line.split("=", 1)
                 except Exception as e:
-                    print(f"[!] Malformed line: {e}")
+                    logger.warning("Malformed line: %s", e)
                     continue
                 key = key.strip()
-                value = value.strip().rstrip(";")
-                if value.lower() in ["true", "false"]:
-                    value = value.lower() == "true"
-                elif value.replace(".", "", 1).isdigit():
-                    value = float(value) if '.' in value else int(value)
-                item[key] = value
+                item[key] = parse_scalar(value)
         return item
 
     def parse_files(self):
         """Parse all ENML files in the folder using the file_to_type mapping."""
         parsed_data = {v: [] for v in set(self.file_to_type.values())}
         if not os.path.exists(self.folder_path):
-            print("[DEBUG] Local directory not found.")
+            logger.debug("Local directory not found: %s", self.folder_path)
             return parsed_data
 
         for file_name in os.listdir(self.folder_path):
             if file_name.endswith(".enml") and file_name in self.file_to_type:
-                print(f"Found relevant file: {file_name}")
+                logger.debug("Found relevant file: %s", file_name)
                 item_type = self.file_to_type[file_name]
                 file_path = os.path.join(self.folder_path, file_name)
                 with open(file_path, "r", encoding="utf-8") as file:
@@ -75,5 +74,5 @@ class FileParser:
                                 block_lines = []
                                 continue
                         block_lines.append(line_stripped)
-                print(f"[✓] Parsed {len(parsed_data[item_type])} {item_type}(s) from {file_name}")
+                logger.info("Parsed %s %s item(s) from %s", len(parsed_data[item_type]), item_type, file_name)
         return parsed_data
