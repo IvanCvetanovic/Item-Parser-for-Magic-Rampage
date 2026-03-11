@@ -4,10 +4,11 @@ from models import record_to_mapping
 
 def sort_by_max_armor(items, is_ring=False):
     """Sorts a list of dicts by max armor (or armor if ring) in ascending order."""
+    normalized_items = [record_to_mapping(item) for item in items]
     if is_ring:
-        return sorted(items, key=lambda x: x.get("armor", 0))
+        return sorted(normalized_items, key=lambda x: x.get("armor", 0))
     else:
-        return sorted(items, key=lambda x: x.get("maxLevelArmor", x.get("armor", 0)))
+        return sorted(normalized_items, key=lambda x: x.get("maxLevelArmor", x.get("armor", 0)))
 
 
 def _price_values_in_order(block):
