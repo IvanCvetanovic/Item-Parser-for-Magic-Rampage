@@ -1,5 +1,6 @@
 import os
 import re
+import sys
 import xml.etree.ElementTree as ET
 
 STRINGS_FILE = "strings.xml"
@@ -135,6 +136,13 @@ def create_translations_db(lang_dir):
 # -------- Main processing --------
 
 def main():
+    # Progress messages below contain emoji; make sure they don't crash on a
+    # redirected non-UTF-8 stdout (e.g. piping output to a file on Windows).
+    try:
+        sys.stdout.reconfigure(encoding="utf-8")
+    except (AttributeError, ValueError):
+        pass
+
     en_dir = os.path.join(LANG_DIR, 'en')
     key_locations = create_key_locations_map(en_dir)
     english_text_db = create_english_text_db(en_dir)

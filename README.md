@@ -3,7 +3,7 @@ This project parses item, class, and enemy data from Magic Rampage and exports e
 ## Requirements
 
 - Python 3.11 or newer
-- `requests`
+- `requests` (only needed to fetch the latest item data online; offline/local-only use and the test suite work without it)
 
 Install dependencies with:
 
@@ -68,11 +68,11 @@ Items are sorted deterministically:
 - `pipeline.py` handles loading, filtering, merging, reclassification, and stable ordering.
 - `exporters.py` handles writing text outputs.
 - `models.py` provides typed records for items, classes, and enemies.
-- `online_data.py` validates the online schema before use.
+- `online_data.py` validates the online schema before use, and falls back to the bundled `items.json` snapshot when the network fetch fails or `requests` is unavailable.
 
 ## Tests
 
-Install dependencies first (`pip install .`), otherwise importing `requests` will fail. Then run the test suite with:
+The test suite has no external dependencies. Run it with:
 
 ```bash
 python -m unittest discover -s tests

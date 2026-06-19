@@ -21,6 +21,7 @@ def main(argv=None):
     if config.item_type == "all":
         exporter.export_all_items(items_by_type, config.output_type)
         exporter.export_classes(config.items_folder, config.output_type)
+        exporter.export_enemies(config.enemy_directories, config.output_type)
         return
 
     exporter.export_items(items_by_type, config.item_type, config.output_type)
