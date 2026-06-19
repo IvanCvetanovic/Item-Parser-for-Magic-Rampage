@@ -9,13 +9,16 @@ description = "Parsers and exporters for Magic Rampage item, class, and enemy da
 requires-python = ">=3.11"
 dependencies = [
     "requests>=2.31,<3",
+    "flask>=3.0,<4",
 ]
 
 [tool.setuptools]
 py-modules = [
+    "app",
     "armor_ring_parser",
     "class_parser",
     "config",
+    "diff_checker",
     "enemy_parser",
     "exporters",
     "file_parser",

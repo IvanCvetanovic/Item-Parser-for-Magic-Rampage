@@ -11,8 +11,9 @@ DEFAULT_ENEMY_DIRECTORIES = [
 ]
 DEFAULT_ONLINE_ITEMS_URL = "https://gist.githubusercontent.com/andresan87/5670c559e5a930129aa03dfce7827306/raw/items.json"
 DEFAULT_OUTPUT_DIR = "output"
+DEFAULT_BASELINE = "items.json"
 OUTPUT_TYPES = ("developer", "normal")
-ITEM_TYPES = ("armor", "ring", "sword", "hammer", "spear", "staff", "dagger", "axe", "all", "class", "enemy")
+ITEM_TYPES = ("armor", "ring", "sword", "hammer", "spear", "staff", "dagger", "axe", "all", "class", "enemy", "diff")
 
 
 @dataclass(frozen=True)
@@ -24,6 +25,7 @@ class AppConfig:
     online_items_url: str
     output_dir: Path
     log_level: str
+    baseline: Path = Path(DEFAULT_BASELINE)
 
 
 def _split_env_paths(value):
@@ -42,6 +44,7 @@ def parse_args(argv=None):
     parser.add_argument("--online-items-url", default=os.getenv("MAGIC_RAMPAGE_ITEMS_URL", DEFAULT_ONLINE_ITEMS_URL))
     parser.add_argument("--output-dir", default=os.getenv("MAGIC_RAMPAGE_OUTPUT_DIR", DEFAULT_OUTPUT_DIR))
     parser.add_argument("--log-level", default=os.getenv("MAGIC_RAMPAGE_LOG_LEVEL", "INFO"))
+    parser.add_argument("--baseline", default=os.getenv("MAGIC_RAMPAGE_BASELINE", DEFAULT_BASELINE), help="Path to the baseline items.json for diff")
     args = parser.parse_args(argv)
 
     env_enemy_dirs = _split_env_paths(os.getenv("MAGIC_RAMPAGE_ENEMY_DIRS"))
@@ -56,6 +59,7 @@ def parse_args(argv=None):
         online_items_url=args.online_items_url,
         output_dir=Path(args.output_dir),
         log_level=args.log_level.upper(),
+        baseline=Path(args.baseline),
     )
 
 

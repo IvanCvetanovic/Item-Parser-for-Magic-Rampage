@@ -1,4 +1,5 @@
 from config import configure_logging, parse_args
+from diff_checker import DiffChecker
 from exporters import ExportService
 from pipeline import ItemPipeline
 
@@ -7,6 +8,14 @@ def main(argv=None):
     config = parse_args(argv)
     configure_logging(config.log_level)
     exporter = ExportService(config.output_dir)
+
+    if config.item_type == "diff":
+        checker = DiffChecker(config.items_folder, config.online_items_url)
+        new_items, removed_items, changes, fresh_enml = checker.run()
+        report = DiffChecker.format_report(new_items, removed_items, changes, fresh_enml)
+        print(report)
+        exporter.write_text("diff_report.txt", report)
+        return
 
     if config.item_type == "class":
         exporter.export_classes(config.items_folder, config.output_type)
