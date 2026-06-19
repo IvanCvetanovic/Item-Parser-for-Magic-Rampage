@@ -41,6 +41,17 @@ python main.py developer enemy --enemy-dir "D:\SteamLibrary\steamapps\common\Mag
 python main.py normal all --output-dir custom-output
 ```
 
+Preview the output in your terminal instead of writing files:
+
+```bash
+python main.py developer sword --stdout
+```
+
+Other flags: `--version` and `--log-level <LEVEL>`. After each run a summary is
+printed to stderr — the resolved input paths (with a `(not found)` hint when a
+folder is missing), per-file record counts, and totals — so stdout stays clean
+for `--stdout` redirection.
+
 The same values can be provided through environment variables:
 
 - `MAGIC_RAMPAGE_ITEMS_DIR`

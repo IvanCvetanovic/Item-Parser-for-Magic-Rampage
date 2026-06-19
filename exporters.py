@@ -1,4 +1,5 @@
 import logging
+from dataclasses import dataclass
 from pathlib import Path
 from armor_ring_parser import generate_armor_code, generate_ring_code
 from weapon_parser import (
@@ -25,15 +26,28 @@ WEAPON_GENERATORS = {
 }
 
 
-class ExportService:
-    def __init__(self, output_dir):
-        self.output_dir = Path(output_dir)
+@dataclass(frozen=True)
+class ExportResult:
+    label: str
+    count: int
+    path: Path | None  # None when content was printed to stdout instead of written
 
-    def write_text(self, filename, content):
+
+class ExportService:
+    def __init__(self, output_dir, to_stdout=False):
+        self.output_dir = Path(output_dir)
+        self.to_stdout = to_stdout
+
+    def _emit(self, filename, content):
+        if self.to_stdout:
+            print(f"# ==== {filename} ====")
+            print(content)
+            print()
+            return None
         self.output_dir.mkdir(parents=True, exist_ok=True)
         out = self.output_dir / filename
         out.write_text(content, encoding="utf-8")
-        logger.info("Exported %s", out)
+        logger.debug("Exported %s", out)
         return out
 
     def export_items(self, items_by_type, item_type, output_type):
@@ -42,26 +56,29 @@ class ExportService:
             content = self._format_developer_items(item_type, items)
         else:
             content = self._format_normal_items(item_type, items)
-        return self.write_text(f"{item_type}_code.txt", content)
+        path = self._emit(f"{item_type}_code.txt", content)
+        return ExportResult(item_type, len(items), path)
 
     def export_all_items(self, items_by_type, output_type):
-        outputs = []
+        results = []
         for item_type, items in items_by_type.items():
             if not items:
                 continue
-            outputs.append(self.export_items(items_by_type, item_type, output_type))
-        return outputs
+            results.append(self.export_items(items_by_type, item_type, output_type))
+        return results
 
     def export_classes(self, items_folder, output_type):
         class_file = Path(items_folder) / "class-heads.enml"
         parser = ClassParser(str(class_file))
         lines = parser.generate_class_code() if output_type == "developer" else parser.format_class_human()
-        return self.write_text("class_code.txt", "\n".join(lines))
+        path = self._emit("class_code.txt", "\n".join(lines))
+        return ExportResult("class", len(lines), path)
 
     def export_enemies(self, enemy_directories, output_type):
         parser = EnemyParser([str(path) for path in enemy_directories])
         lines = parser.parse_enemy_stats(mode=output_type)
-        return self.write_text("enemy_code.txt", "\n".join(lines))
+        path = self._emit("enemy_code.txt", "\n".join(lines))
+        return ExportResult("enemy", len(lines), path)
 
     @staticmethod
     def _format_developer_items(item_type, items):
