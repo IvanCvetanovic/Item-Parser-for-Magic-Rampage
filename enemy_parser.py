@@ -61,14 +61,16 @@ class EnemyParser:
 
         for block in character_blocks:
             character = self.parse_character_block(block)
-            item_stats = {"damage": 0, "armor": 0, "speedBoost": 1.0, "jumpImpulseBoost": 1.0}
-            item_blocks = self.extract_named_blocks(block, r"equippedItem\d+")
+            item_stats = {"damage": 0, "armor": 0, "speedBoost": 1.0, "jumpBoost": 1.0}
+            # equippedItem blocks are siblings of the character block (not nested
+            # inside it), so scan the whole file content, not just the character body.
+            item_blocks = self.extract_named_blocks(content, r"equippedItem\d+")
             for item in item_blocks:
                 parsed = self.parse_character_block(item)
                 for key in item_stats:
                     val = parsed.get(key)
                     if val:
-                        if key in ["speedBoost", "jumpImpulseBoost"]:
+                        if key in ["speedBoost", "jumpBoost"]:
                             item_stats[key] *= val
                         else:
                             item_stats[key] += val
@@ -98,7 +100,7 @@ class EnemyParser:
         damage_on_touch = int(enemy.get("passiveDamage", 0))
         armor = int(enemy.get("_items", {}).get("armor", 0))
         speed = round(float(enemy.get("speed", 0)) * float(enemy.get("_items", {}).get("speedBoost", 1.0)), 2)
-        jump = round(float(enemy.get("jumpImpulse", 0)) * float(enemy.get("_items", {}).get("jumpImpulseBoost", 1.0)), 2)
+        jump = round(float(enemy.get("jumpImpulse", 0)) * float(enemy.get("_items", {}).get("jumpBoost", 1.0)), 2)
         patrol = enemy.get("patrolBehaviour", "")
         attack = enemy.get("attackBehaviour", "")
 
@@ -113,7 +115,7 @@ class EnemyParser:
         name = base.replace("_", " ").replace("-", " ").title()
         health = enemy.get("resistance", 0)
         speed = round(float(enemy.get("speed", 0)) * float(enemy.get("_items", {}).get("speedBoost", 1.0)), 2)
-        jump = round(float(enemy.get("jumpImpulse", 0)) * float(enemy.get("_items", {}).get("jumpImpulseBoost", 1.0)), 2)
+        jump = round(float(enemy.get("jumpImpulse", 0)) * float(enemy.get("_items", {}).get("jumpBoost", 1.0)), 2)
         patrol = enemy.get("patrolBehaviour", "")
         attack = enemy.get("attackBehaviour", "")
         damage = int(enemy.get("_items", {}).get("damage", 0))

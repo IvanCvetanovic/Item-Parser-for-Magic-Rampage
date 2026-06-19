@@ -6,23 +6,21 @@ from enemy_parser import EnemyParser
 
 
 class EnemyParserTests(unittest.TestCase):
-    def test_parse_file_keeps_equipped_items_scoped_to_each_character(self):
+    def test_parse_file_aggregates_sibling_equipped_items(self):
+        # Real .character files hold a single character with equippedItem blocks
+        # as siblings (not nested), so their stats are aggregated onto the enemy.
         content = """
 character {
   resistance = 10;
   speed = 2;
-  equippedItem1 {
-    damage = 3;
-    speedBoost = 1.5;
-  }
 }
-character {
-  resistance = 20;
-  speed = 4;
-  equippedItem1 {
-    damage = 7;
-    speedBoost = 2;
-  }
+equippedItem1 {
+  damage = 3;
+  speedBoost = 1.5;
+}
+equippedItem2 {
+  damage = 7;
+  speedBoost = 2;
 }
 """
         with tempfile.TemporaryDirectory() as tmp_dir:
@@ -32,10 +30,9 @@ character {
 
             enemies = parser.parse_file(path)
 
-        self.assertEqual(enemies[0]["_items"]["damage"], 3)
-        self.assertEqual(enemies[0]["_items"]["speedBoost"], 1.5)
-        self.assertEqual(enemies[1]["_items"]["damage"], 7)
-        self.assertEqual(enemies[1]["_items"]["speedBoost"], 2)
+        self.assertEqual(len(enemies), 1)
+        self.assertEqual(enemies[0]["_items"]["damage"], 10)  # 3 + 7
+        self.assertEqual(enemies[0]["_items"]["speedBoost"], 3.0)  # 1.5 * 2
 
     def test_parse_enemy_stats_supports_developer_mode(self):
         content = """

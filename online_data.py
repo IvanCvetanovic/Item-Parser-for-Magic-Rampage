@@ -1,7 +1,8 @@
 import re
+import json
 import logging
-import requests
 import unicodedata
+from pathlib import Path
 from models import PRICE_FIELD_NAMES
 
 logger = logging.getLogger(__name__)
@@ -10,6 +11,10 @@ PRICE_FIELDS = PRICE_FIELD_NAMES
 
 LOCAL_ITEM_TYPES = {"armor", "ring", "sword", "hammer", "spear", "staff", "dagger", "axe"}
 ONLINE_REQUIRED_FIELDS = {"name", "type", "secondaryType"}
+
+# Bundled snapshot of the online data, used as an offline fallback when the
+# network fetch fails or `requests` is unavailable.
+BUNDLED_ITEMS_PATH = Path(__file__).resolve().parent / "items.json"
 
 
 def _norm_key(s):
@@ -58,8 +63,12 @@ def _matches(local_key, online_item, item_type):
 
 
 class OnlineDataManager:
+    def __init__(self, bundled_items_path=BUNDLED_ITEMS_PATH):
+        self.bundled_items_path = Path(bundled_items_path)
+
     def get_online_item_data(self, url):
         try:
+            import requests
             response = requests.get(url, timeout=15)
             response.raise_for_status()
             data = response.json()
@@ -68,6 +77,20 @@ class OnlineDataManager:
             return valid_data
         except Exception as e:
             logger.warning("Error fetching online data: %s", e)
+            return self._load_bundled_item_data()
+
+    def _load_bundled_item_data(self):
+        if not self.bundled_items_path.exists():
+            logger.warning("Bundled item data not found at %s", self.bundled_items_path)
+            return None
+        try:
+            with open(self.bundled_items_path, encoding="utf-8") as handle:
+                data = json.load(handle)
+            valid_data = self.validate_online_item_data(data)
+            logger.info("Using bundled offline item data: %s valid item(s)", len(valid_data))
+            return valid_data
+        except Exception as e:
+            logger.warning("Error reading bundled item data: %s", e)
             return None
 
     def validate_online_item_data(self, data):

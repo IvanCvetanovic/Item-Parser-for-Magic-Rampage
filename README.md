@@ -3,12 +3,18 @@ This project parses item, class, and enemy data from Magic Rampage and exports e
 ## Requirements
 
 - Python 3.11 or newer
-- `requests`
+- `requests` (only needed to fetch the latest item data online; offline/local-only use and the test suite work without it)
 
 Install dependencies with:
 
 ```bash
 pip install .
+```
+
+Or install just the runtime dependency:
+
+```bash
+pip install -r requirements.txt
 ```
 
 ## Usage
@@ -34,6 +40,17 @@ python main.py normal all --items-folder "D:\SteamLibrary\steamapps\common\Magic
 python main.py developer enemy --enemy-dir "D:\SteamLibrary\steamapps\common\Magic Rampage\npcs\enemies" --enemy-dir "D:\SteamLibrary\steamapps\common\Magic Rampage\npcs\bosses"
 python main.py normal all --output-dir custom-output
 ```
+
+Preview the output in your terminal instead of writing files:
+
+```bash
+python main.py developer sword --stdout
+```
+
+Other flags: `--version` and `--log-level <LEVEL>`. After each run a summary is
+printed to stderr — the resolved input paths (with a `(not found)` hint when a
+folder is missing), per-file record counts, and totals — so stdout stays clean
+for `--stdout` redirection.
 
 The same values can be provided through environment variables:
 
@@ -62,11 +79,11 @@ Items are sorted deterministically:
 - `pipeline.py` handles loading, filtering, merging, reclassification, and stable ordering.
 - `exporters.py` handles writing text outputs.
 - `models.py` provides typed records for items, classes, and enemies.
-- `online_data.py` validates the online schema before use.
+- `online_data.py` validates the online schema before use, and falls back to the bundled `items.json` snapshot when the network fetch fails or `requests` is unavailable.
 
 ## Tests
 
-Run the test suite with:
+The test suite has no external dependencies. Run it with:
 
 ```bash
 python -m unittest discover -s tests
