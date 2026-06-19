@@ -11,6 +11,12 @@ Install dependencies with:
 pip install .
 ```
 
+Or install just the runtime dependency:
+
+```bash
+pip install -r requirements.txt
+```
+
 ## Usage
 
 Default run:
@@ -66,7 +72,7 @@ Items are sorted deterministically:
 
 ## Tests
 
-Run the test suite with:
+Install dependencies first (`pip install .`), otherwise importing `requests` will fail. Then run the test suite with:
 
 ```bash
 python -m unittest discover -s tests
